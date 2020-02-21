@@ -2,7 +2,7 @@
 
 Repository for the ManyNames dataset
 
-UNDER CONSTRUCTION; release expected by March 27 2020
+**UNDER CONSTRUCTION**; release expected by March 27 2020
 
 Licensed under CC BY 4.0 International; attribution by citing:
 
