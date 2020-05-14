@@ -76,16 +76,16 @@ All scripts can be given as optional argument the path to the ManyNames dataset:
 `python <script-name> [$MANYNAMESROOT/manynames_v1.0.tsv]`
 By default, `$MANYNAMESROOT` is `../` from the script directory.
 * **`manynames.py`**
-  *Loads the MN data into a pandas DataFrame.*
+  *Loads the MN data into a pandas DataFrame.*<br>
   `python manynames.py [$MANYNAMESROOT/manynames_v1.0.tsv]`
 * **`visualise.py`**
   *Provides a function to draw a bounding box around an object and label it with its MN object names (and VG name).*
   You can run a demo of it with `python visualise.py`
 * **`agreement_table.py`**
-  *Creates a table (in tex format) of the agreement in object naming of MN. (Table 3 in the [paper](https://github.com/amore-upf/manynames/lrec2020naming.pdf)).*
+  *Creates a table (in tex format) of the agreement in object naming of MN. (Table 3 in the [paper](https://github.com/amore-upf/manynames/lrec2020naming.pdf)).*<br>
   `python agreement_table.py [$MANYNAMESROOT/manynames_v1.0.tsv]`
 * **`plot_distr_topnames.py`**
-  *Creates a stacked box plot, showing the distribution of top MN names per domain (Figure 3 in the [paper](https://github.com/amore-upf/manynames/lrec2020naming.pdf)).*
+  *Creates a stacked box plot, showing the distribution of top MN names per domain (Figure 3 in the [paper](https://github.com/amore-upf/manynames/lrec2020naming.pdf)).*<br>
   `python plot_distr_topnames.py [$MANYNAMESROOT/manynames_v1.0.tsv]`
 * `wordnet_analysis.py`
   TODO
