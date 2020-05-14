@@ -5,10 +5,9 @@ Repository for the ManyNames dataset
 **UNDER CONSTRUCTION**; release expected by 12 May 2020
 
 **TODOs**:
-* [ ] upload scripts to (i) load manyname (ii) compute results@LREC paper
-* [ ] ? add file with (VG) urls of image files instead of images?
-* [ ] describe usage of scripts
-* [ ] double-check bbox ccordinates
+* [ ] add file with (VG) urls of image files; add VG images
+* [ ] add and decsribe script for WN relations@LREC paper
+* [x] double-check bbox ccordinates
 * [ ] add preproc scripts + raw data from computer@UPF
 
 ## ManyNames dataset Version 1.0
@@ -56,12 +55,12 @@ For each domain, there exists at least one WordNet category out of *article of c
 | vg_image_name | str | The name of the VG image |
 | vg_object_id | int | The VG id of the object |
 | vg_obj_name | str | The VG name of the object |
-| bbox_xywh | list | The coordinates of the object in the image: XXX [x, y, width, height] |
+| bbox_xywh | list | The coordinates of the object in the image: [left x, bottom y, width, height] <br>(y=0 is at the top of the image)|
 | vg_synset | str | The WN synset of the object, provided by VG |
 | vg_cat | str | The WordNet hypernym of the VG synset, corresponds roughly to one of the 7 MN domains.  |
 
 ### Subfolders:
-imgs/
+images/
 scripts/
 raw_data/
 
@@ -79,6 +78,9 @@ By default, `$MANYNAMESROOT` is `../` from the script directory.
 * **`manynames.py`**
   *Loads the MN data into a pandas DataFrame.*
   `python manynames.py [$MANYNAMESROOT/manynames_v1.0.tsv]`
+* **`visualise.py`**
+  *Provides a function to draw a bounding box around an object and label it with its MN object names (and VG name).*
+  You can run a demo of it with `python visualise.py`
 * **`agreement_table.py`**
   *Creates a table (in tex format) of the agreement in object naming of MN. (Table 3 in the [paper](https://github.com/amore-upf/manynames/lrec2020naming.pdf)).*
   `python agreement_table.py [$MANYNAMESROOT/manynames_v1.0.tsv]`
