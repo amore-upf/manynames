@@ -68,8 +68,9 @@ raw_data/
 ###### Package Requirements:
   * `pandas`
   * `numpy`
-  * `matplotlib.pyplot` (for `agreement_table.py`)
+  * `matplotlib.pyplot` (for `agreement_table.py` and `visualise.py`)
   * `nltk` and `nltk.corpus` (for `wordnet_analysis.py`,   `agreement_table.py`)
+  * `skimage` (for `visualise.py`)
 
 ###### Usage:
 All scripts can be given as optional argument the path to the ManyNames dataset: 
