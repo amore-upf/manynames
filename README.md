@@ -6,9 +6,12 @@ Repository for the ManyNames dataset
 
 **TODOs**:
 * [ ] add file with (VG) urls of image files; add VG images
-* [ ] add and decsribe script for WN relations@LREC paper
+* [ ] add and describe script for WN relations@LREC paper
 * [x] double-check bbox ccordinates
 * [ ] add preproc scripts + raw data from computer@UPF
+* [x] change incorrect column to singletons, also for MNv2.0
+* [ ] column VG_cat only in MNv1.0
+* [x] remove prefix from MN columns
 
 ## ManyNames dataset Version 1.0
 ###### ManyNames_v1.0 completed as of 8 January 2020
@@ -36,13 +39,13 @@ For each domain, there exists at least one WordNet category out of *article of c
 | vg_image_id | int | The VG id of the image |
 | vg_object_id | int | The VG id of the object |
 | url | str | The url to the image, with the object marked |
-| mn_topname | str | The most frequent name in the MN responses |
-| mn_domain | str | The MN domain of the MN object |
+| topname | str | The most frequent name in the MN responses |
+| domain | str | The MN domain of the MN object |
 | N | float | The number of types in the MN responses |
 | %top | float | The relative frequency of the most frequent response (in percent) |
 | H | float | The H agreement measure from (Snodgrass and Vanderwart, 1980) |
 | responses | Counter | The collected MN names and their counts, i.e., the number of annotators responding them |
-| incorrect | dict | Complex data, see below. |
+| singletons | dict | Contains all names which were given only once, i.e., with count=1. <br>Example: `{'sofa': 1, 'armchair': 1}` |
 | vg_obj_name | str | The VG name of the object |
 | vg_domain | str | The MN domain of the VG name, which may be a superset of its WN category (vg_cat). <br>Example: The MN domain *food* subsumes the WN categories *food, solid food* and *food, nutrient*. |
 | vg_synset | str | The WN synset of the object, provided by VG |

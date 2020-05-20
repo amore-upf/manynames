@@ -34,6 +34,8 @@ def load_cleaned_results(filename, sep="\t", index_col=None):
             
     if 'incorrect' in resdf: # MNv2.0
         resdf['incorrect'] = resdf['incorrect'].apply(lambda x: eval(x))
+    if 'singletons' in resdf: # MNv1.0 + v2.0
+        resdf['singletons'] = resdf['singletons'].apply(lambda x: eval(x))
 
     return resdf
 
