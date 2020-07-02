@@ -132,13 +132,13 @@ def load_cleaned_results_old(filename, sep="\t", index_col=None):
     return resdf
 
 if __name__=="__main__":
-    MN_V2 = False
+    MN_V2 = True
     LOAD_IMAGEDATA = False
     
     if len(sys.argv) > 1:
         fn = sys.argv[1]
     elif MN_V2 is True:
-        fn = '../proc_data_phase0/mn_v2.0/manynames-v2.0_valid_responses_ad0.40.csv'
+        fn = '../manynames-v2.0.tsv'
     else:
         fn = "../manynames_v1.0.tsv"
         
