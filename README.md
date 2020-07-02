@@ -101,13 +101,15 @@ By default, `$MANYNAMESROOT` is `../` from the script directory.
 ### Citing ManyNames
 Silberer, C., S. Zarrieß, G. Boleda. 2020. [Object Naming in Language and Vision: A Survey and a New Dataset](https://github.com/amore-upf/manynames/lrec2020naming.pdf). In Proceedings of LREC 2020. [[paper]](https://github.com/amore-upf/manynames/lrec2020naming.pdf)
 
-`@inproceedings{ silberer2020manynames,`
-  `title = {{Object Naming in Language and Vision: A Survey and a New Dataset}},`
-  `author = {Silberer, Carina and Zarieß, Sina and Boleda, Gemma},`
-  `year = {2020},`
-  `booktitle = {Proceedings of the Twelfth International Conference on Language Resources and Evaluation (LREC 2020)},`
-  `url = {https://www.aclweb.org/anthology/volumes/L20-1/},`
-`}`
+```
+@inproceedings{ silberer2020manynames,
+  title = {{Object Naming in Language and Vision: A Survey and a New Dataset}},
+  author = {Silberer, Carina and Zarieß, Sina and Boleda, Gemma},
+  year = {2020},
+  booktitle = {Proceedings of the Twelfth International Conference on Language Resources and Evaluation (LREC 2020)},
+  url = {https://www.aclweb.org/anthology/volumes/L20-1/},
+}
+```
 
 ### About
 ManyNames is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/), and based on  VisualGenome at [visualgenome.org](https://visualgenome.org).
