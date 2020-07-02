@@ -8,14 +8,10 @@ Repository for the ManyNames dataset
 
 - [ ] add file with (VG) urls of image files; add VG images
 - [ ] add and describe script for WN relations@LREC paper
-- [x] double-check bbox ccordinates
 - [ ] add preproc scripts + raw data from computer@UPF
-- [x] change incorrect column to singletons, also for MNv2.0
-- [ ] column VG_cat only in MNv1.0
-- [x] remove prefix from MN columns
 
-## ManyNames dataset Version 1.0
-###### ManyNames_v1.0 completed as of 8 January 2020
+## ManyNames dataset
+###### ManyNames completed as of 8 January 2020
 
 Below we describe the data that is availabe for download in this repository.
 
@@ -33,7 +29,7 @@ Below we describe the data that is availabe for download in this repository.
 
 For each domain, there exists at least one WordNet category out of *article of clothing*, *instrumentality, instrumentation*, *person*, *tableware*, *ware*, *food, nutrient*, *structure, construction*, *animal*, *tool*, *food, solid food*, *plant, flora, plant life*, *vehicle*.
    
-#### Data file: manynames-v1.0.tsv
+#### Data file: manynames.tsv
 
 | Column | Type | Description | 
 | -------- | :-------: | -------- |
@@ -77,20 +73,20 @@ raw_data/
 
 ###### Usage:
 All scripts can be given as optional argument the path to the ManyNames dataset: 
-`python <script-name> [$MANYNAMESROOT/manynames_v1.0.tsv]`
+`python <script-name> [$MANYNAMESROOT/manynames.tsv]`
 By default, `$MANYNAMESROOT` is `../` from the script directory.
 * **`manynames.py`**
   *Loads the MN data into a pandas DataFrame.*<br>
-  `python manynames.py [$MANYNAMESROOT/manynames_v1.0.tsv]`
+  `python manynames.py [$MANYNAMESROOT/manynames.tsv]`
 * **`visualise.py`**
   *Provides a function to draw a bounding box around an object and label it with its MN object names (and VG name).*
   You can run a demo of it with `python visualise.py`
 * **`agreement_table.py`**
   *Creates a table (in tex format) of the agreement in object naming of MN. (Table 3 in the [paper](https://github.com/amore-upf/manynames/lrec2020naming.pdf)).*<br>
-  `python agreement_table.py [$MANYNAMESROOT/manynames_v1.0.tsv]`
+  `python agreement_table.py [$MANYNAMESROOT/manynames.tsv]`
 * **`plot_distr_topnames.py`**
   *Creates a stacked box plot, showing the distribution of top MN names per domain (Figure 3 in the [paper](https://github.com/amore-upf/manynames/lrec2020naming.pdf)).*<br>
-  `python plot_distr_topnames.py [$MANYNAMESROOT/manynames_v1.0.tsv]`
+  `python plot_distr_topnames.py [$MANYNAMESROOT/manynames.tsv]`
 * `wordnet_analysis.py`
   TODO
    *   **Data Prerequisites:** Download the object annotations in [objects.json.zip](https://visualgenome.org/static/data/dataset/objects.json.zip "objects.json.zip") from [VisualGenome](https://visualgenome.org "VisualGenome") (VisualGenome version 1.4) and save it under `$MANYNAMESROOT/vgenome/`.
