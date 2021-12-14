@@ -57,9 +57,9 @@ When run from the command line, all scripts can be given as optional argument th
 * **`visualise.py`**
   *Provides a function to draw the bounding box around the target object and label it with its MN object names (and VG name).*
 * **`agreement_table.py`**
-  *Creates a summary table of name agreement indices (Table 3 in [Silberer, Zarrieß, & Boleda (2020)](https://aclanthology.org/2020.lrec-1.710/)).*<br>
+  *Creates a summary table of name agreement indices (Table 3 in [Silberer, Zarrieß, & Boleda, 2020](https://aclanthology.org/2020.lrec-1.710/)).*<br>
 * **`plot_distr_topnames.py`**
-  *Creates a stacked box plot, showing the distribution of MN topnames per domain (Figure 3 in [Silberer, Zarrieß, & Boleda (2020)](https://aclanthology.org/2020.lrec-1.710/)).*<br>
+  *Creates a stacked box plot, showing the distribution of MN topnames per domain (Figure 3 in [Silberer, Zarrieß, & Boleda, 2020](https://aclanthology.org/2020.lrec-1.710/)).*<br>
 
 ## Subfolder: images
 Contains sample images (from VG) which are used in the demo of `visualise.py`.
