@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 import manynames as mn
 
-#%% ---- FUNCTIONS TO RECREATE TABLE 2
+#%% ---- FUNCTIONS TO RECREATE AGREEMENT TABLE
 def snodgrass_agreement(rdict, vocab, singletons=False):
     # to decide: do we include singleton answers for calculating agreement?
     if singletons:
@@ -29,6 +29,9 @@ def make_df(manynames):
     vg_is_common = []
     vg_prop = []
     ntypesmin2 = []
+    
+    if not isinstance(manynames.iloc[0]['responses'], Counter):
+        manynames['responses'] = manynames['responses'].apply(lambda x: Counter(x))
 
     for ix,row in manynames.iterrows():
         vg_is_common.append(int(row['topname'] == row['vg_obj_name']))
