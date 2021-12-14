@@ -3,7 +3,7 @@ Repository for the ManyNames dataset (version 2.1). ManyNames provides 36 name a
 
 <img src="example/mn_images_example2.png" alt="ManyNames example" width="800"/>
 
-For details of the data collection see [Silberer, Zarrieß, & Boleda, 2020](https://aclanthology.org/2020.lrec-1.710/) (version 1.0) and [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/) (version 2.0). For changes in the present version see the [release notes](https://github.com/amore-upf/manynames/release_notes_v2.1.md). Previous versions of the dataset can be accessed as older releases in this repository.
+For details of the data collection see [Silberer, Zarrieß, & Boleda, 2020](https://aclanthology.org/2020.lrec-1.710/) (version 1.0) and [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/) (version 2.0). For changes in the present version see the [release notes](https://github.com/amore-upf/manynames/blob/master/release_notes_v2.1.md). Previous versions of the dataset can be accessed as older releases in this repository.
 
 ## Notation
 |Abbreviation | Description |
