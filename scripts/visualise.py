@@ -43,7 +43,7 @@ if __name__=="__main__":
         url = mn_item["link_vg"].values[0]
         responses = mn_item["responses"].values[0]
         mn_objnames = "MN: "+" / ".join(responses.keys())
-        bbox = mn_item["bbox_xywh"].values[0]
+        bbox = mn_item["target_coord"].values[0]
         vg_objname = "VG: "+ mn_item["vg_obj_name"].values[0]
         image_name = mn_item["vg_image_name"].values[0]
         obj_name = mn_objnames + "   (%s)" % vg_objname

@@ -2,6 +2,7 @@
 # coding: utf-8
 
 #%% ---- DEPENDENCIES
+import os
 import sys
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -100,17 +101,17 @@ def plot_function(domain, ax, nm2domain, domain_gdf, domains, text_fontsize=8):
 
 #%% ---- DIRECTLY RUN
 if __name__ == '__main__':
-    
+
     if len(sys.argv) > 1:
         fn = sys.argv[1]
         print("Creating figure for", fn)
     else:
         fn = "../manynames.tsv"
-    
+
     manynames_df = mn.load_cleaned_results(fn)
     nm2domain = dict(zip(manynames_df["vg_obj_name"], manynames_df["vg_domain"]))
     
-    domain_key = "domain"
+    domain_key = "domain" #"vg_domain"
     obj_name_df, print_df = statistics_mn_topnames(manynames_df, domain_key)
 
     domain_groups = obj_name_df.groupby([domain_key]).apply(lambda x: (x.groupby('topname')
