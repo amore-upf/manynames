@@ -1,14 +1,13 @@
+#!/usr/bin/env python
+# coding: utf-8
 
+#%% ---- DEPENDENCIES
 from skimage import io
 import os
-
-import matplotlib as mpl
 import matplotlib.pyplot as plt
-
-plt.ion()
-
 import manynames as mn
 
+#%% ---- FUNCTION TO SHOW OBJECT WITH BOUNDING BOX AND NAMES
 def show_objects(img_name, bbox, objname, img_dir="../images", block_display=True):
     im = io.imread(os.path.join(img_dir, '%s'%img_name))
     fig = plt.figure()
@@ -35,10 +34,11 @@ def show_objects(img_name, bbox, objname, img_dir="../images", block_display=Tru
     plt.draw()
     plt.show(block=block_display)
 
-        
+
+#%% ---- DIRECTLY RUN        
 if __name__=="__main__":
     imagedata = mn.load_images("../images.tsv")
-    manynames = mn.load_cleaned_results("../manynames_v1.0.tsv")
+    manynames = mn.load_cleaned_results("../manynames.tsv")
     
     for image_id in [2417690, 2417892, 2388484, 2417993, 2388471, 65, 413, 2417452]:
         mn_item = manynames[manynames["vg_image_id"]==image_id]

@@ -1,32 +1,29 @@
 #!/usr/bin/env python
 # coding: utf-8
-import os
+
+#%% ---- DEPENDENCIES
 import sys
-
-from collections import defaultdict
-
 import pandas as pd
 import matplotlib.pyplot as plt
-
 import manynames as mn # former module name: load_results
 
-
+#%% ---- FUNCTIONS TO RECREATE DISTRIBUTION FIGURE
 def statistics_mn_topnames(df, domain_key, print_stats=False):
     """
     VG image distribution, MN entry-level distribution, per domain
     """
     # count frequency of vg object names
-    obj_name_df = df[["mn_topname", domain_key]]
-    obj_name_df = pd.DataFrame(obj_name_df.groupby(by=["mn_topname", domain_key])["mn_topname"].count())
-    obj_name_df.rename(columns={"mn_topname": "mn_count"}, inplace=True)
+    obj_name_df = df[["topname", domain_key]]
+    obj_name_df = pd.DataFrame(obj_name_df.groupby(by=["topname", domain_key])["topname"].count())
+    obj_name_df.rename(columns={"topname": "mn_count"}, inplace=True)
     obj_name_df.reset_index(level=[1], inplace=True)
-    obj_name_df["mn_topname"] = obj_name_df.index
+    obj_name_df["topname"] = obj_name_df.index
     obj_name_df.set_index(pd.Index(list(range(len(obj_name_df)))), inplace=True)
     obj_name_df.sort_values(by=[domain_key, "mn_count"], ascending=False, inplace=True)
     
     print_df = dict()
     for cat in set(df.vg_domain):
-        top_names = obj_name_df[obj_name_df[domain_key]==cat].head(10)["mn_topname"].tolist()
+        top_names = obj_name_df[obj_name_df[domain_key]==cat].head(10)["topname"].tolist()
         counts_top_names = obj_name_df[obj_name_df[domain_key]==cat].head(10)["mn_count"].tolist()
         print_df[cat] = ["%s (%d)" % (top_names[idx], round(counts_top_names[idx])) for idx in range(len(top_names))]
         
@@ -38,7 +35,7 @@ def statistics_mn_topnames(df, domain_key, print_stats=False):
     return obj_name_df, print_df
 
 
-def plot_function(domain, ax, nm2domain, text_fontsize=8):
+def plot_function(domain, ax, nm2domain, domain_gdf, domains, text_fontsize=8):
     """
     A bit hacky function to create a stacked bar plot for an individual MN domain.
     """
@@ -101,27 +98,22 @@ def plot_function(domain, ax, nm2domain, text_fontsize=8):
             ax.spines['right'].set_visible(False)
     return plot_singledomain
 
-
+#%% ---- DIRECTLY RUN
 if __name__ == '__main__':
-    MN_V2 = False
+
     if len(sys.argv) > 1:
         fn = sys.argv[1]
-        print("Creating agreement table for", fn)
-        postfix = "manynames_vx.x"
-    elif MN_V2 is True:
-        fn = '../proc_data_phase0/mn_v2.0/manynames-v2.0_valid_responses_ad0.40.csv'
-        postfix = "manynames_v2.0"
+        print("Creating figure for", fn)
     else:
-        fn = "../manynames_v1.0.tsv"
-        postfix = "manynames_v1.0"
+        fn = "../manynames.tsv"
 
     manynames_df = mn.load_cleaned_results(fn)
     nm2domain = dict(zip(manynames_df["vg_obj_name"], manynames_df["vg_domain"]))
     
-    domain_key = "mn_domain" #"vg_domain"
+    domain_key = "domain" #"vg_domain"
     obj_name_df, print_df = statistics_mn_topnames(manynames_df, domain_key)
 
-    domain_groups = obj_name_df.groupby([domain_key]).apply(lambda x: (x.groupby('mn_topname')
+    domain_groups = obj_name_df.groupby([domain_key]).apply(lambda x: (x.groupby('topname')
                                           .sum().sort_values('mn_count', ascending=False)))
     domain_gdf = domain_groups.unstack(fill_value=0)
     domains = [domain[0] for domain in domain_gdf.iterrows()]
@@ -133,10 +125,9 @@ if __name__ == '__main__':
 
     graph = dict(zip(domains, axes))
     plots = list(map(lambda domain: plot_function(domain, graph[domain], 
-                     nm2domain), graph))
+                     nm2domain, domain_gdf, domains), graph))
     fig.tight_layout()
     fig.subplots_adjust(wspace=0)
-    plt.savefig(os.path.join("distr_imgs-per-domain_%s.png" % postfix))
     plt.show()
 
 
