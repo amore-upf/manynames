@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 import manynames as mn
 
-#%% ---- FUNCTIONS TO RECREATE TABLE 3
+#%% ---- FUNCTIONS TO RECREATE TABLE 2
 def snodgrass_agreement(rdict, vocab, singletons=False):
     # to decide: do we include singleton answers for calculating agreement?
     if singletons:
@@ -79,7 +79,6 @@ def make_agreement_table(resdf):
     outdf['domain'] = pd.Categorical(outdf['domain'], 
                                      ['all', 'people', 'clothing', 'home', 'buildings', 
                                       'food', 'vehicles', 'animals_plants'])
-    
     return outdf
 
 #%% ---- DIRECTLY RUN
@@ -95,3 +94,4 @@ if __name__ == '__main__':
     resdf = make_df(manynames)
     o1 = make_agreement_table(resdf)
     print(o1.sort_values(by = 'domain'))
+    
