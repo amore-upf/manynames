@@ -39,7 +39,7 @@ The columns are labelled as follows. The most important columns are listed first
 | vg_inadequacy_type | dict | Rated inadequacy type for the vg_object_name
 | vg_image_name | str | The name of the VG image |
 | vg_cat | str | The WN hypernym of the VG synset, corresponds roughly to one of the 7 MN domains. |
-| target_coord | list| The coordinates of the object in the image: "[left x, bottom y, width, height]"; y=0 is at the top of the image.
+| bbox_xywh | list| The coordinates of the object in the image: "[left x, bottom y, width, height]"; y=0 is at the top of the image.
 | clusters | dict | Response clusters and total count per cluster |
 | domain | str | The MN domain of the object |
 | N | int | The number of types in the MN responses |
@@ -51,7 +51,7 @@ The columns are labelled as follows. The most important columns are listed first
 | same_object | dicts | Mean same-object ratings for response pairs |
 | adequacy_mean | dict | Mean adequacy ratings for MN responses |
 | inadequacy_type | dict | Rated inadequacy rating for MN responses |
-
+| split | str | Use of the image in training vs. test vs. validation in [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/)
 
 ## Subfolder: scripts/
 

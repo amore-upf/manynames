@@ -7,7 +7,7 @@ In version 2.1 we addressed some potentially problematic issues regarding the de
 
 **Solution**: In these cases, the *topname* is defined as the most frequent name within the largest name cluster (instead of the most frequent name overall). In addition names belonging to the largest cluster are coded as correct (instead of names belonging to the cluster of the most frequent name). In the example above, the topname was changed to *woman* (instead of *giraffe*) and *woman*, *girl*, and *person* are now counted as correct (and *giraffe* as incorrect).
 
-**Affected columns**: clusters (new), topname, responses, incorrect (overall 179 topnames were changed)
+**Affected columns**: clusters (new), topname, responses, incorrect
 
 ### Update/correct domains
 
@@ -21,7 +21,7 @@ Please note, that for some images/names the most appropriate domain label is not
 
 * The names *sand*, *snow*, *field*, *water*, *grass* were lacking a corresponding MN domain. In order to avoid adding a new (and very sparse) domain label, these names were included into the domain *animals_plants* (which therefore may be more broadly understood as *natural world*).
 
-**Affected columns**: domain (overall 173 domain definitions were changed)
+**Affected columns**: domain
 
 ### Spelling variants
 **Problem**: Different spellings of noun-noun compounds were so far counted as different names (e.g., 'tea pot' vs 'teapot').
@@ -40,7 +40,7 @@ Please note, that for some images/names the most appropriate domain label is not
 ### Update summary columns
 Based on the updated topname and response variables, we have also updated the following columns:
 
-* total_responses (number of responses in total)
+* total_responses (sum of correct responses)
 * perc_top percentage (name agreement in %)
 * H (name agreement score)
 * N (number of response types)

@@ -17,8 +17,8 @@ def load_cleaned_results(filename="../manynames.tsv", sep="\t",
     resdf = resdf[columns]
         
     # run eval on nested lists/dictionaries
-    evcols = ['vg_same_object', #'vg_inadequacy_type', 
-              'target_coord', 'clusters', 'responses', 'singletons', 
+    evcols = ['vg_same_object', 'vg_inadequacy_type', 
+              'bbox_xywh', 'clusters', 'responses', 'singletons', 
               'same_object', 'adequacy_mean', 'inadequacy_type']
     
     for icol in evcols:

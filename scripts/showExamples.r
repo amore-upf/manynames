@@ -1,10 +1,10 @@
 ## ---- DEPENDENCIES
 library(magick)
 library(jsonlite)
-source("scripts/functions_showExamples.r")
+source("functions_showExamples.r")
 
 ## ---- READ MANYNAMES DATA
-mn <- jsonlite::read_json(path = 'manynames.json')
+mn <- jsonlite::read_json(path = '../manynames.json')
 
 ## ---- EXAMPLE 1: PERCENTAGES - ONLY CORRECT
 #STEP 1: get random sample of 6 images
@@ -20,7 +20,7 @@ res <- sapply(mn[idx], FUN = function(x) {do.call(annotateImage, c(list(x), pars
 res <- do.call(arrangeImages, c(list(res, nCols = 3), pars))
 
 #STEP 4: save image
-image_write(res, path = "mn_images_example1.png")
+image_write(res, path = "../mn_images_example1.png")
 
 
 ## ---- EXAMPLE 2: COUNTS - INCLUDING SINGLETONS AND INCORRECT
@@ -37,7 +37,7 @@ res <- sapply(mn[idx], FUN = function(x) {do.call(annotateImage, c(list(x), pars
 res <- do.call(arrangeImages, c(list(res, nCols = 3), pars))
 
 #STEP 4: save image
-image_write(res, path = "mn_images_example2.png")
+image_write(res, path = "../mn_images_example2.png")
 
  
 ## ---- EXAMPLE 3: COUNTS - INCLUDING SINGLETONS AND INCORRECT - ONLY TOPNAME MAN
@@ -55,6 +55,6 @@ res <- sapply(mn[idx], FUN = function(x) {do.call(annotateImage, c(list(x), pars
 res <- do.call(arrangeImages, c(list(res, nCols = 3), pars))
 
 #STEP 4: save image
-image_write(res, path = "mn_images_example3.png")
+image_write(res, path = "../mn_images_example3.png")
 
 
