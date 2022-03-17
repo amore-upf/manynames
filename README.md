@@ -1,5 +1,5 @@
 # ManyNames
-Repository for the ManyNames dataset (version 2.1). ManyNames provides 36 name annotations for each of 25K objects in images selected from VisualGenome. For an illustration see the image below.
+Repository for the ManyNames dataset (version 2.1). ManyNames provides ca. 36 name annotations for each of 25K objects in images selected from VisualGenome. For an illustration see the image below.
 
 <img src="examples/mn_images_example1.png" alt="ManyNames example" width="800"/>
 
