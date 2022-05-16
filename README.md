@@ -1,7 +1,7 @@
 # ManyNames
 Repository for the ManyNames dataset (version 2.1). ManyNames provides ca. 36 name annotations for each of 25K objects in images selected from VisualGenome. For an illustration see the image below.
 
-<img src="examples/mn_images_example1.png" alt="ManyNames example" width="800"/>
+<img src="examples/mn_images_example4.png" alt="ManyNames example" width="800"/>
 
 For details of the data collection see [Silberer, Zarrieß, & Boleda, 2020](https://aclanthology.org/2020.lrec-1.710/) (version 1.0) and [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/) (version 2.0). For changes in the present version see the [release notes](https://github.com/amore-upf/manynames/blob/master/release_notes_v2.1.md). Previous versions of the dataset can be accessed as older releases in this repository.
 
