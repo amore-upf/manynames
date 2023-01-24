@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>ManyNames</title>
+  <meta name="author" content="AMORE-Team">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="./index.html">home</a></li>
+        <li><a href="./about.html">about</a></li>
+        <li><a href="./download.html">download</a></li>
+        <li><a href="./contact.html">contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- INTRODUCTION -->
+    <div class="row">
+      <div class="col-lg-6">
+
+        <p>ManyNames is a large scale ressource of human object naming data. ManyNames provides up to 36 name annotations for 25k objects in real world images. The images for ManyNames were selected from VisualGenome. In each image one target object is marked with a red bounding box. Annotators were asked to provide names for the object tightly bound by this bounding box. The initially collected data was amended by verification data to further improve the quality and utility of the data set.</p>
+
+        <h3>Explore</h3>
+        <p>You can explore the ManyNames data set with the
+          <a href="https://amaedebach.github.io/MN_interface/" target="_blank">ManyNames search interface</a>.</p>
+
+
+        <h3>More information and download</h3>
+
+        <p>The dataset can be downloaded from the <a href="https://github.com/amore-upf/manynames" target="_blank">GitHub Repository</a>.The dataset is provided in .tsv (tab-separated values) and .json format. Python and R-scripts to facilitate access to the dataset as well as detailed documentation of the dataset is provided in the repository.</p>
+        <p>Links to the individual images for the ManyNames version (with bounding box) and the original VisualGenome version (without bounding box) are provided in the data set. The ManyNames images can also be directly accessed <a href="https://object-naming-amore.upf.edu/" target="_blank">here</a>. </p>
+        <p>All download options are listed in the <a href="./download.html">download section</a></p>
+
+        <h3>Citing ManyNames</h3>
+        <ul>
+          <li>
+            Silberer, C., S. Zarrieß, M. Westera, G. Boleda. 2020.
+                <a href="https://www.aclweb.org/anthology/2020.coling-main.172.pdf">Humans Meet Models on Object Naming: A New Dataset and Analysis</a>.
+                <i>COLING 2020</i>.
+          </li>
+
+          <li>
+            Silberer, C., S. Zarrieß, G. Boleda. 2020.
+                <a href="https://aclanthology.org/2020.lrec-1.710.pdf">Object Naming in Language and Vision: A Survey and a New Dataset</a>.
+                <i>LREC 2020</i>.
+          </li>
+        </ul>
+      </div>
+
+      <!-- EXAMPLE IMAGE -->
+      <div class="col-lg-6">
+        <img class="img-fluid" src="img/mn_images_example4.png" alt="ManyNames example images">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+<!-- ---
+layout: default
+title: ManyNames
+---
+
+## ManyNames
+
+blih blah -->
