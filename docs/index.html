@@ -11,77 +11,34 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<body>
+<header>
   <div class="container">
-    <nav>
-      <ul>
-        <li><a href="./index.html">home</a></li>
-        <li><a href="./about.html">about</a></li>
-        <li><a href="./search.html">search</a></li>
-        <li><a href="./download.html">download</a></li>
-        <li><a href="./contact.html">contact</a></li>
-      </ul>
-    </nav>
+    <div class="row">
+      <script src="js/nav.js"></script>
+    </div>
+  </div>
+</header>
+
+
+<body>
+<div class="content">
+  <div class="container">
 
     <!-- INTRODUCTION -->
     <div class="row">
-      <div class="col-lg-6 me-2">
+      <div class="col-lg-6">
         <p>ManyNames is a large scale ressource of human object naming data. ManyNames provides up to 36 name annotations for 25k objects in real world images. The images for ManyNames were selected from VisualGenome. In each image one target object is marked with a red bounding box. Annotators were asked to provide names for the object tightly bound by this bounding box. The initially collected data was amended by verification data to further improve the quality and utility of the data set.</p>
-      </div>
 
-      <div class="col-lg-5 ms-3">
-        <div id="carouselExample" class="carousel carousel-dark slide5">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/mn_examples_1.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/mn_examples_2.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/mn_examples_3.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true" style="transform: translateX(-60px);"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true" style="transform: translateX(60px)"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="row">
         <h3>Explore</h3>
-        <div class="col-lg-6 me-2">
-          <p>You can explore the ManyNames data set with our
-            <a href="./search.html">search interface</a>.</p>
-        </div>
-        <div class="col-lg-5 ms-3">
-          <div class="d-flex justify-content-center">
-            <div class="input-group mb-3">
-              <input class="form-control" placeholder="bird, duck" aria-label="name(s)" id="names_field"></input>
-              <button id="submit_button" class="btn btn-dark mx-4" type="submit">Search</button>
-            </div>
-          </div>
-        </div>
-      </div>
+        <p>You can explore the ManyNames data set by <a href="./search.html" target="_blank">searching for images</a> with names that interest you or by 
+          <a href="./names.html" target="_blank">browsing the names</a> we observed. 
 
-      <div class="row">
         <h3>More information and download</h3>
-        <div class="col-lg-6">
-        <p> Detailed information about the data collection can be found in our papers (see below) and the <a href="https://github.com/amore-upf/manynames" target="_blank">GitHub repository</a>.
-        <br>
-        Different versions of the data set as well as scripts to facilitate accessing the data set and the images are provided in the <a href="./download.html">download</a> section. The images are hosted at <a href="https://object-naming-amore.upf.edu/" target="_blank">https://object-naming-amore.upf.edu/</a>.</p>
+        <p>The dataset can be downloaded from the <a href="https://github.com/amore-upf/manynames" target="_blank">GitHub Repository</a>.The dataset is provided in .tsv (tab-separated values) and .json format. Python and R-scripts to facilitate access to the dataset as well as detailed documentation of the dataset is provided in the repository.</p>
+        <p>Links to the individual images for the ManyNames version (with bounding box) and the original VisualGenome version (without bounding box) are provided in the data set. The ManyNames images can also be directly accessed <a href="https://object-naming-amore.upf.edu/" target="_blank">here</a>. </p>
+        <p>All download options are listed in the <a href="./download.html">download section</a></p>
 
-        </div>
-      </div>
-
-      <div class="row">
         <h3>Citing ManyNames</h3>
-        <div class="col-auto">
 <pre>
 Silberer, C., S. Zarrieß, M. Westera, G. Boleda. 2020.
   <a href="https://www.aclweb.org/anthology/2020.coling-main.172.pdf">Humans Meet Models on Object Naming: A New Dataset and Analysis</a>.<i> COLING 2020</i>.</pre>
@@ -90,10 +47,13 @@ Silberer, C., S. Zarrieß, M. Westera, G. Boleda. 2020.
 Silberer, C., S. Zarrieß, G. Boleda. 2020.
   <a href="https://aclanthology.org/2020.lrec-1.710.pdf">Object Naming in Language and Vision: A Survey and a New Dataset</a>.<i> LREC 2020</i>.
 </pre>
-        </div>
       </div>
+      <div class="col-lg-6">
+        <div><img src="img/mn_images_example4.png" class="img-fluid" alt="..."></div>
     </div>
-
+    </div>
+  </div>  
+</div>
   <!-- JS Scripts -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

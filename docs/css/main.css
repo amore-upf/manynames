@@ -4,9 +4,11 @@ body {
     width: 90%;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.6;
+    overflow: hidden;
 }
 nav ul, footer ul {
     padding: 0px;
+    position: fixed;
     list-style: none;
     font-weight: bold;
 }
@@ -33,13 +35,6 @@ h2 {
     font-size: 1.5em;
 }
 
-
-h3 {
-    /* top | right | bottom | left */
-    /* margin: 0 0 2px 0; */
-}
-
-
 footer {
     border-top: 1px solid;
     font-size: .8em;
@@ -53,3 +48,32 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+
+/*keep table header fixed when scrolling*/
+th {
+    text-align: center;
+    position: sticky;
+    top: 70px;  /* 0px if you don't have a navbar, but something is required */
+  }
+
+.content {
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+    overflow: auto;
+  }
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/*horizontal lines instead of stripes*/
+/* tr {
+    border-bottom: 2px solid #ccc;
+}
+
+.sortable tbody tr:nth-child(2n+1){
+    background-color: #fff ;
+} */

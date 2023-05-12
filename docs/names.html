@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>ManyNames</title>
+  <meta name="author" content="AMORE-Team">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <!-- link stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/sortable.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <script src="js/nav.js"></script>
+    </div>
+  </div>
+</header>
+<body>
+<script>0</script>
+<div class="content">
+  <div class="container">
+    <div class="row">
+        <!-- SEARCH -->
+        <div class="row sticky-top" style="background-color: white;">
+          
+          <div class="col">
+            <!-- names search field -->
+            <div class="input-group mb-3" >
+              <span class="input-group-text">name(s)</span>
+              <textarea class="form-control" placeholder="dog, bear, ..." rows="1" 
+              aria-label="name(s)" id="names_field" onkeyup="updateTable()"></textarea>
+            </div>
+          </div>
+            <!-- scope toogle -->
+          <div class="col">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox", id="topname_button" onchange="updateTable()"> 
+              <label class="form-check-label" for="topname_button">show only topnames</label>
+            </div>
+          </div>
+        </div>
+        <!-- RESULTS -->
+      <!-- NAMES TABLE -->
+        <div class="row">
+          <!-- here the names_table gets added -->
+          <table class="sortable" id="names_table" style="margin-left:10px;">
+            <thead 
+              <tr>
+                <th scope="col">name</th>
+                <th scope="col">token count</th>
+                <th scope="col">image count</th>
+                <th scope="col">topname count</th>
+                <th scope="col">coocurring names</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS Scripts -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script type="text/javascript" src="js/names.js"></script>
+<script type="text/javascript" src="assets/sortable.min.js"></script>
+</body>
+
+</html>

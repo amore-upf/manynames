@@ -34,13 +34,22 @@ d3.json("data/manynames.json")
 
       //image pagination (9 images per page)
       let btn_page = document.getElementById("current_page");
-      btn_page.innerHTML = 1
+      btn_page.value = "1"
       let n_gallery_pages = Math.ceil(filtered_length/img_per_page);
-      document.getElementById("max_page").innerHTML = n_gallery_pages;
+      document.getElementById("max_page").innerHTML = `of ${n_gallery_pages.toString()}`;
       let btn_next = document.getElementById("next_page");
+      btn_next.disabled = false;
       let btn_prev = document.getElementById("prev_page");
+      btn_prev.disabled = false; 
       btn_next.onclick = function(){nextPage(n_gallery_pages, filtered_data, img_per_page)};
       btn_prev.onclick = function(){prevPage(n_gallery_pages, filtered_data, img_per_page)};
+      btn_page.addEventListener("keyup", function(event) {
+        if (event.key === "Enter") {
+          goToPage(n_gallery_pages, filtered_data, img_per_page)
+        }
+      }
+      );
+
 
       // show/hide download buttons
       if (filtered_data.length > 0) {
@@ -59,51 +68,60 @@ d3.json("data/manynames.json")
   });
 
 // -------------------------- FUNCTIONS
-//pagination functions
+// draw images on selected page
+function drawImages(current_page, filtered_data, img_per_page) {
+  const img_gallery = document.getElementById("image_gallery");
+  img_gallery.textContent = '';
+  first_image = (current_page * img_per_page) - img_per_page
+  last_image = first_image + img_per_page
+  display_data = sampleSubset(filtered_data, first_image, last_image);
+  for (let i = 0; i < display_data.length; i++) {
+    addImage(display_data[i]['link_mn'], responseStr(display_data[i]['responses']));
+  }
+};
+
+//go to page entered
+function goToPage(max_pages, filtered_data, img_per_page) {
+  let current_page = document.getElementById("current_page").value
+  if (isBetween(current_page, 1, max_pages)) {
+    changePage(current_page, max_pages);
+    drawImages(current_page, filtered_data, img_per_page);
+  } else { 
+    const img_gallery = document.getElementById("image_gallery");
+    changePage(current_page, max_pages);
+    img_gallery.style.color = "red";
+    img_gallery.textContent = 'Please enter a page number between 1 and ' + max_pages.toString() + '.';
+  };
+};
+
+//turn page back
 function prevPage(max_pages, filtered_data, img_per_page) {
-    //turn page back
-    let current_page = document.getElementById("current_page").innerHTML
+
+    let current_page = document.getElementById("current_page").value
     if (current_page > 1) {
         current_page--;
         changePage(current_page, max_pages);
       };
-
-    //draw images
-    const img_gallery = document.getElementById("image_gallery");
-    img_gallery.textContent = '';
-    first_image = (current_page * img_per_page) - img_per_page
-    last_image = first_image + img_per_page
-    display_data = sampleSubset(filtered_data, first_image, last_image);
-    for (let i = 0; i < display_data.length; i++) {
-      addImage(display_data[i]['link_mn'], responseStr(display_data[i]['responses']));
-    }
+    drawImages(current_page, filtered_data, img_per_page);
 };
 
+//turn page back
 function nextPage(max_pages, filtered_data, img_per_page){
-    //turn page back
-    let current_page = document.getElementById("current_page").innerHTML
+    let current_page = document.getElementById("current_page").value
     if (current_page < max_pages) {
         current_page++;
         changePage(current_page, max_pages);
     }
-
-    //draw images
-    const img_gallery = document.getElementById("image_gallery");
-    img_gallery.textContent = '';
-    first_image = (current_page * img_per_page) - img_per_page
-    last_image = first_image + img_per_page
-    display_data = sampleSubset(filtered_data, first_image, last_image);
-    for (let i = 0; i < display_data.length; i++) {
-      addImage(display_data[i]['link_mn'], responseStr(display_data[i]['responses']));
-    }
+    drawImages(current_page, filtered_data, img_per_page);
 }
 
-function changePage(page, maxPages){
+//change page number, disable buttons if needed
+function changePage(page, max_pages){
     let btn_next = document.getElementById("next_page");
     let btn_prev = document.getElementById("prev_page");
     let btn_page = document.getElementById("current_page");
 
-    btn_page.innerHTML = page;
+    btn_page.value = page;
 
     if (page == 1) {
         btn_prev.disabled = true;
@@ -111,12 +129,17 @@ function changePage(page, maxPages){
         btn_prev.disabled = false;
     }
 
-    if (page == maxPages) {
+    if (page == max_pages) {
         btn_next.disabled = true;
     } else {
         btn_next.disabled = false;
     }
-}
+
+    if (!isBetween(page, 1, max_pages)) {
+      btn_next.disabled = true;
+      btn_prev.disabled = true;
+    } 
+};
 
 
 //shuffle array
@@ -282,7 +305,7 @@ function searchFeedback(n_results) {
     };
   } else if (n_results == 0) {
     search_feedback.className = 'text-danger';
-    search_feedback.innerHTML = 'No images fit your search criteria. Please make sure that you have set sensible ranges for name agreement. Please also consider other spelling variants of the names you are looking for.';
+    search_feedback.innerHTML = 'No images fit your search criteria. Please make sure that you have set a sensible range for name agreement. Please also consider other spelling variants of the names you are looking for. You can browse the list of all names (and their spelling) found in ManyNames  <a href="/names.html">here</a>.';
   };
 };
 

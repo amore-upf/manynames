@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>ManyNames - Dowloads</title>
+  <title>ManyNames - Downloads</title>
   <meta name="author" content="AMORE-Team">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
@@ -11,44 +11,40 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<body>
+<header>
   <div class="container">
-    <nav>
-      <ul>
-        <li><a href="./index.html">home</a></li>
-        <li><a href="./about.html">about</a></li>
-        <li><a href="./search.html">search</a></li>
-        <li><a href="./download.html">download</a></li>
-        <li><a href="./contact.html">contact</a></li>
-      </ul>
-    </nav>
-
-      <div class="col-lg-6">
-        <h3> Data set</h3>
-        <p> The data set can be downloaded in different versions. The .json and .tsv (tab-separated values) versions contain the full data set. Scripts illustrating importing the data into Python and R can be accessed below.
-        <ul>
-          <li> <a href="https://github.com/amore-upf/manynames/raw/master/manynames.json"> manynames.json</a></li>
-          <li> <a href="https://github.com/amore-upf/manynames/raw/master/manynames.tsv"> manynames.tsv</a> </li>
-        </ul>
-        </p>
-        <h3> Images</h3>
-        <p>The ManyNames images were sampled from the Visual Genome (VG) images. The original VG images can be downloaded at <a href="https://visualgenome.org" target="_blank">visualgenome.org</a>. These images were rescaled and displayed with a red bounding box for the data collection. This version of the image can be downloaded at <a href="https://object-naming-amore.upf.edu/" target="_blank">object-naming-amore.upf.edu/ </a>.</p>
-
-        <h3> Scripts</h3>
-        He we provide scripts to faciliate accessing the dataset in Python and R. In addition there are scripts to a specific download images using the .csv generated in the search interface and scripts to recreate the ManyNames images from the VisualGenome versions.
-
-        <ul>
-          <li> ...</li>
-          <li> ...</li>
-          <li> ...</li>
-          <li> ...</li>
-        </ul>
-
-
-
-      </div>
+    <div class="row">
+      <script src="js/nav.js"></script>
     </div>
   </div>
+</header>
+
+<body>
+<div class="content">
+  <div class="container">
+    <div class="col-lg-6">
+      <h3> Data set</h3>
+      <p> The data set can be downloaded in different versions. The .json and .tsv (tab-separated values) versions contain the full data set. Scripts illustrating importing the data into Python and R can be accessed below.
+      <ul>
+        <li> <a href="https://github.com/amore-upf/manynames/raw/master/manynames.json" download="manynames.json" target="_blank"> manynames.json</a></li>
+        <li> <a href="https://github.com/amore-upf/manynames/raw/master/manynames.tsv" download="manynames.tsv" target="_blank"> manynames.tsv</a> </li>
+      </ul>
+      </p>
+      <h3> Images</h3>
+      <p>The ManyNames images were sampled from the Visual Genome (VG) images. The original VG images can be downloaded at <a href="https://visualgenome.org" target="_blank">visualgenome.org</a>. These images were rescaled and displayed with a red bounding box for the data collection. This version of the image can be downloaded at <a href="https://object-naming-amore.upf.edu/" target="_blank">object-naming-amore.upf.edu/ </a>.</p>
+
+      <h3> Scripts</h3>
+      He we provide scripts to faciliate accessing the dataset in Python and R. In addition there are scripts to a specific download images using the .csv generated in the search interface and scripts to recreate the ManyNames images from the VisualGenome versions.
+
+      <ul>
+        <li> ...</li>
+        <li> ...</li>
+        <li> ...</li>
+        <li> ...</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
