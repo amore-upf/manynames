@@ -1,30 +1,28 @@
-// read manynames.json and filter
+/* read manynames.json and filter */
 d3.json("data/manynames.json")
   .then(function(data) {
 
-    /* get search settings [make function which put this into object, checks settings for consistency, and throws error/suggestion for user] */
-
+    /* get search settings */
     var submit_button = d3.select("#submit_button");
     submit_button.on("click", runEnter);
 
     function runEnter() {
 
-      //gather user input
-      let user_input = gatherInput()
+      /*gather user input*/
+      let user_input = gatherInput();
 
-      //filter data
-      var filtered_data = data.filter(
+      /*filter data*/
+      let filtered_data = data.filter(
         fitsSearch(user_input['scope'], user_input['names'],
                    user_input['min_pct'], user_input['max_pct']));
 
-      //give feedback on search
+      /*give feedback on search*/
       let filtered_length = filtered_data.length
       searchFeedback(filtered_length);
 
-
-      //draw images
+      /*draw images*/
       //filtered_data = shuffle(filtered_data);
-      let img_per_page = 9;
+      let img_per_page = 9;  /*9 images per page*/
       const img_gallery = document.getElementById("image_gallery");
       img_gallery.textContent = '';
       display_data = sampleSubset(filtered_data, 0, img_per_page);
@@ -32,7 +30,7 @@ d3.json("data/manynames.json")
         addImage(display_data[i]['link_mn'], responseStr(display_data[i]['responses']));
       }
 
-      //image pagination (9 images per page)
+      /*image pagination*/
       let btn_page = document.getElementById("current_page");
       btn_page.value = "1"
       let n_gallery_pages = Math.ceil(filtered_length/img_per_page);
@@ -51,24 +49,22 @@ d3.json("data/manynames.json")
       );
 
 
-      // show/hide download buttons
+      /*show/hide download buttons*/
       if (filtered_data.length > 0) {
         displayResults('block');
       } else {
         displayResults('none');
       };
 
-      // add download functionality
+      /*add download functionality*/
       let csv_btn = document.getElementById('csv_button')
       csv_btn.onclick = function(){downloadCSV(filtered_data)}
-      // let zip_btn = document.getElementById('zip_button')
-      // zip_btn.onclick = function(){downloadZIP(filtered_data)}
-    }
+    };
 
   });
 
-// -------------------------- FUNCTIONS
-// draw images on selected page
+/* -------------------------- FUNCTIONS */
+/*draw images on selected page*/
 function drawImages(current_page, filtered_data, img_per_page) {
   const img_gallery = document.getElementById("image_gallery");
   img_gallery.textContent = '';
@@ -80,7 +76,7 @@ function drawImages(current_page, filtered_data, img_per_page) {
   }
 };
 
-//go to page entered
+/*go to page entered*/
 function goToPage(max_pages, filtered_data, img_per_page) {
   let current_page = document.getElementById("current_page").value
   if (isBetween(current_page, 1, max_pages)) {
@@ -94,7 +90,7 @@ function goToPage(max_pages, filtered_data, img_per_page) {
   };
 };
 
-//turn page back
+/*turn page back*/
 function prevPage(max_pages, filtered_data, img_per_page) {
 
     let current_page = document.getElementById("current_page").value
@@ -105,7 +101,7 @@ function prevPage(max_pages, filtered_data, img_per_page) {
     drawImages(current_page, filtered_data, img_per_page);
 };
 
-//turn page back
+/*turn page forward*/
 function nextPage(max_pages, filtered_data, img_per_page){
     let current_page = document.getElementById("current_page").value
     if (current_page < max_pages) {
@@ -113,9 +109,9 @@ function nextPage(max_pages, filtered_data, img_per_page){
         changePage(current_page, max_pages);
     }
     drawImages(current_page, filtered_data, img_per_page);
-}
+};
 
-//change page number, disable buttons if needed
+/*change page number, disable buttons if needed*/
 function changePage(page, max_pages){
     let btn_next = document.getElementById("next_page");
     let btn_prev = document.getElementById("prev_page");
@@ -141,98 +137,13 @@ function changePage(page, max_pages){
     } 
 };
 
-
-//shuffle array
+/*shuffle array*/
 function shuffle(array) {
   const shuffled_array = [...array].sort(() => 0.5 - Math.random());
   return shuffled_array;
-}
+};
 
-// // helper function to zip images
-// /**
-//  * Fetch the content and return the associated promise.
-//  * @param {String} url the url of the content to fetch.
-//  * @return {Promise} the promise containing the data.
-//  */
-// function urlToPromise(url) {
-//     return new Promise(function(resolve, reject) {
-//         JSZipUtils.getBinaryContent(url, function (err, data) {
-//             if(err) {
-//                 reject(err);
-//             } else {
-//                 resolve(data);
-//             }
-//         });
-//     });
-// }
-//
-// // pack images into zip and start download
-// function downloadZIP(filtered_data) {
-//   document.getElementById('zip_button').disabled = true;
-//   let zip = new JSZip();
-//   filtered_data =[
-//   {link_mn:'http://object-naming-amore.upf.edu//3_1060282_seed_ambiguous.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//4_1060306_seed_ambiguous.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//6_1023970_seed_ambiguous.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//8_1060463_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//10_1060591_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//11_1060613_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//12_1024216_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//13_1060686_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//14_1060700_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//15_1060766_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//18_1060889_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//19_1060961_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//23_1024626_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//27_1024754_seed_ambiguous.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//28_1024781_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//30_1061339_seed_ambiguous.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//32_1058643_seed_ambiguous.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//35_1024961_seed_ambiguous.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//37_1025073_seed_ambiguous.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//40_1025176_seed_ambiguous.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//41_1061574_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//42_1061636_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//43_1061695_seed_ambiguous.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//63_1533912_seed_ambiguous.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//65_1533920_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//66_1533975_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//72_1062142_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//83_1062222_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//84_1534340_singleton_obj.png'},
-//   {link_mn:'http://object-naming-amore.upf.edu//92_1534493_singleton_obj.png'}
-// ];
-//   for (idat of filtered_data) {
-//     // const url = idat['link_mn']
-//     // const name = url.replace('http://object-naming-amore.upf.edu//', '')
-//     const url = idat['link_mn'].replace('http://object-naming-amore.upf.edu//', 'https://amaedebach.github.io/MN_interface//images/') // LOCAL VS REMOTE IMG SOURCE!
-//     const name = url.replace('../images/', '')
-//     zip.file(name, urlToPromise(url), {binary:true});
-//   }
-//   zip.generateAsync({type:'blob'}, updateProgress)
-//   .then(function(blob){
-//     const url = window.URL.createObjectURL(blob);
-//     const zip_download_link = document.createElement("a")
-//     zip_download_link.setAttribute('href', url);
-//     zip_download_link.setAttribute('download', 'ManyNames_images.zip');
-//     document.body.appendChild(zip_download_link)
-//     zip_download_link.click();
-//     document.body.removeChild(zip_download_link);
-//     window.URL.revokeObjectURL(url)
-//     document.getElementById('zip_button').disabled = false;
-//   });
-// }
-//
-// // show progress of zip-preparation
-// var progress_txt = document.getElementById('zip_progress');
-// function updateProgress(metaData) {
-//   let pct = metaData.percent;
-//   setTimeout(function() {
-//     progress_txt.innerHTML = `zip-archive: ${pct.toFixed(0)}% complete`;
-//   },100);
-// }
-
-// convert to csv and start download
+/* convert to csv and start download*/
 function downloadCSV(filtered_data) {
   document.getElementById('csv_button').disabled = true;
   makeCSV(filtered_data)
@@ -248,16 +159,16 @@ function downloadCSV(filtered_data) {
     window.URL.revokeObjectURL(url)
     document.getElementById('csv_button').disabled = false;
   });
-}
+};
 
-//helper function to reshape data into csv string
+/*helper function to reshape data into csv string*/
 function makeCSV(data_obj) {
   return new Promise(function(resolve, reject){
-    //variable names
+    /*variable names*/
     let img_vars = ['vg_image_id', 'vg_object_id', 'link_mn', 'link_vg', 'total_responses']
     let name_vars = ['name', 'is_topname', 'name_proportion']
 
-    //reshape to flatten input data
+    /*reshape to flatten input data*/
     let dat_flat = [];
     for (dat_in of data_obj) {
         let dat_row = {};
@@ -283,7 +194,7 @@ function makeCSV(data_obj) {
   });
 };
 
-//add download buttons
+/*add download buttons*/
 function displayResults(display_style) {
   let csv_download_div = document.getElementById("csv_download")
   // let zip_download_div = document.getElementById("zip_download")
@@ -293,13 +204,12 @@ function displayResults(display_style) {
   images_div.style.display = display_style
 };
 
-// give search feedback:
+/* give search feedback*/
 function searchFeedback(n_results) {
   var search_feedback = document.getElementById("search_feedback")
   if (n_results > 0) {
     search_feedback.className = 'text-success';
     search_feedback.innerHTML = n_results.toString() + ' images fit your search criteria.' + 'You can download the corresponding naming data (in csv-format). The download section contains scripts to download the images in your search result based on this csv.';
-    // search_feedback.innerHTML = n_results.toString() + ' images fit your search criteria.' + '<br />' + 'You can download the corresponding naming data (in csv-format) and the images (in a zip-archive) below. Please note, that preparing the zip-archive will take some time for larger amounts of images. ';
     if (n_results == 1) {
       search_feedback.innerHTML.replace('images fit', 'image fits');
     };
@@ -309,7 +219,7 @@ function searchFeedback(n_results) {
   };
 };
 
-// add image to gallery
+/* add image to gallery*/
 function addImage(img_url, resp_string) {
   // img_url = img_url.replace(('http://object-naming-amore.upf.edu//', '../images/')) // LOCAL VS REMOTE IMG SOURCE!
   var img_gallery = document.getElementById("image_gallery");
@@ -335,22 +245,20 @@ function addImage(img_url, resp_string) {
   thumbnail.appendChild(figure);
   img_div.appendChild(thumbnail);
   img_gallery.appendChild(img_div);
-}
+};
 
-// response object to string
+/* response object to string*/
 function responseStr(obj){
   resp_string = '';
   for (const [nam, cnt] of Object.entries(obj)) {
       resp_string += `${nam}(${cnt}), `;
     }
   return resp_string.slice(0,-2);
-}
+};
 
-
-//gather input
+/*gather input*/
 function gatherInput() {
-
-  //scope setting
+  /*scope setting*/
   var all_nam_button = document.getElementById("all_nam_button")['checked'];
   var any_nam_button = document.getElementById("any_nam_button")['checked'];
   var any_top_button = document.getElementById("any_top_button")['checked'];
@@ -358,7 +266,7 @@ function gatherInput() {
   else if (any_nam_button) {var scope = 'any_nam'}
   else if (any_top_button) {var scope = 'any_top'}
 
-  //names
+  /*names*/
   /*remove leading and trailing spaces, remove anything else that is not a letter or space */
   var names_input = document.getElementById("names_field")['value'];
   if (names_input == "") {
@@ -370,42 +278,41 @@ function gatherInput() {
   })
   var names = names.filter(Boolean)
 
-  //min pct
+  /*min pct*/
   var min_pct = document.getElementById("min_pct_field")['value'];
   if (min_pct == "") {
     var min_pct = document.getElementById("min_pct_field").placeholder;
   }
   var min_pct = min_pct / 100
 
-  //max pct
+  /*max pct*/
   var max_pct = document.getElementById("max_pct_field")['value'];
   if (max_pct == "") {
     var max_pct = document.getElementById("max_pct_field").placeholder;
   }
   var max_pct = max_pct / 100
 
-  //return as object
+  /*return as object*/
   let user_input = {scope: scope, names:names, min_pct:min_pct, max_pct:max_pct}
   return user_input
 };
 
-
-// sample subset of data (to display)
+/* sample subset of data (to display) */
 function sampleSubset(arr, first, last) {
   return arr.slice(first, last);
 };
 
-// check if percentage in range
+/* check if percentage in range */
 function isBetween(x, min, max) {
   return x >= min && x <= max;
-}
+};
 
-// check search criteria for name and response percent pair
+/* check search criteria for name and response percent pair */
 function responseFits(resp, pct, names, min_pct, max_pct) {
   return names.includes(resp) && isBetween(pct, min_pct, max_pct)
-}
+};
 
-// filter function (for now only one topname and "any_topname")
+/* filter function (for now only one topname and "any_topname") */
 function fitsSearch(scope, names, min_pct, max_pct) {
   return function(el) {
     if (scope == 'any_top') {
@@ -434,15 +341,4 @@ function fitsSearch(scope, names, min_pct, max_pct) {
       return(checked.every(Boolean));
     };
   };
-};
-
-
-// -------------------------- DEV-ONLY FUNCTIONS
-// testing purpose functions
-function getKeys(dat, idx) {
-  return console.log(Object.keys(dat[idx]))
-}
-
-function getValue(obj, key) {
-  return obj[key];
 };
