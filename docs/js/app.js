@@ -119,13 +119,13 @@ function changePage(page, max_pages){
 
     btn_page.value = page;
 
-    if (page == 1) {
+    if (page === 1) {
         btn_prev.disabled = true;
     } else {
         btn_prev.disabled = false;
     }
 
-    if (page == max_pages) {
+    if (page === max_pages) {
         btn_next.disabled = true;
     } else {
         btn_next.disabled = false;
@@ -165,8 +165,8 @@ function downloadCSV(filtered_data) {
 function makeCSV(data_obj) {
   return new Promise(function(resolve, reject){
     /*variable names*/
-    let img_vars = ['vg_image_id', 'vg_object_id', 'link_mn', 'link_vg', 'total_responses']
-    let name_vars = ['name', 'is_topname', 'name_proportion']
+    let img_vars = ['vg_image_id', 'vg_object_id', 'link_mn', 'link_vg', 'total_responses'];
+    let name_vars = ['name', 'is_topname', 'name_proportion'];
 
     /*reshape to flatten input data*/
     let dat_flat = [];
@@ -177,7 +177,7 @@ function makeCSV(data_obj) {
         }
         for (const [nam,cnt] of Object.entries(dat_in['responses'])) {
           dat_row['name'] = nam;
-          dat_row['isTopname'] = nam == dat_in['topname'];
+          dat_row['isTopname'] = nam === dat_in['topname'];
           dat_row['response_count'] = cnt;
           dat_flat.push({...dat_row});
         };
@@ -210,10 +210,10 @@ function searchFeedback(n_results) {
   if (n_results > 0) {
     search_feedback.className = 'text-success';
     search_feedback.innerHTML = n_results.toString() + ' images fit your search criteria.' + 'You can download the corresponding naming data (in csv-format). The download section contains scripts to download the images in your search result based on this csv.';
-    if (n_results == 1) {
+    if (n_results === 1) {
       search_feedback.innerHTML.replace('images fit', 'image fits');
     };
-  } else if (n_results == 0) {
+  } else if (n_results === 0) {
     search_feedback.className = 'text-danger';
     search_feedback.innerHTML = 'No images fit your search criteria. Please make sure that you have set a sensible range for name agreement. Please also consider other spelling variants of the names you are looking for. You can browse the list of all names (and their spelling) found in ManyNames  <a href="/names.html">here</a>.';
   };
@@ -269,7 +269,7 @@ function gatherInput() {
   /*names*/
   /*remove leading and trailing spaces, remove anything else that is not a letter or space */
   var names_input = document.getElementById("names_field")['value'];
-  if (names_input == "") {
+  if (names_input === "") {
     var names_input = document.getElementById("names_field").placeholder;
   }
   var names = names_input.split(',')
@@ -280,14 +280,14 @@ function gatherInput() {
 
   /*min pct*/
   var min_pct = document.getElementById("min_pct_field")['value'];
-  if (min_pct == "") {
+  if (min_pct === "") {
     var min_pct = document.getElementById("min_pct_field").placeholder;
   }
   var min_pct = min_pct / 100
 
   /*max pct*/
   var max_pct = document.getElementById("max_pct_field")['value'];
-  if (max_pct == "") {
+  if (max_pct === "") {
     var max_pct = document.getElementById("max_pct_field").placeholder;
   }
   var max_pct = max_pct / 100
@@ -315,16 +315,16 @@ function responseFits(resp, pct, names, min_pct, max_pct) {
 /* filter function (for now only one topname and "any_topname") */
 function fitsSearch(scope, names, min_pct, max_pct) {
   return function(el) {
-    if (scope == 'any_top') {
+    if (scope === 'any_top') {
       return responseFits(el.topname, el.perc_top, names, min_pct, max_pct);
-    } else if (scope == 'any_nam'){
+    } else if (scope === 'any_nam'){
       var checked = []
       for (const resp of Object.entries(el['responses'])) {
           checked.push(responseFits(resp[0], resp[1]/el['total_responses'],
                        names, min_pct, max_pct));
         }
       return(checked.some(Boolean))
-    } else if (scope == 'all_nam'){
+    } else if (scope === 'all_nam'){
       responses = Object.keys(el['responses'])
       var chkNams = names.every(nam => responses.includes(nam));
       if (!chkNams) {

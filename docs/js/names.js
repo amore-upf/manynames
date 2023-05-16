@@ -14,17 +14,18 @@ d3.json("data/manynames.json")
     return addCoocurrence(data, name_data);
   })
 
-  // show on webpage 
+  // setup full table
   .then(function(name_data){
 
-    // setup table
     let names_table = document.getElementById("names_table");
     name_data.reverse();
     for (const [name, ndata] of name_data) {
       addRow(name, ndata, names_table);
     };
+    updateTable();
+    names_table.style.display = "table";
+  })
 
-   })
 
 // -------------------------- FUNCTIONS
 // extract names and counts from manynames data
@@ -91,7 +92,12 @@ function updateTable() {
   let all_rows = names_table.querySelectorAll("tr[data-name]");
 
   //get text input, trim spaces split words
-  let names_input = document.getElementById("names_field")['value'];
+  var names_input = document.getElementById("names_field")['value'];
+  
+  if (names_input === "") {
+    var names_input = document.getElementById("names_field").placeholder;
+  }
+
   names = names_input.split(',')
   names.forEach(function(val, idx) {
     names[idx] = val.trim().replace(/[^a-zA-Z ]/g, "");
