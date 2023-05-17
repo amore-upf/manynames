@@ -4,11 +4,10 @@ body {
     width: 90%;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.6;
-    overflow: hidden;
 }
+
 nav ul, footer ul {
     padding: 0px;
-    position: fixed;
     list-style: none;
     font-weight: bold;
 }
@@ -60,7 +59,6 @@ th {
 .content {
     margin-top: 50px;
     height: calc(100vh - 50px);
-    overflow: auto;
   }
 
 

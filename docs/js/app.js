@@ -1,5 +1,5 @@
 /* read manynames.json and filter */
-d3.json("data/manynames.json")
+d3.json("https://raw.githubusercontent.com/amore-upf/manynames/master/manynames.json")
   .then(function(data) {
 
     /* get search settings */
