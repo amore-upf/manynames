@@ -53,7 +53,7 @@ ul.posts li {
 th {
     text-align: center;
     position: sticky;
-    top: 70px;  /* 0px if you don't have a navbar, but something is required */
+    top: 70px;
   }
 
 .content {
@@ -66,6 +66,18 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
+
+@media only screen and (max-width: 800px) {
+    th:nth-child(5) {
+        display:none;
+      }
+    th {
+        top: 50px;
+    }
+    td:nth-child(5) {
+      display:none;
+    }
+  }
 
 /*horizontal lines instead of stripes*/
 /* tr {

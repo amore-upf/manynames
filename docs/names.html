@@ -30,7 +30,7 @@
           <div class="col">
             <!-- names search field -->
             <div class="input-group mb-3" >
-              <span class="input-group-text">name(s)</span>
+              <span class="input-group-text" data-bs-toggle="tooltip" data-bs-placement="top" title="enter names separated by commas; an empty search returns all names">name(s)</span>
               <textarea class="form-control" placeholder="swan, bird, ..." rows="1" 
               aria-label="name(s)" id="names_field" onkeyup="updateTable()"></textarea>
             </div>
@@ -39,7 +39,7 @@
           <div class="col">
             <div class="form-check">
               <input class="form-check-input" type="checkbox", id="topname_button" onchange="updateTable()"> 
-              <label class="form-check-label" for="topname_button">show only topnames</label>
+              <label class="form-check-label" for="topname_button">show only top names</label>
             </div>
           </div>
         </div>
@@ -53,7 +53,7 @@
                 <th scope="col">name</th>
                 <th scope="col">token count</th>
                 <th scope="col">image count</th>
-                <th scope="col">topname count</th>
+                <th scope="col">top name count</th>
                 <th scope="col">coocurring names</th>
               </tr>
             </thead>
@@ -69,6 +69,13 @@
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script type="text/javascript" src="js/names.js"></script>
 <script type="text/javascript" src="assets/sortable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+</script>
 </body>
 
 </html>
