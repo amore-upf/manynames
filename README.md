@@ -58,7 +58,7 @@ The columns are labelled as follows. The most important columns are listed first
 
 ### Python scripts
 The python scripts require the following packages:
-  * `pandas` for `manynames.py`, agreement_table.py`, `plot_distr_topnames.py` and `visualise.py`
+  * `pandas` for `manynames.py`, `agreement_table.py`, `plot_distr_topnames.py` and `visualise.py`
   * `skimage` (for `visualise.py`)
   * `matplotlib.pyplot` (for `agreement_table.py`, `plot_distr_topnames.py` and `visualise.py`)
   * `PIL` (for `create_MN_images.py`, `download_MN_images.py`)
