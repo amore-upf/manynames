@@ -2,7 +2,7 @@
 # coding: utf-8
 
 #%% ---- DEPENDENCIES
-import sys
+import argparse
 import pandas as pd
 
 #%% ---- FUNCTION TO LOAD MANYNAMES.TSV
@@ -28,14 +28,26 @@ def load_cleaned_results(filename="../manynames.tsv", sep="\t",
     #return df
     return resdf
 
-#%% ---- DIRECTLY RUN
+#%% ---- MAIN
 if __name__=="__main__":
     
-    if len(sys.argv) > 1:
-        fn = sys.argv[1]
-    else:
-        fn = "../manynames.tsv"
-
+    #%%% ----- CHECK ARGUMENTS
+    #setup argument parser
+    arg_parser = argparse.ArgumentParser(
+        description = '''opens manynames.tsv and runs eval on nested data structures''')
+       
+    #add required arguments
+    arg_parser.add_argument('-mnfile', type=str, 
+                            help='''the path to manynames.tsv''',
+                            default='../manynames.tsv')
+    
+    #check provided arguments
+    args = arg_parser.parse_args()
+    
+    #set values
+    fn = args.mnfile
+    
+    #%%% ----- PROCESSING
     print("Loading data from", fn)
     manynames = load_cleaned_results(filename = fn)
     print(manynames.head())

@@ -23,8 +23,9 @@ if __name__=="__main__":
     arg_parser = argparse.ArgumentParser(description = 'create ManyNames images from VG')
        
     #add required arguments
-    arg_parser.add_argument('mnfile', type=str, 
-                            help='the local path to manynames.json')
+    arg_parser.add_argument('-mnfile', type=str, 
+                            help='the local path to manynames.json',
+                            default='../manynames.json')
       
     arg_parser.add_argument('-vgimg', type=str, 
                             help='the path to the VG images (with subfolders VG_100K and VG_100K_2)', 
@@ -32,7 +33,7 @@ if __name__=="__main__":
     
     arg_parser.add_argument('-outdir', type=str, 
                             help='output path for the ManyNames images', 
-                            default='MN_images/')
+                            default='../MN_images/')
     
     #check provided arguments
     args = arg_parser.parse_args()

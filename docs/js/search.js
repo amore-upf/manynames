@@ -48,7 +48,6 @@ d3.json("https://raw.githubusercontent.com/amore-upf/manynames/master/manynames.
       }
       );
 
-
       /*show/hide download buttons*/
       if (filtered_data.length > 0) {
         displayResults('block');
@@ -222,7 +221,7 @@ function searchFeedback(n_results) {
 /* add image to gallery*/
 function addImage(img_url, resp_string) {
   let img_url_small = img_url.replace('.png', '_s.png')
-  img_url_small = img_url_small.replace('http://object-naming-amore.upf.edu//', '../images_small/') // set for thumbnail path
+  img_url_small = img_url_small.replace('http://manynames.upf.edu//', 'http://manynames.upf.edu//small//') // set to thumbnail path
   var img_gallery = document.getElementById("image_gallery");
   var img_div = document.createElement('div');
   img_div.className = 'col-lg-3 col-md-4 col-8 m-1 rounded'
@@ -236,7 +235,7 @@ function addImage(img_url, resp_string) {
   figure.className = 'figure mt-2';
   var img = document.createElement("img");
   img.className = "img-fluid";
-  img.setAttribute("src", img_url); // set to img_url_small for thumbnails
+  img.setAttribute("src", img_url_small); // set to img_url_small for thumbnails
   img.setAttribute("alt", "");
   img.style.maxHeight = '80%';
   var caption = document.createElement("figcaption");

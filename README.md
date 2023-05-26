@@ -1,5 +1,5 @@
 # ManyNames
-Repository for the ManyNames dataset (version 2.1). ManyNames provides ca. 36 name annotations for each of 25K objects in images selected from VisualGenome. For an illustration see the image below.
+Repository for the ManyNames dataset (version 2.11). ManyNames provides ca. 36 name annotations for each of 25K objects in images selected from VisualGenome. For an illustration see the image below.
 
 <img src="examples/mn_images_example4.png" alt="ManyNames example" width="800"/>
 
@@ -29,6 +29,7 @@ The columns are labelled as follows. The most important columns are listed first
 | ***link_mn*** | ***str*** | ***The url to the image, with the object marked*** |
 | ***topname*** | ***str*** | ***The most frequent name of the object in the largest cluster*** |
 | ***responses*** | ***dict*** | ***Correct responses and their counts*** |
+| mn_bbox_xywh | list| The coordinates of the object in the ManyNames version of the image: "[left x, bottom y, width, height]"; y=0 is at the top of the image.
 | vg_image_id | int | The VG id of the image |
 | link_vg | str | The url to the image in VG |
 | vg_obj_name | str | The VG name of the object |
@@ -39,7 +40,7 @@ The columns are labelled as follows. The most important columns are listed first
 | vg_inadequacy_type | dict | Rated inadequacy type for the vg_object_name
 | vg_image_name | str | The name of the VG image |
 | vg_cat | str | The WN hypernym of the VG synset, corresponds roughly to one of the 7 MN domains. |
-| bbox_xywh | list| The coordinates of the object in the image: "[left x, bottom y, width, height]"; y=0 is at the top of the image.
+| vg_bbox_xywh | list| The coordinates of the object in the original VG version of the image: "[left x, bottom y, width, height]"; y=0 is at the top of the image.
 | clusters | dict | Response clusters and total count per cluster |
 | domain | str | The MN domain of the object |
 | N | int | The number of types in the MN responses |
@@ -57,11 +58,13 @@ The columns are labelled as follows. The most important columns are listed first
 
 ### Python scripts
 The python scripts require the following packages:
-  * `pandas`
+  * `pandas` for `manynames.py`, agreement_table.py`, `plot_distr_topnames.py` and `visualise.py`
   * `skimage` (for `visualise.py`)
   * `matplotlib.pyplot` (for `agreement_table.py`, `plot_distr_topnames.py` and `visualise.py`)
+  * `PIL` (for `create_MN_images.py`, `download_MN_images.py`)
+  * `tqdm` (for `create_MN_images.py`, `download_MN_images.py`)
 
-When run from the command line, the python scripts can be given as optional argument the path to the ManyNames dataset: `python <script-name> <path-to-manynames.tsv>`. By default this path is set to `../manynames.tsv` from the script directory.
+The scripts can be run from the command line. Use `python <script-name> -h` for more information.
 
 * **`manynames.py`**
   *Loads the MN data into a pandas DataFrame.*<br>
@@ -69,14 +72,19 @@ When run from the command line, the python scripts can be given as optional argu
   *Provides a function to draw the bounding box around the target object and label it with its MN object names (and VG name).*
 * **`agreement_table.py`**
   *Creates a summary table of name agreement indices (reproducing Table 3 in [Silberer, Zarrieß, & Boleda (2020)](https://aclanthology.org/2020.lrec-1.710/) with the v2.1 data).*<br>
-
 * **`plot_distr_topnames.py`**
   *Creates a stacked box plot, showing the distribution of MN topnames per domain (reproducing Figure 3 in [Silberer, Zarrieß, & Boleda (2020)](https://aclanthology.org/2020.lrec-1.710/) with the v2.1 data).*<br>
+* **`create_MN_images.py`**
+  *creates the images as stored under manynames.upf.edu from their VG-source*<br>
+* **`download_MN_images.py`**
+  *downloads a subset of images from manynames.upf.edu*<br>
 
 ### R scripts
 The R-scripts can be used to view a subset of MN-images together with the respective name annotations. **`showExample.r`** can be used to recreate the example image above. **`functions_showExample.r`** contains custom functions to extract and format the data from ManyNames to create this figure.
 
 ## Version history
+* **version 2.11**: Added bounding box coordinates for ManyNames image versions. Updated image links to new domain: manynames.upf.edu
+
 * **version 2.1**: Corrections to topname and domain definitions, inclusion of singleton responses (for details see [release notes](https://github.com/amore-upf/manynames/release_notes_v2.1.md))
 
 * **version 2.0**: Integration of name verification data (for details see [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/))

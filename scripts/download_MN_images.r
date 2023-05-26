@@ -1,17 +1,22 @@
 #!/usr/bin/env Rscript
 
 ## %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INFO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-## - creates a folder "images" and downloads the images specified in the csv 
-##   downloaded from the ManyNames website into it
+## - downloads the images specified in the input file into "../MN_images" 
+## - takes a .tsv (like manynames.tsv from GitHub) or .csv (like ManyNames_data.csv 
+##   created from the search interface) as input. File needs to contain a column
+##   labelled "link_mn" with the image urls
 ## - can be run on the command line with:
-##   "[R Path]bin\Rscript.exe" download_Manynames_images.r
+##   "[R Path]bin\Rscript.exe" download_MN_images.r
 ## %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 # read csv
 imgdat <- read.table('ManyNames_data.csv', header=TRUE, sep=",")
 
+# # read tsv
+# imgdat <- read.table('manynames.tsv', header=TRUE, sep="\t")
+
 #make image folder
-dir_name <- 'images/'
+dir_name <- 'MN_images/'
 if (!dir.exists(dir_name)) {
   dir.create(dir_name)  
 }
@@ -19,6 +24,10 @@ if (!dir.exists(dir_name)) {
 #download unique image files
 img_links <- unique(imgdat$link_mn)
 sapply(img_links, function(url) {
-  file_path <- gsub('http://object-naming-amore.upf.edu//', dir_name, url)
-  download.file(url, file_path)  
+  file_path <- gsub('http://manynames.upf.edu//', dir_name, url)
+  if (file.exists(file_path)) {
+    print(paste('skipping:', file_path, 'because it already exists', sep = ' '))
+  } else {
+    download.file(url, file_path)  
+    }
 })

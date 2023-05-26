@@ -2,6 +2,7 @@
 # coding: utf-8
 
 #%% ---- DEPENDENCIES
+import argparse
 from collections import Counter
 import sys
 import numpy as np
@@ -84,15 +85,27 @@ def make_agreement_table(resdf):
                                       'food', 'vehicles', 'animals_plants'])
     return outdf
 
-#%% ---- DIRECTLY RUN
+#%% ---- MAIN
 if __name__ == '__main__':
     
-    if len(sys.argv) > 1:
-        fn = sys.argv[1]
-        print("Creating agreement table for", fn)
-    else:
-        fn = "../manynames.tsv"
-
+    #%%% ----- CHECK ARGUMENTS
+    #setup argument parser
+    arg_parser = argparse.ArgumentParser(
+        description = '''Creates a summary table of name agreement indices 
+                         (reproducing Table 3 in [Silberer, Zarrieß, & Boleda,2020)''')
+       
+    #add required arguments
+    arg_parser.add_argument('-mnfile', type=str, 
+                            help='''the path to manynames.tsv''',
+                            default='../manynames.tsv')
+    
+    #check provided arguments
+    args = arg_parser.parse_args()
+    
+    #set values
+    fn = args.mnfile
+    
+    #%%% ----- PROCESSING
     manynames = mn.load_cleaned_results(fn)
     resdf = make_df(manynames)
     o1 = make_agreement_table(resdf)

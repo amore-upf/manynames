@@ -3,7 +3,7 @@
 
 #%% ---- DEPENDENCIES
 import os
-import sys
+import argparse
 import pandas as pd
 import matplotlib.pyplot as plt
 import manynames as mn
@@ -99,15 +99,27 @@ def plot_function(domain, ax, nm2domain, domain_gdf, domains, text_fontsize=8):
             ax.spines['right'].set_visible(False)
     return plot_singledomain
 
-#%% ---- DIRECTLY RUN
+#%% ---- MAIN
 if __name__ == '__main__':
 
-    if len(sys.argv) > 1:
-        fn = sys.argv[1]
-        print("Creating figure for", fn)
-    else:
-        fn = "../manynames.tsv"
+    #%%% ----- CHECK ARGUMENTS
+    #setup argument parser
+    arg_parser = argparse.ArgumentParser(
+        description = '''plots the top name distribution (reproducing Figure 3 
+                         in Silberer, Zarrieß, & Boleda, 2020)''')
+       
+    #add required arguments
+    arg_parser.add_argument('-mnfile', type=str, 
+                            help='''the path to manynames.tsv''',
+                            default='../manynames.tsv')
+    
+    #check provided arguments
+    args = arg_parser.parse_args()
+    
+    #set values
+    fn = args.mnfile
 
+    #%%% ----- PROCESSING
     manynames_df = mn.load_cleaned_results(fn)
     nm2domain = dict(zip(manynames_df["vg_obj_name"], manynames_df["vg_domain"]))
     

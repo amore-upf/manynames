@@ -2,9 +2,11 @@
 # coding: utf-8
 
 #%% ---- DEPENDENCIES
+import argparse
 import matplotlib.pyplot as plt
 from skimage import io
 import manynames as mn
+from ast import literal_eval
 
 #%% ---- FUNCTION TO SHOW OBJECT WITH BOUNDING BOX AND NAMES
 def show_objects(url, bbox, objname, block_display=True):
@@ -35,16 +37,39 @@ def show_objects(url, bbox, objname, block_display=True):
     plt.show(block=block_display)
 
 #%% ---- DIRECTLY RUN
-image_id = 2417690
 if __name__=="__main__":
-    manynames = mn.load_cleaned_results()
+    
+    #%%% ----- CHECK ARGUMENTS
+    #setup argument parser
+    arg_parser = argparse.ArgumentParser(
+        description = '''Draws example images using the VG-souce and showing the MN-target object and observed object names.''')
+       
+    #add arguments
+    arg_parser.add_argument('-mnfile', type=str, 
+                            help='''the path to manynames.tsv''',
+                            default='../manynames.tsv')
+    
+    arg_parser.add_argument('-vgids', type=str, 
+                            help='''a list of VG_image_ids''',
+                            default='[2417690, 2417892, 2388484, 2417993, 2388471, 65, 413, 2417452]')
+    
+    #check provided arguments
+    args = arg_parser.parse_args()
+    
+    #set values
+    fn = args.mnfile
+    ids = literal_eval(args.vgids)
+
+
+    #%%% ----- PROCESSING
+    manynames = mn.load_cleaned_results(filename=fn)
    
-    for image_id in [2417690, 2417892, 2388484, 2417993, 2388471, 65, 413, 2417452]:
+    for image_id in ids:
         mn_item = manynames[manynames["vg_image_id"]==image_id]
         url = mn_item["link_vg"].values[0]
         responses = mn_item["responses"].values[0]
         mn_objnames = "MN: "+" / ".join(responses.keys())
-        bbox = mn_item["bbox_xywh"].values[0]
+        bbox = literal_eval(mn_item["vg_bbox_xywh"].values[0])
         vg_objname = "VG: "+ mn_item["vg_obj_name"].values[0]
         image_name = mn_item["vg_image_name"].values[0]
         objname = mn_objnames + "   (%s)" % vg_objname

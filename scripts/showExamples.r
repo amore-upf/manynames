@@ -20,7 +20,7 @@ res <- sapply(mn[idx], FUN = function(x) {do.call(annotateImage, c(list(x), pars
 res <- do.call(arrangeImages, c(list(res, nCols = 3), pars))
 
 #STEP 4: save image
-image_write(res, path = "../mn_images_example1.png")
+image_write(res, path = "../examples/mn_images_example1.png")
 
 ## ---- EXAMPLE 2: COUNTS - INCLUDING SINGLETONS AND INCORRECT
 #STEP 1: get random sample of 6 images
@@ -36,7 +36,7 @@ res <- sapply(mn[idx], FUN = function(x) {do.call(annotateImage, c(list(x), pars
 res <- do.call(arrangeImages, c(list(res, nCols = 3), pars))
 
 #STEP 4: save image
-image_write(res, path = "../mn_images_example2.png")
+image_write(res, path = "../examples/mn_images_example2.png")
 
 ## ---- EXAMPLE 3: COUNTS - INCLUDING SINGLETONS AND INCORRECT - ONLY TOPNAME MAN
 #STEP 1: get random sample of 6 images from images with topname "man
@@ -53,7 +53,7 @@ res <- sapply(mn[idx], FUN = function(x) {do.call(annotateImage, c(list(x), pars
 res <- do.call(arrangeImages, c(list(res, nCols = 3), pars))
 
 #STEP 4: save image
-image_write(res, path = "../mn_images_example3.png")
+image_write(res, path = "../examples/mn_images_example3.png")
 
 ## ---- EXAMPLE 4: FIGURE1 FROM SILBERER ET AL 2020
 #STEP 1: get image sample
@@ -72,7 +72,7 @@ res <- sapply(mn[idx], FUN = function(x) {do.call(annotateImage, c(list(x), pars
 res <- do.call(arrangeImages, c(list(res, nCols = 3), pars))
 
 #STEP 4: save image
-image_write(res, path = "../mn_images_example4.png")
+image_write(res, path = "../examples/mn_images_example4.png")
 
 
 
