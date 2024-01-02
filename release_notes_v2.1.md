@@ -28,7 +28,7 @@ Please note, that for some images/names the most appropriate domain label is not
 
 **Solution**: When responses differed only in one white space, the response counts were summed under the most frequent spelling variant.
 
-**Affected columns:**: responses
+**Affected columns**: responses
 
 ### Treatment of singleton responses
 **Problem**: The strict exclusion of all singleton responses can remove viable object names.
@@ -47,7 +47,7 @@ Based on the updated topname and response variables, we have also updated the fo
 
 ### Update verification data columns
 
-To verification data (same object and adequacy ratings) are now stored for all names (correct and incorrect) in the same columns (see below). The column *incorrect* now only includes the incorrect names with their response counts but no longer their verification data.
+The verification data (same object and adequacy ratings) are now stored for all names (correct and incorrect) in the same columns (see below). The column *incorrect* now only includes the incorrect names with their response counts but no longer their verification data.
 
 * **same_object**: it now contains, for all the naming annotations of each data point (correct and incorrect names), their reciprocal *same object* score. Singletons - which are included in the responses, but for which we do not have a *same object* score - are labelled with “NA”.
 
