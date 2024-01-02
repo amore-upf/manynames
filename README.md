@@ -1,5 +1,5 @@
 # ManyNames
-Repository for the ManyNames dataset (version 2.11). ManyNames provides ca. 36 name annotations for each of 25K objects in images selected from VisualGenome. For an illustration see the image below.
+Repository for the ManyNames dataset (version 2.1.1). ManyNames provides ca. 36 name annotations for each of 25K objects in images selected from VisualGenome. For an illustration see the image below.
 
 <img src="examples/mn_images_example4.png" alt="ManyNames example" width="800"/>
 
@@ -83,9 +83,9 @@ The scripts can be run from the command line. Use `python <script-name> -h` for 
 The R-scripts can be used to view a subset of MN-images together with the respective name annotations. **`showExample.r`** can be used to recreate the example image above. **`functions_showExample.r`** contains custom functions to extract and format the data from ManyNames to create this figure.
 
 ## Version history
-* **version 2.11**: Added bounding box coordinates for ManyNames image versions. Updated image links to new domain: manynames.upf.edu
+* **version 2.1.1**: Added bounding box coordinates for ManyNames image versions. Updated image links to new domain: manynames.upf.edu
 
-* **version 2.1**: Corrections to topname and domain definitions, inclusion of singleton responses (for details see [release notes](https://github.com/amore-upf/manynames/release_notes_v2.1.md))
+* **version 2.1**: Corrections to topname and domain definitions, inclusion of some singleton responses (for details see [release notes](https://github.com/amore-upf/manynames/blob/master/release_notes_v2.1.md)
 
 * **version 2.0**: Integration of name verification data (for details see [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/))
 
