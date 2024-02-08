@@ -1,9 +1,9 @@
 # ManyNames
-Repository for the ManyNames dataset (version 2.1.1). ManyNames provides ca. 36 name annotations for each of 25K objects in images selected from VisualGenome. For an illustration see the image below.
+Repository for the ManyNames dataset (version 2.2) for English and Mandarin Chinese. The English version of ManyNames provides ca. 36 name annotations for each of 25K objects in images selected from VisualGenome, whereas the Chinese version provides approximately 20 name annotations for 1319 objects in images selected from ManyNames. For an illustration see the image below.
 
 <img src="examples/mn_images_example4.png" alt="ManyNames example" width="800"/>
 
-For details of the data collection see [Silberer, Zarrieß, & Boleda, 2020](https://aclanthology.org/2020.lrec-1.710/) (version 1.0) and [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/) (version 2.0). For changes in the present version see the [release notes](https://github.com/amore-upf/manynames/blob/master/release_notes_v2.1.md). Previous versions of the dataset can be accessed as older releases in this repository.
+For details of the data collection see [Silberer, Zarrieß, & Boleda, 2020](https://aclanthology.org/2020.lrec-1.710/) (version 1.0) and [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/) (version 2.0), and [He, Liao, Liang, & Boleda, 2023](https://aclanthology.org/2023.conll-1.30/) (Mandarin Chinese version). For changes in the present version see the [release notes](https://github.com/amore-upf/manynames/blob/master/release_notes_v2.2.md). Previous versions of the dataset can be accessed as older releases in this repository.
 
 ## Notation
 |Abbreviation | Description |
@@ -18,10 +18,10 @@ For each domain, there exists at least one WordNet category out of *article of c
 ## Data files
 The dataset is provided in two formats:
 
-* ***manynames.tsv***: tab-separated text file, first row contains the column labels, nested data is stored as python dictionaries (i.e., "{key: value}")
-* ***manynames.json***: the same data set in .json format to facilitate access (to the nested data) outside of python
+* **.TSV**: tab-separated text file, first row contains the column labels, nested data is stored as python dictionaries (i.e., "{key: value}")
+* **.JSON**: the same data set in .json format to facilitate access (to the nested data) outside of python
 
-The columns are labelled as follows. The most important columns are listed first.
+The columns that are included for both languages are labelled as follows. The most important columns are listed first.
 
 | Column | Type | Description |
 | -------- | :-------: | -------- |
@@ -31,28 +31,45 @@ The columns are labelled as follows. The most important columns are listed first
 | ***responses*** | ***dict*** | ***Correct responses and their counts*** |
 | mn_bbox_xywh | list| The coordinates of the object in the ManyNames version of the image: "[left x, bottom y, width, height]"; y=0 is at the top of the image.
 | vg_image_id | int | The VG id of the image |
-| link_vg | str | The url to the image in VG |
 | vg_obj_name | str | The VG name of the object |
 | vg_domain | str | The MN domain of the VG name, which may be a superset of its WN category (vg_cat). <br>Example: The MN domain *food* subsumes the WN categories *food, solid food* and *food, nutrient*. |
 | vg_synset | str | The WN synset of the object, provided by VG |
-| vg_same_object | dict | Same object ratings for the vg_object_name
-| vg_adequacy_mean | str | Mean adequacy rating for the vg_object_name
-| vg_inadequacy_type | dict | Rated inadequacy type for the vg_object_name
-| vg_image_name | str | The name of the VG image |
-| vg_cat | str | The WN hypernym of the VG synset, corresponds roughly to one of the 7 MN domains. |
-| vg_bbox_xywh | list| The coordinates of the object in the original VG version of the image: "[left x, bottom y, width, height]"; y=0 is at the top of the image.
-| clusters | dict | Response clusters and total count per cluster |
 | domain | str | The MN domain of the object |
 | N | int | The number of types in the MN responses |
 | total_responses | int | Sum count of correct responses |
 | perc_top | float | The relative frequency of the topname (among correct responses)|
 | H | float | The H agreement measure from Snodgrass and Vanderwart (1980) |
+
+The English ManyNames dataset also includes the columns listed below.
+
+| Column | Type | Description |
+| -------- | :-------: | -------- |
+| link_vg | str | The url to the image in VG |
 | incorrect | dict | Incorrect responses and their counts |
-| singletons | dict | All responses which were given only once and are not synonyms or hypernyms of the topname (these are included in *responses*) |
+| split | str | Use of the image in training vs. test vs. validation in [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/) |
+
+In the case of the Chinese ManyNames dataset, it includes as well the following columns.
+
+| Column | Type | Description |
+| -------- | :-------: | -------- |
+|  list  |  str | Lists of images assigned to participants |
+| familiarity | float | Weighted average of corpus-frequency of responses |
+
+Besides, the English ManyNames dataset contains a file named ***additional-info-manynames-en.tsv***, composed of the additional columns in the following table.
+
+| Column | Type | Description |
+| -------- | :-------: | -------- |
+| vg_same_object | dict | Same object ratings for the vg_object_name |
+| vg_adequacy_mean | str | Mean adequacy rating for the vg_object_name |
+| vg_inadequacy_type | dict | Rated inadequacy type for the vg_object_name |
+| vg_image_name | str | The name of the VG image |
+| vg_cat | str | The WN hypernym of the VG synset, corresponds roughly to one of the 7 MN domains. |
+| vg_bbox_xywh | list| The coordinates of the object in the original VG version of the image: "[left x, bottom y, width, height]"; y=0 is at the top of the image. |
+| clusters | dict | Response clusters and total count per cluster |
 | same_object | dicts | Mean same-object ratings for response pairs |
 | adequacy_mean | dict | Mean adequacy ratings for MN responses |
 | inadequacy_type | dict | Rated inadequacy rating for MN responses |
-| split | str | Use of the image in training vs. test vs. validation in [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/)
+
 
 ## Subfolder: scripts/
 
@@ -83,6 +100,8 @@ The scripts can be run from the command line. Use `python <script-name> -h` for 
 The R-scripts can be used to view a subset of MN-images together with the respective name annotations. **`showExample.r`** can be used to recreate the example image above. **`functions_showExample.r`** contains custom functions to extract and format the data from ManyNames to create this figure.
 
 ## Version history
+* **version 2.2**: Inclusion of all singletons responses (given only once and not synonyms or hypernyms of the topname)
+
 * **version 2.1.1**: Added bounding box coordinates for ManyNames image versions. Updated image links to new domain: manynames.upf.edu
 
 * **version 2.1**: Corrections to topname and domain definitions, inclusion of some singleton responses (for details see [release notes](https://github.com/amore-upf/manynames/blob/master/release_notes_v2.1.md)
@@ -115,6 +134,19 @@ Silberer, C., S. Zarrieß, M. Westera, G. Boleda. 2020. [Humans meet models on o
     year = "2020",
     url = "https://aclanthology.org/2020.coling-main.172",
     doi = "10.18653/v1/2020.coling-main.172",
+}
+```
+
+He, Y., Liao, X., Liang, J., Boleda, G. 2023. [The Impact of Familiarity on Naming Variation: A Study on Object Naming in Mandarin Chinese](https://aclanthology.org/2023.conll-1.30/). Proceedings of the 27th Conference on Computational Natural Language Learning (CoNLL)
+
+```
+@inproceedings{he-etal-2023-impact,
+    title = "The Impact of Familiarity on Naming Variation: A Study on Object Naming in {M}andarin {C}hinese",
+    author = "He, Yunke and Liao, Xixian and Liang, Jialing and Boleda, Gemma",
+    booktitle = "Proceedings of the 27th Conference on Computational Natural Language Learning (CoNLL)",
+    year = "2023",
+    url = "https://aclanthology.org/2023.conll-1.30",
+    doi = "10.18653/v1/2023.conll-1.30",
 }
 ```
 
