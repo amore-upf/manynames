@@ -3,19 +3,13 @@ refrmtResp <- function(x, type, incl, linewidth, asterisks) {
   
   #which responses to include
   resp = x$responses
-  if (incl == "singletons") {
-    if (asterisks & length(x$singletons) > 0) {
-      names(x$singletons) = paste0(names(x$singletons), "*")}
-    resp = append(resp, x$singletons)
-  } else if (incl == "incorrect") {
+  if (incl == "incorrect") {
     if (asterisks & length(x$incorrect) > 0) {
-      names(x$íncorrect) = paste0(names(x$incorrect), "**")}
+      names(x$ï¿½ncorrect) = paste0(names(x$incorrect), "*")}
     resp = append(resp, x$incorrect)
   } else if (incl == "all") {
-    if (asterisks & length(x$singletons) > 0) {
-      names(x$singletons) = paste0(names(x$singletons), "*")}
     if (asterisks & length(x$incorrect) > 0) {
-      names(x$incorrect) = paste0(names(x$incorrect), "**")} 
+      names(x$incorrect) = paste0(names(x$incorrect), "*")} 
     resp = append(resp, append(x$singletons, x$incorrect))}
   
   #order by count
@@ -60,7 +54,7 @@ refrmtResp <- function(x, type, incl, linewidth, asterisks) {
 
 ## ---- ANNOTATE IMAGE
 annotateImage <- function(x, type = c("count", "pct"),
-                          incl = c("correct", "singletons", "incorrect", "all"), 
+                          incl = c("correct", "incorrect", "all"), 
                           asterisks = TRUE, 
                           linewidth = 39, 
                           txtsize = 40) {
@@ -91,7 +85,7 @@ annotateImage <- function(x, type = c("count", "pct"),
 
 ## ---- ARRANGE IMAGES
 arrangeImages <- function(x, type = c("count", "pct"),
-                          incl = c("correct", "singletons", "incorrect", "all"), 
+                          incl = c("correct", "incorrect", "all"), 
                           asterisks = TRUE, 
                           nCols = 3,
                           linewidth = 39, 
@@ -129,17 +123,13 @@ arrangeImages <- function(x, type = c("count", "pct"),
                      "Numbers in parentheses are percentages.") 
     
     if (asterisks) {
-      captxtC = ifelse(incl == "singletons", 
-                       "Includes singleton responses (marked with *).", 
-                       ifelse(incl == "incorrect", "Includes incorrect responses (marked with **).", 
-                              ifelse(incl == "all", "Includes singletons (marked with *) and incorrect responses (marked with **).", 
-                                     "")))
+      captxtC = ifelse(incl == "incorrect", "Includes incorrect responses (marked with *).", 
+                      ifelse(incl == "all", "Includes incorrect responses (marked with *).", 
+                            "")))
     } else {
-      captxtC = ifelse(incl == "singletons", 
-                       "Includes singleton responses", 
-                       ifelse(incl == "incorrect", "Includes incorrect responses.", 
-                              ifelse(incl == "all", "Includes singletons and incorrect responses.", 
-                                     "")))
+      captxtC = ifelse(incl == "incorrect", "Includes incorrect responses.", 
+                      ifelse(incl == "all", "Includes incorrect responses.", 
+                            "")))
     }
     
     

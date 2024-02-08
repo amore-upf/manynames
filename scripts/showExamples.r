@@ -22,7 +22,7 @@ res <- do.call(arrangeImages, c(list(res, nCols = 3), pars))
 #STEP 4: save image
 image_write(res, path = "../examples/mn_images_example1.png")
 
-## ---- EXAMPLE 2: COUNTS - INCLUDING SINGLETONS AND INCORRECT
+## ---- EXAMPLE 2: COUNTS - INCLUDING INCORRECT
 #STEP 1: get random sample of 6 images
 set.seed(1)
 idx <- sample(seq_along(mn), size = 6)
@@ -38,7 +38,7 @@ res <- do.call(arrangeImages, c(list(res, nCols = 3), pars))
 #STEP 4: save image
 image_write(res, path = "../examples/mn_images_example2.png")
 
-## ---- EXAMPLE 3: COUNTS - INCLUDING SINGLETONS AND INCORRECT - ONLY TOPNAME MAN
+## ---- EXAMPLE 3: COUNTS - INCLUDING INCORRECT - ONLY TOPNAME MAN
 #STEP 1: get random sample of 6 images from images with topname "man
 set.seed(1)
 tn.man = sapply(mn, function(x) {x$topname == "man"})
