@@ -18,8 +18,8 @@ For each domain, there exists at least one WordNet category out of *article of c
 ## Data files
 The dataset is provided in two formats:
 
-* **.TSV**: tab-separated text file, first row contains the column labels, nested data is stored as python dictionaries (i.e., "{key: value}")
-* **.JSON**: the same data set in .json format to facilitate access (to the nested data) outside of python
+* **TSV**: tab-separated text file, first row contains the column labels, nested data is stored as python dictionaries (i.e., "{key: value}")
+* **JSON**: the same data set in .json format to facilitate access (to the nested data) outside of python
 
 The columns that are included for both languages are labelled as follows. The most important columns are listed first.
 
