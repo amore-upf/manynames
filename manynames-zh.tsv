@@ -1,4 +1,4 @@
-	vg_image_id	vg_object_id	link_mn	vg_obj_name	vg_domain	vg_synset	mn_bbox_xywh	topname_Mandarin	topname_English	list	responses	total_responses	perc_top	H	familiarity	N	domain
+	vg_image_id	vg_object_id	link_mn	vg_obj_name	vg_domain	vg_synset	mn_bbox_xywh	topname	topname_English	list	responses	total_responses	perc_top	H	familiarity	N	domain
 0	2415243	143313	http://manynames.upf.edu//2415243_143313_dog.png	dog	animals_plants	dog.n.01	[53, 11, 407, 246]	['狗']	dog	list6	{'狗': 19}	19	1.0	0.0	4.0722	1	animals_plants
 1	2414912	149494	http://manynames.upf.edu//2414912_149494_woman.png	woman	people	woman.n.01	[239, 150, 259, 347]	['女人']	woman	list1	{'女人': 16, '笑脸': 1, '游客': 1, '女性': 1, '女孩': 1, '女士': 2}	22	0.7272727272727273	1.459431618637297	3.9359318181818175	6	people
 2	2414899	149712	http://manynames.upf.edu//2414899_149712_bagel.png	bagel	food	baked_goods.n.01	[44, 70, 280, 306]	['面包']	bagel	list3	{'食物': 3, '面包': 16, '贝果': 1, '包': 1, '面包圈': 2}	23	0.6956521739130435	1.44726249944121	3.179682608695652	5	food
