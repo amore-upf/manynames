@@ -231,10 +231,10 @@ if __name__ == "__main__":
                 'Chinese': {'path': '../manynames-zh.json', 'code': 'zh'}}
     # iterate over versions
     for lang in datasets:
+        # open TSV file
         with open(datasets[lang]['path'], 'r') as f:
             mn = json.load(f)
-        
-        print('\n' + lang.upper() + ': ')
+            
         # set seed for samples
         random.seed(1)
         
@@ -243,14 +243,12 @@ if __name__ == "__main__":
         images = [mn[i] for i in idx]
         arrangement = arrange_images(images, lang, type="pct", incl="correct")
         arrangement.save("examples/mn_images_example1_" + datasets[lang]['code'] + ".png")
-        print('Example 1 succesfully generated.')
     
         # Example 2: Counts - Only Correct
         idx = random.sample(range(len(mn)), 6)
         images = [mn[i] for i in idx]
         arrangement = arrange_images(images, lang, type="count", incl="correct")
         arrangement.save("examples/mn_images_example2_" + datasets[lang]['code'] + ".png")
-        print('Example 2 succesfully generated.')
     
         # Example 3: Counts - Including Incorrect - Only Topname "Man"/"男人"
         if lang == 'English':
@@ -262,7 +260,6 @@ if __name__ == "__main__":
         images = [mn[i] for i in idx]
         arrangement = arrange_images(images, lang, type="count", incl="correct")
         arrangement.save("examples/mn_images_example3_" + datasets[lang]['code'] + ".png")
-        print('Example 3 succesfully generated.')
     
         # Example 4: Figure 1 from Silberer et al 2020
         if lang == 'English':
@@ -271,14 +268,9 @@ if __name__ == "__main__":
             images = [mn[i] for i in idx]
             arrangement = arrange_images(images, lang, type="count", incl="correct")
             arrangement.save("examples/mn_images_example4_" + datasets[lang]['code'] + ".png")
-            print('Example 4 succesfully generated.')
     
     # Example 5: Counts - Examples in English and Chinese
     dic = {'English': {'path': 'ManyNames_EN/manynames-en.json', 'ids': [2358126, 713859, 2393177]},
            'Chinese': {'path': 'ManyNames_ZH/manynames-zh.json', 'ids': [3327, 4692, 286036]}}
-    
-    print('\n' + list(dic.keys())[0].upper() + ' & ' + list(dic.keys())[1].upper() + ': ')
-    
     arrangement = arrange_images_2_datasets(dic, type="count", incl="correct", nCols=2, add_caption=False)
     arrangement.save("examples/mn_images_example5.png")
-    print('Example 5 succesfully generated.')
