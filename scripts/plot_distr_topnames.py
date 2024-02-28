@@ -2,19 +2,31 @@
 # coding: utf-8
 
 #%% ---- DEPENDENCIES
-import os
+import ast
 import argparse
 import pandas as pd
 import matplotlib.pyplot as plt
 import manynames as mn
 
 #%% ---- FUNCTIONS TO RECREATE DISTRIBUTION FIGURE
-def statistics_mn_topnames(df, domain_key, print_stats=False):
+def statistics_mn_topnames(df, domain_key, lang, print_stats=False):
     """
     VG image distribution, MN entry-level distribution, per domain
     """
     # count frequency of vg object names
     obj_name_df = df[["topname", domain_key]]
+    
+    # in case the MN-ZH is being plotted (topname in MN-ZH is a list)
+    if lang == 'Chinese':
+        # create a copy of the DataFrame to avoid SettingWithCopyWarning
+        obj_name_df_copy = obj_name_df.copy()
+        # modify the 'topname' column in the copied DataFrame so each element is treated as a list
+        obj_name_df_copy.loc[:, 'topname'] = [ast.literal_eval(x) for x in obj_name_df_copy['topname']]
+        # explode the lists in the 'topname' column and replicate 'domain' values
+        obj_name_df = obj_name_df_copy.explode('topname').reset_index(drop=True)
+        # # (optional) save df
+        # obj_name_df.to_csv('topnames_per_domain_zh.csv')
+    
     obj_name_df = pd.DataFrame(obj_name_df.groupby(by=["topname", domain_key])["topname"].count())
     obj_name_df.rename(columns={"topname": "mn_count"}, inplace=True)
     obj_name_df.reset_index(level=[1], inplace=True)
@@ -36,25 +48,34 @@ def statistics_mn_topnames(df, domain_key, print_stats=False):
     return obj_name_df, print_df
 
 
-def plot_function(domain, ax, nm2domain, domain_gdf, domains, text_fontsize=8):
+def plot_function(domain, ax, nm2domain, domain_gdf, domains, lang, text_fontsize=8):
     """
     A bit hacky function to create a stacked bar plot for an individual MN domain.
     """
     num_1domain = domain_gdf.loc[domain][domain_gdf.loc[domain]>0].sort_values(ascending=False)
 
     a = num_1domain.unstack(fill_value=0)
+    
+    # set the default font family to a font that supports Chinese characters
+    plt.rcParams['font.family'] = ['Arial Unicode MS']
+    
     plot_singledomain = a.plot(ax=ax, kind="bar", stacked=True, legend=False, alpha=0.65, width=.6)
     # hide x ticks ("vg_count")
     plot_singledomain.xaxis.set_major_formatter(plt.NullFormatter())
-    plot_singledomain.set_xlabel(domain.replace("_", "/"), fontsize=text_fontsize)
-    plot_singledomain.set_ylabel("Cumulated sum of images / name", fontsize=text_fontsize)
-
+    plot_singledomain.set_xlabel(domain.replace("_", "/"), fontsize=(text_fontsize+1))
+    plot_singledomain.set_ylabel("Cumulative sum of images / name", fontsize=(text_fontsize+2))
+    
     # label some subbars with their names
     ypositions = num_1domain.cumsum()
     idx2show = [("c",0)]
     for idx in range(1, len(ypositions)):
-        if -ypositions[idx-1]+ypositions[idx] < 90:
-            break
+        # set different filtering values for each language (figures vary considerably)
+        if lang == 'English':
+            if -ypositions[idx-1]+ypositions[idx] < 90:
+                break
+        elif lang == 'Chinese':
+            if -ypositions[idx-1]+ypositions[idx] < 8:
+                break
         idx2show.append(("c", idx))
     no_nms2show = 5
     num = 0
@@ -87,61 +108,87 @@ def plot_function(domain, ax, nm2domain, domain_gdf, domains, text_fontsize=8):
             ax.text(xcoord, ycoord, 
                     obj_name, ha='center', va='center', 
                     color='black', fontsize=text_fontsize-1)
-        if domain!="animals_plants":
-            ax.spines['left'].set_visible(False)
-        else:
-            mkfunc = lambda x, pos: '%1.0fK' % (x / 1000)
-            mkformatter = plt.FuncFormatter(mkfunc)
-            plot_singledomain.yaxis.set_major_formatter(mkformatter)
-            plot_singledomain.tick_params(labelsize=text_fontsize-1)
-            
-        if domain!="vehicles":
-            ax.spines['right'].set_visible(False)
+        # set a specific format for y-axis scale depending on the language
+        if lang == 'English':
+            if domain!="animals_plants":
+                ax.spines['left'].set_visible(False)
+            else:
+                mkfunc = lambda x, pos: '%1.0fK' % (x / 1000)
+                mkformatter = plt.FuncFormatter(mkfunc)
+                plot_singledomain.yaxis.set_major_formatter(mkformatter)
+                plot_singledomain.tick_params(labelsize=text_fontsize-1)
+            if domain!="vehicles":
+                ax.spines['right'].set_visible(False)
+        elif lang == 'Chinese':
+            if domain!="animals_plants":
+                ax.spines['left'].set_visible(False)
+            else:
+                mkfunc = lambda x, pos: '%.1f' % (x / 100)
+                mkformatter = plt.FuncFormatter(mkfunc)
+                plot_singledomain.yaxis.set_major_formatter(mkformatter)
+                plot_singledomain.tick_params(labelsize=text_fontsize-1)
+            if domain!="vehicles":
+                ax.spines['right'].set_visible(False)
     return plot_singledomain
 
 #%% ---- MAIN
 if __name__ == '__main__':
+    datasets = {'English': {'path': '../manynames-en.tsv', 'code': 'en'},
+                'Chinese': {'path': '../manynames-zh.tsv', 'code': 'zh'}
+                }
+    for lang in datasets:
+        #%%% ----- CHECK ARGUMENTS
+        #setup argument parser
+        arg_parser = argparse.ArgumentParser(
+            description = '''plots the top name distribution (reproducing Figure 3 
+                            in Silberer, Zarrieß, & Boleda, 2020)''')
+        
+        #add required arguments
+        arg_parser.add_argument('-mnfile', type=str, 
+                                help='''the path to the TSV file''',
+                                default=datasets[lang]['path'])
+        
+        #check provided arguments
+        args = arg_parser.parse_args()
+        
+        #set values
+        fn = args.mnfile
 
-    #%%% ----- CHECK ARGUMENTS
-    #setup argument parser
-    arg_parser = argparse.ArgumentParser(
-        description = '''plots the top name distribution (reproducing Figure 3 
-                         in Silberer, Zarrieß, & Boleda, 2020)''')
-       
-    #add required arguments
-    arg_parser.add_argument('-mnfile', type=str, 
-                            help='''the path to manynames.tsv''',
-                            default='../manynames.tsv')
-    
-    #check provided arguments
-    args = arg_parser.parse_args()
-    
-    #set values
-    fn = args.mnfile
+        #%%% ----- PROCESSING
+        manynames_df = mn.load_cleaned_results(fn)
+        nm2domain = dict(zip(manynames_df["vg_obj_name"], manynames_df["vg_domain"]))
+        
+        domain_key = "domain" #"vg_domain"
+        obj_name_df, print_df = statistics_mn_topnames(manynames_df, domain_key, lang)
 
-    #%%% ----- PROCESSING
-    manynames_df = mn.load_cleaned_results(fn)
-    nm2domain = dict(zip(manynames_df["vg_obj_name"], manynames_df["vg_domain"]))
-    
-    domain_key = "domain" #"vg_domain"
-    obj_name_df, print_df = statistics_mn_topnames(manynames_df, domain_key)
+        domain_groups = obj_name_df.groupby([domain_key]).apply(lambda x: (x.groupby('topname')
+                                            .sum().sort_values('mn_count', ascending=False)))
+        domain_gdf = domain_groups.unstack(fill_value=0)
+        domains = [domain[0] for domain in domain_gdf.iterrows()]
 
-    domain_groups = obj_name_df.groupby([domain_key]).apply(lambda x: (x.groupby('topname')
-                                          .sum().sort_values('mn_count', ascending=False)))
-    domain_gdf = domain_groups.unstack(fill_value=0)
-    domains = [domain[0] for domain in domain_gdf.iterrows()]
-
-    n_subplots = len(domains)
-    fig, axes = plt.subplots(nrows=1, ncols=n_subplots, 
-                             sharey=True, figsize=(7, 3.5), 
-                             dpi=200)  # width, height
-
-    graph = dict(zip(domains, axes))
-    plots = list(map(lambda domain: plot_function(domain, graph[domain], 
-                     nm2domain, domain_gdf, domains), graph))
-    fig.tight_layout()
-    fig.subplots_adjust(wspace=0)
-    plt.show()
+        n_subplots = len(domains)
+        fig, axes = plt.subplots(nrows=1, ncols=n_subplots, 
+                                sharey=True, figsize=(7.5, 3.5), 
+                                dpi=300)  # width, height
+        
+        # iterate over subplots to hide y-axis ticks
+        for i, ax in enumerate(axes):
+            if i != 0:
+                ax.tick_params(left=False)
+                
+        # (optional) set a title
+        plt.title(f'Top name distribution in {lang}', x=-2.5, y=1.0, fontname="Verdana", weight='bold')
+        
+        graph = dict(zip(domains, axes))
+        plots = list(map(lambda domain: plot_function(domain, graph[domain], 
+                        nm2domain, domain_gdf, domains, lang), graph))
+        fig.tight_layout()
+        fig.subplots_adjust(wspace=0)
+        
+        # save image
+        plt.savefig(f"topname_distribution_{datasets[lang]['path']}.png", dpi=300)
+        
+        plt.show()
 
 
 

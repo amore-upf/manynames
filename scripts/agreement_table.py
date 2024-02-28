@@ -4,30 +4,23 @@
 #%% ---- DEPENDENCIES
 import argparse
 from collections import Counter
-import sys
 import numpy as np
 import pandas as pd
 import manynames as mn
 
 #%% ---- FUNCTIONS TO RECREATE AGREEMENT TABLE
-def snodgrass_agreement(rdict, vocab, singletons=False):
-    # to decide: do we include singleton answers for calculating agreement?
-    if singletons:
-        vec = np.array([rdict[key] for key in rdict])
-    else:
-        vec = np.array([rdict[key] for key in rdict if vocab[key] > 1])
+def snodgrass_agreement(rdict):
+    vec = np.array([rdict[key] for key in rdict])
     vec_rel = vec/(np.sum(vec))
     agr = np.sum(vec_rel * np.log2(1/vec_rel))
     return agr
 
 def percent_agreement(rdict):
-    # to decide: do we include singleton answers for calculating agreement?
     topname = rdict.most_common(1)[0][0]
     total = sum(rdict.values())
     return rdict[topname]/total
 
 def make_df(manynames):
-    vg_is_common = []
     vg_prop = []
     ntypesmin2 = []
     
@@ -35,51 +28,38 @@ def make_df(manynames):
         manynames['responses'] = manynames['responses'].apply(lambda x: Counter(x))
 
     for ix,row in manynames.iterrows():
-        vg_is_common.append(int(row['topname'] == row['vg_obj_name']))
         vg_weight = row['responses'][row['vg_obj_name']]/sum(row['responses'].values())
         vg_prop.append(vg_weight)
-        min2types = [k for k in row['responses'].keys() if row['responses'][k] > 1]
+        min2types = [k for k in row['responses'].keys()]
         ntypesmin2.append(len(min2types))
 
     manynames['n_types_min2'] = ntypesmin2
     manynames['percent_agree_min2'] = manynames['responses'].apply(lambda x: percent_agreement(x))
-    manynames['snodgrass_min2'] = manynames['responses'].apply(lambda x: snodgrass_agreement(x,{},True))
-    manynames['vg_is_max'] = vg_is_common
-    manynames['vg_mean'] = vg_prop
+    manynames['snodgrass_min2'] = manynames['responses'].apply(lambda x: snodgrass_agreement(x))
     return manynames
     
 def make_agreement_table(resdf):
-    nobjects = len(resdf)
     tablerows = []
     tablerows.append(('all',
                      str("%.1f"%np.mean(resdf['n_types_min2'])),
                      str("%.1f (%.1f)"%(np.mean(resdf['percent_agree_min2'])*100,
                      np.std(resdf['percent_agree_min2'])*100)),
                      str("%.1f (%.1f)"%(np.mean(resdf['snodgrass_min2']),
-                     np.std(resdf['snodgrass_min2']))),
-                     str("%.1f"%((np.sum(resdf['vg_is_max'])/nobjects)*100)),
-                     str("%.1f"%((np.sum(resdf['vg_mean'])/nobjects)*100)),
+                     np.std(resdf['snodgrass_min2'])))
                     ))
 
     for c in set(list(resdf['vg_domain'])):
         catdf = resdf[resdf['vg_domain'] == c]
-        ncat = len(catdf)
-        synagree = Counter()
-        for s in set(list(catdf['vg_synset'])):
-            syndf = catdf[catdf['vg_synset'] == s]
-            synagree[s] = np.mean(syndf['vg_mean'])
 
         tablerows.append((c,
                         str("%.1f"%np.mean(catdf['n_types_min2'])),
                          str("%.1f (%.1f)"%(np.mean(catdf['percent_agree_min2'])*100,
                          np.std(catdf['percent_agree_min2'])*100)),
                          str("%.1f (%.1f)"%(np.mean(catdf['snodgrass_min2']),
-                         np.std(catdf['snodgrass_min2']))),
-                         str("%.1f"%((np.sum(catdf['vg_is_max'])/ncat)*100)),
-                         str("%.1f"%((np.sum(catdf['vg_mean'])/ncat)*100)),
+                         np.std(catdf['snodgrass_min2'])))
                     ))
 
-    outdf = pd.DataFrame(tablerows,columns=['domain','N','%top','H','top=VG','%VG'])
+    outdf = pd.DataFrame(tablerows,columns=['domain','N','%top','H'])
     outdf['domain'] = pd.Categorical(outdf['domain'], 
                                      ['all', 'people', 'clothing', 'home', 'buildings', 
                                       'food', 'vehicles', 'animals_plants'])
@@ -87,27 +67,33 @@ def make_agreement_table(resdf):
 
 #%% ---- MAIN
 if __name__ == '__main__':
-    
-    #%%% ----- CHECK ARGUMENTS
-    #setup argument parser
-    arg_parser = argparse.ArgumentParser(
-        description = '''Creates a summary table of name agreement indices 
-                         (reproducing Table 3 in [Silberer, Zarrieß, & Boleda,2020)''')
-       
-    #add required arguments
-    arg_parser.add_argument('-mnfile', type=str, 
-                            help='''the path to manynames.tsv''',
-                            default='../manynames.tsv')
-    
-    #check provided arguments
-    args = arg_parser.parse_args()
-    
-    #set values
-    fn = args.mnfile
-    
-    #%%% ----- PROCESSING
-    manynames = mn.load_cleaned_results(fn)
-    resdf = make_df(manynames)
-    o1 = make_agreement_table(resdf)
-    print(o1.sort_values(by = 'domain'))
-    
+    datasets = {'en': '../manynames_en.tsv',
+                'zh': '../manynames_zh.tsv'
+                }
+    for lang in datasets:
+        #%%% ----- CHECK ARGUMENTS
+        #setup argument parser
+        arg_parser = argparse.ArgumentParser(
+            description = '''Creates a summary table of name agreement indices 
+                            (reproducing Table 3 in [Silberer, Zarrieß, & Boleda,2020)''')
+        
+        #add required arguments
+        arg_parser.add_argument('-mnfile', type=str, 
+                                help='''the path to the TSV file''',
+                                default=datasets[lang])
+        
+        #check provided arguments
+        args = arg_parser.parse_args()
+        
+        #set values
+        fn = args.mnfile
+        
+        #%%% ----- PROCESSING
+        manynames = mn.load_cleaned_results(fn)
+        resdf = make_df(manynames)
+        o1 = make_agreement_table(resdf)
+        print(o1.sort_values(by = 'domain'))
+        
+        #save into CSV file
+        o1.to_csv(f'agreement_table_{lang}.csv')
+        

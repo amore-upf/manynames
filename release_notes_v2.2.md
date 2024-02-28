@@ -65,7 +65,7 @@ The final version of the English ManyNames file (v2.2) corresponds to file `many
 |*split* | str | Use of the image in training vs. test vs. validation in Silberer, Zarrieß, Westera, & Boleda, 2020|
 
 
-The file `additional-info-manynames-en.tsv` includes additional information about the data in v.2.2. It contains the following columns:
+The file `additional-info-en.tsv` includes additional information about the data in v.2.2. It contains the following columns:
 
 |Column     |Type  |Description   |
 |:----------|:-----|:-------------|

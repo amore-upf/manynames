@@ -19,7 +19,7 @@ For each domain, there exists at least one WordNet category out of *article of c
 The dataset is provided in two formats:
 
 * **TSV**: tab-separated text file, first row contains the column labels, nested data is stored as python dictionaries (i.e., "{key: value}")
-* **JSON**: the same data set in .json format to facilitate access (to the nested data) outside of python
+* **JSON**: the same data set in .json format to facilitate access (to the nested data) outside of python. Included in subfolder *other_data*
 
 The columns that are included for both languages are labelled as follows. The most important columns are listed first.
 
@@ -55,7 +55,7 @@ In the case of the Chinese ManyNames dataset, it includes as well the following 
 |  list  |  str | Lists of images assigned to participants |
 | familiarity | float | Weighted average of corpus-frequency of responses |
 
-Besides, the English ManyNames dataset contains a file named ***additional-info-manynames-en.tsv***, composed of the additional columns in the following table.
+Besides, the English ManyNames dataset contains a file named ***additional-info-en.tsv***, composed of the additional columns in the following table.
 
 | Column | Type | Description |
 | -------- | :-------: | -------- |
@@ -92,15 +92,17 @@ The scripts can be run from the command line. Use `python <script-name> -h` for 
 * **`plot_distr_topnames.py`**
   *Creates a stacked box plot, showing the distribution of MN topnames per domain (reproducing Figure 3 in [Silberer, Zarrieß, & Boleda (2020)](https://aclanthology.org/2020.lrec-1.710/) with the v2.1 data).*<br>
 * **`create_MN_images.py`**
-  *creates the images as stored under manynames.upf.edu from their VG-source*<br>
+  *Creates the images as stored under manynames.upf.edu from their VG-source.*<br>
 * **`download_MN_images.py`**
-  *downloads a subset of images from manynames.upf.edu*<br>
+  *Downloads a subset of images from manynames.upf.edu*<br>
+* **`showExamples.py`**
+  *Annotates and displays subsets of MN-images.*<br>
 
 ### R scripts
-The R-scripts can be used to view a subset of MN-images together with the respective name annotations. **`showExample.r`** can be used to recreate the example image above. **`functions_showExample.r`** contains custom functions to extract and format the data from ManyNames to create this figure.
+The R-script **`download_MN_images`** can be used, as its Python counterpart, to download a subset of images from manynames.upf.edu.
 
 ## Version history
-* **version 2.2**: Inclusion of all singletons responses (given only once and not synonyms or hypernyms of the topname)
+* **version 2.2**: Added all singletons responses (given only once and not synonyms or hypernyms of the topname)
 
 * **version 2.1.1**: Added bounding box coordinates for ManyNames image versions. Updated image links to new domain: manynames.upf.edu
 
