@@ -133,6 +133,7 @@ def plot_function(domain, ax, nm2domain, domain_gdf, domains, lang, text_fontsiz
 
 #%% ---- MAIN
 if __name__ == '__main__':
+    #dict with MN versions, paths, and lang codes
     datasets = {'English': {'path': '../manynames-en.tsv', 'code': 'en'},
                 'Chinese': {'path': '../manynames-zh.tsv', 'code': 'zh'}
                 }

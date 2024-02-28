@@ -67,6 +67,7 @@ def make_agreement_table(resdf):
 
 #%% ---- MAIN
 if __name__ == '__main__':
+    #dict with paths to datasets
     datasets = {'en': '../manynames_en.tsv',
                 'zh': '../manynames_zh.tsv'
                 }

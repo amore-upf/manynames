@@ -31,20 +31,29 @@ def refrmt_resp(x, lang, type, incl, linewidth, asterisks):
     
     #combine to one string
     y = ""
+    line_length = 0
     for i, (name, value) in enumerate(resp):
-        # add comma if it's not the last annotation
-        comma = ", " if i < len(resp) - 1 else ""
-        y += f"{name} {values[i]}{comma}"
-        
-    lines = [y[i:i+linewidth] for i in range(0, len(y), linewidth)]
+        # prevent lines from breaking in the middle of a word
+        element_length = len(name) + 1 + len(values[i]) + 2  # length of name + space + length of value + 2 (for comma and space)
+        # add newline if adding next element would exceed linewidth
+        if line_length + element_length > linewidth and i > 0:
+            y += '\n'
+            line_length = 0
+        y += f"{name} {values[i]}, "
+        line_length += element_length
     
-    # only keep 2 lines as maximum per response
+    # Remove the comma and space of last annotation
+    y = y.rstrip(", ")
+    # split into lines
+    lines = y.split('\n')
+    
+    # only keep 2 lines as maximum per response and add '...' if there are more lines
     if len(lines) > 2:
+        lines[1] += ' ...'
         lines = lines[0:2]
-        lines[1] += ' ...' # if line 2 too long end with "..."
     
-    # combine lines again    
-    y = "\n".join(lines)
+    # combine lines again
+    y = '\n'.join(lines)
     
     # return string with lines combined
     return y
@@ -59,7 +68,7 @@ def read_image_from_url(url):
         raise Exception(f"Failed to fetch image from URL: {url}")
 
 # Annotate image
-def annotate_image(x, lang, type="count", incl="correct", asterisks=True, linewidth=34, txtsize=40, nCols=3):
+def annotate_image(x, lang, type="count", incl="correct", asterisks=True, linewidth=35, txtsize=40, nCols=3):
     # format string of responses
     txt = refrmt_resp(x, lang, type, incl, linewidth, asterisks)
     # read image
@@ -86,16 +95,16 @@ def annotate_image(x, lang, type="count", incl="correct", asterisks=True, linewi
     return canvas
 
 # Arrange images
-def arrange_images(x, lang, type="count", incl="correct", asterisks=True, nCols=3, linewidth=34, txtsize=40, add_caption=True):
+def arrange_images(x, lang, type="count", incl="correct", asterisks=True, nCols=3, linewidth=35, txtsize=40, add_caption=True):
+    # add condition for Chinese (smaller linewidth works better)
+    if lang == 'Chinese':
+        linewidth = 25
+        
     # annotate images
     images = []
     for img in x:
-        # add condition for Chinese (smaller linewidth works better)
-        if lang == 'Chinese':
-            images.append(annotate_image(img, lang, type, incl, asterisks, linewidth=25))
-        else:
-            images.append(annotate_image(img, lang, type, incl, asterisks))
-    
+        images.append(annotate_image(img, lang, type, incl, asterisks, linewidth=linewidth, txtsize=txtsize))
+
     # arrange in grid (with nCols)
     num_images = len(images)
     img_width, img_height = images[0].size 
@@ -159,21 +168,18 @@ def fix_order(lst):
     return result
 
 # Arrange images from two different datasets
-def arrange_images_2_datasets(dic, type="count", incl="correct", asterisks=True, nCols=2, linewidth=34, txtsize=40, add_caption=True):
+def arrange_images_2_datasets(dic, type="count", incl="correct", asterisks=True, nCols=2, linewidth=35, txtsize=40, add_caption=True):
     images = []
     for lang in dic:
+        # add condition for Chinese (smaller linewidth works better)
+        if lang == 'Chinese':
+            linewidth = 25
         with open(dic[lang]['path'], 'r') as f:
             mn = json.load(f)
-
             idx = [next(i for i, x in enumerate(mn) if x['vg_image_id'] == img_id) for img_id in dic[lang]['ids']]
             x = [mn[i] for i in idx]
-            
-            if lang == 'Chinese':
-                for img in x:
-                    images.append(annotate_image(img, lang, type, incl, asterisks, 25))
-            elif lang == 'English':
-                for img in x:
-                    images.append(annotate_image(img, lang, type, incl, asterisks, 35))
+            for img in x:
+                images.append(annotate_image(img, lang, type, incl, asterisks, linewidth=linewidth, txtsize=txtsize))
                     
     num_images = len(images)
     img_width, img_height = images[0].size 
@@ -220,12 +226,12 @@ def arrange_images_2_datasets(dic, type="count", incl="correct", asterisks=True,
 
 #%% ---- MAIN
 if __name__ == "__main__":
-    # define paths of MN versions
-    paths = {'English': 'ManyNames_EN/manynames-en.json',
-             'Chinese': 'ManyNames_ZH/manynames-zh.json'}
+    # define a dict with MN versions, paths, and lang codes
+    datasets = {'English': {'path': '../manynames-en.json', 'code': 'en'},
+                'Chinese': {'path': '../manynames-zh.json', 'code': 'zh'}}
     # iterate over versions
-    for lang in paths:
-        with open(paths[lang], 'r') as f:
+    for lang in datasets:
+        with open(datasets[lang]['path'], 'r') as f:
             mn = json.load(f)
         
         print('\n' + lang.upper() + ': ')
@@ -236,14 +242,14 @@ if __name__ == "__main__":
         idx = random.sample(range(len(mn)), 6)
         images = [mn[i] for i in idx]
         arrangement = arrange_images(images, lang, type="pct", incl="correct")
-        arrangement.save("examples/mn_images_example1" + paths[lang][-8:-5] + ".png")
+        arrangement.save("examples/mn_images_example1_" + datasets[lang]['code'] + ".png")
         print('Example 1 succesfully generated.')
     
         # Example 2: Counts - Only Correct
         idx = random.sample(range(len(mn)), 6)
         images = [mn[i] for i in idx]
         arrangement = arrange_images(images, lang, type="count", incl="correct")
-        arrangement.save("examples/mn_images_example2" + paths[lang][-8:-5] + ".png")
+        arrangement.save("examples/mn_images_example2_" + datasets[lang]['code'] + ".png")
         print('Example 2 succesfully generated.')
     
         # Example 3: Counts - Including Incorrect - Only Topname "Man"/"男人"
@@ -255,7 +261,7 @@ if __name__ == "__main__":
             idx = random.sample([i for i, x in enumerate(mn) if word in x['topname']], 6)
         images = [mn[i] for i in idx]
         arrangement = arrange_images(images, lang, type="count", incl="correct")
-        arrangement.save("examples/mn_images_example3" + paths[lang][-8:-5] + ".png")
+        arrangement.save("examples/mn_images_example3_" + datasets[lang]['code'] + ".png")
         print('Example 3 succesfully generated.')
     
         # Example 4: Figure 1 from Silberer et al 2020
@@ -264,7 +270,7 @@ if __name__ == "__main__":
             idx = [next(i for i, x in enumerate(mn) if x['vg_image_id'] == img_id) for img_id in ids]
             images = [mn[i] for i in idx]
             arrangement = arrange_images(images, lang, type="count", incl="correct")
-            arrangement.save("examples/mn_images_example4" + paths[lang][-8:-5] + ".png")
+            arrangement.save("examples/mn_images_example4_" + datasets[lang]['code'] + ".png")
             print('Example 4 succesfully generated.')
     
     # Example 5: Counts - Examples in English and Chinese
