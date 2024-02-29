@@ -70,10 +70,10 @@ function retrievePathfromLang() {
 
   switch(lang_button) {
     case 'English':
-      path = "https://raw.githubusercontent.com/amore-upf/manynames/release_v2.2/other-data/manynames-en.json";
+      path = "https://raw.githubusercontent.com/amore-upf/manynames/master/other-data/manynames-en.json";
       break;
     case 'Chinese':
-      path = "https://raw.githubusercontent.com/amore-upf/manynames/release_v2.2/other-data/manynames-zh.json";
+      path = "https://raw.githubusercontent.com/amore-upf/manynames/master/other-data/manynames-zh.json";
       break;
   }
   return path
