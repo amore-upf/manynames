@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>ManyNames</title>
+  <title>ManyNames - Search</title>
   <meta name="author" content="AMORE-Team">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
@@ -27,6 +27,14 @@
       <div class="col-4 d-flex.align-items-center">
         <!-- SEARCH -->
         <div class="row">
+          <!-- dropdown menu -->
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">English</button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li></li><a class="dropdown-item" href="#" onclick="changeLanguage('English'); changeExample('English')">English</a></li>
+              <li></li><a class="dropdown-item" href="#" onclick="changeLanguage('Chinese'); changeExample('Chinese')">Chinese</a></li>
+            </ul>
+          </div>
           <!-- scope toogle -->
           <div class="btn-group btn-group-toggle" data-toggle="buttons" data-bs-html="true" data-bs-toggle="tooltip" data-bs-placement="top" 
           title="<b>all names</b>: find objects with all of the entered names<br><br><b>any name</b>: find objects with at least one of the entered names<br><br><b>any top name</b>: find objects with at least one of the entered names as the top name">
@@ -117,6 +125,25 @@
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
 </script>
+<script type="text/javascript">
+  function changeLanguage(language) {
+    document.getElementById('dropdownMenuButton').innerText = language;
+  }
+  </script>
+  <script>
+  // Function to change the language
+  function changeExample(language) {
+    // Get the input field element
+    const inputField = document.getElementById('names_field');
+  
+    // Change the placeholder text based on the selected language
+    if (language === 'English') {
+      inputField.setAttribute('placeholder', 'swan, bird, ...');
+    } else if (language === 'Chinese'){
+      inputField.setAttribute('placeholder', '天鹅，鸟，...');
+    }
+  }
+  </script>
 </body>
 
 </html>

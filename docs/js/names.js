@@ -1,5 +1,15 @@
-// read manynames.json and filter
-d3.json("https://raw.githubusercontent.com/amore-upf/manynames/master/manynames.json")
+createTable()
+
+function createTable() {
+  // clear the content inside the <tbody> element to prevent from adding one table to another instead of creating a new one
+  let tbody = document.querySelector("#names_table tbody");
+  tbody.innerHTML = '';
+
+  // specify the path of the JSON file depending on the selected language
+  let json_path = retrievePathfromLang();
+
+  // read manynames.json and filter
+  d3.json(json_path)
 
 // extract names and counts from data
   .then(function(data) {
@@ -25,27 +35,65 @@ d3.json("https://raw.githubusercontent.com/amore-upf/manynames/master/manynames.
     updateTable();
     names_table.style.display = "table";
   })
+};
 
 
 // -------------------------- FUNCTIONS
+/*select JSON file depending on language*/
+function retrievePathfromLang() {
+  var lang_button = document.getElementById('dropdownMenuButton').innerText;
+
+  switch(lang_button) {
+    case 'English':
+      path = "https://raw.githubusercontent.com/amore-upf/manynames/release_v2.2/other-data/manynames-en.json";
+      break;
+    case 'Chinese':
+      path = "https://raw.githubusercontent.com/amore-upf/manynames/release_v2.2/other-data/manynames-zh.json";
+      break;
+  }
+  return path
+};
+
 // extract names and counts from manynames data
 function extractNameDat(data) {
+  // Check current language
+  var lang_button = document.getElementById('dropdownMenuButton').innerText;
+  // Create empty object
   const name_data = {};
+  // Iterate through each element of the MN JSON
   data.forEach(element => {
-      Object.entries(element.responses).forEach(([key, value]) => {
-        if (name_data.hasOwnProperty(key) && element.topname === key) {
-          name_data[key].overall += value;
-          name_data[key].img_any += 1;
-          name_data[key].img_top += 1;
-        } else if (name_data.hasOwnProperty(key) && element.topname != key) {
-          name_data[key].overall += value;
-          name_data[key].img_any += 1;
-        } else if (!name_data.hasOwnProperty(key) && element.topname === key) {
-          name_data[key] = {overall: value, img_any: 1, img_top: 1};
-        } else {
-          name_data[key] = {overall: value, img_any: 1, img_top: 0};
-        }
-      });
+    if (lang_button === 'English') {
+        // Iterate through each object in key 'responses' (=column 'responses')
+        Object.entries(element.responses).forEach(([key, value]) => {
+          if (name_data.hasOwnProperty(key) && element.topname === key) {
+            name_data[key].overall += value;
+            name_data[key].img_any += 1;
+            name_data[key].img_top += 1;
+          } else if (name_data.hasOwnProperty(key) && element.topname != key) {
+            name_data[key].overall += value;
+            name_data[key].img_any += 1;
+          } else if (!name_data.hasOwnProperty(key) && element.topname === key) {
+            name_data[key] = {overall: value, img_any: 1, img_top: 1};
+          } else {
+            name_data[key] = {overall: value, img_any: 1, img_top: 0};
+          }
+        });
+      } else if (lang_button === 'Chinese') {
+        Object.entries(element.responses).forEach(([key, value]) => {
+          if (name_data.hasOwnProperty(key) && element.topname.includes(key)) {
+            name_data[key].overall += value;
+            name_data[key].img_any += 1;
+            name_data[key].img_top += 1;
+          } else if (name_data.hasOwnProperty(key) && (element.topname.includes(key) == false)) {
+            name_data[key].overall += value;
+            name_data[key].img_any += 1;
+          } else if (!name_data.hasOwnProperty(key) && element.topname.includes(key)) {
+            name_data[key] = {overall: value, img_any: 1, img_top: 1};
+          } else {
+            name_data[key] = {overall: value, img_any: 1, img_top: 0};
+          }
+        });
+      }
     });
     return name_data;
   };
@@ -87,7 +135,7 @@ function addRow(name, name_data, table) {
 
 //function to update table with user input
 function updateTable() {
-
+  var lang = document.getElementById('dropdownMenuButton').innerText;
   //gather all rows
   let all_rows = names_table.querySelectorAll("tr[data-name]");
 
@@ -98,10 +146,23 @@ function updateTable() {
     var names_input = document.getElementById("names_field").placeholder;
   }
 
-  names = names_input.split(',')
-  names.forEach(function(val, idx) {
-    names[idx] = val.trim().replace(/[^a-zA-Z ]/g, "");
-  })
+  if (lang === 'Chinese') {
+    var names = names_input.split('，'); // The exact word(s) the user is searching for
+  } else {
+    var names = names_input.split(',');
+  }
+
+  if (lang === 'English') {
+    names.forEach(function(val, idx) {
+      names[idx] = val.trim().replace(/[^a-zA-Z\- ]/g, ""); // !!!!!! only keep alphabetical characters, spaces, and hyphens
+    })
+  }
+  else if (lang === 'Chinese') {
+    names.forEach(function(val, idx) {
+      names[idx] = val.trim().replace(/[^\u4E00-\u9FFF ]/g, "");
+    })
+  }
+  
   names = names.filter(Boolean);
 
   //filter by name

@@ -48,9 +48,32 @@ ul.posts li {
     list-style: none;
 }
 
+/* adjust dropdown button margins and position */
+.dropdown {
+    margin-bottom: 10px;
+}
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+}
+/* adjust appearance of example in index */
+.smaller-image {
+    max-width: 90%; /* You can adjust this value to make the image smaller */
+    height: auto;
+}
+/* two-column layout */
+.two-column-list {
+    column-count: 2; /* Split into two columns */
+    column-gap: 40px; /* Adjust the gap between columns */
+}
+
+.two-column-list li {
+    margin-bottom: 10px; /* Add some space between list items */
+}
+
 
 /*keep table header fixed when scrolling*/
-th {
+#names_table th {
     text-align: center;
     position: sticky;
     top: 70px;

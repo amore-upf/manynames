@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>ManyNames - Stats</title>
+  <meta name="author" content="AMORE-Team">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <!-- link stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <script src="js/nav.js"></script>
+    </div>
+  </div>
+</header>
+
+<body>
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        
+        <h1> Statistics</h1>
+        <!-- GENERAL STATS -->
+        <table class="table table-hover">
+          <thead>
+            <tr class="table-dark">
+              <th scope="col"></th>
+              <th scope="col">en</th>
+              <th scope="col">zh</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Number of images</th>
+              <td>25315</td>
+              <td>1319</td>
+            </tr>
+            <tr>
+              <th scope="row">Number of names</th>
+              <td>3098</td>
+              <td>2252</td>
+            </tr>
+            <tr>
+              <th scope="row">Average number of names per pic</th>
+              <td>3.3</td>
+              <td>6.4</td>
+            </tr>
+            <tr>
+              <th scope="row">Min. number of names per pic</th>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">Max. number of names per pic</th>
+              <td>14</td>
+              <td>17</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <br>
+        <br>
+        <!-- AGREEMENT TABLE -->
+        <h3> Agreement table</h3>
+        <p>The agreement table is always composed of four columns:</p>
+        <table class="table">
+          <thead>
+            <tr class="table-light">
+              <th scope="col">Columns</th>
+              <th scope="col">Type</th>
+              <th scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">domain</th>
+              <td>str</td>
+              <td>The MN domain of the VG name</td>
+            </tr>
+            <tr>
+              <th scope="row">N</th>
+              <td>int</td>
+              <td>The number of types in the MN responses</td>
+            </tr>
+            <tr>
+              <th scope="row">% top</th>
+              <td>float</td>
+              <td>The relative frequency of the topname (among correct responses)</td>
+            </tr>
+            <tr>
+              <th scope="row">H</th>
+              <td>float</td>
+              <td>The H agreement measure from Snodgrass and Vanderwart (1980)</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <br>
+        <!-- Agreement table for English -->
+        <h4> English</h4>
+        <table class="table table-hover">
+          <thead>
+            <tr class="table-dark">
+              <th scope="col">domain</th>
+              <th scope="col">N</th>
+              <th scope="col">%top</th>
+              <th scope="col">H</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">all</th>
+              <td>3.3</td>
+              <td>77.4 (20.8)</td>
+              <td>0.9 (0.7)</td>
+            </tr>
+            <tr>
+              <th scope="row">clothing</th>
+              <td>3.6</td>
+              <td>73.4 (17.9)</td>
+              <td>1.0 (0.6)</td>
+            </tr>
+            <tr>
+              <th scope="row">food</th>
+              <td>3.6</td>
+              <td>77.0 (19.4)</td>
+              <td>0.9 (0.7)</td>
+            </tr>
+            <tr>
+              <th scope="row">animals_plants</th>
+              <td>1.8</td>
+              <td>94.0 (11.8)</td>
+              <td>0.3 (0.4)</td>
+            </tr>
+            <tr>
+              <th scope="row">people</th>
+              <td>5</td>
+              <td>61.3 (20.5)</td>
+              <td>1.5 (0.7)</td>
+            </tr>
+            <tr>
+              <th scope="row">buildings</th>
+              <td>3.1</td>
+              <td>79.7 (19.5)</td>
+              <td>0.8 (0.7)</td>
+            </tr>
+            <tr>
+              <th scope="row">home</th>
+              <td>3.1</td>
+              <td>78.3 (19.0)</td>
+              <td>0.8 (0.6)</td>
+            </tr>
+            <tr>
+              <th scope="row">vehicles</th>
+              <td>3.2</td>
+              <td>76.6 (19.5)</td>
+              <td>0.8 (0.6)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br>
+        <!-- Agreement table for Chinese -->
+        <h4> Chinese</h4>
+        <table class="table table-hover">
+          <thead>
+            <tr class="table-dark">
+              <th scope="col">domain</th>
+              <th scope="col">N</th>
+              <th scope="col">%top</th>
+              <th scope="col">H</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">all</th>
+              <td>3.3</td>
+              <td>77.4 (20.8)</td>
+              <td>0.9 (0.7)</td>
+            </tr>
+            <tr>
+              <th scope="row">clothing</th>
+              <td>6.8</td>
+              <td>43.8 (14.9)</td>
+              <td>2.2 (0.6)</td>
+            </tr>
+            <tr>
+              <th scope="row">food</th>
+              <td>6.2</td>
+              <td>56.1 (20.8)</td>
+              <td>1.8 (0.8)</td>
+            </tr>
+            <tr>
+              <th scope="row">animals_plants</th>
+              <td>4.1</td>
+              <td>72.7 (18.9)</td>
+              <td>1.2 (0.7)</td>
+            </tr>
+            <tr>
+              <th scope="row">people</th>
+              <td>7.2</td>
+              <td>44.2 (13.8)</td>
+              <td>2.2 (0.5)</td>
+            </tr>
+            <tr>
+              <th scope="row">buildings</th>
+              <td>8.1</td>
+              <td>48.3 (21.6)</td>
+              <td>2.3 (0.9)</td>
+            </tr>
+            <tr>
+              <th scope="row">home</th>
+              <td>6</td>
+              <td>59.6 (22.0)</td>
+              <td>1.7 (0.9)</td>
+            </tr>
+            <tr>
+              <th scope="row">vehicles</th>
+              <td>5.4</td>
+              <td>58.9 (21.5)</td>
+              <td>1.7 (0.8)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br>
+        <br>
+
+      </div>
+      <!-- PLOTS AND FIGURES -->
+      <div class="col-lg-6">
+        <!-- <h1> Figures</h1> -->
+        <!-- <h4> Distribution of MN topnames per domain</h4> -->
+        <div class="col">
+          <div><img src="img/topname_distribution_en.png" class="img-fluid" alt="..."></div>
+        </div>
+        <div class="col">
+          <div><img src="img/topname_distribution_zh.png" class="img-fluid" alt="..."></div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- <h4> Distribution of agreement</h4> -->
+          <div class="col">
+            <div><img src="img/agreement_en.jpg" class="img-fluid" alt="..."></div>
+          </div>
+          <div class="col">
+            <div><img src="img/agreement_zh.jpg" class="img-fluid" alt="..."></div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

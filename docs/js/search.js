@@ -1,20 +1,21 @@
-/* read manynames.json and filter */
-d3.json("https://raw.githubusercontent.com/amore-upf/manynames/master/manynames.json")
-  .then(function(data) {
+/* get search settings */
+var submit_button = d3.select("#submit_button");
+submit_button.on("click", runEnter);
 
-    /* get search settings */
-    var submit_button = d3.select("#submit_button");
-    submit_button.on("click", runEnter);
+function runEnter() {
+  /*gather language input*/
+  let json_path = retrievePathfromLang();
 
-    function runEnter() {
-
+  /* read manynames.json and filter */
+  d3.json(json_path)
+    .then(function(data) {
       /*gather user input*/
       let user_input = gatherInput();
 
       /*filter data*/
       let filtered_data = data.filter(
         fitsSearch(user_input['scope'], user_input['names'],
-                   user_input['min_pct'], user_input['max_pct']));
+                  user_input['min_pct'], user_input['max_pct']));
 
       /*give feedback on search*/
       let filtered_length = filtered_data.length
@@ -58,11 +59,26 @@ d3.json("https://raw.githubusercontent.com/amore-upf/manynames/master/manynames.
       /*add download functionality*/
       let csv_btn = document.getElementById('csv_button')
       csv_btn.onclick = function(){downloadCSV(filtered_data)}
-    };
+    });
+};
 
-  });
 
 /* -------------------------- FUNCTIONS */
+/*select JSON file depending on language*/
+function retrievePathfromLang() {
+  var lang_button = document.getElementById('dropdownMenuButton').innerText;
+
+  switch(lang_button) {
+    case 'English':
+      path = "https://raw.githubusercontent.com/amore-upf/manynames/release_v2.2/other-data/manynames-en.json";
+      break;
+    case 'Chinese':
+      path = "https://raw.githubusercontent.com/amore-upf/manynames/release_v2.2/other-data/manynames-zh.json";
+      break;
+  }
+  return path
+};
+
 /*draw images on selected page*/
 function drawImages(current_page, filtered_data, img_per_page) {
   const img_gallery = document.getElementById("image_gallery");
@@ -252,13 +268,15 @@ function addImage(img_url, resp_string) {
 function responseStr(obj){
   resp_string = '';
   for (const [nam, cnt] of Object.entries(obj)) {
-      resp_string += `${nam}(${cnt}), `;
+      resp_string += `${nam} (${cnt}), `;
     }
   return resp_string.slice(0,-2);
 };
 
 /*gather input*/
 function gatherInput() {
+  /*retrieve language*/
+  var lang = document.getElementById('dropdownMenuButton').innerText;
   /*scope setting*/
   var all_nam_button = document.getElementById("all_nam_button")['checked'];
   var any_nam_button = document.getElementById("any_nam_button")['checked'];
@@ -273,10 +291,24 @@ function gatherInput() {
   if (names_input === "") {
     var names_input = document.getElementById("names_field").placeholder;
   }
-  var names = names_input.split(',')
-  names.forEach(function(val, idx) {
-    names[idx] = val.trim().replace(/[^a-zA-Z ]/g, "");
-  })
+
+  if (lang === 'Chinese') {
+    var names = names_input.split('，');
+  } else {
+    var names = names_input.split(',');
+  }
+
+  if (lang === 'English') {
+    names.forEach(function(val, idx) {
+      names[idx] = val.trim().replace(/[^a-zA-Z\- ]/g, "");
+    })
+  }
+  else if (lang === 'Chinese') {
+    names.forEach(function(val, idx) {
+      names[idx] = val.trim().replace(/[^\u4E00-\u9FFF ]/g, "");
+    })
+  }
+
   var names = names.filter(Boolean)
 
   /*min pct*/
@@ -310,7 +342,15 @@ function isBetween(x, min, max) {
 
 /* check search criteria for name and response percent pair */
 function responseFits(resp, pct, names, min_pct, max_pct) {
-  return names.includes(resp) && isBetween(pct, min_pct, max_pct)
+  if (typeof resp === 'string') {
+    return names.includes(resp) && isBetween(pct, min_pct, max_pct);
+  } else if (typeof resp === 'object') {
+    var checked = []
+    for (const r of resp) {
+      checked.push(names.includes(r) && isBetween(pct, min_pct, max_pct));
+    }
+    return(checked.some(Boolean))
+  }
 };
 
 /* filter function (for now only one topname and "any_topname") */
