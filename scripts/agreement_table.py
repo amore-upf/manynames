@@ -68,19 +68,19 @@ def make_agreement_table(resdf):
 #%% ---- MAIN
 if __name__ == '__main__':
     #dict with paths to datasets
-    datasets = {'en': '../manynames_en.tsv',
-                'zh': '../manynames_zh.tsv'
+    datasets = {'en': '../manynames-en.tsv',
+                'zh': '../manynames-zh.tsv'
                 }
     for lang in datasets:
         #%%% ----- CHECK ARGUMENTS
         #setup argument parser
         arg_parser = argparse.ArgumentParser(
             description = '''Creates a summary table of name agreement indices 
-                            (reproducing Table 3 in [Silberer, Zarrieß, & Boleda,2020)''')
+                            (reproducing Table 3 in Silberer, Zarrieß, & Boleda,2020)''')
         
         #add required arguments
         arg_parser.add_argument('-mnfile', type=str, 
-                                help='''the path to the TSV file''',
+                                help='path to the TSV file containing the ManyNames data',
                                 default=datasets[lang])
         
         #check provided arguments
@@ -90,11 +90,11 @@ if __name__ == '__main__':
         fn = args.mnfile
         
         #%%% ----- PROCESSING
-        manynames = mn.load_cleaned_results(fn)
+        manynames = mn.load_manynames(fn)
         resdf = make_df(manynames)
         o1 = make_agreement_table(resdf)
         print(o1.sort_values(by = 'domain'))
         
         #save into CSV file
-        o1.to_csv(f'agreement_table_{lang}.csv')
+        o1.to_csv(f'agreement_table_{lang}.csv', index=False)
         

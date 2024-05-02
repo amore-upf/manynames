@@ -231,7 +231,7 @@ if __name__ == "__main__":
                 'Chinese': {'path': '../manynames-zh.json', 'code': 'zh'}}
     # iterate over versions
     for lang in datasets:
-        # open TSV file
+        # open file
         with open(datasets[lang]['path'], 'r') as f:
             mn = json.load(f)
             

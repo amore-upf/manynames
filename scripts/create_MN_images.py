@@ -24,11 +24,11 @@ if __name__=="__main__":
        
     #add required arguments
     arg_parser.add_argument('-mnfile', type=str, 
-                            help='the local path to manynames.json',
-                            default='../manynames.json')
+                            help='local path to the JSON file containing the ManyNames data',
+                            default='../manynames-en.json')
       
     arg_parser.add_argument('-vgimg', type=str, 
-                            help='the path to the VG images (with subfolders VG_100K and VG_100K_2)', 
+                            help='path to the VG images (with subfolders VG_100K and VG_100K_2)', 
                             default='https://cs.stanford.edu/people/rak248/')
     
     arg_parser.add_argument('-outdir', type=str, 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue May 16 16:46:59 2023
-- takes a .tsv (like manynames.tsv from GitHub) or .csv (like manynames_data.csv 
+- takes a .tsv (like manynames-en.tsv from GitHub) or .csv (like manynames_data.csv 
   created from the search interface) as input. File needs to contain a column
   labelled "link_mn" with the image urls
 - downloads the images specified in the input file into a folder (default: "../MN_images")
@@ -29,9 +29,9 @@ if __name__=="__main__":
        
     #add required arguments
     arg_parser.add_argument('-mnfile', type=str, 
-                            help='''the path to the .csv- or .tsv-file containing 
+                            help='''path to the CSV or TSV file containing 
                             the image urls in a column labelled "link_mn"''',
-                            default='../manynames.tsv')
+                            default='../manynames-en.tsv')
       
     arg_parser.add_argument('-outdir', type=str, 
                             help='output path for the ManyNames images', 
@@ -51,7 +51,7 @@ if __name__=="__main__":
     elif mn_file[-4:] == '.csv':
         delim = ','
     else: 
-        raise Exception('''Input file needs to be ending in .csv (comma-separated) or .tsv (tab separated).''')
+        raise Exception('Extension for input file needs to be .csv (comma-separated) or .tsv (tab separated).')
     
     with open(mn_file) as f:
         mn = list(csv.DictReader(f, delimiter=delim))
@@ -63,7 +63,7 @@ if __name__=="__main__":
     #download unique image files
     img_links = list(set([i['link_mn'] for i in mn]))
     for url in tqdm(img_links):
-        file_path = url.replace('http://manynames.upf.edu//', mn_img_dir)
+        file_path = url.replace('http://manynames.upf.edu/', mn_img_dir)
         if os.path.isfile(file_path):
             print('skipping: ' + file_path + ' because it already exists')
             continue

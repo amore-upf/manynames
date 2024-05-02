@@ -46,11 +46,11 @@ if __name__=="__main__":
        
     #add arguments
     arg_parser.add_argument('-mnfile', type=str, 
-                            help='''the path to manynames.tsv''',
-                            default='../manynames.tsv')
+                            help='path to the TSV file containing the ManyNames data',
+                            default='../manynames-en.tsv')
     
     arg_parser.add_argument('-vgids', type=str, 
-                            help='''a list of VG_image_ids''',
+                            help='a list of VG_image_ids',
                             default='[2417690, 2417892, 2388484, 2417993, 2388471, 65, 413, 2417452]')
     
     #check provided arguments
@@ -62,7 +62,7 @@ if __name__=="__main__":
 
 
     #%%% ----- PROCESSING
-    manynames = mn.load_cleaned_results(filename=fn)
+    manynames = mn.load_manynames(filename=fn)
    
     for image_id in ids:
         mn_item = manynames[manynames["vg_image_id"]==image_id]

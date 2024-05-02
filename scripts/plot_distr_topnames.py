@@ -146,7 +146,7 @@ if __name__ == '__main__':
         
         #add required arguments
         arg_parser.add_argument('-mnfile', type=str, 
-                                help='''the path to the TSV file''',
+                          	    help='path to the TSV file containing the ManyNames data',
                                 default=datasets[lang]['path'])
         
         #check provided arguments
@@ -156,7 +156,7 @@ if __name__ == '__main__':
         fn = args.mnfile
 
         #%%% ----- PROCESSING
-        manynames_df = mn.load_cleaned_results(fn)
+        manynames_df = mn.load_manynames(fn)
         nm2domain = dict(zip(manynames_df["vg_obj_name"], manynames_df["vg_domain"]))
         
         domain_key = "domain" #"vg_domain"

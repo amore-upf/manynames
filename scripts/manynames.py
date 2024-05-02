@@ -6,13 +6,13 @@ import argparse
 import pandas as pd
 
 #%% ---- FUNCTION TO LOAD MANYNAMES.TSV
-def load_cleaned_results(filename="../manynames.tsv", sep="\t", 
+def load_manynames(filename="../manynames-en.tsv", sep="\t", 
                          index_col=None):
     
     # read tsv
     resdf = pd.read_csv(filename, sep=sep, index_col=index_col)
 
-    # remove any old index columns
+    # remove any old index columns ==> @PAOLA remove this when we've made sure that the tsv files are ok
     columns = [col for col in resdf.columns if not col.startswith("Unnamed")]
     resdf = resdf[columns]
         
@@ -25,7 +25,6 @@ def load_cleaned_results(filename="../manynames.tsv", sep="\t",
         if icol in resdf:
             resdf[icol] = resdf[icol].apply(lambda x: eval(x))
     
-    #return df
     return resdf
 
 #%% ---- MAIN
@@ -34,12 +33,12 @@ if __name__=="__main__":
     #%%% ----- CHECK ARGUMENTS
     #setup argument parser
     arg_parser = argparse.ArgumentParser(
-        description = '''opens manynames.tsv and runs eval on nested data structures''')
+        description = '''opens TSV file for ManyNames and runs eval on nested data structures''')
        
     #add required arguments
     arg_parser.add_argument('-mnfile', type=str, 
-                            help='''the path to manynames.tsv''',
-                            default='../manynames.tsv')
+                            help='path to the TSV file containing the ManyNames data',
+                            default='../manynames-en.tsv')
     
     #check provided arguments
     args = arg_parser.parse_args()
@@ -49,5 +48,5 @@ if __name__=="__main__":
     
     #%%% ----- PROCESSING
     print("Loading data from", fn)
-    manynames = load_cleaned_results(filename = fn)
+    manynames = load_manynames(filename = fn)
     print(manynames.head())
