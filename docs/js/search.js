@@ -224,13 +224,13 @@ function searchFeedback(n_results) {
   var search_feedback = document.getElementById("search_feedback")
   if (n_results > 0) {
     search_feedback.className = 'text-success';
-    search_feedback.innerHTML = n_results.toString() + ' images fit your search criteria.' + 'You can download the corresponding naming data (in csv-format). The <a href="./download.html">download</a> section contains scripts to download the images in your search result based on this csv.';
+    search_feedback.innerHTML = n_results.toString() + ' images fit your search criteria.' + 'You can download the corresponding naming data below (in CSV format). The <a href="./download.html">download</a> section contains scripts to download the images in your search result based on this csv.';
     if (n_results === 1) {
       search_feedback.innerHTML.replace('images fit', 'image fits');
     };
   } else if (n_results === 0) {
     search_feedback.className = 'text-danger';
-    search_feedback.innerHTML = 'No images fit your search criteria. Please make sure that you have set a sensible range for name agreement. Please also consider other spelling variants of the names you are looking for. You can browse the list of all names (and their spelling) found in ManyNames  <a href="./names.html">here</a>.';
+    search_feedback.innerHTML = 'No images fit your search criteria. Please make sure that you have set a sensible range for name agreement. Please also consider other spelling variants of the names you are looking for. You can browse the list of all ManyNames names (and their spelling) <a href="./names.html">here</a>.';
   };
 };
 
