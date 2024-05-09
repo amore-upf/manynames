@@ -1,7 +1,9 @@
 # ManyNames
 Repository for the ManyNames dataset (version 2.2) for English and Mandarin Chinese. The English version of ManyNames provides ca. 36 name annotations for each of 25K objects in images selected from VisualGenome, whereas the Chinese version provides approximately 20 name annotations for 1319 objects in images selected from ManyNames. For an illustration see the image below.
 
-<img src="examples/mn_images_example5.png" alt="ManyNames example" width="500"/>
+<p align="center">
+  <img src="examples/mn_images_example5.png" alt="ManyNames example" width="500"/>
+</p>
 
 For details of the data collection see [Silberer, Zarrieß, & Boleda, 2020](https://aclanthology.org/2020.lrec-1.710/) (version 1.0) and [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/) (version 2.0), and [He, Liao, Liang, & Boleda, 2023](https://aclanthology.org/2023.conll-1.30/) (Mandarin Chinese version). For changes in the present version see the [release notes](https://github.com/amore-upf/manynames/blob/master/release_notes_v2.2.md). Previous versions of the dataset can be accessed as older releases in this repository.
 
