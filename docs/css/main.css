@@ -61,6 +61,26 @@ ul.posts li {
     max-width: 90%; /* You can adjust this value to make the image smaller */
     height: auto;
 }
+/* adjust appearance of pics in the about page */
+.about_pic {
+    width: 115px;
+    height: 128px;
+    object-fit: cover; /* To ensure the aspect ratio is maintained */
+}
+/* media query for tablets */
+@media only screen and (max-width: 768px) {
+    .about-img {
+        width: 90px;
+        height: 100px;
+    }
+}
+/* media query for phones */
+@media only screen and (max-width: 480px) {
+    .about-img {
+        width: 60px;
+        height: 70px;
+    }
+}
 /* two-column layout */
 .two-column-list {
     column-count: 2; /* Split into two columns */
