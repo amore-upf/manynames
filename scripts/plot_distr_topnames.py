@@ -187,7 +187,7 @@ if __name__ == '__main__':
         fig.subplots_adjust(wspace=0)
         
         # save image
-        plt.savefig(f"topname_distribution_{datasets[lang]['path']}.png", dpi=300)
+        plt.savefig(f"../topname_distribution_{datasets[lang]['code']}.png", dpi=300)
         
         plt.show()
 
