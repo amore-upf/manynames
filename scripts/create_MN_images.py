@@ -8,6 +8,7 @@ Created on Thu May 18 14:42:20 2023
 #%% ----- DEPENDENCIES
 import argparse
 import os
+import pandas as pd
 import json
 import requests
 from io import BytesIO
@@ -46,8 +47,9 @@ if __name__=="__main__":
 
     #%%% ----- PROCESSING
     #data import
-    with open(mn_file, 'r') as f:
-        mn_data = json.load(f)
+    manynames_df = pd.read_json(mn_file)
+    additional_df = pd.read_csv('additional-info.tsv', sep='\t')[['vg_object_id', 'link_vg']] #add needed columns
+    mn_data = pd.merge(manynames_df, additional_df, on='vg_object_id').to_dict(orient='records')
 
     #create outdir
     if not os.path.isdir(mn_img_dir):
@@ -86,6 +88,6 @@ if __name__=="__main__":
     
         #save
         vg_img.save(mn_itm['link_mn'].replace(
-            'http://manynames.upf.edu//', mn_img_dir))
+            'http://manynames.upf.edu/', mn_img_dir))
 
 

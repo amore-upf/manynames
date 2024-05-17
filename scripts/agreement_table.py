@@ -90,10 +90,17 @@ if __name__ == '__main__':
         fn = args.mnfile
         
         #%%% ----- PROCESSING
-        manynames = mn.load_manynames(fn)
-        resdf = make_df(manynames)
+        #data import
+        manynames_df = mn.load_manynames(fn)
+        additional_df = pd.read_csv('../other-data/additional-info.tsv', sep='\t')[['vg_object_id', 'vg_obj_name', 'vg_domain']] #add needed columns
+        manynames_df = pd.merge(manynames_df, additional_df, on='vg_object_id')
+        
+        resdf = make_df(manynames_df)
         o1 = make_agreement_table(resdf)
-        print(o1.sort_values(by = 'domain'))
+        o1 = o1.sort_values(by = 'domain') #sort by domain
+        
+        #print results
+        print(o1)
         
         #save into CSV file
         o1.to_csv(f'agreement_table_{lang}.csv', index=False)

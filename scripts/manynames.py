@@ -11,10 +11,6 @@ def load_manynames(filename="../manynames-en.tsv", sep="\t",
     
     # read tsv
     resdf = pd.read_csv(filename, sep=sep, index_col=index_col)
-
-    # remove any old index columns ==> @PAOLA remove this when we've made sure that the tsv files are ok
-    columns = [col for col in resdf.columns if not col.startswith("Unnamed")]
-    resdf = resdf[columns]
         
     # run eval on nested lists/dictionaries
     evcols = ['vg_same_object', 'vg_inadequacy_type', 

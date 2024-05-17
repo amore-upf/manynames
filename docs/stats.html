@@ -42,12 +42,12 @@
               <td>1319</td>
             </tr>
             <tr>
-              <th scope="row">Number of names (types)</th>
+              <th scope="row">Number of names (tokens)</th>
               <td>82964</td>
               <td>8399</td>
             </tr>
             <tr>
-              <th scope="row">Number of names (tokens)</th>
+              <th scope="row">Number of names (types)</th>
               <td>3098</td>
               <td>2252</td>
             </tr>
@@ -66,6 +66,20 @@
         
         <br>
         <br>
+        
+        <h3> Distribution of MN topnames per domain</h3>
+        <div class="col">
+          <div><img src="img/topname_distribution_en.png" class="img-fluid" alt="..."></div>
+        </div>
+        
+        <br>
+        
+        <div class="col">
+          <div><img src="img/topname_distribution_zh.png" class="img-fluid" alt="..."></div>
+        </div>
+        
+        <br>
+        
         <!-- AGREEMENT TABLE -->
         <h3> Agreement tables</h3>
         <p>The agreement tables are composed of four columns:</p>
@@ -91,19 +105,19 @@
             <tr>
               <th scope="row">%top</th>
               <td>float</td>
-              <td>The relative frequency of the topname (among correct responses)</td>
+              <td>The relative frequency of the topname (among correct responses).<br>Standard deviation is included in parentheses</td>
             </tr>
             <tr>
               <th scope="row">H</th>
               <td>float</td>
-              <td>The H agreement measure from Snodgrass and Vanderwart (1980)</td>
+              <td>The H agreement measure from Snodgrass and Vanderwart (1980).<br>Standard deviation is included in parentheses</td>
             </tr>
           </tbody>
         </table>
         
         <br>
         <!-- Agreement table for English -->
-        <h4> English</h4>
+        <h4> English (all 25315 images)</h4>
         <table class="table table-hover">
           <thead>
             <tr class="table-dark">
@@ -167,7 +181,7 @@
 
         <br>
         <!-- Agreement table for Chinese -->
-        <h4> Chinese</h4>
+        <h4> Chinese (1319 images)</h4>
         <table class="table table-hover">
           <thead>
             <tr class="table-dark">
@@ -230,32 +244,88 @@
         </table>
 
         <br>
+        <!-- Agreement table for English (same subset as Chinese) -->
+        <h4> English (same 1319 images as the Chinese data)</h4>
+        <table class="table table-hover">
+          <thead>
+            <tr class="table-dark">
+              <th scope="col">domain</th>
+              <th scope="col">N</th>
+              <th scope="col">%top</th>
+              <th scope="col">H</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">all</th>
+              <td>3.9</td>
+              <td>70.5 (21.6)</td>
+              <td>1.1 (0.7)</td>
+            </tr>
+            <tr>
+              <th scope="row">clothing</th>
+              <td>3.9</td>
+              <td>68.2 (20.7)</td>
+              <td>1.2 (0.7)</td>
+            </tr>
+            <tr>
+              <th scope="row">food</th>
+              <td>4.4</td>
+              <td>64.8 (20.0)</td>
+              <td>1.3 (0.7)</td>
+            </tr>
+            <tr>
+              <th scope="row">animals_plants</th>
+              <td>3.0</td>
+              <td>80.7 (18.9)</td>
+              <td>0.8 (0.6)</td>
+            </tr>
+            <tr>
+              <th scope="row">people</th>
+              <td>4.8</td>
+              <td>62.8 (21.7)</td>
+              <td>1.4 (0.7)</td>
+            </tr>
+            <tr>
+              <th scope="row">buildings</th>
+              <td>3.6</td>
+              <td>75.3 (22.4)</td>
+              <td>1.0 (0.8)</td>
+            </tr>
+            <tr>
+              <th scope="row">home</th>
+              <td>3.1</td>
+              <td>76.4 (19.5)</td>
+              <td>0.9 (0.6)</td>
+            </tr>
+            <tr>
+              <th scope="row">vehicles</th>
+              <td>3.7</td>
+              <td>71.0 (20.2)</td>
+              <td>1.1 (0.6)</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <br>
         <br>
 
-      </div>
-      <!-- PLOTS AND FIGURES -->
-      <div class="col-lg-6">
-        <!-- <h1> Figures</h1> -->
-        <!-- <h4> Distribution of MN topnames per domain</h4> -->
+        <h3> Distribution of agreement</h3>
         <div class="col">
-          <div><img src="img/topname_distribution_en.png" class="img-fluid" alt="..."></div>
+          <div><img src="img/agreement_en.jpg" class="img-fluid" alt="..."></div>
         </div>
+
+        <br>
+
         <div class="col">
-          <div><img src="img/topname_distribution_zh.png" class="img-fluid" alt="..."></div>
+          <div><img src="img/agreement_zh.jpg" class="img-fluid" alt="..."></div>
         </div>
 
         <br>
-        <br>
-        <br>
-        <br>
 
-        <!-- <h4> Distribution of agreement</h4> -->
-          <div class="col">
-            <div><img src="img/agreement_en.jpg" class="img-fluid" alt="..."></div>
-          </div>
-          <div class="col">
-            <div><img src="img/agreement_zh.jpg" class="img-fluid" alt="..."></div>
-          </div>
+        <div class="col">
+          <div><img src="img/agreement_en_subset.jpg" class="img-fluid" alt="..."></div>
+        </div>
       </div>
     </div>
   </div>

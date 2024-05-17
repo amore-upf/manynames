@@ -237,7 +237,7 @@ function searchFeedback(n_results) {
 /* add image to gallery*/
 function addImage(img_url, resp_string) {
   let img_url_small = img_url.replace('.png', '_s.png')
-  img_url_small = img_url_small.replace('http://manynames.upf.edu//', 'http://manynames.upf.edu//small//') // set to thumbnail path
+  img_url_small = img_url_small.replace('http://manynames.upf.edu/', 'http://manynames.upf.edu/small/') // set to thumbnail path
   var img_gallery = document.getElementById("image_gallery");
   var img_div = document.createElement('div');
   img_div.className = 'col-lg-3 col-md-4 col-8 m-1 rounded'

@@ -157,6 +157,12 @@ if __name__ == '__main__':
 
         #%%% ----- PROCESSING
         manynames_df = mn.load_manynames(fn)
+        
+        # add VG columns
+        additional_df = pd.read_csv('../other-data/additional-info.tsv', sep='\t')[['vg_object_id', 'vg_obj_name', 'vg_domain']]
+        manynames_df = pd.merge(manynames_df, additional_df, on='vg_object_id')
+        
+        
         nm2domain = dict(zip(manynames_df["vg_obj_name"], manynames_df["vg_domain"]))
         
         domain_key = "domain" #"vg_domain"
