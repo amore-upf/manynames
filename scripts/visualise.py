@@ -6,10 +6,13 @@ import argparse
 import matplotlib.pyplot as plt
 from skimage import io
 import manynames as mn
+import pandas as pd
 from ast import literal_eval
 
 #%% ---- FUNCTION TO SHOW OBJECT WITH BOUNDING BOX AND NAMES
 def show_objects(url, bbox, objname, block_display=True):
+    # set the default font family to a font that supports Chinese characters
+    plt.rcParams['font.family'] = ['Arial Unicode MS']
     
     im = io.imread(url)
     fig = plt.figure()
@@ -51,7 +54,7 @@ if __name__=="__main__":
     
     arg_parser.add_argument('-vgids', type=str, 
                             help='a list of VG_image_ids',
-                            default='[2417690, 2417892, 2388484, 2417993, 2388471, 65, 413, 2417452]')
+                            default='[2415243, 2354270, 2404023, 2374399, 2362509, 2368028, 2388175, 2366047]')
     
     #check provided arguments
     args = arg_parser.parse_args()
@@ -63,17 +66,16 @@ if __name__=="__main__":
 
     #%%% ----- PROCESSING
     manynames = mn.load_manynames(filename=fn)
+    additional = pd.read_csv('additional-info.tsv', sep='\t')[['vg_object_id', 'vg_obj_name', 'vg_image_name', 'link_vg']]
+    manynames = pd.merge(manynames, additional, on='vg_object_id')
    
     for image_id in ids:
         mn_item = manynames[manynames["vg_image_id"]==image_id]
         url = mn_item["link_vg"].values[0]
         responses = mn_item["responses"].values[0]
-        mn_objnames = "MN: "+" / ".join(responses.keys())
+        mn_objnames = " / ".join(responses.keys())
         bbox = literal_eval(mn_item["vg_bbox_xywh"].values[0])
-        vg_objname = "VG: "+ mn_item["vg_obj_name"].values[0]
-        image_name = mn_item["vg_image_name"].values[0]
-        objname = mn_objnames + "   (%s)" % vg_objname
-        show_objects(url, bbox, objname)
+        show_objects(url, bbox, mn_objnames)
     
                 
                 
