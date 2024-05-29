@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>How (not) to name an object</title>
+  <meta name="author" content="AMORE-team at UPF">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<!-- ------- BODY ------- -->
+<body>
+
+<crowd-form onsubmit="return validate(this)">
+
+  <div class="container" id="singleton_form">
+
+    <!-- SHORT INTRO/EXAMPLE IMAGES -->
+    <hr style="border-top:8px solid darkblue">
+    <div class="col pt-1 px-5 bg-light">
+      <h2 class="text-center pt-1 pb-3 bg-light">How (not) to name an object</h2>
+      <div class="row align-items-center pt-3 bg-light">
+        <div class="col-md-7 col-sm-12">
+          <p class="text px-5" id="intro">
+              We asked various workers to <i>"name the object in the bounding box"</i>, for a large number of images. <b>Now we need you to evaluate the names we got</b>.
+              <br><br>
+              For each image you will see a list of names that were provided for the object in the bounding box. Your task is to decide for each name whether it refers to the correct object.
+              <br><br>
+              In this HIT you will get <span id="num_images">X</span> images, with a total of <span id="num_names">X</span> names. You will receive <span style="color:red;background-color:yellow;">X</span>$ for completing this HIT.
+              <br><br>
+              This task contains quality control items. Please read the detailed instructions carefully and take note of our policy on rejections (see below).
+              <br><br>
+              Please contact <a href="mailto:amore.upf@gmail.com">amore.upf@gmail.com</a> if anything remains unclear. 
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-12 bg-white me-1 border" id="intro_item">
+        </div>
+      </div>
+      <!-- LONG INSTRUCTIONS/EXAMPLES -->
+      <div class="row bg-light pb-3">
+        <div class="accordion">
+          <div class="accordion-item" id="accordionInstructions">
+            <h2 class="accordion-header" id="headingInstr">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstr" aria-expanded="true" aria-controls="collapseInstr">
+                Detailed Instructions
+              </button>
+            </h2>
+            <div id="collapseInstr" class="accordion-collapse collapse" aria-labelledby="headingInstr" data-bs-parent="#accordionInstructions">
+              <div class="accordion-body bg-light">
+                <div class="row">
+                  <div class="col-md-7">
+                    Your task is to decide, for a list of names, whether they refer to an object of interest. The object of interest is defined by a red bounding box and a name.
+                    <br><br>
+                    For example, in this image the object of interest is named
+                    <b style="color: darkred"> duck</b>.
+                    The names <i>bird</i>, and <i>animal</i> refer to the same object as <b style="color: darkred"> duck </b> whereas
+                    the names <i>water</i>, and <i>lake</i> do not.
+                  </div>
+                  <div class="col bg-white border" id="instr_img1">
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-md-7">
+                    In some cases, given a bounding box, it is not unequivocally clear <i>which object is the target</i> and workers may have provided names for different objects in the same bounding box. We want you to focus only on the object indicated by the name (in red) in the instruction for each image. Please select only names which are plausibly referring to the same object as this name!
+                    <br><br>
+                    For example, in this image the names <i>food</i>, and <i>plate</i> both refer to an object in the bounding box. But only <i>food</i> refers to the same object as <b style="color: darkred"> pizza </b>.
+
+                  </div>
+                  <div class="col bg-white border"  id="instr_img2">
+                  </div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-md-7">
+                    Sometimes, it is not unequivocally clear <i>what the object in the bounding box is</i> and different workers may have perceived the same object in a different way. We want you to select only names which could plausibly be used to refer to the same object (as shown in the image) even if they can not always be used for the same object.
+                    <br><br>
+                    For example, in this image the names <i>gravy</i>, and <i>soup</i> both plausibly refer to the same object as <b style="color: darkred"> sauce</b>, because it is not unequivocally clear whether the object in the box is <i>gravy</i>, or <i>soup</i>.
+
+                  </div>
+                  <div class="col bg-white border" id="instr_img3">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item" id="accordionInstructions">
+            <h2 class="accordion-header" id="headingQuality">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuality" aria-expanded="false" aria-controls="collapseQuality">
+                Quality control, rejections
+              </button>
+            </h2>
+            <div id="collapseQuality" class="accordion-collapse collapse" aria-labelledby="headingQuality" data-bs-parent="#accordionInstructions">
+              <div class="accordion-body bg-light">
+                This HIT contains quality control items. If you answer these items incorrectly you will receive a warning when you click on SUBMIT. If this happens please make sure you fully understood the instructions and/or try to work more carefully.
+                <br><br>
+                Regardless of the warning, you can still SUBMIT your results. Your submission is not automatically rejected. We do not reject workers lightly and will only do so after human consideration. However, when you receive a warning, please consider double-checking and improving your responses before submitting to avoid rejection.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  <hr style="border-top:8px solid darkblue">
+  <!-- TASK CONTENT -->
+</div>
+
+<crowd-button form-action="submit" variant="primary" data-testid="crowd-submit" style="margin: auto;">Submit</crowd-button>
+
+</crowd-form>
+
+
+
+<!-- ------- SCRIPTS ------- -->
+<!-- aws-crowd-elements (must be included!) -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- bootstrap plugins -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Script to fill task content from json -->
+<script language="javascript" type="text/javascript">
+  let examples = [
+    {"vg_image_id": 2409050,
+      "link_mn": "https://object-naming-amore.upf.edu//2409050_1090145_singleton_obj.png",
+      "topname": "duck",
+      "singletons": ["bird", "animal", "water", "lake"],
+      "chk_pos": [],
+      "chk_neg": [],
+      "example": true,
+      "set_checked": ["bird", "animal"]},
+    {"vg_image_id": 2317904,
+      "link_mn": "https://object-naming-amore.upf.edu//2317904_3265831_seed_ambiguous.png",
+      "topname": "pizza",
+      "singletons": ["plate", "food", "beer"],
+      "chk_pos": [],
+      "chk_neg": [],
+      "example": true,
+      "set_checked": ["food"]},
+    {"vg_image_id": 2317904,
+      "link_mn": "http://object-naming-amore.upf.edu//2372903_589902_supercat_ambiguous.png",
+      "topname": "sauce",
+      "singletons": ["gravy", "soup", "chicken"],
+      "chk_pos": [],
+      "chk_neg": [],
+      "example": true,
+      "set_checked": ["gravy","soup"]}
+  ];
+
+  let img_data = [];
+
+  function showImage(url, w=3) {
+    let img_div = document.createElement('div');
+    img_div.className = 'col-md-' + w + ' sm-12 mx-auto';
+    let img_src = document.createElement('img');
+    img_src.className = "img-fluid";
+    img_src.src = url;
+    img_src.width = 320;
+    img_div.appendChild(img_src)
+    return(img_div)
+  }
+
+  function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
+
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+  }
+
+  function createItem(img, prefix, img_width=3, idx=''){
+
+    /*outer div*/
+    let item_row = document.createElement('div');
+    item_row.className = "row my-2";
+    item_row.id = prefix + '_' + img['vg_image_id'];
+
+    /*show question*/
+    let topname = img['topname'];
+    let question = document.createElement('p');
+    question.className = 'text-left';
+    if (img['example']) {
+      question.className += ' text-muted small';
+    }
+    question.innerHTML = 'Please decide for all items whether they plausibly refer to the <b style="color: darkred">' + topname + '</b> marked by the red box.<br>';
+    item_row.appendChild(question);
+
+    /*show image*/
+    let img_url = img['link_mn'];
+    let img_div = showImage(img_url, img_width);
+    let img_row = document.createElement('div');
+    img_row.className = 'row';
+    img_row.appendChild(img_div);
+
+    /*create list of names*/
+    let all_names = img['singletons'].concat(img['chk_pos'], img['chk_neg']);
+    if (!img['example']) {
+      shuffle(all_names);
+    };
+
+    /*add name checkboxes*/
+    let names_div = document.createElement('div');
+    names_div.className = "col pt-3 mx-auto mb-1";
+    let n_names = all_names.length;
+    let names_per_col = 5;
+    if (n_names <= 12) {
+      names_per_col = 5;
+    } else if (n_names > 12) {
+      names_per_col = 6;
+    };
+    let n_chk_cols = Math.ceil(n_names/names_per_col);
+
+    let names_row = document.createElement('div');
+    names_row.className = 'row';
+
+    for (let icol = 1; icol <= n_chk_cols; icol++) {
+      let names_col = document.createElement('div');
+      names_col.className = 'col-md-4 col-sm-12';
+      let a = 0 + ((icol-1)*names_per_col);
+      let z = a + names_per_col;
+      if (z > n_names) {
+        z = n_names;
+      }
+      for (const obj_name of all_names.slice(a,z)) {
+
+        let name_type = 'singleton';
+        if (img['chk_pos'].indexOf(obj_name) > -1) {
+          name_type = "chk_pos";
+        } else if (img['chk_neg'].indexOf(obj_name) > -1) {
+          name_type = "chk_neg";
+        };
+
+        let btn_div = document.createElement('div');
+        btn_div.className = "col";
+        let btn_grp = document.createElement('div');
+        btn_grp.className = 'btn-group align-items-center';
+        btn_grp.setAttribute("role", "group");
+
+        /* ok-button */
+        let button_ok = document.createElement('input');
+        button_ok.className = 'btn-check';
+        button_ok.type = 'radio';
+        button_ok.autocomplete = "off";
+        button_ok.id = img['vg_image_id'] + '_' + obj_name + '_ok';
+        button_ok.value = name_type + '_' + img['vg_image_id'] + '_' + obj_name + '_OK';
+        button_ok.name = img['vg_image_id'] + '_' + obj_name + idx ;
+        button_ok.required = 'true';
+        let label_ok = document.createElement('label');
+        label_ok.className = 'btn btn-outline-primary btn-sm py-0 px-1';
+        label_ok.setAttribute('for', img['vg_image_id'] + '_' + obj_name + '_ok');
+
+        let icon_ok = document.createElement('i');
+        icon_ok.className = "bi bi-check-circle";
+        if (img['example']) {
+          icon_ok.style.fontSize = "1.2rem";
+        } else {
+          icon_ok.style.fontSize = "1.3rem";
+        };
+
+        /*notok-button*/
+        let button_not = document.createElement('input');
+        button_not.className = 'btn-check';
+        button_not.type = 'radio';
+        button_not.autocomplete = "off";
+        button_not.id = img['vg_image_id'] + '_' + obj_name + '_not';
+        button_not.value = name_type + '_' + img['vg_image_id'] + '_' + obj_name + '_NOT';
+        button_not.name = img['vg_image_id'] + '_' + obj_name + idx;
+        button_not.required = 'true';
+        let label_not = document.createElement('label');
+        label_not.className = 'btn btn-outline-primary btn-sm py-0 px-1';
+        label_not.setAttribute('for', img['vg_image_id'] + '_' + obj_name + '_not');
+
+        let icon_not = document.createElement('i');
+        icon_not.className = "bi bi-x-circle";
+        if (img['example']) {
+          icon_not.style.fontSize = "1.2rem";
+        } else {
+          icon_not.style.fontSize = "1.3rem";
+        };
+
+        /*data attribute*/
+        if (name_type == "chk_pos") {
+          button_ok.setAttribute('data-id', "chk");
+        } else if (name_type == "chk_neg") {
+          button_not.setAttribute('data-id', "chk");
+        };
+
+        /*add checked status for examples*/
+        if (img['example']) {
+          button_ok.setAttribute('disabled', true);
+          button_not.setAttribute('disabled', true);
+          if (img['set_checked'].includes(obj_name)) {
+            button_ok.setAttribute('checked', true);
+          } else {
+            button_not.setAttribute('checked', true);
+          }
+        };
+
+        /*append buttons to button group*/
+        label_ok.appendChild(icon_ok);
+        btn_grp.appendChild(button_ok);
+        btn_grp.appendChild(label_ok);
+
+        label_not.appendChild(icon_not);
+        btn_grp.appendChild(button_not);
+        btn_grp.appendChild(label_not);
+
+        /*add names to buttons*/
+        let name_span = document.createElement('span');
+        name_span.className = "text align-middle ms-2";
+        if (img['example']) {
+          name_span.className += ' text-muted small';
+        }
+        name_span.innerHTML = obj_name;
+        btn_grp.appendChild(name_span);
+
+        btn_div.appendChild(btn_grp);
+        names_col.appendChild(btn_div);
+      }
+      names_row.appendChild(names_col);
+    }
+    names_div.appendChild(names_row);
+    img_row.appendChild(names_div);
+    item_row.appendChild(img_row);
+    return item_row;
+  }
+
+  /*set number of images and names*/
+  /*let info_images = document.getElementById("num_images");
+  info_images.innerHTML = img_data.length;*/
+
+  /*let cnt_names = 0;
+  for (i of img_data) {
+    cnt_names += i['singletons'].concat(i['chk_pos'], i['chk_neg']).length;
+  }
+  let info_names = document.getElementById("num_names");
+  info_names.innerHTML = cnt_names;*/
+
+  /*add example items*/
+  /*set idx-par in createItem when repeating images to make button values unique*/
+  let intro_img = createItem(examples[0], "instr", 6, '1');
+  let intro_container = document.getElementById('intro_item');
+  intro_container.appendChild(intro_img);
+
+  let example1 = createItem(examples[0], "instr", 5, '2');
+  let instr1 = document.getElementById('instr_img1');
+  instr1.appendChild(example1);
+
+  let example2 = createItem(examples[1], "instr", 5);
+  let instr2 = document.getElementById('instr_img2');
+  instr2.appendChild(example2);
+
+  let example3 = createItem(examples[2], "instr", 5);
+  let instr3 = document.getElementById('instr_img3');
+  instr3.appendChild(example3);
+
+  /*add form items*/
+  let form_container = document.getElementById('singleton_form');
+  for (const img of img_data) {
+    let item_row = createItem(img,  "form")
+    form_container.appendChild(item_row);
+    let hline = document.createElement('hr');
+    hline.style.borderTop = "4px solid black";
+    form_container.appendChild(hline);
+  };
+  let hline_blue = document.createElement('hr');
+  hline_blue.style.borderTop = "8px solid darkblue";
+  form_container.appendChild(hline_blue);
+</script>
+
+<!-- quality control check -->
+<script language="javascript" type="text/javascript">
+    document.querySelector('crowd-form').onsubmit = function(e) {
+      let valres = validate();
+      if (valres > 0) {
+          if (valres > 2) {
+            var valtxt = 'You have missed several of our quality control items.\n\nIf you submit now we will very likely reject your assignment. Please improve your responses before submitting and consider (re-)reading the instructions to make sure you understood them correctly.\n\nPressing OK will submit your present responses, CANCEL will allow you to improve your responses.'
+          } else {
+            var valtxt = 'You have missed some of our quality control items.\n\nIf you submit now we may reject your assignment. Please consider improving your responses before submitting them.\n\nPressing OK will submit your present responses, CANCEL will allow you to improve your responses.'
+          }
+          return confirm(valtxt)
+        }
+      }
+
+      function validate() {
+        const all_chks = document.querySelectorAll('input[data-id="chk"]');
+
+        let chk_ok = 0;
+        for (i = 0; i < all_chks.length; i++) {
+          if (all_chks[i].checked) {
+            chk_ok += 1
+          };
+        };
+
+        let n_err = all_chks.length - chk_ok;
+        return n_err;
+
+      }
+</script>
+<body>

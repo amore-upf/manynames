@@ -19,20 +19,20 @@ The following changes have been introduced in version 2.2:
 
 ### Before verification: re-generating MNv2.1
 
-Since we spotted some issues in MNv2.1, we first repeated the procedure that went from MNv2 to MNv2.1 with some improvements. The MNv2 => MNv2.1 process addressed some problematic issues regarding the definition of top names and domains and well as the treatment of spelling variants; adjusted the treatment of singleton responses; and simplified the structure of the data columns detailing the verification data to ease accessibility (full description of the process [here](https://github.com/amore-upf/manynames/blob/master/release_notes_v2.1.md)). The improvements we made in this release are the following: ***, but improving some aspects of them; e.g., we made sure to correct spelling mistakes in the singletons column as well (because of a bug, this was not done properly in the previous MNv2.1). ==> @TO-DO: list all the improvements*** The singletons in the resulting data were subject to the following processing.
+Since we spotted some issues in MNv2.1, we first repeated the procedure that went from MNv2 to MNv2.1 with some improvements. The MNv2 => MNv2.1 process addressed some problematic issues regarding the definition of top names and domains and well as the treatment of spelling variants; adjusted the treatment of singleton responses; and simplified the structure of the data columns detailing the verification data to ease accessibility (full description of the process [here](https://github.com/amore-upf/manynames/blob/master/release_notes_v2.1.md)). In this release, we make sure we correct spelling mistakes in the singletons column as well (because of a bug, this was not done properly in the previous MNv2.1). The singletons in the resulting data were subject to the following processing.
 
 #### Automatic filtering
 We filtered out singletons that we could safely identify as incorrect without need of manual annotation, therefore adding them to column *incorrect*. This involved two steps:
 
 1. **Filtering of multi-word singletons**: Some singletons consisted of more than one word. Some multi-word expressions, such as "tennis player", are lexicalized, meaning that the individual word components co-occur in language so often that the multi-word expression can be considered a single name; others, like "cute red dress", are not lexicalized. With singletons, we follow the same procedure that we followed with the remaining names: multi-word expressions appearing in the dataset of Muraki, E. J., Abdalla, S., Brysbaert, M., & Pexman, P. M. (2022). [Concreteness ratings for 62 thousand English multiword expressions](https://doi.org/10.31234/osf.io/m397u) were kept for annotation, and the rest were automatically discarded.
 
-2. **Filtering of incorrect parts-of-speech**: We PoS-tagged the singletons with StanfordCoreNLP, and kept all PoS but but RB (adverb), IN (preposition/subordinating conjunction), and FW (foreign word), so as to automatically filter out words that are likely not names. ***@TO-DO, did we filter out expressions containing any of these, or consisting only of these? if it is "containing", why didn't they get removed in step 1?***
+2. **Filtering of incorrect parts-of-speech**: We PoS-tagged the singletons with StanfordCoreNLP, and kept all PoS but RB (adverb), IN (preposition/subordinating conjunction), and FW (foreign word), so as to automatically filter out words consisting of these, that are likely not names.
 
 **Affected columns**: incorrect, singletons
 
 #### Manual verification
 
-AMT workers were asked whether singletons correctly referred to the relevant MN objects. This process encompassed 21,149 images, organized into 1834 batches launched on AMT, and annotated by 3 people each. More information about the annotation process is included in the Appendix below. ***@PAOLA please put the exact instructions that were given to the turkers in the appendix below***
+AMT workers were asked whether singletons correctly referred to the relevant MN objects. This process encompassed 21,149 images, organized into 1834 batches launched on AMT, and annotated by 3 people each. More information about the annotation process is included in [this template](https://github.com/amore-upf/manynames/blob/release_v2.2/other-data/instructions_for_singleton_verification.html), which contains the exact instructions that were given to the turkers.
 
 #### Generating English MNv2.2
 
@@ -77,31 +77,6 @@ This information has been retrieved from several datasets listed [here](https://
 * In script `agreement_table.py`, we deleted columns *top=VG* and *%VG*.
 
 * In script `plot_distr_topnames.py`, we hid y-axis spine and ticks and added a title to the plot.
-
-### APPENDIX: Procedure for the manual verification
-#### Instructions given to turkers for manual singleton verification
-Your task is to decide, for a list of names, whether they refer to an object of interest. The object of interest is defined by a red bounding box and a name.
-For example, in this image the object of interest is named **duck**. The names *bird*, and *animal* refer to the same object as **duck** whereas the names *water*, and *lake* do not.
-
-<p align="center">
-  <img src="examples/mn_images_example1_instructions.jpeg" alt="ManyNames example" width="500"/>
-</p>
-
-In some cases, given a bounding box, it is not unequivocally clear which object is the target and workers may have provided names for different objects in the same bounding box. We want you to focus only on the object indicated by the name (in red) in the instruction for each image. Please select only names which are plausibly referring to the same object as this name!
-<br>
-For example, in this image the names *food*, and *plate* both refer to an object in the bounding box. But only *food* refers to the same object as **pizza**.
-
-<p align="center">
-  <img src="examples/mn_images_example2_instructions.jpeg" alt="ManyNames example" width="500"/>
-</p>
-
-Sometimes, it is not unequivocally clear what the object in the bounding box is and different workers may have perceived the same object in a different way. We want you to select only names which could plausibly be used to refer to the same object (as shown in the image) even if they can not always be used for the same object.
-<br>
-For example, in this image the names *gravy*, and *soup* both plausibly refer to the same object as **sauce**, because it is not unequivocally clear whether the object in the box is *gravy*, or *soup*.
-
-<p align="center">
-  <img src="examples/mn_images_example3_instructions.jpeg" alt="ManyNames example" width="500"/>
-</p>
 
 &nbsp;
 &nbsp;
