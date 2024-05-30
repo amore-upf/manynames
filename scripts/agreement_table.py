@@ -103,5 +103,5 @@ if __name__ == '__main__':
         print(o1)
         
         #save into CSV file
-        o1.to_csv(f'agreement_table_{lang}.csv', index=False)
+        o1.to_csv(f'../agreement_table_{lang}.csv', index=False)
         

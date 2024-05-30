@@ -24,25 +24,22 @@ The columns that are included for **both languages** are labelled as follows.
 | Column | Type | Description |
 | -------- | :-------: | -------- |
 | vg_object_id | int | The VG id of the object |
-| link_mn | str | The url to the image, with the object marked |
+| vg_image_id | int | The VG id of the image |
 | topname | str | The most frequent name produced by subjects for the object |
 | responses | dict | Correct responses and their counts |
-| mn_bbox_xywh | list| The coordinates of the object: "[left x, bottom y, width, height]"; y=0 is at the top of the image.
-| vg_image_id | int | The VG id of the image |
-| vg_obj_name | str | The VG name of the object |
-| vg_domain | str | The MN domain of the VG name, which may be a superset of its WordNet category (encoded in column vg_cat). Example: The MN domain *food* subsumes the WordNet categories *food, solid food*, and *food, nutrient*. |
-| vg_synset | str | The WordNet synset of the object, as provided by VG.  |
 | domain | str | The MN domain of the object, i.e. categorisation of objects into *people*, *animals_plants*, *vehicles*, *food*, *home*, *buildings*, and *clothing* |
 | N | int | The number of types in the MN responses (each name counts once) |
 | total_responses | int | Sum count of correct responses (tokens; each subject production of a name counts once)|
 | perc_top | float | The relative frequency of the topname (among correct responses), in percentage|
 | H | float | The H agreement measure from Snodgrass and Vanderwart (1980), which is the entropy over subject responses |
+| vg_synset | str | The WordNet synset of the object, as provided by VG  |
+| link_mn | str | The url to the image, with the object marked |
+| mn_bbox_xywh | list| The coordinates of the object: "[left x, bottom y, width, height]"; y=0 is at the top of the image|
 
 The English ManyNames dataset also includes the columns listed below.
 
 | Column | Type | Description |
 | -------- | :-------: | -------- |
-| link_vg | str | The url to the image in VG |
 | incorrect | dict | Incorrect responses and their counts |
 | split | str | Use of the image in training vs. test vs. validation in [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/) |
 
@@ -52,7 +49,6 @@ The Mandarin Chinese ManyNames dataset also includes the following columns.
 | -------- | :-------: | -------- |
 |  list  |  str | Lists of images assigned to participants |
 | familiarity | float | Familiarity approximated as the weighted average of the corpus frequency of the responses |
-
 
 *Note*: A subset of the ManyNames data has also been annotated for Catalan within the [AINA project](https://projecteaina.cat/). It is available [here](https://huggingface.co/datasets/projecte-aina/cat_manynames).
 

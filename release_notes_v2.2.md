@@ -19,7 +19,7 @@ The following changes have been introduced in version 2.2:
 
 ### Before verification: re-generating MNv2.1
 
-Since we spotted some issues in MNv2.1, we first repeated the procedure that went from MNv2 to MNv2.1 with some improvements. The MNv2 => MNv2.1 process addressed some problematic issues regarding the definition of top names and domains and well as the treatment of spelling variants; adjusted the treatment of singleton responses; and simplified the structure of the data columns detailing the verification data to ease accessibility (full description of the process [here](https://github.com/amore-upf/manynames/blob/master/release_notes_v2.1.md)). In this release, we make sure we correct spelling mistakes in the singletons column as well (because of a bug, this was not done properly in the previous MNv2.1). The singletons in the resulting data were subject to the following processing.
+Since we spotted some issues in MNv2.1, we first repeated the procedure that went from MNv2 to MNv2.1 with some improvements. The MNv2 => MNv2.1 process addressed some problematic issues regarding the definition of top names and domains and well as the treatment of spelling variants; adjusted the treatment of singleton responses; and simplified the structure of the data columns detailing the verification data to ease accessibility (full description of the process [here](#manynames-v210)). In this release, we make sure we correct spelling mistakes in the singletons column as well (because of a bug, this was not done properly in the previous MNv2.1). The singletons in the resulting data were subject to the following processing.
 
 #### Automatic filtering
 We filtered out singletons that we could safely identify as incorrect without need of manual annotation, therefore adding them to column *incorrect*. This involved two steps:
@@ -32,7 +32,7 @@ We filtered out singletons that we could safely identify as incorrect without ne
 
 #### Manual verification
 
-AMT workers were asked whether singletons correctly referred to the relevant MN objects. This process encompassed 21,149 images, organized into 1834 batches launched on AMT, and annotated by 3 people each. More information about the annotation process is included in [this template](https://github.com/amore-upf/manynames/blob/release_v2.2/other-data/instructions_for_singleton_verification.html), which contains the exact instructions that were given to the turkers.
+AMT workers were asked whether singletons correctly referred to the relevant MN objects. This process encompassed 21,149 images, organized into 1834 batches launched on AMT, and annotated by 3 people each. More information about the annotation process is included in [this template](https://github.com/amore-upf/manynames/blob/release_v2.2/other-data/instructions_for_singleton_verification.pdf), which contains the exact instructions that were given to the turkers.
 
 #### Generating English MNv2.2
 
