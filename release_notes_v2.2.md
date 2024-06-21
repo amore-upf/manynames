@@ -1,5 +1,5 @@
 # Release Notes
-(This file contains the release notes for all versions, in reverse chronological order.)
+(Note: This file contains the release notes for all versions, in reverse chronological order.)
 
 ## ManyNames v2.2
 
@@ -70,7 +70,7 @@ This information has been retrieved from several datasets listed [here](https://
 
 * We reorganized the information in previous versions by moving some of the columns to file `other-data/additional-info.tsv` and reordering the columns (see the main README.md for which information is where). This was done to facilitate use.
 
-* In the English version, we substituted empty values in column `split`, which corresponds to the use of the image in training vs. test vs. validation of version 1 of ManyNames (v. [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/)), for values *test* and *val*, distrubuted randomly and equally.
+* In the English version, we substituted missing values in column `split`, which corresponds to the use of the image in training vs. test vs. validation sets of ManyNames (v. [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/)), by values *test* and *val*, distributed randomly and equally (we do not know why there were missing values).
 
 * We converted script `showExamples.r` to Python, resulting in script `showExamples.py`.
 
