@@ -34,7 +34,7 @@ We filtered out singletons that we could safely identify as incorrect without ne
 
 #### Manual verification
 
-AMT workers were asked whether singletons correctly referred to the relevant ManyNames objects. This process encompassed 21,149 images, organized into 1834 batches launched on AMT, and annotated by 3 people each. The instructions that were given to the workers are available [here](https://github.com/amore-upf/manynames/blob/release_v2.2/other-data/instructions_for_singleton_verification.pdf), which contains.
+AMT workers were asked whether singletons correctly referred to the relevant ManyNames objects. This process encompassed 21,149 images, organized into 1834 batches launched on AMT, and annotated by 3 people each. The instructions that were given to the workers are available [here](https://github.com/amore-upf/manynames/blob/master/other-data/instructions_for_singleton_verification.pdf), which contains.
 
 ### Resulting version of ManyNames (English)
 
@@ -64,7 +64,7 @@ We have added files with lexical information for each name in the ManyNames data
 - age of acquisition
 - frequency per million tokens
 
-This information has been retrieved from several datasets listed [here](https://github.com/amore-upf/manynames/blob/release_v2.2/other-data/README.md).
+This information has been retrieved from several datasets listed [here](https://github.com/amore-upf/manynames/blob/master/other-data/README.md).
 
 ### Data reorganization, changes to scripts
 
