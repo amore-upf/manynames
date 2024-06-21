@@ -5,7 +5,7 @@ The web interface is publicly accessible under: https://amore-upf.github.io/many
 
 The code behind the website lives in the folder `docs` in the [public repository for ManyNames](https://github.com/amore-upf/manynames/). The data source for the web interface are the files `manynames-en/zh.json` contained in folder *other-data/* of the public repo.
 
-All computations on the website (counting images, filtering the data etc.) is done with javascript and runs client-side. This allows us to host the site and the data files on Github while having the image files, which are too many and too large overall for GitHub, hosted by UPF [here](https://manynames.upf.edu/).
+All computations on the website (counting images, filtering the data, etc.) is done with javascript and runs client-side. This allows us to host the site and the data files on Github while having the image files, which are too many and too large overall for GitHub, hosted by UPF [here](https://manynames.upf.edu/).
 
 ## **Folders and files**
 
@@ -26,7 +26,7 @@ Intended for custom .js-scripts. Contains the following files:
 **nav.js:** Contains the content of the navbar. Its main purpose is to only have to change one file when changing the names of elements of the navbar (or their location). 
 
 **search.js:**
-Enables the image search functionality. The script reads `manynames-en/zh.json` and contains the functions to gather the user input (after clicking the "Submit"-button). Based on this the html-code to build the search result section is created from the data (i.e, for showing the images, navigation buttons etc). The general structure is the same as for `names.js` but somewhat more complex in terms of the helper functions to filter the data, format the text output under each image, and enable the pagination and download functionality of the search results. 
+Enables the image search functionality. The script reads `manynames-en/zh.json` and contains the functions to gather the user input (after clicking the "Submit"-button). Based on this the html-code to build the search result section is created from the data (i.e, for showing the images, navigation buttons...). The general structure is the same as for `names.js` but somewhat more complex in terms of the helper functions to filter the data, format the text output under each image, and enable the pagination and download functionality of the search results. 
 
 *Note. The search results are made up from smaller, thumbnail version of the images. These are hosted under `'http://manynames.upf.edu/small/'` instead of `'http://manynames.upf.edu/'` (file names are the same but with *_s* added for the small versions). This was done to improve loading speed of the webpage when skipping through the image results. This is not visible to the user. Clicking on the image opens the full scale version and the tooltip link on hover shows the url of the full scale version as well.*
 
