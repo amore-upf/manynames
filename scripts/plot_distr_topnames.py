@@ -52,7 +52,8 @@ def plot_function(domain, ax, nm2domain, domain_gdf, domains, lang, text_fontsiz
     """
     A bit hacky function to create a stacked bar plot for an individual MN domain.
     """
-    num_1domain = domain_gdf.loc[domain][domain_gdf.loc[domain]>0].sort_values(ascending=False)
+    domain_gdf_numeric = domain_gdf.apply(pd.to_numeric, errors='coerce')
+    num_1domain = domain_gdf_numeric.loc[domain][domain_gdf_numeric.loc[domain] > 0].sort_values(ascending=False)
 
     a = num_1domain.unstack(fill_value=0)
     
