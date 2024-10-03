@@ -1,3099 +1,2382 @@
 word,concreteness,imageability,familiarity,age_of_acquisition,frequency
-smile,514,615,594,2,58.0
-traffic light,NA,NA,NA,NA,NA
-tin can,NA,NA,NA,NA,NA
-husky,NA,NA,NA,2,NA
-teacher,569,575,599,2,55.73
-youngster,NA,NA,NA,2,1.45
-rig,NA,NA,NA,8,8.63
-shower door,NA,NA,NA,NA,NA
-motor scooter,NA,NA,NA,NA,NA
-mallard,NA,NA,NA,10,NA
-sweatshirt,NA,NA,NA,NA,2.35
-stoplight,NA,NA,NA,2,0.31
-apron,NA,565,516,2,2.67
-recorder,NA,NA,NA,2,4.94
-car door,NA,NA,NA,NA,NA
-chest of drawers,NA,NA,NA,NA,NA
-iced coffee,NA,NA,NA,NA,NA
-luxuriousness,NA,NA,NA,NA,0.04
-groom,NA,NA,NA,4,7.82
-mantle,579,596,438,12,2.16
-baseball dugout,NA,NA,NA,NA,NA
-semi,NA,NA,NA,8,2.33
-green beans,NA,NA,NA,2,NA
-tortilla,NA,NA,NA,10,0.31
-birthday cake,NA,NA,NA,NA,NA
-placeman,NA,NA,NA,NA,NA
-ski pole,NA,NA,NA,NA,NA
-polar bear,NA,NA,NA,2,NA
-teddies,NA,NA,NA,NA,0.06
-jumpsuit,NA,NA,NA,NA,0.71
-tomato sauce,NA,NA,NA,NA,NA
-sati,NA,NA,NA,NA,NA
-equine,NA,NA,NA,14,0.14
-catcher,NA,NA,NA,4,3.75
-husband,549,537,557,2,194.8
-ear,640,597,560,2,32.0
-plat,NA,NA,NA,12,0.08
-tow truck,NA,NA,NA,NA,NA
-hooker,NA,NA,NA,12,11.73
-canister,NA,NA,NA,8,1.43
-pitchers mound,NA,NA,NA,NA,NA
-side dish,NA,NA,NA,NA,NA
-young woman,NA,NA,NA,NA,NA
-alcohol,618,598,578,4,16.57
-finch,NA,NA,NA,8,NA
-nut,NA,NA,NA,2,15.63
-pita,NA,NA,NA,NA,NA
-tower,585,596,463,4,22.84
-water bird,NA,NA,NA,NA,NA
-name tag,NA,NA,NA,NA,NA
-wheat,594,577,510,2,5.75
-hard drive,NA,NA,NA,NA,NA
-cheeseburger,NA,NA,NA,2,3.2
-tea cup,NA,NA,NA,NA,NA
-golden retriever,NA,NA,NA,NA,NA
-cruise,NA,NA,NA,6,12.27
-locomotive,NA,NA,405,4,0.8
-computer system,NA,NA,NA,NA,NA
-motorcar,NA,NA,NA,2,0.57
-water pitcher,NA,NA,NA,NA,NA
-hubbard,NA,NA,NA,NA,NA
-teepee,NA,NA,NA,4,0.12
-workspace,NA,NA,NA,NA,0.27
-ticket office,NA,NA,NA,NA,NA
-toaster,579,580,520,2,3.88
-dog bed,NA,NA,NA,NA,NA
-pajama,NA,NA,NA,NA,1.27
-boats,NA,NA,NA,NA,11.75
-bat,564,586,514,2,20.63
-easel,580,532,349,4,0.27
-paper,599,590,635,2,103.35
-sauce,576,569,522,2,15.59
-baseball,NA,NA,NA,2,25.25
-prisoner,548,565,485,4,23.14
-fireplace,592,639,529,2,5.08
-village,576,578,524,2,33.57
-beanie,NA,NA,NA,8,NA
-egret,NA,NA,NA,13,0.04
-sandwich bread,NA,NA,NA,NA,NA
-umpire,581,572,542,4,1.06
-mash potatoes,NA,NA,NA,NA,NA
-taco truck,NA,NA,NA,NA,NA
-iron,584,561,555,2,17.94
-warplane,NA,NA,NA,NA,0.1
-chest,580,556,543,2,40.98
-sheep shearer,NA,NA,NA,NA,NA
-broccoli salad,NA,NA,NA,NA,NA
-wheel,573,576,566,2,27.06
-race track,NA,NA,NA,2,NA
-pizza hut,NA,NA,NA,NA,NA
-mom,NA,NA,NA,2,NA
-keyboard tray,NA,NA,NA,NA,NA
-headboard,NA,NA,NA,8,0.29
-f16,NA,NA,NA,NA,NA
-linen,581,551,515,2,2.92
-washerwoman,NA,NA,NA,4,0.12
-bars,NA,NA,NA,NA,17.96
-bedframe,NA,NA,NA,NA,NA
-dirt bike,NA,NA,NA,NA,NA
-food bar,NA,NA,NA,NA,NA
-dumpster,NA,NA,NA,10,3.98
-green house,NA,NA,NA,NA,NA
-reuben,NA,NA,NA,NA,NA
-poodle,NA,NA,NA,2,2.84
-chef,NA,NA,NA,6,11.88
-lore,NA,NA,NA,10,0.67
-platform,547,529,498,4,6.14
-build,NA,NA,NA,2,48.08
-light,550,542,575,2,165.2
-bananas,NA,NA,NA,NA,5.45
-hurler,NA,NA,NA,NA,NA
-herd,NA,NA,NA,2,7.06
-fry pan,NA,NA,NA,NA,NA
-strap,NA,NA,NA,2,5.16
-cricket,NA,NA,NA,2,2.82
-cardboard,NA,NA,NA,2,2.71
-feeder,NA,NA,NA,10,0.69
-bunk bed,NA,NA,NA,NA,NA
-tyre,NA,NA,NA,NA,2.43
-grill,NA,NA,NA,2,4.45
-signpost,NA,NA,NA,6,0.31
-toy,567,569,550,2,16.84
-machine,578,575,549,2,70.25
-ewe,538,481,341,6,0.31
-loveseat,NA,NA,NA,NA,0.06
-light rail,NA,NA,NA,NA,NA
-sticks,NA,NA,NA,13,13.61
-baseman,NA,NA,NA,4,0.59
-flower,584,618,566,2,22.76
-prow,485,307,252,14,0.12
-blinds,NA,NA,NA,2,2.14
-range,417,413,515,2,22.76
-friend,450,587,603,2,419.29
-food item,NA,NA,NA,NA,NA
-vases,NA,NA,NA,NA,0.55
-comedian,NA,NA,NA,4,4.1
-guy,565,551,550,4,762.61
-scissors,596,609,559,2,6.69
-customer,505,488,549,4,15.2
-cloak,543,518,423,6,3.0
-secretary,576,563,528,4,33.22
-wave,492,542,518,2,21.25
-young adult,NA,NA,NA,NA,NA
-politician,494,507,556,6,3.27
-fire engine,NA,NA,NA,2,NA
-trunk,596,529,485,2,19.8
-poundcake,NA,NA,NA,NA,0.06
-fruit basket,NA,NA,NA,NA,NA
-shark costume,NA,NA,NA,NA,NA
-truck bed,NA,NA,NA,NA,NA
-shoppers,NA,NA,NA,NA,1.22
-ladder,NA,NA,507,2,9.25
-victim,467,521,511,6,47.73
-garage,NA,NA,NA,2,27.22
-tux,NA,NA,NA,12,3.45
-door,606,599,630,2,292.06
-flower girl,NA,NA,NA,NA,NA
-dog collar,NA,NA,NA,NA,NA
-cricketeer,NA,NA,NA,NA,NA
-scrambled eggs,NA,NA,NA,NA,NA
-boss,552,554,574,2,124.29
-fur,601,588,530,2,8.27
-daffodil,595,611,404,4,0.2
-pier,588,545,436,6,6.55
-wine bucket,NA,NA,NA,NA,NA
-workbench,NA,NA,NA,6,0.2
-carpet,581,538,508,2,11.65
-fence,597,611,526,2,16.06
-doughnut,NA,NA,NA,4,4.22
-fennel,NA,NA,NA,14,0.76
-usb,NA,NA,NA,NA,NA
-apple chip,NA,NA,NA,NA,NA
-food cart,NA,NA,NA,NA,NA
-self,459,466,604,4,14.16
-bison,NA,541,298,10,0.33
-tanker,NA,NA,NA,4,1.96
-pheasant,NA,NA,NA,8,0.8
-submarine sandwich,NA,NA,NA,NA,NA
-shampoo bottle,NA,NA,NA,NA,NA
-railroad,579,596,493,2,12.43
-skier,NA,NA,NA,NA,0.47
-outhouse,573,494,378,6,0.75
-advertisement,NA,NA,NA,4,1.2
-chopper,NA,NA,NA,2,11.69
-spreader,NA,NA,NA,8,0.69
-adapter,NA,NA,NA,10,0.22
-pork sandwich,NA,NA,NA,NA,NA
-garb,NA,NA,NA,10,0.31
-monastery,564,550,461,8,3.71
-dinner table,NA,NA,NA,NA,NA
-stylist,NA,NA,NA,6,0.86
-biplane,NA,NA,NA,8,0.04
-toast,582,594,571,2,33.47
-cooler,NA,NA,NA,4,7.06
-cop,NA,NA,NA,2,86.14
-dip,479,456,466,4,7.96
-dishes,NA,NA,NA,2,11.86
-clock dial,NA,NA,NA,NA,NA
-pork chop,NA,NA,NA,NA,NA
-woodpecker,NA,NA,NA,2,0.98
-resort,499,523,523,6,6.9
-whiskbroom,NA,NA,NA,NA,0.02
-bul,NA,NA,NA,NA,NA
-corn muffin,NA,NA,NA,NA,NA
-sport jacket,NA,NA,NA,NA,NA
-mushrooms,NA,NA,NA,NA,2.84
-bowel,NA,NA,NA,NA,3.59
-bowler hat,NA,NA,NA,NA,NA
-preacher,NA,NA,NA,4,6.71
-shrimp,629,618,546,4,8.71
-cutlery,NA,NA,NA,10,0.35
-fried rice,NA,NA,NA,NA,NA
-ketchup,NA,NA,NA,2,6.08
-takeout food,NA,NA,NA,NA,NA
-chicken,614,619,544,2,61.73
-waterman,NA,NA,NA,12,NA
-macaroni and cheese,NA,NA,NA,NA,NA
-stick,604,517,528,2,97.12
-drawer,NA,NA,NA,2,13.0
-doggie,NA,NA,NA,NA,3.31
-cigarette,607,645,573,4,26.61
-dad,603,626,646,2,NA
-tart,NA,NA,NA,6,2.39
-motorcycles,NA,NA,NA,NA,1.29
-christmas,432,629,611,NA,NA
-caboodle,NA,NA,NA,10,0.67
-amtrak,NA,NA,NA,NA,NA
-hunting knife,NA,NA,NA,NA,NA
-life jacket,NA,NA,NA,NA,NA
-tent,608,593,521,2,17.49
-kitchenettes,NA,NA,NA,NA,0.02
-turk,NA,NA,NA,NA,NA
-radio,615,613,644,2,77.18
-chalet,NA,NA,NA,14,0.51
-toga,NA,519,291,10,0.92
-straw hat,NA,NA,NA,NA,NA
-bookshelf,NA,NA,NA,2,0.33
-vanity,250,406,433,6,4.12
-filling,NA,NA,NA,4,9.69
-shirt and tie,NA,NA,NA,NA,NA
-single bed,NA,NA,NA,NA,NA
-areopagite,NA,NA,NA,NA,NA
-stuffed toy,NA,NA,NA,NA,NA
-toy train,NA,NA,NA,NA,NA
-grape,611,591,532,2,4.0
-storefronts,NA,NA,NA,NA,0.06
-light pole,NA,NA,NA,NA,NA
-latte,NA,NA,NA,NA,2.41
-jug,NA,NA,498,2,2.63
-tempura,NA,NA,NA,12,0.24
-doctor,575,600,573,2,263.94
-skiing,NA,NA,NA,4,4.16
-file cabinet,NA,NA,NA,NA,NA
-dwelling,NA,NA,NA,6,1.33
-orange juice,NA,NA,NA,NA,NA
-grinder,NA,NA,NA,6,1.27
-flag,606,607,545,2,17.49
-button up,NA,NA,NA,6,NA
-bong,NA,NA,NA,2,2.78
-supervisor,NA,NA,NA,4,5.96
-freight,511,465,425,4,3.84
-hair stylist,NA,NA,NA,NA,NA
-kitten,612,639,517,2,4.73
-couple,NA,NA,NA,2,223.41
-watermelon,NA,NA,NA,4,2.2
-competitors,NA,NA,NA,NA,2.14
-sugar,620,595,608,2,37.76
-cabbage,611,573,504,2,2.9
-shirt,616,612,612,2,46.37
-swinging bench,NA,NA,NA,NA,NA
-feline,483,471,277,12,0.9
-toilet seat,NA,NA,NA,NA,NA
-flower head,NA,NA,NA,NA,NA
-purger,NA,NA,NA,NA,NA
-package,580,529,497,2,22.78
-park bench,NA,NA,NA,NA,NA
-breakfast nook,NA,NA,NA,NA,NA
-art,440,493,529,2,70.8
-stringboard,NA,NA,NA,NA,NA
-train,592,593,548,2,95.06
-barge,NA,NA,NA,4,3.88
-red light,NA,NA,NA,NA,NA
-bicyclist,NA,NA,NA,NA,NA
-sporting,NA,NA,NA,8,3.12
-fruit salad,NA,NA,NA,NA,NA
-drizzle,558,582,516,4,0.43
-bathroom,NA,NA,NA,2,61.67
-rocking horse,NA,NA,NA,2,NA
-outerwear,NA,NA,NA,NA,NA
-teenager,NA,NA,NA,NA,6.88
-tickets,NA,NA,NA,NA,43.35
-petrol,NA,NA,NA,8,1.57
-bracelet,602,606,547,2,7.8
-carnival game,NA,NA,NA,NA,NA
-office chair,NA,NA,NA,NA,NA
-path,NA,NA,NA,2,24.55
-chairperson,NA,NA,NA,8,0.12
-ale,578,526,454,6,3.96
-spaghetti,NA,NA,NA,2,5.92
-doll,588,565,503,2,24.76
-van,606,572,542,6,NA
-fruit,612,587,590,2,21.73
-pan,586,532,566,2,12.29
-human,NA,NA,NA,2,124.76
-statue,600,562,444,2,10.59
-doberman,NA,NA,NA,NA,NA
-aircraft,NA,NA,NA,4,9.45
-slice of pizza,NA,NA,NA,NA,NA
-big rig,NA,NA,NA,NA,NA
-harness,563,513,421,2,2.61
-bur,NA,NA,NA,10,0.12
-spinach,589,606,452,4,2.55
-dessert,NA,NA,NA,2,14.02
-shooter,NA,NA,NA,NA,9.78
-spray bottle,NA,NA,NA,NA,NA
-compact car,NA,NA,NA,NA,NA
-phone booth,NA,NA,NA,2,NA
-viaduct,NA,NA,NA,8,0.22
-pumper,NA,NA,NA,NA,0.33
-chairlift,NA,NA,NA,NA,0.06
-uniform,550,591,484,4,24.82
-carton,NA,NA,NA,4,1.88
-rain jacket,NA,NA,NA,NA,NA
-pancakes,NA,NA,NA,NA,9.65
-jean jacket,NA,NA,NA,NA,NA
-cradle,587,592,478,2,2.84
-bonnet,NA,NA,NA,2,1.86
-halter top,NA,NA,NA,NA,NA
-bird feeder,NA,NA,NA,NA,NA
-workshop,NA,NA,NA,4,2.8
-stairs,NA,NA,NA,2,23.76
-sheet pan,NA,NA,NA,NA,NA
-blackberry,NA,NA,NA,2,0.75
-mannequin,NA,NA,NA,12,1.22
-crust,NA,NA,NA,2,3.25
-eye,634,603,611,2,111.78
-tricycle,NA,NA,436,2,0.53
-fries,NA,NA,NA,NA,11.69
-peacoat,NA,NA,NA,NA,0.04
-energy drink,NA,NA,NA,NA,NA
-sparrow,629,583,523,2,NA
-horn,618,566,498,2,21.08
-mattress,640,601,524,2,6.61
-chicken sandwich,NA,NA,NA,NA,NA
-cheese pizza,NA,NA,NA,NA,NA
-pocket knife,NA,NA,NA,NA,NA
-giraffe,NA,NA,381,2,1.49
-tarp,NA,NA,NA,12,0.98
-zombie,NA,NA,NA,6,3.61
-decor,NA,NA,NA,12,1.02
-fighter aircraft,NA,NA,NA,NA,NA
-tree,604,622,613,2,65.0
-paper cup,NA,NA,NA,NA,NA
-old lady,NA,NA,NA,NA,NA
-frosting,NA,NA,NA,2,1.41
-wild horse,NA,NA,NA,NA,NA
-bouquet,566,599,473,4,3.22
-dropper,492,433,467,6,0.39
-surfboard,NA,NA,NA,2,0.92
-cockatoo,NA,NA,NA,8,0.16
-apartment,575,556,491,2,83.04
-coat,601,572,610,2,42.08
-building,NA,NA,NA,2,99.57
-tiles,NA,NA,NA,NA,1.67
-pita bread,NA,NA,NA,NA,NA
-shirtsleeve,NA,NA,NA,NA,0.02
-remote control,NA,NA,NA,NA,NA
-tourists,NA,NA,NA,NA,5.41
-villa,NA,NA,NA,10,4.39
-mat,513,537,490,2,3.49
-seaport,NA,NA,NA,4,0.16
-bratwurst,NA,NA,NA,13,0.47
-bent,NA,NA,NA,2,7.22
-jets,NA,NA,NA,NA,4.41
-pie tin,NA,NA,NA,NA,NA
-work clothes,NA,NA,NA,NA,NA
-columns,NA,NA,NA,NA,2.76
-bus,NA,NA,NA,2,74.18
-bald eagle,NA,NA,NA,NA,NA
-chuddar,NA,NA,NA,NA,NA
-office table,NA,NA,NA,NA,NA
-family,525,577,607,2,354.25
-sea plane,NA,NA,NA,NA,NA
-flatbed truck,NA,NA,NA,NA,NA
-candle,565,594,544,2,8.02
-waterboard,NA,NA,NA,NA,NA
-female child,NA,NA,NA,NA,NA
-cathedral,553,599,440,6,3.73
-riverboat,NA,NA,NA,NA,0.39
-kitty,NA,NA,NA,2,NA
-produce,432,396,534,4,11.06
-miser,NA,NA,NA,6,0.49
-doughnuts,NA,NA,NA,NA,4.53
-diaper cake,NA,NA,NA,NA,NA
-pillowcase,NA,NA,NA,2,0.65
-plant pot,NA,NA,NA,NA,NA
-wash,447,522,632,2,40.73
-graffiti,NA,NA,NA,NA,2.02
-chair cushion,NA,NA,NA,NA,NA
-burger,NA,NA,NA,2,10.24
-longhorn,NA,NA,NA,4,NA
-cottage,593,607,543,2,5.29
-flooding,NA,NA,NA,NA,1.69
-measure,366,379,555,2,10.53
-necklace,633,606,536,2,9.75
-parking lot,NA,NA,NA,NA,NA
-cinderella,NA,NA,NA,NA,NA
-structure,NA,NA,NA,4,10.18
-antenna,NA,NA,NA,4,2.39
-vanward,NA,NA,NA,NA,NA
-feet,642,597,611,2,120.73
-tee shirt,NA,NA,NA,NA,NA
-soldier,578,578,517,4,38.92
-baby girl,NA,NA,NA,NA,NA
-glass vase,NA,NA,NA,NA,NA
-wardmote,NA,NA,NA,NA,NA
-ram,541,546,468,2,6.43
-goldfinch,NA,NA,NA,4,NA
-food truck,NA,NA,NA,NA,NA
-sandwich,NA,NA,NA,2,21.92
-sheep,622,596,507,2,13.43
-slipper,585,595,494,2,2.22
-lovechild,NA,NA,NA,NA,NA
-taine,NA,NA,NA,NA,NA
-horse riding,NA,NA,NA,NA,NA
-maker,426,379,487,2,4.92
-paw,NA,NA,NA,2,3.12
-mobile,NA,NA,NA,6,7.47
-meter,NA,NA,NA,6,6.22
-potter,NA,NA,NA,6,NA
-ships,NA,NA,NA,NA,19.65
-window,609,602,621,2,86.0
-book,609,591,643,2,176.98
-trucks,NA,NA,NA,NA,9.86
-coleslaw,NA,NA,NA,4,1.24
-cat and mouse,NA,NA,NA,NA,NA
-man,618,567,623,2,1845.75
-hitter,NA,NA,NA,NA,1.55
-suit,545,536,543,2,68.61
-trellis,574,544,208,10,0.27
-turban,NA,NA,NA,6,1.29
-actress,NA,NA,NA,2,16.02
-skyline,NA,NA,NA,6,0.67
-women,NA,NA,NA,2,195.65
-towers,NA,NA,NA,NA,5.39
-jumbo jet,NA,NA,NA,NA,NA
-ox,633,548,364,4,7.78
-railcar,NA,NA,NA,NA,0.04
-game table,NA,NA,NA,NA,NA
-barbecue sauce,NA,NA,NA,2,NA
-desk lamp,NA,NA,NA,NA,NA
-soda,600,544,536,2,19.84
-garbage can,NA,NA,NA,NA,NA
-place mat,NA,NA,NA,NA,NA
-mane,554,528,416,2,0.59
-laptop,NA,NA,NA,NA,3.47
-street name,NA,NA,NA,NA,NA
-tennis outfit,NA,NA,NA,NA,NA
-classic car,NA,NA,NA,NA,NA
-wash room,NA,NA,NA,NA,NA
-trains,NA,NA,NA,NA,8.16
-nuts,NA,NA,NA,2,53.51
-box truck,NA,NA,NA,NA,NA
-straitjacket,NA,NA,NA,NA,0.82
-housing,NA,NA,NA,6,4.06
-russet,NA,NA,NA,8,NA
-pug,NA,NA,NA,8,NA
-stage,NA,NA,NA,4,45.57
-soil,581,566,516,2,7.78
-vesta,NA,NA,NA,NA,NA
-tacos,NA,NA,NA,NA,2.16
-exhaust,467,520,510,6,2.14
-cutlet,NA,NA,NA,10,0.35
-elevated railroad,NA,NA,NA,NA,NA
-log,NA,NA,466,2,11.96
-photo,NA,NA,NA,2,22.84
-tapestry,NA,NA,NA,10,0.71
-oxen,NA,NA,NA,4,0.43
-broccoli pasta,NA,NA,NA,NA,NA
-funnel cake,NA,NA,NA,NA,NA
-bike path,NA,NA,NA,NA,NA
-depot,NA,NA,NA,6,2.94
-para sail,NA,NA,NA,NA,NA
-carrier,NA,NA,NA,6,6.39
-sheds,NA,NA,NA,NA,0.41
-sailboat,NA,NA,NA,2,1.61
-drape,NA,NA,NA,4,1.04
-window seat,NA,NA,NA,NA,NA
-llama,NA,NA,NA,6,1.41
-toothbrush,NA,NA,NA,2,5.0
-polo shirt,NA,NA,NA,NA,NA
-quesadilla,NA,NA,NA,NA,0.22
-chemical,NA,NA,NA,2,11.35
-backpacker,NA,NA,NA,NA,0.04
-bet,403,453,527,2,171.82
-sports dress,NA,NA,NA,NA,NA
-solider,NA,NA,NA,NA,0.18
-faucet,NA,NA,NA,4,1.43
-work surface,NA,NA,NA,NA,NA
-visor,NA,NA,NA,8,0.59
-toy duck,NA,NA,NA,NA,NA
-cat sweater,NA,NA,NA,NA,NA
-cloth,580,547,561,2,6.1
-cadet,NA,NA,NA,6,3.45
-farmhouse,NA,NA,NA,2,1.31
-muffler,NA,NA,NA,4,1.0
-hotdog,NA,NA,NA,NA,0.39
-lounge,NA,NA,NA,6,7.86
-sink counter,NA,NA,NA,NA,NA
-motor,565,521,545,2,13.16
-pets,NA,NA,NA,NA,5.69
-trunks,NA,NA,NA,4,2.51
-blackberries,NA,NA,NA,NA,0.24
-yellow jacket,NA,NA,NA,2,NA
-police officer,NA,NA,NA,NA,NA
-saucepan,NA,NA,NA,4,0.16
-trail,511,525,508,2,19.2
-flannel shirt,NA,NA,NA,NA,NA
-patio chair,NA,NA,NA,NA,NA
-sweater,NA,NA,NA,2,13.8
-hen,631,597,461,2,3.2
-pelican,NA,NA,NA,6,NA
-parrot,NA,NA,NA,2,3.27
-frying pan,NA,NA,NA,NA,NA
-umbrella hat,NA,NA,NA,NA,NA
-coffee cake,NA,NA,NA,NA,NA
-water bowl,NA,NA,NA,NA,NA
-elder,NA,NA,NA,4,NA
-airings,NA,NA,NA,NA,0.02
-city,554,605,616,2,169.1
-mike,NA,NA,NA,4,NA
-brick,610,574,529,2,10.18
-baseball cap,NA,NA,NA,NA,NA
-salesman,NA,NA,NA,4,10.43
-rack,535,439,486,2,7.78
-avocado,NA,NA,NA,8,1.22
-turntable,NA,NA,NA,2,0.35
-bread,622,619,611,2,28.33
-walkway,NA,NA,NA,NA,0.37
-scones,NA,NA,NA,NA,0.78
-sportswomen,NA,NA,NA,NA,NA
-baby seat,NA,NA,NA,NA,NA
-castle,NA,NA,415,2,21.55
-cafe,568,625,531,2,5.06
-snakes,NA,NA,NA,NA,10.16
-reporter,NA,NA,NA,2,20.39
-cardinal,600,531,451,4,NA
-trench coat,NA,NA,NA,8,NA
-mutton,538,484,337,6,0.78
-passenger,562,529,543,4,10.76
-bostonian,NA,NA,NA,NA,NA
-watercraft,NA,NA,NA,NA,NA
-ice cream truck,NA,NA,NA,NA,NA
-gentleman,516,559,537,2,41.86
-nerd,NA,NA,NA,10,3.29
-key chain,NA,NA,NA,NA,NA
-nurse,588,617,537,2,44.98
-mo,NA,NA,NA,NA,NA
-fruit cup,NA,NA,NA,NA,NA
-zebras,NA,NA,NA,NA,0.51
-controllerships,NA,NA,NA,NA,NA
-wildebeest,NA,NA,NA,12,0.43
-sectional couch,NA,NA,NA,NA,NA
-railroad tracks,NA,NA,NA,NA,NA
-electronic device,NA,NA,NA,NA,NA
-recliner,NA,NA,NA,NA,0.18
-step,508,483,578,2,118.67
-orchids,NA,NA,NA,NA,2.63
-pastries,NA,NA,NA,NA,0.57
-cabinet,593,524,472,4,8.33
-schoolchild,NA,NA,NA,NA,0.04
-lodge,538,464,429,4,6.69
-cutter,NA,NA,NA,4,NA
-apparel,NA,NA,NA,10,0.69
-submarine,583,588,450,4,7.1
-football player,NA,NA,NA,NA,NA
-tramcar,NA,NA,NA,NA,NA
-laptops,NA,NA,NA,NA,0.27
-shipwreck,NA,NA,NA,4,0.53
-showgirl,NA,NA,NA,NA,0.9
-roller skater,NA,NA,NA,NA,NA
-bangle,NA,NA,NA,13,NA
-snack,NA,NA,NA,2,9.14
-fish pond,NA,NA,NA,NA,NA
-tossed salad,NA,NA,NA,NA,NA
-earring,NA,NA,NA,2,2.71
-hotdogs,NA,NA,NA,NA,0.25
-duchess,568,525,416,6,NA
-griffe,NA,NA,NA,NA,NA
-farm,565,560,564,2,30.04
-umbellate,NA,NA,NA,NA,NA
-business card,NA,NA,NA,NA,NA
-wrecker,NA,NA,NA,4,0.51
-count,351,459,574,2,89.96
-goal,482,556,554,4,16.75
-truk,NA,NA,NA,NA,NA
-splash,NA,NA,NA,2,4.22
-rat,624,588,548,2,32.61
-ostrich,NA,NA,358,2,0.94
-gif,NA,NA,NA,NA,NA
-troat,NA,NA,NA,NA,NA
-baby bottle,NA,NA,NA,NA,NA
-monster truck,NA,NA,NA,NA,NA
-apartments,NA,NA,NA,NA,4.22
-citrus,NA,NA,NA,6,0.51
-minivan,NA,NA,NA,NA,1.59
-baseball team,NA,NA,NA,NA,NA
-prayer,381,492,507,2,15.78
-external hard drive,NA,NA,NA,NA,NA
-gondola,606,572,291,10,0.73
-model plane,NA,NA,NA,NA,NA
-brat,501,536,507,2,6.22
-shower head,NA,NA,NA,NA,NA
-bathrooms,NA,NA,NA,NA,2.71
-sandwich bun,NA,NA,NA,NA,NA
-lawn chair,NA,NA,NA,NA,NA
-coffee machine,NA,NA,NA,NA,NA
-packet,NA,NA,NA,6,2.51
-area rug,NA,NA,NA,NA,NA
-front,424,427,570,2,181.55
-slugger,NA,NA,NA,4,1.1
-rail,540,556,505,2,4.57
-tinning table,NA,NA,NA,NA,NA
-wings,NA,NA,NA,8,19.67
-egg yolk,NA,NA,NA,NA,NA
-nook,NA,NA,NA,8,1.06
-eggs benedict,NA,NA,NA,NA,NA
-focaccia,NA,NA,NA,NA,NA
-liquid,555,589,578,4,7.75
-train cars,NA,NA,NA,NA,NA
-meow,NA,NA,NA,2,NA
-peak,NA,NA,NA,4,5.94
-handsaws,NA,NA,NA,NA,NA
-brothers,NA,NA,NA,NA,47.06
-water buffalo,NA,NA,NA,6,NA
-settee,NA,NA,NA,12,0.18
-crown,586,602,531,2,13.69
-race car,NA,NA,NA,NA,NA
-boater,NA,NA,NA,NA,0.02
-trawler,NA,NA,NA,12,0.45
-donkey,NA,NA,NA,2,5.35
-eyeglass,NA,NA,NA,2,0.06
-fort,580,559,418,4,NA
-nightstands,NA,NA,NA,NA,NA
-pepperoni pizza,NA,NA,NA,NA,NA
-boardwalk,NA,NA,NA,10,1.84
-cross country skier,NA,NA,NA,NA,NA
-chopping board,NA,NA,NA,NA,NA
-horse and rider,NA,NA,NA,NA,NA
-entertainment,NA,NA,NA,4,12.55
-stove top,NA,NA,NA,NA,NA
-green shirt,NA,NA,NA,NA,NA
-patrolman,NA,NA,NA,4,1.22
-tea,609,599,572,2,58.63
-kalamazoo,NA,NA,NA,NA,NA
-chicken breast,NA,NA,NA,NA,NA
-beef and broccoli,NA,NA,NA,NA,NA
-skiff,NA,NA,NA,12,0.73
-picnic boat,NA,NA,NA,NA,NA
-chain,595,559,513,2,21.22
-shack,NA,NA,NA,6,5.65
-amarillo,NA,NA,NA,NA,NA
-pole,577,579,510,2,12.59
-blue jeans,NA,NA,NA,NA,NA
-market,551,583,518,2,36.24
-suspender,NA,NA,NA,NA,0.04
-patient,487,526,538,4,63.65
-pizza,NA,NA,NA,2,33.51
-sea,596,606,537,2,59.84
-barber chair,NA,NA,NA,NA,NA
-adult,492,526,590,2,14.29
-pinata,NA,NA,NA,NA,0.41
-tempo,NA,NA,NA,8,1.69
-petals,NA,NA,NA,NA,1.51
-movers,NA,NA,NA,NA,1.14
-belt,602,494,550,2,24.35
-hut,589,560,486,2,13.22
-wok,NA,NA,NA,NA,0.75
-railway track,NA,NA,NA,NA,NA
-brownie,535,553,386,2,NA
-computer table,NA,NA,NA,NA,NA
-reader,NA,NA,NA,2,5.45
-bighorn sheep,NA,NA,NA,NA,NA
-class,NA,NA,NA,2,117.35
-armchair,NA,NA,NA,2,0.41
-syrup,NA,NA,NA,6,5.1
-monkey,566,588,531,2,33.51
-mate,507,506,553,2,29.24
-shelve,NA,NA,NA,12,0.2
-police van,NA,NA,NA,NA,NA
-ballgirl,NA,NA,NA,NA,NA
-automobile,607,628,456,2,5.71
-red bull,NA,NA,NA,NA,NA
-bird nest,NA,NA,NA,NA,NA
-puppet,NA,NA,382,2,5.47
-dining table,NA,NA,NA,NA,NA
-waffle,NA,NA,NA,2,2.12
-barrel,590,602,487,4,10.63
-sunhat,NA,NA,NA,NA,NA
-motorcycle cop,NA,NA,NA,NA,NA
-repro,NA,NA,NA,NA,0.02
-men,586,587,621,2,372.76
-visors,NA,NA,NA,NA,0.18
-railing,NA,NA,NA,4,1.47
-guys,NA,NA,NA,NA,631.33
-recreational vehicle,NA,NA,NA,NA,NA
-water spout,NA,NA,NA,NA,NA
-trucker,NA,NA,NA,8,1.2
-holder,NA,NA,NA,4,1.61
-hotdogging,NA,NA,NA,NA,0.04
-sweet lemon,NA,NA,NA,NA,NA
-atty,NA,NA,NA,NA,NA
-soap,598,600,594,2,15.2
-rider,NA,NA,NA,4,7.71
-pizza oven,NA,NA,NA,NA,NA
-bib,548,488,380,2,0.49
-plant,594,605,592,2,27.61
-vegetates,NA,NA,NA,NA,NA
-repairman,NA,NA,NA,NA,1.06
-little girl,NA,NA,NA,NA,NA
-entryway,NA,NA,NA,NA,0.16
-lawn furniture,NA,NA,NA,NA,NA
-seabird,NA,NA,NA,NA,NA
-woody,NA,NA,NA,6,NA
-policeman,574,629,570,2,11.73
-teen,NA,NA,NA,NA,4.1
-pasta dish,NA,NA,NA,NA,NA
-doors,NA,NA,NA,NA,34.41
-bar,565,596,592,2,85.98
-ledge,NA,NA,NA,4,3.51
-drinking glass,NA,NA,NA,NA,NA
-railroad car,NA,NA,NA,NA,NA
-bluebird,NA,NA,NA,2,0.76
-cup of tea,NA,NA,NA,NA,NA
-donuts,NA,NA,NA,NA,2.9
-saddle,603,578,436,2,7.82
-all-terrain vehicle,NA,NA,NA,NA,NA
-lot,NA,NA,NA,2,569.92
-crab cake,NA,NA,NA,NA,NA
-paddle,NA,NA,NA,4,3.75
-bread bowl,NA,NA,NA,NA,NA
-turki,NA,NA,NA,NA,NA
-drawbridge,NA,NA,NA,4,0.53
-tam,NA,NA,NA,10,NA
-stir fry,NA,NA,NA,NA,NA
-hands,NA,NA,NA,NA,236.53
-talker,NA,NA,NA,2,1.78
-programmer,NA,NA,NA,10,1.1
-youth,439,507,551,2,16.82
-lamp shade,NA,NA,NA,NA,NA
-builtin,NA,NA,NA,NA,NA
-wood stove,NA,NA,NA,NA,NA
-pullover,NA,NA,NA,8,0.25
-lateen,NA,NA,NA,NA,NA
-children,582,597,608,2,175.1
-calzone,NA,NA,NA,NA,0.1
-pizza board,NA,NA,NA,NA,NA
-footballer,NA,NA,NA,NA,0.31
-doggy,NA,NA,NA,4,4.41
-stingray,NA,NA,NA,10,NA
-lantern,630,575,441,2,2.02
-bowl of carrots,NA,NA,NA,NA,NA
-cupcake wrapper,NA,NA,NA,NA,NA
-papers,NA,NA,NA,6,51.73
-overpass,NA,NA,NA,4,0.49
-glassware,NA,NA,NA,2,0.14
-wine,621,624,570,4,60.35
-female,NA,NA,NA,4,31.61
-mug,576,574,527,4,6.84
-mountain,616,629,574,4,35.39
-game board,NA,NA,NA,NA,NA
-whiskey,604,592,574,4,16.12
-polo pony,NA,NA,NA,NA,NA
-telephone booth,NA,NA,NA,NA,NA
-cork board,NA,NA,NA,NA,NA
-lime,590,563,447,4,3.29
-hard disk,NA,NA,NA,NA,NA
-drapery,NA,NA,NA,10,0.06
-horse race,NA,NA,NA,NA,NA
-system,356,340,588,6,91.51
-counter,NA,NA,NA,4,13.9
-sports jacket,NA,NA,NA,NA,NA
-jeans,NA,NA,NA,2,6.61
-ring,593,601,589,2,92.75
-whiteboard,NA,NA,NA,NA,NA
-gran,NA,NA,NA,NA,NA
-coke,580,623,585,2,NA
-taxicab,NA,NA,NA,4,0.86
-humans,NA,NA,NA,NA,16.29
-tub,NA,NA,NA,4,12.69
-cauliflower,642,567,462,4,0.55
-horse head,NA,NA,NA,NA,NA
-cookie,NA,NA,NA,2,16.71
-condiments,NA,NA,NA,NA,0.61
-bobcat,NA,NA,NA,2,0.39
-workhorse,NA,NA,NA,12,0.1
-artist,554,600,547,2,28.63
-custom,323,364,538,6,6.2
-boaters,NA,NA,NA,NA,0.06
-bridgeboard,NA,NA,NA,NA,NA
-rug,611,591,557,2,10.41
-plank,592,598,483,4,2.04
-woodenware,NA,NA,NA,6,NA
-people,540,548,628,2,1102.98
-awning,NA,NA,NA,8,0.47
-juices,NA,NA,NA,NA,1.1
-beverages,NA,NA,NA,NA,1.2
-jumper,NA,NA,NA,6,2.29
-arugula,NA,NA,NA,NA,0.12
-train depot,NA,NA,NA,NA,NA
-bowl of cereal,NA,NA,NA,NA,NA
-smoker,NA,NA,NA,4,2.27
-basketball player,NA,NA,NA,NA,NA
-windowsill,NA,NA,NA,4,0.65
-trial,446,516,509,4,49.37
-light bulb,NA,NA,NA,NA,NA
-light post,NA,NA,NA,NA,NA
-ski lift,NA,NA,NA,NA,NA
-athletic shirt,NA,NA,NA,NA,NA
-flatbread,NA,NA,NA,NA,NA
-butterfly,593,624,481,2,5.51
-master,498,495,495,4,87.25
-ottoman,NA,NA,NA,14,0.31
-baseball player,NA,NA,NA,NA,NA
-tie,568,551,559,2,44.43
-toy cow,NA,NA,NA,NA,NA
-padding,NA,NA,NA,8,0.96
-toy truck,NA,NA,NA,NA,NA
-outfielder,NA,NA,NA,2,0.1
-camerawoman,NA,NA,NA,NA,NA
-soup bowl,NA,NA,NA,NA,NA
-barber,NA,NA,NA,2,5.47
-waterway,NA,NA,NA,4,0.12
-gourd,NA,NA,NA,6,0.47
-eggs,NA,NA,NA,NA,38.65
-office,569,518,566,2,203.9
-dixie,NA,NA,NA,NA,NA
-trainer,NA,482,458,2,5.57
-model train,NA,NA,NA,NA,NA
-decals,NA,NA,NA,NA,0.14
-serving dish,NA,NA,NA,NA,NA
-sport utility vehicle,NA,NA,NA,NA,NA
-tennis racket,NA,NA,NA,NA,NA
-shelf,NA,NA,NA,4,6.96
-drawers,NA,NA,NA,12,4.27
-yogurt,NA,NA,NA,2,2.27
-pipe,602,598,535,2,19.39
-spotter,NA,NA,NA,12,0.94
-ornament,615,594,460,4,1.14
-furniture,583,588,580,2,15.08
-curtain,NA,NA,NA,NA,10.29
-hose,596,572,449,2,8.06
-undershirt,NA,NA,NA,2,0.29
-fur coat,NA,NA,NA,NA,NA
-trough,NA,NA,NA,6,1.41
-delivery van,NA,NA,NA,NA,NA
-car interior,NA,NA,NA,NA,NA
-curter,NA,NA,NA,NA,NA
-pagoda,NA,NA,NA,12,NA
-cage,593,585,487,2,20.27
-paddle boat,NA,NA,NA,NA,NA
-hooded sweatshirt,NA,NA,NA,NA,NA
-tunnels,NA,NA,NA,NA,4.33
-pusher,NA,NA,NA,6,1.25
-picture,579,581,597,2,138.45
-soba,NA,NA,NA,NA,NA
-kale,558,391,256,14,0.55
-owl,614,595,477,2,5.61
-vent hood,NA,NA,NA,NA,NA
-school bus,NA,NA,NA,NA,NA
-typist,NA,NA,NA,4,0.82
-racetrack,NA,NA,NA,NA,1.8
-aqueduct,NA,NA,NA,10,0.33
-squirrel,612,642,511,2,5.47
-computer desk,NA,NA,NA,NA,NA
-eagle,616,601,465,2,NA
-hard hat,NA,NA,NA,NA,NA
-auto,NA,NA,NA,2,7.67
-lab,NA,NA,NA,2,39.61
-hazmat,NA,NA,NA,NA,NA
-soup pot,NA,NA,NA,NA,NA
-camel,597,561,421,2,5.02
-top,435,486,571,2,133.43
-music,512,549,599,2,151.65
-floor mat,NA,NA,NA,NA,NA
-trash truck,NA,NA,NA,NA,NA
-entree,418,413,441,12,0.82
-selfie,NA,NA,NA,NA,NA
-riders,NA,NA,NA,NA,3.1
-cement mixer,NA,NA,NA,NA,NA
-flower box,NA,NA,NA,NA,NA
-cutting board,NA,NA,NA,NA,NA
-bedsheets,NA,NA,NA,NA,0.24
-burrito,NA,NA,NA,NA,1.65
-container,NA,NA,NA,4,4.29
-docks,NA,NA,NA,NA,3.69
-sundress,NA,NA,NA,NA,0.08
-complainer,NA,NA,NA,NA,0.1
-hydroplane,NA,NA,NA,8,0.02
-hat,601,562,580,2,64.18
-skate park,NA,NA,NA,NA,NA
-hotel,591,597,565,2,103.22
-pancake,NA,NA,NA,2,3.96
-gal,NA,NA,NA,2,14.22
-pyrex,NA,NA,NA,NA,NA
-bleachers,NA,NA,NA,4,1.16
-hutch,NA,NA,NA,12,NA
-lab coat,NA,NA,NA,NA,NA
-foods,NA,NA,NA,NA,3.02
-cot,NA,NA,391,4,2.0
-skateboarding,NA,NA,NA,NA,0.57
-retaining wall,NA,NA,NA,NA,NA
-insect,593,586,542,2,3.16
-desktop,NA,NA,NA,NA,0.1
-radish,NA,NA,456,2,0.61
-diver,NA,NA,448,4,2.43
-chicken and rice,NA,NA,NA,NA,NA
-young lady,NA,NA,NA,NA,NA
-net,577,540,514,2,15.55
-tepee,NA,NA,NA,4,0.53
-vacationer,NA,NA,NA,NA,0.02
-batting helmet,NA,NA,NA,NA,NA
-bread pudding,NA,NA,NA,NA,NA
-siding,NA,NA,NA,10,1.33
-garden chair,NA,NA,NA,NA,NA
-bunk,NA,NA,NA,2,6.27
-coffee table,NA,NA,NA,NA,NA
-dentist,607,622,563,2,11.2
-olive,618,578,444,4,NA
-telethon,NA,NA,NA,12,1.04
-mini truck,NA,NA,NA,NA,NA
-quad,NA,NA,NA,NA,1.55
-jockey,557,606,443,4,4.84
-curtains,NA,NA,NA,4,6.29
-train engine,NA,NA,NA,NA,NA
-pair,377,480,544,2,37.25
-club chair,NA,NA,NA,NA,NA
-labrador,NA,NA,NA,NA,NA
-catamaran,NA,NA,NA,12,0.06
-mashed potato,NA,NA,NA,NA,NA
-domicile,456,435,219,14,0.35
-ice cream sandwich,NA,NA,NA,NA,NA
-table and chairs,NA,NA,NA,NA,NA
-baseball jersey,NA,NA,NA,NA,NA
-billiard,NA,NA,NA,NA,0.82
-carrot,622,577,539,2,3.82
-football,584,597,565,2,37.53
-meatballs,NA,NA,NA,NA,2.25
-bears,NA,NA,NA,NA,11.39
-bread slice,NA,NA,NA,NA,NA
-front entrance,NA,NA,NA,NA,NA
-houses of parliament,NA,NA,NA,NA,NA
-cycle,NA,NA,NA,6,5.88
-gown,586,578,515,6,6.55
-blazer,NA,NA,NA,10,1.22
-chaise,NA,NA,NA,14,0.29
-drink,549,553,628,2,247.39
-walker,NA,NA,NA,2,NA
-doge,NA,NA,NA,13,0.14
-bed sheet,NA,NA,NA,NA,NA
-farm animal,NA,NA,NA,NA,NA
-lama,NA,NA,NA,14,NA
-chair,606,610,617,2,49.24
-table,604,582,599,2,105.63
-warehouse,578,502,449,4,9.98
-dog out,NA,NA,NA,NA,NA
-wing back chair,NA,NA,NA,NA,NA
-heron,NA,NA,NA,8,0.27
-card reader,NA,NA,NA,NA,NA
-maid,NA,NA,NA,4,22.82
-boll,350,270,210,NA,NA
-lamppost,NA,NA,NA,4,0.55
-island,596,643,507,2,39.57
-hanger,NA,NA,NA,4,1.35
-orange,601,626,567,2,22.31
-float,451,525,553,2,7.47
-pizza pan,NA,NA,NA,NA,NA
-mango,NA,NA,NA,12,1.65
-stuffed animals,NA,NA,NA,NA,NA
-gas stove,NA,NA,NA,NA,NA
-scissor,NA,NA,NA,NA,0.35
-socks,NA,NA,NA,NA,18.27
-cupcakes,NA,NA,NA,NA,1.49
-pony,611,642,524,2,8.1
-fry,NA,NA,NA,2,8.39
-beans,NA,NA,NA,2,14.43
-tiger,611,606,513,2,18.53
-bagel,NA,NA,NA,10,3.06
-cartoon,NA,NA,NA,2,3.76
-lemon,608,632,518,2,12.02
-car window,NA,NA,NA,NA,NA
-suit jacket,NA,NA,NA,NA,NA
-scarecrow,NA,NA,NA,2,1.75
-ride,NA,NA,NA,2,135.37
-patio set,NA,NA,NA,NA,NA
-console table,NA,NA,NA,NA,NA
-bench seat,NA,NA,NA,NA,NA
-hand,604,598,601,2,279.65
-vehicles,NA,NA,NA,NA,6.0
-shuttle,NA,NA,NA,10,5.53
-mayonnaise,NA,NA,NA,6,2.25
-television,NA,NA,NA,4,33.9
-keeper,459,421,464,4,4.08
-grandma,NA,NA,NA,2,NA
-balcony,NA,NA,NA,4,7.31
-husband and wife,NA,NA,NA,NA,NA
-riverbank,NA,NA,NA,NA,0.67
-roof,586,604,552,2,35.65
-hound,583,596,433,2,5.04
-outfit,515,487,489,4,25.1
-sister,575,613,588,2,180.53
-urinal,NA,NA,NA,12,0.76
-tuxedo jacket,NA,NA,NA,NA,NA
-triplane,NA,NA,NA,NA,NA
-rodeo,NA,NA,NA,4,5.55
-carafe,NA,NA,NA,12,0.1
-tarmac,NA,NA,NA,14,0.43
-frock,481,403,323,10,0.84
-peacock,NA,NA,NA,2,NA
-sofa bed,NA,NA,NA,NA,NA
-concrete slab,NA,NA,NA,NA,NA
-stocking cap,NA,NA,NA,NA,NA
-bus station,NA,NA,NA,NA,NA
-headgear,NA,NA,NA,6,0.31
-kitchen countertop,NA,NA,NA,NA,NA
-utility truck,NA,NA,NA,NA,NA
-mice,NA,NA,NA,2,6.57
-vehicle,558,593,534,4,22.61
-cabin,596,582,523,2,19.65
-motorcycling,NA,NA,NA,NA,0.02
-hitchhiker,NA,NA,NA,NA,0.98
-fighter,NA,NA,NA,2,12.78
-plushy,NA,NA,NA,NA,0.04
-rein,537,478,440,6,0.76
-police boat,NA,NA,NA,NA,NA
-roots,NA,NA,NA,NA,6.37
-wine cooler,NA,NA,NA,NA,NA
-flight,NA,NA,NA,2,59.69
-fishwife,NA,NA,NA,12,0.14
-cable car,NA,NA,NA,NA,NA
-airport,NA,NA,NA,2,38.04
-parka,NA,NA,NA,8,0.61
-parachute,NA,NA,NA,4,3.18
-toys,NA,NA,NA,NA,13.22
-guardrail,NA,NA,NA,NA,0.27
-person,562,562,620,2,212.88
-guacamole,NA,NA,NA,NA,1.1
-caboose,NA,NA,NA,2,0.59
-elephant,628,616,459,2,11.37
-pig,614,635,509,2,39.14
-skewer,NA,NA,NA,12,0.41
-hiker,NA,NA,NA,NA,0.27
-delivery truck,NA,NA,NA,NA,NA
-ladle,NA,NA,NA,10,0.75
-gas station,NA,NA,NA,2,NA
-hydrant,NA,NA,NA,6,1.02
-shower stall,NA,NA,NA,NA,NA
-boys,NA,NA,NA,NA,224.16
-bullpen,NA,NA,NA,NA,0.65
-pizza tray,NA,NA,NA,NA,NA
-console,NA,NA,NA,NA,2.24
-china cabinet,NA,NA,NA,NA,NA
-zucchini,NA,NA,NA,12,0.96
-plate rack,NA,NA,NA,NA,NA
-dog,610,636,598,2,192.84
-snowsuit,NA,NA,NA,NA,0.12
-blender cup,NA,NA,NA,NA,NA
-veggie,NA,NA,NA,NA,0.59
-oreopithecus,NA,NA,NA,NA,NA
-moving van,NA,NA,NA,NA,NA
-signage,NA,NA,NA,NA,0.33
-military man,NA,NA,NA,NA,NA
-shirting,NA,NA,NA,NA,NA
-feather,NA,NA,485,2,6.63
-dam,NA,NA,NA,2,5.75
-crib,NA,NA,NA,2,6.2
-pickup truck,NA,NA,NA,NA,NA
-toy dog,NA,NA,NA,NA,NA
-curry,NA,NA,NA,12,2.43
-rugby player,NA,NA,NA,NA,NA
-coal car,NA,NA,NA,NA,NA
-soup spoon,NA,NA,NA,NA,NA
-santa,NA,NA,NA,NA,NA
-stampede,NA,NA,NA,6,1.33
-rescue truck,NA,NA,NA,NA,NA
-flooring,NA,NA,NA,6,0.43
-baseball field,NA,NA,NA,NA,NA
-egg roll,NA,NA,NA,NA,NA
-stork,614,570,393,2,NA
-ice bucket,NA,NA,NA,NA,NA
-pillar,NA,NA,NA,8,1.59
-farmer,NA,NA,NA,2,11.84
-double bed,NA,NA,NA,NA,NA
-train car,NA,NA,NA,NA,NA
-cup,539,558,595,2,51.65
-wrap,457,482,549,2,17.8
-alpaca,NA,NA,NA,12,0.2
-car dashboard,NA,NA,NA,NA,NA
-mechanic,580,530,467,4,5.06
-bad,NA,NA,NA,2,545.18
-bedspread,NA,NA,NA,2,0.45
-suit and tie,NA,NA,NA,NA,NA
-fan,557,582,520,2,35.14
-white shirt,NA,NA,NA,NA,NA
-aqueducts,NA,NA,NA,NA,0.12
-wood,606,577,574,2,27.0
-sailing ship,NA,NA,NA,NA,NA
-courtyard,NA,NA,NA,8,2.14
-fast food,NA,NA,NA,NA,NA
-animals,NA,NA,NA,NA,39.08
-anchor,595,561,458,4,7.41
-meal,602,573,603,2,28.86
-skateboarder,NA,NA,NA,NA,0.18
-sausages,NA,NA,NA,NA,2.55
-slaw,NA,NA,NA,4,0.33
-baker,NA,NA,NA,2,NA
-piece of furniture,NA,NA,NA,NA,NA
-eater,NA,NA,NA,NA,1.57
-duck,606,632,529,2,24.76
-cote,NA,NA,NA,14,NA
-rodent,NA,NA,NA,8,1.8
-skiers,NA,NA,NA,NA,0.24
-mountain goat,NA,NA,NA,2,NA
-cactus,NA,NA,400,2,2.9
-hatchback,NA,NA,NA,10,0.16
-gull,NA,NA,NA,6,1.1
-bowl,575,579,557,2,21.45
-hatstand,NA,NA,NA,NA,NA
-stroller,NA,NA,NA,2,0.88
-dog jacket,NA,NA,NA,NA,NA
-grandpa,NA,NA,NA,2,NA
-medicine,517,551,547,2,34.2
-smartphone,NA,NA,NA,NA,NA
-shoes,NA,NA,NA,NA,74.16
-cooking pan,NA,NA,NA,NA,NA
-coffee shop,NA,NA,NA,6,NA
-server,NA,NA,NA,4,3.92
-shelter,NA,488,509,4,11.67
-joker,NA,NA,NA,4,4.57
-license plate,NA,NA,NA,NA,NA
-peaches,NA,NA,NA,NA,4.08
-sitter,NA,NA,NA,6,1.57
-tuxedo,NA,NA,NA,8,3.1
-kicker,NA,NA,NA,NA,1.06
-moped,NA,NA,NA,6,0.45
-licentiate,NA,NA,NA,13,NA
-poncho,NA,NA,NA,8,0.86
-sub,NA,NA,NA,2,7.65
-team,492,565,538,2,147.61
-wristband,NA,NA,NA,8,0.18
-sideline,NA,NA,NA,6,0.61
-throw rug,NA,NA,NA,NA,NA
-jet ski,NA,NA,NA,NA,NA
-button,613,580,573,2,28.25
-monk,NA,NA,NA,6,7.37
-jackknife,NA,NA,NA,4,0.18
-lunch,552,602,616,2,104.12
-meadow,594,622,478,2,2.27
-basket,606,560,485,2,13.18
-crepe,NA,NA,NA,NA,0.82
-cooking,NA,NA,NA,2,25.63
-steamboat,NA,NA,NA,4,0.51
-streetlight,NA,NA,NA,NA,0.49
-catch,NA,NA,NA,2,135.51
-tee,NA,NA,NA,4,2.16
-jeep,622,659,564,2,10.27
-pickup,NA,NA,NA,2,7.63
-roller,NA,NA,NA,4,5.75
-ruins,NA,NA,NA,6,4.41
-veterinarian,NA,NA,NA,6,1.25
-camera,627,576,550,2,57.0
-dolphin,NA,NA,NA,10,2.76
-baking pan,NA,NA,NA,NA,NA
-stagecoach,NA,NA,NA,4,1.0
-headlights,NA,NA,NA,NA,1.88
-bane,NA,NA,NA,14,NA
-branch,583,548,529,2,10.08
-sneakers,NA,NA,NA,4,4.57
-chin,592,608,545,2,12.69
-snowman,NA,NA,NA,2,1.9
-ascot,NA,NA,NA,14,NA
-folding knife,NA,NA,NA,NA,NA
-swimmer,NA,NA,NA,2,3.73
-fridge,NA,NA,NA,12,9.84
-bangles,NA,NA,NA,NA,NA
-steam locomotive,NA,NA,NA,NA,NA
-skate,562,563,534,2,5.9
-bartender,NA,NA,NA,2,9.76
-urinals,NA,NA,NA,NA,0.22
-motorized wheelchair,NA,NA,NA,NA,NA
-model,NA,NA,NA,2,32.06
-span,352,381,449,6,1.98
-retriever,NA,NA,NA,10,0.75
-game controller,NA,NA,NA,NA,NA
-sign,520,534,543,2,133.27
-shark,611,602,516,4,14.98
-boy,609,618,606,2,529.82
-buffalo,NA,NA,NA,2,NA
-group,451,467,553,2,73.76
-treasure,NA,NA,NA,2,19.06
-bra,629,624,575,4,10.92
-bookcase,NA,NA,NA,2,0.94
-vessel,571,525,461,6,9.35
-pail,NA,NA,NA,4,0.94
-home,539,599,626,2,774.33
-compartment,NA,NA,NA,6,5.96
-rope,608,596,539,2,22.71
-goats,NA,NA,NA,NA,2.65
-fight,455,543,561,2,201.08
-prius,NA,NA,NA,NA,NA
-swam,NA,NA,NA,2,2.41
-pavement,NA,NA,NA,4,2.02
-hydrant cap,NA,NA,NA,NA,NA
-utensils,NA,NA,NA,NA,0.65
-butter knife,NA,NA,NA,NA,NA
-crane,606,562,428,4,NA
-princess,568,547,502,2,39.59
-lory,NA,NA,NA,13,NA
-creature,541,492,508,2,21.41
-card,565,578,543,2,85.43
-sandwiches,NA,NA,NA,NA,9.61
-horse cart,NA,NA,NA,NA,NA
-groomer,NA,NA,NA,NA,0.12
-cereal bowl,NA,NA,NA,NA,NA
-train track,NA,NA,NA,NA,NA
-shower gel,NA,NA,NA,NA,NA
-pant,NA,NA,NA,6,0.96
-skating,NA,NA,NA,NA,4.92
-cotton,608,562,521,2,14.18
-fireboat,NA,NA,NA,NA,NA
-ray,470,556,480,4,NA
-town,556,553,589,4,247.92
-nose,628,605,584,2,69.75
-foal,420,448,338,12,0.27
-shelving,NA,NA,NA,12,0.24
-heart,605,617,578,2,244.18
-cabana,NA,NA,NA,12,0.9
-foot,558,597,583,2,64.92
-bathroom sink,NA,NA,NA,NA,NA
-snowflake,NA,NA,NA,2,NA
-corset,NA,NA,NA,6,0.88
-musician,564,585,558,2,6.04
-tennis dress,NA,NA,NA,NA,NA
-meat,587,618,589,2,43.65
-bucket,594,586,506,2,10.02
-underbelly,NA,NA,NA,NA,0.76
-omnirange,NA,NA,NA,NA,NA
-chairs,NA,NA,NA,NA,9.88
-fruit bowl,NA,NA,NA,NA,NA
-eel,634,552,433,2,1.43
-hoagie,NA,NA,NA,NA,NA
-sheepskin,600,566,428,4,0.27
-atv,NA,NA,NA,NA,NA
-panel van,NA,NA,NA,NA,NA
-roadway,NA,NA,NA,4,0.22
-frank,NA,NA,NA,2,NA
-bedpost,NA,NA,NA,2,0.31
-hare,615,577,460,4,NA
-prairie,575,569,416,2,2.8
-bathing suit,NA,NA,NA,NA,NA
-drawing table,NA,NA,NA,NA,NA
-wine bottle,NA,NA,NA,NA,NA
-convertible,NA,NA,NA,6,3.25
-camper van,NA,NA,NA,NA,NA
-businesswoman,NA,NA,NA,NA,0.49
-trash,588,599,541,2,22.47
-sari,NA,NA,NA,12,0.43
-decorator,NA,NA,NA,6,2.1
-strainer,NA,NA,NA,6,0.27
-metal,582,541,559,4,19.45
-shorts,NA,NA,NA,2,9.41
-kid,536,525,559,2,339.2
-ingredients,NA,NA,NA,NA,2.14
-plane,535,556,558,2,95.53
-corral,NA,NA,NA,6,2.33
-seat,568,574,597,2,78.78
-flannel,574,520,499,4,1.37
-siblings,NA,NA,NA,NA,1.96
-bystander,NA,NA,NA,6,0.88
-dress shirt,NA,NA,NA,NA,NA
-sweets,NA,NA,NA,2,2.39
-cat bed,NA,NA,NA,NA,NA
-hot air balloon,NA,NA,NA,NA,NA
-breakfast table,NA,NA,NA,NA,NA
-brownshirt,NA,NA,NA,NA,NA
-collie,NA,NA,NA,2,NA
-pirate ship,NA,NA,NA,NA,NA
-ruler,555,543,571,2,3.18
-unicyclist,NA,NA,NA,NA,0.02
-fox,605,607,501,2,NA
-ventilator,NA,NA,NA,6,1.25
-booth,556,486,444,6,20.37
-scoreboard,NA,NA,NA,NA,0.61
-skillet,NA,NA,NA,4,1.22
-bikes,NA,NA,NA,NA,2.84
-display case,NA,NA,NA,NA,NA
-drafting table,NA,NA,NA,NA,NA
-gherkin,NA,NA,NA,14,0.08
-grackle,NA,NA,NA,14,0.04
-granola,NA,NA,NA,NA,0.59
-military vehicle,NA,NA,NA,NA,NA
-tractor,590,585,518,2,3.73
-rear view mirror,NA,NA,NA,NA,NA
-vent,NA,NA,NA,4,4.41
-cupboards,NA,NA,NA,NA,0.47
-desk chair,NA,NA,NA,NA,NA
-osprey,NA,NA,NA,14,NA
-drum,602,599,506,2,8.47
-plug,558,583,575,2,10.41
-sleep mask,NA,NA,NA,NA,NA
-toy boat,NA,NA,NA,NA,NA
-horsetrading,NA,NA,NA,NA,NA
-blindfold,NA,NA,NA,2,1.73
-shutter,562,533,398,2,1.45
-show jumper,NA,NA,NA,NA,NA
-defender,NA,NA,NA,4,2.98
-beer,587,598,604,4,75.49
-watch,487,525,576,2,330.02
-fedora,NA,NA,NA,12,0.25
-bedfellow,NA,NA,NA,14,0.14
-truckload,NA,NA,NA,NA,1.0
-cheese sauce,NA,NA,NA,NA,NA
-flower stand,NA,NA,NA,NA,NA
-brick house,NA,NA,NA,NA,NA
-truck shop,NA,NA,NA,NA,NA
-hatch,NA,NA,NA,4,12.82
-ocean liner,NA,NA,NA,NA,NA
-hider,NA,NA,NA,NA,NA
-queen,537,612,527,2,54.69
-tomatoes,NA,NA,NA,NA,4.31
-leopard,595,635,431,2,5.41
-sconce,NA,NA,NA,14,0.16
-kettle,602,594,551,2,2.8
-toilet closet,NA,NA,NA,NA,NA
-cambridgeshire,NA,NA,NA,NA,NA
-travelers,NA,NA,NA,NA,1.84
-half pipe,NA,NA,NA,NA,NA
-cook,502,504,568,2,45.57
-gravy,606,594,522,2,5.27
-telephone,619,655,605,2,32.37
-predinner,NA,NA,NA,NA,NA
-lover,NA,NA,NA,2,26.63
-plushier,NA,NA,NA,NA,NA
-mask,NA,NA,NA,2,19.8
-brick wall,NA,NA,NA,NA,NA
-wind surfer,NA,NA,NA,NA,NA
-engine,586,595,543,2,31.88
-rope bridge,NA,NA,NA,NA,NA
-fillings,NA,NA,NA,NA,0.69
-wing,595,584,510,2,20.24
-hood,547,558,510,2,15.39
-infant,579,600,513,6,4.22
-tolly,NA,NA,NA,NA,NA
-ghost,379,552,505,4,36.59
-soccer,524,570,521,10,12.55
-passenger train,NA,NA,NA,NA,NA
-laptop computer,NA,NA,NA,NA,NA
-reclining chair,NA,NA,NA,NA,NA
-slider,NA,NA,NA,NA,0.39
-antique,492,549,484,6,6.06
-crow,590,578,490,2,4.45
-headpiece,NA,NA,NA,8,0.31
-plastic cup,NA,NA,NA,NA,NA
-vase,595,563,452,2,3.84
-grilled cheese,NA,NA,NA,NA,NA
-pizza paddle,NA,NA,NA,NA,NA
-piece of cake,NA,NA,NA,NA,NA
-cookie dough,NA,NA,NA,NA,NA
-quilt,613,554,490,2,0.76
-jam,563,569,529,2,13.53
-panel truck,NA,NA,NA,NA,NA
-bumper,NA,NA,NA,2,3.55
-fruit stand,NA,NA,NA,NA,NA
-wrapper,NA,NA,NA,2,1.67
-berries,NA,NA,NA,NA,3.1
-printer,NA,NA,NA,6,2.1
-tail,613,551,533,4,23.9
-multiplayer,NA,NA,NA,NA,NA
-pickle,606,641,562,2,4.61
-mouse pad,NA,NA,NA,NA,NA
-jump,449,506,551,2,69.82
-yolk,593,530,471,4,0.41
-speedboat,NA,NA,NA,2,0.53
-apple,620,637,598,2,23.67
-baserunner,NA,NA,NA,NA,NA
-blinders,NA,NA,NA,6,0.47
-nun,583,617,500,6,6.96
-racket,562,530,486,4,7.43
-food container,NA,NA,NA,NA,NA
-photograph,590,618,551,4,11.35
-housecoat,NA,NA,NA,NA,0.12
-lift gate,NA,NA,NA,NA,NA
-sitting bench,NA,NA,NA,NA,NA
-bungalow,564,543,421,6,1.65
-home base,NA,NA,NA,NA,NA
-damsel,544,551,292,10,0.88
-bag,603,570,634,2,94.04
-canopy,NA,NA,NA,8,1.69
-railway,NA,NA,NA,4,1.57
-jet,580,585,583,2,14.14
-pot roast,NA,NA,NA,NA,NA
-tire,563,511,546,6,12.37
-cupboard,NA,NA,NA,2,2.49
-toothbrush holder,NA,NA,NA,NA,NA
-delicacy,NA,NA,NA,8,1.39
-temple,565,547,450,4,17.55
-computer,NA,NA,NA,2,59.04
-harbor,NA,NA,NA,2,NA
-condominium,NA,NA,NA,12,0.33
-condo,NA,NA,NA,NA,4.22
-sects,NA,NA,NA,NA,0.25
-rice,608,506,548,2,15.08
-pot,584,598,577,2,22.53
-ringmaster,NA,NA,NA,NA,0.39
-garlic bread,NA,NA,NA,NA,NA
-disc drive,NA,NA,NA,NA,NA
-long hair,NA,NA,NA,NA,NA
-tulip,619,641,546,4,NA
-flamingo,NA,NA,NA,6,NA
-garden hose,NA,NA,NA,NA,NA
-mountain climber,NA,NA,NA,NA,NA
-ranch,561,519,379,2,17.55
-kitchen island,NA,NA,NA,NA,NA
-black cat,NA,NA,NA,NA,NA
-ice cream,NA,NA,NA,2,NA
-clock tower,NA,NA,NA,NA,NA
-bunked,NA,NA,NA,NA,0.14
-seagull,NA,NA,NA,8,1.22
-cornbread,NA,NA,NA,2,0.9
-computer keyboard,NA,NA,NA,NA,NA
-mushroom,NA,NA,NA,2,2.14
-water heater,NA,NA,NA,NA,NA
-lounger,NA,NA,NA,NA,0.06
-beds,NA,NA,NA,NA,8.57
-drapes,NA,NA,NA,4,2.98
-patty,NA,NA,NA,8,NA
-waistcoat,NA,NA,NA,8,0.35
-snacks,NA,NA,NA,NA,3.39
-refrigerator,574,612,545,2,8.37
-treat,399,360,534,4,51.88
-females,NA,NA,NA,NA,3.39
-seat cushion,NA,NA,NA,NA,NA
-wooden leg,NA,NA,NA,NA,NA
-westminster,NA,NA,NA,NA,NA
-macaroni,631,608,498,2,3.25
-prep table,NA,NA,NA,NA,NA
-batter,NA,NA,NA,2,3.98
-duckling,NA,NA,NA,2,0.76
-powder,513,524,521,4,16.04
-deer,631,624,509,2,8.71
-serving table,NA,NA,NA,NA,NA
-jet fighter,NA,NA,NA,NA,NA
-billy goat,NA,NA,NA,2,NA
-pet bed,NA,NA,NA,NA,NA
-dentist chair,NA,NA,NA,NA,NA
-aeroponics,NA,NA,NA,NA,NA
-masts,NA,NA,NA,NA,0.16
-tablecloth,NA,NA,NA,2,0.94
-car hood,NA,NA,NA,NA,NA
-windshield wipers,NA,NA,NA,NA,NA
-copter,NA,NA,NA,NA,0.41
-stripes,NA,NA,NA,10,6.31
-bear,585,572,526,2,57.41
-armor,NA,NA,NA,4,7.29
-wastebasket,NA,NA,NA,2,0.63
-boat house,NA,NA,NA,NA,NA
-crashed plane,NA,NA,NA,NA,NA
-ratatouille,NA,NA,NA,NA,0.37
-banana tree,NA,NA,NA,NA,NA
-onion,632,617,550,2,4.24
-menus,NA,NA,NA,NA,1.96
-monitor,NA,NA,NA,6,13.12
-kite,592,624,481,4,2.29
-bedding,NA,NA,NA,6,0.75
-air force one,NA,NA,NA,NA,NA
-deep dish pizza,NA,NA,NA,NA,NA
-coffee pot,NA,NA,NA,2,NA
-track,547,499,514,2,55.75
-bus stop,NA,NA,NA,NA,NA
-rake,597,550,476,2,2.98
-grandmother,579,609,522,2,27.78
-mound,NA,NA,NA,4,1.51
-canine,NA,NA,NA,12,1.69
-china hutch,NA,NA,NA,NA,NA
-sidewalk,NA,NA,NA,2,5.47
-chocolate,576,611,560,2,29.39
-golf cart,NA,NA,NA,NA,NA
-dustbin,NA,NA,NA,NA,0.14
-rain gutter,NA,NA,NA,NA,NA
-hull,NA,NA,NA,4,4.22
-pasture,562,562,414,2,1.53
-sink,590,599,586,2,16.92
-cereal,637,576,543,2,6.35
-bathrobe,NA,NA,NA,4,1.67
-goose,NA,NA,NA,2,13.04
-athlete,545,591,482,4,4.61
-garbage truck,NA,NA,NA,NA,NA
-roll,457,496,547,2,63.27
-figurine,NA,NA,NA,10,0.27
-diner,515,497,442,2,12.39
-veggies,NA,NA,NA,NA,0.49
-appetizer,NA,NA,NA,6,1.2
-parent,NA,NA,NA,2,13.14
-oil,581,573,548,2,41.08
-gazebo,NA,NA,NA,13,0.9
-pedestrian bridge,NA,NA,NA,NA,NA
-leaf,593,608,556,2,5.2
-skateboard ramp,NA,NA,NA,NA,NA
-computer screen,NA,NA,NA,NA,NA
-post,533,518,586,2,32.43
-disk drive,NA,NA,NA,NA,NA
-plain,426,463,551,4,21.82
-handlebars,NA,NA,NA,2,0.51
-scan,NA,NA,NA,6,9.41
-cart,576,597,454,2,9.04
-headband,NA,NA,NA,2,0.41
-dugout,NA,NA,NA,2,0.9
-overhang,NA,NA,NA,8,0.18
-rose,608,623,556,2,NA
-fowl,532,528,452,6,0.69
-wild cat,NA,NA,NA,NA,NA
-cabinets,NA,NA,NA,NA,1.2
-water bottle,NA,NA,NA,NA,NA
-soccer player,NA,NA,NA,NA,NA
-puppy,623,635,522,2,11.45
-packhorse,NA,NA,NA,NA,0.02
-sideboard,NA,NA,NA,12,0.25
-meatloaf,NA,NA,NA,NA,2.33
-tress,NA,NA,NA,13,0.12
-onlooker,NA,NA,NA,6,0.04
-frisbee player,NA,NA,NA,NA,NA
-shipload,NA,NA,NA,4,0.06
-broccoli,NA,NA,NA,8,2.27
-manor,523,508,424,10,3.41
-rails,NA,NA,NA,NA,1.04
-torso,NA,NA,NA,10,1.84
-jewelry,NA,NA,NA,2,11.06
-slice of bread,NA,NA,NA,NA,NA
-salt shaker,NA,NA,NA,NA,NA
-liner,NA,NA,NA,4,1.22
-phone box,NA,NA,NA,NA,NA
-flower arrangement,NA,NA,NA,NA,NA
-pouch,568,513,373,6,1.71
-facade,NA,NA,NA,13,0.82
-shop,549,561,615,2,53.55
-dumplings,NA,NA,NA,NA,1.59
-stump,540,490,447,4,2.45
-shopper,NA,NA,NA,2,0.65
-mirror,605,627,593,2,24.18
-suv,NA,NA,NA,NA,NA
-pasta salad,NA,NA,NA,NA,NA
-bread knife,NA,NA,NA,NA,NA
-teddy bear jacket,NA,NA,NA,NA,NA
-playground,NA,NA,NA,2,5.1
-train cake,NA,NA,NA,NA,NA
-asphalt,583,569,488,8,0.96
-phones,NA,NA,NA,NA,13.02
-celery,NA,NA,NA,4,1.86
-featherbedding,NA,NA,NA,13,NA
-brides,NA,NA,NA,NA,0.92
-mammal,NA,NA,NA,8,1.22
-dog toy,NA,NA,NA,NA,NA
-clock,591,614,608,2,58.63
-sunshade,NA,NA,NA,12,NA
-lady,564,571,573,2,217.08
-swim suit,NA,NA,NA,NA,NA
-tile,NA,NA,NA,6,2.12
-sailing boat,NA,NA,NA,NA,NA
-pool,573,577,541,2,46.98
-snowboard,NA,NA,NA,NA,0.78
-signal,464,513,507,4,37.76
-stock pot,NA,NA,NA,NA,NA
-gamer,NA,NA,NA,NA,0.12
-mason jar,NA,NA,NA,NA,NA
-muffin,NA,NA,NA,2,5.82
-business,389,441,563,2,321.0
-sports coat,NA,NA,NA,NA,NA
-strawberry,610,631,539,2,5.53
-transportation,NA,NA,NA,4,5.55
-backpack,NA,NA,NA,NA,3.65
-terrier,NA,NA,NA,6,0.96
-corn,576,601,548,2,14.22
-hippo,NA,NA,NA,2,1.41
-sports fan,NA,NA,NA,NA,NA
-shrine,NA,NA,NA,8,2.96
-scrubs,NA,NA,NA,NA,0.71
-gloves,NA,NA,NA,2,16.24
-long sleeve,NA,NA,NA,NA,NA
-barbecue sandwich,NA,NA,NA,NA,NA
-drain,591,540,510,2,8.63
-cowboy,NA,NA,521,2,18.98
-tide,516,530,504,4,7.35
-keyboarder,NA,NA,NA,NA,NA
-turf,NA,NA,NA,6,4.27
-game,NA,NA,NA,2,233.84
-sunglasses,NA,NA,NA,6,3.94
-goblet,592,577,306,6,0.37
-danger,338,505,557,2,43.67
-couches,NA,NA,NA,NA,0.43
-mountains,NA,NA,NA,NA,18.65
-lobby,532,462,420,4,12.69
-front desk,NA,NA,NA,NA,NA
-trolley car,NA,NA,NA,NA,NA
-whisky bottle,NA,NA,NA,NA,NA
-camp,571,588,541,2,51.22
-canoe,623,602,441,4,3.57
-blind,443,485,531,2,45.82
-zookeeper,NA,NA,NA,NA,0.02
-noodles,NA,NA,NA,2,6.06
-car mirror,NA,NA,NA,NA,NA
-chicken and waffles,NA,NA,NA,NA,NA
-topping,NA,NA,NA,8,0.88
-white wine,NA,NA,NA,NA,NA
-vintage car,NA,NA,NA,NA,NA
-churches,NA,NA,NA,NA,3.04
-bathroom cabinet,NA,NA,NA,NA,NA
-hospital bed,NA,NA,NA,NA,NA
-pitcher,NA,NA,NA,2,3.24
-pizza plate,NA,NA,NA,NA,NA
-cots,NA,NA,NA,NA,0.63
-hug,NA,NA,NA,2,19.33
-hopes,NA,NA,NA,NA,15.1
-microwave oven,NA,NA,NA,NA,NA
-measuring cup,NA,NA,NA,NA,NA
-players,NA,NA,NA,NA,17.16
-condiment,NA,NA,NA,14,0.16
-cowboy hat,NA,NA,NA,NA,NA
-notes,NA,NA,NA,NA,24.61
-basin,602,542,504,4,1.88
-matte,NA,NA,NA,14,0.27
-dress coat,NA,NA,NA,NA,NA
-train tracks,NA,NA,NA,NA,NA
-wetsuit,NA,NA,NA,NA,0.06
-resting place,NA,NA,NA,NA,NA
-skirt,614,573,551,4,9.96
-monument,558,543,455,4,2.29
-racehorses,NA,NA,NA,NA,0.33
-pajamas,NA,NA,NA,2,5.82
-pantry,NA,NA,NA,6,1.75
-pant leg,NA,NA,NA,NA,NA
-vulture,NA,NA,NA,4,1.76
-timer,NA,NA,NA,2,6.25
-pathway,NA,NA,NA,2,1.14
-grates,NA,NA,NA,NA,0.27
-sculpture,NA,NA,NA,6,3.12
-boyfriend,NA,NA,NA,NA,72.24
-surfing,NA,NA,NA,NA,4.51
-senator,NA,NA,NA,6,NA
-midsection,NA,NA,NA,NA,0.37
-open sandwich,NA,NA,NA,NA,NA
-perching bird,NA,NA,NA,NA,NA
-chiffonier,NA,NA,NA,14,NA
-candy,602,601,559,2,35.78
-whooping crane,NA,NA,NA,8,NA
-baked goods,NA,NA,NA,NA,NA
-station,572,554,548,2,79.08
-toilet bowl,NA,NA,NA,NA,NA
-house,608,606,600,2,514.0
-washington,NA,NA,NA,NA,NA
-icebreaker,NA,NA,NA,6,0.41
-cardigan,NA,NA,NA,14,0.57
-clothe,NA,NA,NA,8,0.82
-semi truck,NA,NA,NA,NA,NA
-landmark,NA,NA,NA,6,1.25
-horse toy,NA,NA,NA,NA,NA
-lamp,615,575,578,2,12.88
-workstation,NA,NA,NA,NA,0.33
-shapes,NA,NA,NA,NA,1.9
-garden,NA,NA,NA,2,26.55
-bed cover,NA,NA,NA,NA,NA
-colt,NA,NA,NA,2,NA
-pottery,NA,NA,NA,4,1.84
-snout,NA,NA,NA,4,0.84
-car,622,638,634,2,483.06
-metro,NA,NA,NA,13,NA
-mobile phone,NA,NA,NA,NA,NA
-baseball catcher,NA,NA,NA,NA,NA
-electronics,NA,NA,NA,12,2.73
-craft,464,429,487,6,5.67
-commuter,NA,NA,NA,8,0.59
-vane,400,377,411,8,0.31
-flock,477,516,434,2,4.65
-aerophone,NA,NA,NA,NA,NA
-penguin,NA,NA,360,2,2.88
-boxberry,NA,NA,NA,NA,NA
-reflection,339,567,505,4,5.02
-lift,461,482,555,2,34.14
-side table,NA,NA,NA,NA,NA
-lunch box,NA,NA,NA,NA,NA
-highway,575,581,488,2,17.86
-tank top,NA,NA,NA,NA,NA
-toy horse,NA,NA,NA,NA,NA
-roast beef,NA,NA,NA,NA,NA
-wheeler,NA,NA,NA,NA,NA
-piece of pie,NA,NA,NA,NA,NA
-stems,NA,NA,NA,NA,1.0
-river,585,633,565,2,55.47
-basil,NA,NA,NA,13,NA
-yak,NA,NA,NA,8,1.39
-skateboard,NA,NA,NA,4,1.67
-trike,NA,NA,NA,NA,0.06
-stack,NA,NA,NA,2,6.1
-dental chair,NA,NA,NA,NA,NA
-fire hydrant cap,NA,NA,NA,NA,NA
-paganini,NA,NA,NA,NA,NA
-raincoat,NA,NA,NA,4,1.65
-forklift,NA,NA,NA,NA,0.96
-food,597,539,579,2,154.43
-blood,613,620,571,2,186.12
-signal light,NA,NA,NA,NA,NA
-lade,NA,NA,NA,NA,NA
-tattoo,NA,NA,NA,2,11.96
-sky,542,618,607,2,44.8
-ship,615,612,553,2,98.88
-fuselage,483,402,289,12,1.02
-wheelchair,NA,NA,NA,NA,6.2
-round table,NA,NA,NA,NA,NA
-lutetium,NA,NA,NA,NA,NA
-carte,NA,NA,NA,NA,1.18
-bin,598,562,580,4,5.37
-kitchen,NA,NA,NA,2,58.31
-diary,NA,NA,NA,6,8.98
-ski,590,615,551,4,8.1
-buyer,NA,463,487,2,5.18
-pizza box,NA,NA,NA,NA,NA
-loaf,NA,NA,NA,2,4.47
-truck cab,NA,NA,NA,NA,NA
-juice,599,593,567,2,26.88
-mustard,595,599,532,2,6.45
-toy giraffe,NA,NA,NA,NA,NA
-headlight,NA,NA,NA,4,0.73
-waitress,NA,NA,NA,2,11.53
-pit,593,589,493,2,13.22
-elevated railway,NA,NA,NA,NA,NA
-music stand,NA,NA,NA,NA,NA
-street sweeper,NA,NA,NA,NA,NA
-trophy,NA,NA,NA,2,7.55
-scatter,NA,NA,NA,2,2.43
-pin,600,576,524,2,16.37
-base,441,436,520,4,35.37
-pillow,613,624,602,2,11.39
-sidecar,NA,NA,NA,10,0.59
-truss bridge,NA,NA,NA,NA,NA
-pepperoni,NA,NA,NA,NA,2.57
-striker,NA,NA,NA,10,NA
-canary,577,533,411,4,2.92
-broach,NA,NA,NA,13,0.45
-champagne,NA,NA,NA,6,31.29
-dancer,558,551,535,4,16.29
-plastic bottle,NA,NA,NA,NA,NA
-fishing boat,NA,NA,NA,NA,NA
-ambulance,595,627,499,4,22.41
-trilby,NA,NA,NA,NA,NA
-pots,NA,NA,NA,NA,3.55
-hot rod,NA,NA,NA,4,NA
-houses,NA,NA,NA,NA,19.12
-tap,538,541,567,2,14.75
-inflatable,NA,NA,NA,NA,0.73
-poker table,NA,NA,NA,NA,NA
-phone,624,587,550,2,269.73
-cucumber,653,623,536,6,1.98
-pop,NA,NA,NA,2,NA
-collar,622,582,509,2,10.51
-bull,NA,NA,NA,2,27.51
-zinnia,NA,NA,NA,8,NA
-fixture,NA,NA,NA,6,0.63
-sticker,NA,NA,NA,4,2.78
-rice pudding,NA,NA,NA,NA,NA
-keyboard,NA,NA,NA,6,1.8
-train door,NA,NA,NA,NA,NA
-drawing,NA,NA,NA,2,16.02
-spacecraft,NA,NA,NA,2,2.25
-stall,NA,NA,NA,4,8.96
-relatives,NA,NA,NA,NA,10.06
-snow,618,597,615,2,31.35
-tailor,535,499,417,4,4.18
-plumber,NA,NA,NA,2,4.49
-device,444,391,500,6,18.16
-cows,NA,NA,NA,NA,9.41
-wardrobe,NA,NA,NA,6,6.47
-head covering,NA,NA,NA,NA,NA
-electrification,NA,NA,NA,NA,0.02
-lanyard,NA,NA,NA,13,0.08
-scoop,NA,NA,NA,2,5.67
-ramekin,NA,NA,NA,14,NA
-center,371,459,540,2,45.78
-crape,NA,NA,NA,14,NA
-cow head,NA,NA,NA,NA,NA
-salad bowl,NA,NA,NA,NA,NA
-barbecue,NA,NA,NA,4,8.94
-hangar,NA,NA,NA,6,3.39
-deck,566,539,507,2,23.76
-relish,NA,NA,NA,6,1.88
-cooker,NA,NA,NA,10,0.67
-credenza,NA,NA,NA,NA,0.18
-scarf,NA,NA,NA,4,4.69
-streetcar,NA,NA,NA,2,1.27
-church tower,NA,NA,NA,NA,NA
-battle,564,597,537,2,42.25
-old woman,NA,NA,NA,NA,NA
-necktie,NA,NA,NA,4,1.2
-cruise liner,NA,NA,NA,NA,NA
-prop,474,450,444,6,3.69
-volleyball player,NA,NA,NA,NA,NA
-swim trunks,NA,NA,NA,NA,NA
-sea animal,NA,NA,NA,NA,NA
-dresser,560,556,526,6,3.57
-tissue,NA,NA,NA,2,10.73
-door mat,NA,NA,NA,NA,NA
-sandal,609,613,494,4,0.22
-flower pot,NA,NA,NA,NA,NA
-patio table,NA,NA,NA,NA,NA
-video game,NA,NA,NA,NA,NA
-soup,615,604,576,2,25.2
-keyboardist,NA,NA,NA,NA,0.06
-sweatband,NA,NA,NA,8,0.08
-hash browns,NA,NA,NA,NA,NA
-can,365,369,620,2,5247.45
-dropline,NA,NA,NA,NA,NA
-transit,NA,NA,NA,8,3.18
-pole dancer,NA,NA,NA,NA,NA
-handle,NA,NA,NA,2,108.41
-memorabilia,NA,NA,NA,12,0.49
-seats,NA,NA,NA,NA,21.76
-cos player,NA,NA,NA,NA,NA
-patio furniture,NA,NA,NA,NA,NA
-meals,NA,NA,NA,NA,7.92
-clothes,NA,NA,NA,2,101.14
-throne,NA,NA,NA,4,8.65
-actor,NA,NA,NA,2,26.33
-triunity,NA,NA,NA,NA,NA
-sheets,NA,NA,NA,NA,12.47
-sash,540,488,385,6,1.14
-baseball glove,NA,NA,NA,NA,NA
-washermen,NA,NA,NA,NA,NA
-tennis court,NA,NA,NA,6,NA
-typecase,NA,NA,NA,NA,NA
-wiener,NA,NA,NA,6,2.22
-fish,597,615,548,2,83.49
-food processor,NA,NA,NA,NA,NA
-pirate hat,NA,NA,NA,NA,NA
-fruits,NA,NA,NA,12,2.8
-books,NA,NA,NA,NA,67.76
-fighter plane,NA,NA,NA,NA,NA
-casserole,NA,NA,NA,4,1.67
-spectator,NA,NA,NA,6,0.9
-plate,595,527,556,2,25.65
-guitarist,NA,NA,NA,NA,0.71
-footbridge,NA,NA,NA,10,0.12
-gallery,569,566,479,6,8.51
-pianist,565,608,473,4,1.69
-winner,NA,NA,NA,2,31.22
-trumpet,608,628,490,2,4.12
-clock face,NA,NA,NA,NA,NA
-cheese,NA,NA,NA,2,39.04
-griddle,NA,NA,NA,6,0.35
-concorde,NA,NA,NA,NA,NA
-thrower,NA,NA,NA,NA,0.47
-sleeping bag,NA,NA,NA,NA,NA
-mobilization,NA,NA,NA,12,0.37
-fingers,NA,NA,NA,NA,33.25
-street sign,NA,NA,NA,NA,NA
-giraffe statue,NA,NA,NA,NA,NA
-looper,NA,NA,NA,NA,0.18
-dining room table,NA,NA,NA,NA,NA
-slice,443,507,540,2,8.53
-swing,NA,NA,NA,2,25.98
-dock,570,559,483,2,9.75
-eye wear,NA,NA,NA,NA,NA
-dalmatian,NA,NA,NA,NA,NA
-sofas,NA,NA,NA,NA,0.31
-shawl,606,576,455,4,1.37
-platter,593,576,478,4,2.92
-jar,595,571,564,2,8.31
-station wagon,NA,NA,NA,4,NA
-entry,NA,356,492,6,12.16
-wedding dress,NA,NA,NA,NA,NA
-leeks,NA,NA,NA,NA,0.06
-kitchen cupboard,NA,NA,NA,NA,NA
-tunnel,555,578,541,4,17.88
-sewing table,NA,NA,NA,NA,NA
-robe,NA,NA,NA,4,8.49
-rusher,NA,NA,NA,NA,0.02
-vet,485,494,456,4,5.8
-dandelion,558,579,513,4,0.29
-bridge,623,608,561,2,45.71
-cockpit,NA,NA,NA,6,3.22
-margarita,NA,NA,NA,NA,1.39
-leather jacket,NA,NA,NA,NA,NA
-field,NA,NA,NA,2,70.2
-oven rack,NA,NA,NA,NA,NA
-mobility scooter,NA,NA,NA,NA,NA
-orchid,599,597,456,6,2.16
-crackpot,NA,NA,NA,6,0.96
-coupe,NA,NA,NA,8,0.61
-motorcycle,NA,NA,NA,2,8.92
-subway train,NA,NA,NA,NA,NA
-bidet,NA,NA,NA,14,0.35
-care,342,383,563,2,485.25
-body,568,614,610,2,195.53
-trolley,579,585,449,4,1.41
-black sheep,NA,NA,NA,12,NA
-scallions,NA,NA,NA,NA,0.1
-overcoat,611,552,441,2,1.45
-ford,NA,NA,NA,8,NA
-dresses,NA,NA,NA,NA,9.75
-oven,593,599,577,2,8.88
-priest,561,568,484,6,26.2
-library,564,587,580,2,22.94
-boarder,NA,NA,NA,8,0.57
-lobster,590,630,472,2,7.33
-artwork,NA,NA,NA,NA,1.53
-painter,568,565,575,2,6.75
-doghouse,NA,NA,NA,6,1.12
-greens,NA,NA,NA,2,2.14
-construction worker,NA,NA,NA,NA,NA
-sea bird,NA,NA,NA,NA,NA
-stream,NA,NA,NA,2,8.04
-face mask,NA,NA,NA,NA,NA
-travel bag,NA,NA,NA,NA,NA
-spoon,614,584,612,2,7.61
-tabby,NA,NA,NA,12,NA
-giraffes,NA,NA,NA,NA,0.61
-lion,627,626,511,2,15.35
-casserole dish,NA,NA,NA,NA,NA
-bagel dog,NA,NA,NA,NA,NA
-hamburger,NA,NA,NA,2,7.78
-drinks,NA,NA,NA,NA,34.2
-window screen,NA,NA,NA,NA,NA
-lamb,633,614,519,2,10.63
-birds,NA,NA,NA,NA,25.88
-pen,571,576,554,2,24.73
-father,594,646,591,2,554.49
-gauge,NA,NA,NA,2,2.2
-bbq,NA,NA,NA,NA,NA
-duplex,NA,NA,NA,8,0.47
-stool,592,584,531,2,3.51
-transport,NA,NA,NA,4,11.2
-pizza pie,NA,NA,NA,NA,NA
-tannhäuser,NA,NA,NA,NA,NA
-floral arrangement,NA,NA,NA,NA,NA
-cookie sheet,NA,NA,NA,NA,NA
-cab,NA,NA,NA,2,35.8
-pizza slices,NA,NA,NA,NA,NA
-raft,NA,NA,483,4,4.71
-kick,485,551,563,2,73.41
-stuffed fish,NA,NA,NA,NA,NA
-bathroom counter,NA,NA,NA,NA,NA
-countertop,NA,NA,NA,NA,NA
-pedestrian,NA,NA,NA,6,1.39
-wedding,NA,NA,NA,4,101.43
-cooktop,NA,NA,NA,NA,NA
-cargo,NA,497,401,4,9.0
-salmon,NA,NA,NA,4,6.55
-pitcher's mound,NA,NA,NA,NA,NA
-necks,NA,NA,NA,NA,3.22
-cover,502,443,597,2,94.27
-evening gown,NA,NA,NA,NA,NA
-bathing tub,NA,NA,NA,NA,NA
-nightstand,NA,NA,NA,NA,0.84
-vat,NA,NA,NA,8,1.49
-bear statue,NA,NA,NA,NA,NA
-poultry,NA,NA,NA,6,1.0
-cargo hold,NA,NA,NA,NA,NA
-things,NA,NA,NA,4,692.88
-icing,NA,NA,NA,4,1.39
-hot dog and fries,NA,NA,NA,NA,NA
-planter,NA,NA,NA,2,0.63
-skateboarders,NA,NA,NA,NA,0.08
-dish,NA,NA,NA,2,11.45
-trailer,597,587,528,4,11.35
-motorbike,NA,NA,NA,NA,0.75
-zip up,NA,NA,NA,NA,NA
-tree stump,NA,NA,NA,NA,NA
-folding table,NA,NA,NA,NA,NA
-mouse,624,615,520,2,19.12
-airdropping,NA,NA,NA,NA,NA
-ballplayer,NA,NA,NA,NA,0.63
-sofa,629,597,564,4,5.86
-computer mouse,NA,NA,NA,NA,NA
-sportsman,NA,NA,NA,4,0.69
-workman,NA,NA,NA,6,0.78
-blouse,640,595,562,2,5.33
-vial,NA,NA,NA,14,1.29
-chef hat,NA,NA,NA,NA,NA
-pellicle,NA,NA,NA,NA,NA
-driveway,NA,NA,NA,2,6.73
-organizer,NA,NA,NA,6,0.43
-dirt,564,547,571,2,25.69
-corolla,NA,NA,NA,12,NA
-beef,637,625,598,2,19.71
-air conditioner,NA,NA,NA,NA,NA
-pepsi,NA,NA,NA,NA,NA
-lynx,568,461,301,13,0.02
-oranges,NA,NA,NA,NA,2.45
-midget,NA,NA,NA,2,4.61
-guardhouse,NA,NA,NA,4,0.71
-luggage,NA,NA,NA,2,11.12
-portrait,570,565,427,6,5.43
-bean,604,538,549,2,6.84
-water trough,NA,NA,NA,NA,NA
-tupperware,NA,NA,NA,NA,NA
-futon,NA,NA,NA,NA,0.67
-mitt,NA,NA,NA,2,1.37
-parakeet,NA,NA,NA,2,1.08
-landing strip,NA,NA,NA,NA,NA
-commuter train,NA,NA,NA,NA,NA
-trailer truck,NA,NA,NA,NA,NA
-booster seat,NA,NA,NA,NA,NA
-club sandwich,NA,NA,NA,10,NA
-yacht,606,624,464,6,8.22
-cyclist,NA,NA,NA,8,0.1
-carer,NA,NA,NA,NA,0.08
-turboprop,NA,NA,NA,NA,0.02
-cooking pot,NA,NA,NA,NA,NA
-apples,NA,NA,NA,NA,8.29
-dog bowl,NA,NA,NA,NA,NA
-panda,NA,NA,NA,2,2.12
-cappuccino,NA,NA,NA,NA,2.86
-head,603,593,611,2,371.51
-chick,NA,NA,NA,2,26.16
-omelette,NA,NA,NA,NA,1.2
-glasses,NA,NA,NA,2,33.12
-asparagus,608,590,534,6,0.98
-deckchair,NA,NA,NA,NA,NA
-semitrailer,NA,NA,NA,NA,0.02
-geese,597,603,421,2,1.59
-blood sausage,NA,NA,NA,NA,NA
-taco,NA,NA,NA,NA,3.1
-chateau,NA,NA,NA,13,2.53
-pul,NA,NA,NA,NA,0.04
-bagel sandwich,NA,NA,NA,NA,NA
-bed,635,635,636,2,187.12
-baby sheep,NA,NA,NA,NA,NA
-police car,NA,NA,NA,NA,NA
-tops,NA,NA,NA,4,7.35
-coffee maker,NA,NA,NA,NA,NA
-pepper,591,587,554,2,8.8
-towel,NA,NA,NA,2,14.16
-macaroni salad,NA,NA,NA,NA,NA
-rhubarb,NA,NA,NA,4,1.08
-assoc,NA,NA,NA,NA,NA
-elk,NA,NA,NA,6,NA
-fryer,NA,NA,NA,NA,0.65
-end table,NA,NA,NA,NA,NA
-luggage carrier,NA,NA,NA,NA,NA
-parking garage,NA,NA,NA,NA,NA
-folding chair,NA,NA,NA,NA,NA
-handlebar,NA,NA,NA,NA,0.2
-bacon,NA,NA,NA,2,11.86
-china,578,597,507,2,NA
-mouth,568,613,572,2,104.41
-assistant,NA,NA,NA,4,32.22
-hamburger bun,NA,NA,NA,NA,NA
-knee pad,NA,NA,NA,NA,NA
-mule,592,608,455,2,7.02
-horse,613,624,560,2,92.88
-volkswagen,NA,NA,NA,NA,NA
-tomato,662,610,574,4,5.9
-teapot,NA,NA,NA,2,0.86
-beach,612,667,553,2,56.63
-dress,595,595,588,2,87.2
-amphora,NA,NA,NA,14,0.02
-brush,589,570,579,2,14.16
-cheetah,NA,NA,NA,8,NA
-mashed potatoes,NA,NA,NA,NA,NA
-wagon,NA,NA,443,2,17.76
-sleeper sofa,NA,NA,NA,NA,NA
-eyes,NA,NA,NA,6,221.55
-comforter,467,499,392,6,0.39
-cheesecake,NA,NA,NA,NA,2.31
-shirty,NA,NA,NA,NA,0.04
-tool,570,538,532,4,10.75
-abode,498,458,334,12,0.65
-sport coat,NA,NA,NA,NA,NA
-rickshaw,NA,NA,NA,NA,0.59
-washstand,NA,NA,NA,6,0.04
-home plate,NA,NA,NA,4,NA
-exam table,NA,NA,NA,NA,NA
-lorikeet,NA,NA,NA,NA,NA
-mobile home,NA,NA,NA,NA,NA
-board,565,592,546,2,64.16
-hoodie,NA,NA,NA,NA,0.2
-cape,581,566,521,4,NA
-daisy,613,573,519,4,NA
-milkshake,NA,NA,NA,2,0.82
-smart car,NA,NA,NA,NA,NA
-shelves,NA,NA,NA,2,2.75
-book bag,NA,NA,NA,NA,NA
-zebrass,NA,NA,NA,NA,NA
-house cat,NA,NA,NA,NA,NA
-poached egg,NA,NA,NA,NA,NA
-ferry,580,592,458,2,5.35
-eyeglasses,NA,NA,NA,6,0.67
-partition,NA,NA,NA,10,0.49
-oatmeal,552,558,471,2,3.31
-twin bed,NA,NA,NA,NA,NA
-toyota,NA,NA,NA,NA,NA
-taxi,NA,NA,NA,4,25.84
-male,564,587,588,4,33.94
-ski boat,NA,NA,NA,NA,NA
-water skiing,NA,NA,NA,NA,NA
-legs,NA,NA,NA,12,55.59
-streetlamp,NA,NA,NA,NA,0.04
-mercedes,NA,NA,NA,NA,NA
-salad,595,623,554,2,17.02
-grid,NA,NA,NA,10,5.53
-cell,542,590,520,4,54.35
-cake pan,NA,NA,NA,NA,NA
-cookware,NA,NA,NA,NA,0.12
-frankfurter,NA,NA,NA,4,NA
-ham,554,570,536,2,11.59
-conveyor,NA,NA,NA,8,0.84
-bush,585,549,532,2,14.12
-remote control car,NA,NA,NA,NA,NA
-footstool,NA,NA,NA,2,0.16
-license,NA,NA,NA,4,32.06
-fabric,565,544,477,6,4.8
-finches,NA,NA,NA,NA,0.25
-airplane,NA,NA,NA,2,10.92
-wall clock,NA,NA,NA,NA,NA
-carpeting,NA,NA,NA,6,0.57
-pews,NA,NA,NA,NA,0.14
-sniper,NA,NA,NA,10,4.35
-punchbowl,NA,NA,NA,NA,0.18
-rover,NA,473,309,6,NA
-toilet lid,NA,NA,NA,NA,NA
-sunglass,NA,NA,NA,NA,NA
-pretzel,NA,NA,NA,2,2.0
-windsurfing,NA,NA,NA,NA,0.16
-writing,467,540,630,2,55.92
-employee,NA,NA,NA,4,11.57
-wheels,NA,NA,NA,NA,13.29
-bridle,NA,NA,NA,4,0.29
-gas,554,532,558,2,67.78
-carriage,576,529,436,2,7.47
-greensleeves,NA,NA,NA,NA,NA
-exhaust fan,NA,NA,NA,NA,NA
-coffee mug,NA,NA,NA,NA,NA
-biscuit,574,571,521,4,NA
-grass,599,602,587,2,16.78
-coffee,613,618,625,2,144.53
-grains,NA,NA,NA,NA,0.98
-voter,548,486,519,4,0.8
-road,583,609,604,2,111.94
-gezira,NA,NA,NA,NA,NA
-ski slope,NA,NA,NA,NA,NA
-medic,NA,NA,NA,10,5.71
-billboard,NA,NA,NA,6,1.35
-cast iron skillet,NA,NA,NA,NA,NA
-hole,485,527,545,2,58.22
-samosas,NA,NA,NA,NA,0.18
-kimono,NA,NA,NA,4,1.08
-washbasin,NA,NA,NA,6,0.02
-valance,NA,NA,NA,12,NA
-stone bench,NA,NA,NA,NA,NA
-umbrella,606,592,511,2,7.49
-beret,578,517,419,10,0.94
-whitecap,NA,NA,NA,NA,NA
-officer,550,593,549,4,103.24
-flat-bed truck,NA,NA,NA,NA,NA
-superwoman,NA,NA,NA,NA,NA
-gate,573,545,540,2,32.04
-front porch,NA,NA,NA,NA,NA
-stone,614,585,564,2,40.63
-snowboarder,NA,NA,NA,NA,0.43
-crash,NA,NA,NA,2,28.65
-coaches,NA,NA,NA,NA,1.75
-cloths,NA,NA,NA,NA,0.43
-tracks,NA,NA,NA,6,16.75
-carse,NA,NA,NA,NA,NA
-serviceman,NA,NA,NA,10,0.16
-ped sheet,NA,NA,NA,NA,NA
-coral rock,NA,NA,NA,NA,NA
-glove,607,596,575,2,10.1
-gyro,NA,NA,NA,8,0.31
-pet,557,589,541,2,20.18
-specs,NA,NA,NA,4,2.08
-garage door,NA,NA,NA,NA,NA
-toy car,NA,NA,NA,NA,NA
-box,597,591,599,2,89.75
-pizza server,NA,NA,NA,NA,NA
-cellphone,NA,NA,NA,NA,3.08
-lounge chair,NA,NA,NA,NA,NA
-guitar,NA,NA,550,4,15.59
-baseball bat,NA,NA,NA,NA,NA
-television camera,NA,NA,NA,NA,NA
-boot,595,604,566,2,11.14
-button down shirt,NA,NA,NA,NA,NA
-broccoli and cheese,NA,NA,NA,NA,NA
-stripper,NA,NA,NA,NA,5.24
-food counter,NA,NA,NA,NA,NA
-helicopter,NA,NA,NA,2,15.8
-microwave,NA,NA,NA,12,3.9
-candies,NA,NA,NA,NA,1.12
-neck,587,622,576,2,59.51
-hill,588,607,585,2,37.55
-sidelines,NA,NA,NA,NA,1.12
-ass,NA,NA,NA,2,226.37
-bulldog,626,583,370,2,NA
-grapes,NA,NA,NA,2,3.94
-headdress,NA,NA,NA,4,0.29
-painting,NA,NA,NA,2,29.2
-thread,607,568,522,2,5.16
-thatched roof,NA,NA,NA,NA,NA
-colors,NA,NA,NA,8,10.35
-baby,589,608,597,2,509.37
-crematorium,NA,NA,NA,NA,0.37
-badge,561,519,473,4,15.25
-fish fillet,NA,NA,NA,NA,NA
-mix,NA,NA,NA,2,16.35
-maxi,NA,NA,NA,NA,0.29
-toilette,NA,NA,NA,13,0.1
-hawk,623,591,504,2,NA
-seller,444,427,459,6,2.2
-coach,561,560,509,4,47.63
-frittata,NA,NA,NA,NA,0.33
-locomotive engine,NA,NA,NA,NA,NA
-battleship,NA,NA,NA,2,1.71
-swan,NA,NA,NA,4,NA
-vest,575,581,472,2,5.57
-hot dog bun,NA,NA,NA,NA,NA
-sun,617,639,635,2,69.67
-ground,558,513,574,2,72.47
-apartment complex,NA,NA,NA,NA,NA
-dairy cow,NA,NA,NA,NA,NA
-cruiser,571,553,490,6,3.18
-tennis ball,NA,NA,NA,NA,NA
-floor,559,544,551,2,100.63
-car seat,NA,NA,NA,NA,NA
-listener,NA,NA,NA,6,1.41
-veg,NA,NA,NA,NA,0.45
-bluejay,NA,NA,NA,4,NA
-air plan,NA,NA,NA,NA,NA
-skater,NA,NA,NA,2,1.9
-lake,585,616,583,2,36.0
-rooster,NA,NA,385,2,3.86
-porcelain,NA,NA,NA,8,1.57
-baking sheet,NA,NA,NA,NA,NA
-cha,NA,NA,NA,NA,NA
-overalls,NA,NA,NA,2,1.02
-water,616,632,641,2,225.06
-pizza topping,NA,NA,NA,NA,NA
-custard,549,515,460,8,1.25
-scooter,565,569,468,4,2.73
-shadow,457,565,536,2,21.18
-breakfast,576,586,657,2,66.29
-hairband,NA,NA,NA,NA,NA
-beanbag,NA,NA,NA,2,0.51
-apricot,638,591,428,4,0.63
-aquarium,NA,NA,NA,2,2.76
-juicer,NA,NA,NA,NA,0.39
-side-view mirror,NA,NA,NA,NA,NA
-front door,NA,NA,NA,NA,NA
-jalapeno,NA,NA,NA,NA,0.12
-pizza slice,NA,NA,NA,NA,NA
-goalkeeper,NA,NA,NA,12,0.31
-performer,529,530,479,2,2.41
-sink cabinet,NA,NA,NA,NA,NA
-ball,615,622,575,2,104.96
-pavilion,NA,NA,NA,8,NA
-young person,NA,NA,NA,NA,NA
-canopy bed,NA,NA,NA,NA,NA
-utensil,567,534,494,4,0.24
-footrest,NA,NA,NA,NA,0.1
-townhouse,NA,NA,NA,NA,0.75
-store,548,506,562,2,81.92
-rink,NA,NA,NA,4,2.14
-wine glasses,NA,NA,NA,NA,NA
-yard,553,568,522,2,25.06
-appliance,558,554,493,4,0.8
-drive,NA,NA,NA,2,153.14
-ballerina,NA,NA,NA,8,2.31
-headphones,NA,NA,NA,NA,1.57
-browser,NA,NA,NA,NA,0.18
-sub sandwich,NA,NA,NA,NA,NA
-nightshirt,NA,NA,NA,4,0.22
-dress clothes,NA,NA,NA,NA,NA
-glider,NA,NA,NA,4,0.69
-bedside table,NA,NA,NA,NA,NA
-table setting,NA,NA,NA,NA,NA
-toppings,NA,NA,NA,NA,0.37
-pie crust,NA,NA,NA,NA,NA
-sauerkraut,604,585,426,6,1.0
-carriages,NA,NA,NA,NA,0.63
-airway,NA,NA,NA,2,1.63
-antique car,NA,NA,NA,NA,NA
-boxcars,NA,NA,NA,NA,0.16
-machinery,545,526,528,4,3.67
-lap,540,531,505,4,13.47
-del,NA,NA,NA,NA,NA
-heifer,NA,NA,NA,8,1.2
-wedding gown,NA,NA,NA,NA,NA
-baby clothes,NA,NA,NA,NA,NA
-sportswear,NA,NA,NA,NA,0.37
-gyroplane,NA,NA,NA,NA,NA
-rain slicker,NA,NA,NA,NA,NA
-cowgirl,NA,NA,NA,4,1.18
-lifeguard,NA,NA,NA,2,1.67
-sock,581,553,578,2,8.98
-lorry,420,383,198,13,NA
-blade,584,568,517,2,13.0
-lights,NA,NA,NA,13,56.41
-grating,NA,NA,NA,10,0.31
-processor,NA,NA,NA,NA,0.9
-marina,NA,NA,NA,10,NA
-minimization,NA,NA,NA,NA,NA
-motorboat,NA,NA,NA,2,0.57
-hot pot,NA,NA,NA,NA,NA
-horsepower,NA,NA,NA,6,1.22
-living room,NA,NA,NA,2,NA
-girls,NA,NA,NA,NA,208.35
-balconies,NA,NA,NA,NA,0.45
-peach,617,613,536,2,6.35
-bedroom,615,629,646,2,36.71
-kiwi,NA,NA,NA,12,0.78
-decoration,507,526,517,10,1.84
-airstrip,NA,NA,NA,6,1.12
-van door,NA,NA,NA,NA,NA
-myna,NA,NA,NA,NA,NA
-balloon,623,583,520,2,8.67
-motor vehicle,NA,NA,NA,NA,NA
-moth,550,577,496,2,2.27
-camp chair,NA,NA,NA,NA,NA
-hours,NA,NA,NA,NA,214.88
-honda,NA,NA,NA,NA,NA
-automobiles,NA,NA,NA,NA,1.12
-shoulders,NA,NA,NA,NA,11.76
-grandson,NA,NA,NA,2,7.98
-wooden bench,NA,NA,NA,NA,NA
-filter,NA,490,489,6,3.18
-hot tub,NA,NA,NA,NA,NA
-taillight,NA,NA,NA,NA,0.82
-pyjamas,NA,NA,NA,2,1.76
-jumping,NA,NA,NA,NA,14.27
-nightshirts,NA,NA,NA,NA,0.02
-cakes,NA,NA,NA,NA,5.71
-bangkok,NA,NA,NA,NA,NA
-tractor trailer,NA,NA,NA,NA,NA
-sheet,608,594,616,2,11.61
-cake,624,624,594,2,45.06
-buildings,NA,NA,NA,NA,9.98
-silverware,NA,NA,NA,4,2.14
-sneaker,NA,NA,NA,2,0.69
-ties,NA,NA,NA,6,9.84
-trencher,NA,NA,NA,14,NA
-salsa,NA,NA,NA,NA,2.14
-mansion,579,628,489,4,6.45
-rice bowl,NA,NA,NA,NA,NA
-passengers,NA,NA,NA,NA,12.29
-puffin,NA,NA,NA,13,0.16
-pastry,NA,NA,NA,6,1.92
-cockatiel,NA,NA,NA,NA,0.04
-police motor bike,NA,NA,NA,NA,NA
-cabinetry,NA,NA,NA,NA,NA
-star,574,623,574,2,81.35
-foil,509,495,516,6,1.22
-plastic knife,NA,NA,NA,NA,NA
-cat,615,617,582,2,66.33
-baby bird,NA,NA,NA,NA,NA
-wall,589,576,596,2,70.69
-object,487,408,586,2,25.76
-windshield,NA,NA,NA,6,3.27
-entertainment stand,NA,NA,NA,NA,NA
-head wrap,NA,NA,NA,NA,NA
-kiss,564,633,592,2,121.16
-attic,NA,NA,NA,NA,7.84
-lasagna,NA,NA,NA,8,3.59
-freight train,NA,NA,NA,NA,NA
-tennis,574,634,528,4,13.63
-kitchen sink,NA,NA,NA,NA,NA
-kail,NA,NA,NA,NA,NA
-train platform,NA,NA,NA,NA,NA
-blender,NA,NA,NA,4,1.67
-flayer,NA,NA,NA,NA,NA
-railroad train,NA,NA,NA,NA,NA
-big ben,NA,NA,NA,NA,NA
-cub,NA,NA,NA,2,NA
-potatoes,NA,NA,NA,NA,11.1
-bicycle,NA,NA,NA,2,6.61
-brits,NA,NA,NA,NA,NA
-pineapple upside down cake,NA,NA,NA,NA,NA
-side mirror,NA,NA,NA,NA,NA
-helper,NA,NA,NA,NA,2.02
-pie cutter,NA,NA,NA,NA,NA
-bear cub,NA,NA,NA,NA,NA
-coffee cup,NA,NA,NA,NA,NA
-desk,583,574,583,2,43.9
-daybed,NA,NA,NA,NA,0.02
-bathtub,NA,NA,NA,2,6.1
-train cart,NA,NA,NA,NA,NA
-play,468,498,586,2,354.53
-bath rug,NA,NA,NA,NA,NA
-rear-view mirror,NA,NA,NA,NA,NA
-range hood,NA,NA,NA,NA,NA
-foot rest,NA,NA,NA,NA,NA
-knob,586,554,534,2,2.45
-costume,544,538,456,4,14.14
-tennis player,NA,NA,NA,NA,NA
-pizza crust,NA,NA,NA,NA,NA
-cleaner,NA,NA,NA,2,6.92
-rocking chair,NA,NA,NA,NA,NA
-palace,579,612,462,2,19.2
-ladies,NA,NA,NA,2,138.31
-baby boy,NA,NA,NA,NA,NA
-sweet,463,493,570,2,145.2
-reef,NA,NA,NA,8,4.0
-vegetables,NA,NA,NA,NA,6.63
-clothing,570,588,614,2,10.84
-springhouse,NA,NA,NA,NA,NA
-traveler,NA,NA,NA,2,3.02
-toilet,586,603,567,2,28.9
-sky board,NA,NA,NA,NA,NA
-champagne glass,NA,NA,NA,NA,NA
-arch,512,557,483,6,3.69
-bookstack,NA,NA,NA,NA,NA
-backboard,NA,NA,NA,6,0.47
-room,566,545,627,2,439.51
-barn,614,589,466,2,13.59
-concrete,562,564,528,4,7.43
-doorway,578,548,532,2,3.22
-restroom,NA,NA,NA,NA,2.45
-shirts,NA,NA,NA,NA,8.71
-boxcar,NA,NA,NA,2,0.65
-kitchen counter,NA,NA,NA,NA,NA
-buffet,NA,NA,NA,10,4.43
-shipyard,NA,NA,NA,2,0.84
-equipment,532,410,543,4,25.45
-polo,495,524,446,4,3.49
-steel,586,534,553,2,18.45
-cook stove,NA,NA,NA,NA,NA
-quiche,NA,NA,NA,13,0.84
-knife,612,633,573,2,46.8
-frame,562,508,494,2,14.1
-young girl,NA,NA,NA,NA,NA
-pizza dough,NA,NA,NA,NA,NA
-guinea pig,NA,NA,NA,8,NA
-motor home,NA,NA,NA,NA,NA
-lioness,NA,NA,NA,6,0.33
-road sign,NA,NA,NA,NA,NA
-seating area,NA,NA,NA,NA,NA
-teenagers,NA,NA,NA,NA,4.22
-pizza toppings,NA,NA,NA,NA,NA
-garment,552,507,440,4,1.39
-pasta,NA,NA,NA,12,4.24
-hamster,599,581,467,2,2.14
-case,548,517,553,2,282.41
-stretcher,NA,NA,NA,6,2.22
-gymnast,NA,NA,NA,6,0.59
-tray,590,550,558,4,8.04
-military aircraft,NA,NA,NA,NA,NA
-armoire,NA,NA,NA,NA,0.16
-player,NA,NA,NA,2,37.76
-countertype,NA,NA,NA,NA,NA
-sloop,NA,NA,NA,12,0.2
 visitor,482,499,560,2,8.75
-bud,549,508,465,2,NA
-car bumper,NA,NA,NA,NA,NA
-screen,NA,NA,NA,2,23.39
-cameraman,NA,NA,NA,NA,2.16
-ramen,NA,NA,NA,NA,NA
-enclosure,NA,NA,NA,6,0.39
-tree house,NA,NA,NA,NA,NA
-baseball mitt,NA,NA,NA,NA,NA
-horses,NA,NA,NA,NA,40.92
-beer bottle,NA,NA,NA,NA,NA
-tunic,563,508,373,12,0.55
-shoulder,589,577,553,2,26.2
-caller,NA,NA,NA,6,4.35
-tourist,533,577,536,6,4.65
-porch,596,586,455,2,9.63
-icecream sandwhich,NA,NA,NA,NA,NA
-fans,NA,NA,NA,NA,13.94
-pontoon,NA,NA,NA,12,0.27
-cargo plane,NA,NA,NA,NA,NA
-wine glass,NA,NA,NA,NA,NA
-restraint,NA,NA,NA,12,2.57
-factory,586,608,562,2,16.8
-roast,NA,NA,536,2,9.78
-spatula,586,517,407,10,1.1
-train station,NA,NA,NA,NA,NA
-lily,609,541,437,2,NA
-stadium,569,586,526,4,6.12
-bull head,NA,NA,NA,NA,NA
-softball player,NA,NA,NA,NA,NA
-propeller,593,599,491,4,1.53
-sour cream,NA,NA,NA,NA,NA
-baby dress,NA,NA,NA,NA,NA
-4 wheeler,NA,NA,NA,NA,NA
-washroom,NA,NA,NA,2,1.69
-prey,464,500,443,6,5.51
-pontoon boat,NA,NA,NA,NA,NA
-protestor,NA,NA,NA,NA,0.06
-teddy bear,NA,NA,NA,2,NA
-cake slice,NA,NA,NA,NA,NA
-snowplow,NA,NA,NA,4,0.39
-steeple,561,559,405,2,0.41
-plane wing,NA,NA,NA,NA,NA
-singer,553,575,548,2,15.69
-chili,NA,NA,NA,2,7.49
-kitchen table,NA,NA,NA,NA,NA
-toy motorcycle,NA,NA,NA,NA,NA
-signboard,NA,NA,NA,6,0.08
-trainbearer,NA,NA,NA,NA,NA
-leptin,NA,NA,NA,NA,NA
-tea kettle,NA,NA,NA,NA,NA
-chert,NA,NA,NA,14,NA
-band,590,579,555,2,53.41
-camping chair,NA,NA,NA,NA,NA
-setting,NA,NA,NA,6,21.55
-hang glider,NA,NA,NA,NA,NA
-bricks,NA,NA,NA,NA,3.92
-lingerie,NA,NA,NA,8,2.82
-underpass,NA,NA,NA,6,0.25
-knife blade,NA,NA,NA,NA,NA
-kayak,NA,NA,NA,6,0.51
-archway,NA,NA,NA,4,0.24
+glass vase,NA,NA,NA,NA,NA
 entrance,484,493,555,2,15.69
-seafood,NA,NA,NA,4,2.02
-beak,552,574,476,2,2.1
-dogs,NA,NA,NA,NA,53.02
-squire,502,459,323,6,NA
-lobsters,NA,NA,NA,NA,2.14
-capote,NA,NA,NA,NA,NA
-fixing,NA,NA,NA,NA,10.45
-mantel,NA,NA,NA,6,0.75
-trepan,NA,NA,NA,12,NA
-fire hose,NA,NA,NA,NA,NA
-horse carriage,NA,NA,NA,NA,NA
-spiderweb,NA,NA,NA,NA,0.1
-tank,581,563,511,4,25.61
-file,480,442,504,2,44.04
-plants,NA,NA,NA,NA,9.57
-architecture,NA,NA,NA,4,3.18
-grasshopper,660,630,507,2,0.92
-falcon,NA,NA,NA,4,NA
-careerism,NA,NA,NA,NA,NA
-beanbag chair,NA,NA,NA,NA,NA
-port,531,546,481,4,14.53
-kids,NA,NA,NA,2,301.1
-television stand,NA,NA,NA,NA,NA
-sinks,NA,NA,NA,NA,1.71
-anchorman,NA,NA,NA,10,0.35
-calf,592,565,511,2,2.96
-truck,595,621,620,2,72.86
-cattle,600,619,511,2,13.22
-storefront,NA,NA,NA,NA,0.45
-blackbird,NA,NA,NA,2,NA
-florist,NA,NA,NA,4,2.41
-steps,NA,NA,NA,NA,24.69
-necker,NA,NA,NA,NA,NA
-train set,NA,NA,NA,NA,NA
-bikers,NA,NA,NA,NA,1.2
-jersey,621,572,559,6,NA
-smoothie,NA,NA,NA,8,0.73
-bench,614,555,488,2,9.67
-stable,562,537,519,2,13.2
-wooden stool,NA,NA,NA,NA,NA
-outfield,NA,NA,NA,2,0.24
-hair,583,580,575,2,153.55
-food bowl,NA,NA,NA,NA,NA
-lambs,NA,NA,NA,NA,1.67
-bow,572,546,489,2,20.27
-animal,587,575,620,2,45.49
-egg,613,599,608,2,26.04
-potato,629,617,612,2,11.29
-batsman,NA,NA,NA,NA,0.04
-beard,NA,NA,NA,4,12.61
-bets,NA,NA,NA,NA,10.53
-crumb cake,NA,NA,NA,NA,NA
-sausage,NA,NA,NA,2,7.78
-peas,NA,NA,NA,2,4.65
-covering,NA,NA,NA,4,12.43
-creek,NA,NA,NA,NA,NA
-elbow,607,602,564,2,6.14
-bomber,NA,NA,NA,4,4.2
-wicker chair,NA,NA,NA,NA,NA
-wiper,NA,NA,NA,2,0.57
-runner,NA,546,531,2,4.96
-hall,565,559,592,2,51.94
-arm,592,593,608,2,65.41
-bride,NA,NA,NA,2,24.22
-long boarder,NA,NA,NA,NA,NA
-cellular phone,NA,NA,NA,NA,NA
-ceiling,606,557,531,2,8.35
-bmw,NA,NA,NA,NA,NA
-knit hat,NA,NA,NA,NA,NA
-camping,NA,NA,NA,NA,6.18
-highway overpass,NA,NA,NA,NA,NA
-shed,611,602,524,6,10.98
-guests,NA,NA,NA,NA,25.71
-male child,NA,NA,NA,NA,NA
-baggage,NA,NA,NA,2,6.24
-model airplane,NA,NA,NA,NA,NA
-cookie jar,NA,NA,NA,NA,NA
-side view mirror,NA,NA,NA,NA,NA
-suit coat,NA,NA,NA,NA,NA
-paring knife,NA,NA,NA,NA,NA
-highchair,NA,NA,NA,NA,0.16
-butter,618,603,615,2,20.43
-easy chair,NA,NA,NA,NA,NA
-patio,NA,NA,NA,6,2.61
-juggler,547,553,425,2,0.47
-toilet cleaner,NA,NA,NA,NA,NA
-chimney,NA,NA,479,2,4.18
-pie,613,604,576,2,28.75
-eclair,NA,NA,NA,13,0.2
-cement,646,578,516,6,4.59
-suitcase,NA,NA,NA,4,13.39
-jetliner,NA,NA,NA,4,0.06
-dashboard,NA,NA,NA,8,0.98
-work table,NA,NA,NA,NA,NA
-reindeer,NA,NA,NA,2,3.37
-stew,603,587,522,4,6.43
-laundry,576,559,502,2,19.06
-firetruck,NA,NA,NA,2,0.06
-bisque,NA,NA,NA,13,0.39
-fortress,NA,NA,NA,8,3.37
-door knob,NA,NA,NA,NA,NA
-larry,NA,NA,NA,NA,NA
-newscaster,NA,NA,NA,NA,NA
-kitchenette,NA,NA,NA,6,0.31
-emu,NA,NA,NA,12,NA
-number plate,NA,NA,NA,NA,NA
-flatbed,NA,NA,NA,NA,0.41
-fishes,NA,NA,NA,NA,2.37
-competitor,NA,NA,NA,6,1.37
-guard,517,530,504,2,58.2
-reservoir,NA,NA,NA,6,1.86
-guaco,NA,NA,NA,NA,NA
-gunman,NA,NA,NA,4,2.08
-coastline,NA,NA,NA,6,0.71
-backdrop,NA,NA,NA,8,0.47
-parliament,456,475,511,6,NA
-bowls,NA,NA,NA,12,2.18
-pilot,NA,NA,NA,2,26.67
-urn,551,510,369,10,1.94
-airplane wing,NA,NA,NA,NA,NA
-garfield,NA,NA,NA,NA,NA
-lases,NA,NA,NA,NA,NA
-gemara,NA,NA,NA,NA,NA
-cake server,NA,NA,NA,NA,NA
-trash can,NA,NA,NA,NA,NA
-leek,621,540,431,12,0.29
-couch,578,536,521,2,23.47
-tray table,NA,NA,NA,NA,NA
-bath,600,601,599,2,31.12
-paperwork,NA,NA,NA,NA,10.41
-service dog,NA,NA,NA,NA,NA
-fighter jet,NA,NA,NA,NA,NA
-macaw,NA,NA,NA,14,0.24
-general,408,491,568,2,NA
-southpaw,NA,NA,NA,8,0.51
-toddler,NA,NA,NA,6,0.78
-duvet,NA,NA,NA,NA,0.24
-tag,NA,NA,NA,2,13.88
-sunbather,NA,NA,NA,NA,NA
-turtleneck,NA,NA,NA,4,0.82
-graph,553,535,524,6,0.75
-dress suit,NA,NA,NA,6,NA
-son,NA,560,607,2,410.76
-turkey,NA,NA,NA,2,22.61
-signatory,NA,NA,NA,13,0.1
-shirt collar,NA,NA,NA,NA,NA
-schoolgirl,NA,NA,NA,4,1.88
-beer glass,NA,NA,NA,NA,NA
-girlfriend,NA,NA,NA,NA,76.1
-schoolboy,NA,NA,NA,2,1.31
-sunflower,NA,NA,NA,2,0.67
-conference table,NA,NA,NA,NA,NA
-goth,NA,NA,NA,NA,NA
-fuel truck,NA,NA,NA,NA,NA
-oriental rug,NA,NA,NA,NA,NA
-sleeve,587,550,560,4,5.61
-lori,NA,NA,NA,NA,NA
-race,463,457,543,2,61.9
-fried dough,NA,NA,NA,NA,NA
-town home,NA,NA,NA,NA,NA
-water plane,NA,NA,NA,NA,NA
-whisker,560,542,489,4,0.25
-arrangement,308,316,525,4,9.45
-tween,NA,NA,NA,NA,0.22
-fields,NA,NA,NA,NA,11.94
-trestle,NA,NA,NA,10,0.16
-eye mask,NA,NA,NA,NA,NA
-freeway,NA,NA,NA,NA,5.53
-pool house,NA,NA,NA,NA,NA
-land,604,566,574,2,88.12
-oik,NA,NA,NA,NA,0.04
-speaker,537,549,554,2,6.9
-football jersey,NA,NA,NA,NA,NA
-bullock,NA,NA,NA,12,NA
-clutter,NA,NA,NA,10,0.94
-buggy,NA,NA,NA,2,2.49
-crab,626,589,433,4,6.9
-sedan,NA,NA,NA,6,1.76
-t-shirt,NA,NA,NA,NA,NA
-chili dog,NA,NA,NA,NA,NA
-dough,627,558,474,4,15.88
-carney,NA,NA,NA,NA,NA
-train caboose,NA,NA,NA,NA,NA
-apartment house,NA,NA,NA,NA,NA
-curio cabinet,NA,NA,NA,NA,NA
-tabby cat,NA,NA,NA,NA,NA
-stuffed animal,NA,NA,NA,NA,NA
-gift,533,553,566,2,64.51
-wooden,NA,NA,NA,2,7.2
-ski parka,NA,NA,NA,NA,NA
-bedwarmer,NA,NA,NA,NA,NA
-jag,NA,NA,NA,8,NA
-little kid,NA,NA,NA,NA,NA
-houseboat,NA,NA,NA,6,0.78
-fish tank,NA,NA,NA,NA,NA
-airfield,NA,NA,NA,2,2.31
-wireman,NA,NA,NA,NA,0.04
-beverage,526,565,566,4,2.33
-pool table,NA,NA,NA,NA,NA
-tissue paper,NA,NA,NA,NA,NA
-fountain,593,602,469,2,6.9
-biker,NA,NA,NA,NA,1.55
-slope,513,578,563,2,2.94
-flower vase,NA,NA,NA,NA,NA
-pot of vegetables,NA,NA,NA,NA,NA
-inflatable ship,NA,NA,NA,NA,NA
-dude,NA,NA,NA,8,99.43
-kites,NA,NA,NA,NA,0.71
-mover,NA,NA,NA,4,0.45
-businessman,NA,NA,NA,2,7.92
-shampoo,NA,NA,NA,2,4.22
-apartment building,NA,NA,NA,NA,NA
-pasta sauce,NA,NA,NA,NA,NA
-breadstick,NA,NA,NA,NA,NA
-wallpaper,NA,NA,NA,2,3.35
-steak,646,647,558,4,16.24
-bureau,547,497,395,6,NA
-grilled chicken,NA,NA,NA,NA,NA
-caretaker,NA,NA,NA,6,2.45
-harley,NA,NA,NA,NA,NA
-whale,610,623,500,4,11.25
-presents,NA,NA,NA,NA,19.08
-train carriage,NA,NA,NA,NA,NA
-cushion,NA,NA,NA,4,2.16
-camper,NA,NA,NA,4,1.43
-tennis players,NA,NA,NA,NA,NA
-bottle,591,619,591,2,50.75
-student,549,603,632,2,43.04
-grazer,NA,NA,NA,NA,NA
-trucked,NA,NA,NA,NA,0.08
-contestant,NA,NA,NA,6,2.67
-fleece jacket,NA,NA,NA,NA,NA
-cargo ship,NA,NA,NA,NA,NA
-pose,NA,NA,NA,2,6.8
-old man,NA,NA,NA,12,NA
-mcdonald,NA,NA,NA,NA,NA
-cubicle,NA,NA,NA,12,2.57
-black man,NA,NA,NA,NA,NA
-ski board,NA,NA,NA,NA,NA
-citrus juicer,NA,NA,NA,NA,NA
-ski jumper,NA,NA,NA,NA,NA
-shoe,600,601,569,2,30.39
-filet,NA,NA,NA,8,0.94
-dessert plate,NA,NA,NA,NA,NA
-returner,NA,NA,NA,NA,0.02
-motorcyclist,NA,NA,NA,NA,0.25
-sweater vest,NA,NA,NA,NA,NA
-goat,636,585,469,2,10.53
-graduation gown,NA,NA,NA,NA,NA
-jelly donut,NA,NA,NA,NA,NA
-dinner,542,570,621,2,202.67
-mountain man,NA,NA,NA,NA,NA
-cow,621,632,529,2,25.51
-cycler,NA,NA,NA,NA,0.02
-lettuce,579,608,565,2,3.39
-police,NA,NA,NA,2,236.16
-paraglider,NA,NA,NA,12,0.04
-bird,602,614,592,2,45.45
-skydiver,NA,NA,NA,NA,0.08
-scaffolding,NA,NA,NA,10,0.24
-noodle,588,530,499,2,2.9
-overskirt,NA,NA,NA,NA,NA
-showcase,NA,NA,NA,6,0.61
-tugboat,NA,NA,NA,2,0.45
-figure,472,526,534,4,129.37
-pants,619,630,575,2,58.75
-baler,NA,NA,NA,8,0.02
-train cab,NA,NA,NA,NA,NA
-racer,NA,NA,NA,2,2.63
-grassland,NA,NA,NA,4,0.1
-teammate,NA,NA,NA,2,0.9
-restaurant,NA,NA,NA,2,46.53
-bar top,NA,NA,NA,NA,NA
-goldman,NA,NA,NA,NA,NA
-chew toy,NA,NA,NA,NA,NA
-photographer,NA,NA,NA,4,9.12
-tailgate,NA,NA,NA,8,0.45
-tumbler,NA,NA,NA,6,0.35
-child,581,619,585,2,157.65
-backstop,NA,NA,NA,10,0.22
-tolidine,NA,NA,NA,NA,NA
+ladle,NA,NA,NA,10,0.75
+phone box,NA,NA,NA,NA,NA
+shower door,NA,NA,NA,NA,NA
+necktie,NA,NA,NA,4,1.2
+wife,562,575,585,2,348.92
+sheet,608,594,616,2,11.61
+automobiles,NA,NA,NA,NA,1.12
+cabana,NA,NA,NA,12,0.9
+roots,NA,NA,NA,NA,6.37
+patio table,NA,NA,NA,NA,NA
+coffee shop,NA,NA,NA,6,NA
+goalkeeper,NA,NA,NA,12,0.31
+pizza crust,NA,NA,NA,NA,NA
 dregs,NA,NA,NA,14,0.51
-beach chair,NA,NA,NA,NA,NA
-leg,626,601,589,2,56.51
-shpt,NA,NA,NA,NA,0.02
-formal wear,NA,NA,NA,NA,NA
-monocycle,NA,NA,NA,NA,NA
-bible,NA,NA,NA,NA,NA
-pizza cutter,NA,NA,NA,NA,NA
-propeller plane,NA,NA,NA,NA,NA
-divan,NA,NA,NA,10,0.12
-old person,NA,NA,NA,NA,NA
-dinghy,NA,NA,NA,13,0.71
-bourbon,NA,NA,NA,6,6.25
-roasting pan,NA,NA,NA,NA,NA
+plants,NA,NA,NA,NA,9.57
+oven,593,599,577,2,8.88
+meadow,594,622,478,2,2.27
+creature,541,492,508,2,21.41
+valance,NA,NA,NA,12,NA
+hot dog,NA,NA,NA,2,NA
+fennel,NA,NA,NA,14,0.76
+faucet,NA,NA,NA,4,1.43
+port,531,546,481,4,14.53
+benches,NA,NA,NA,NA,0.59
+gran,NA,NA,NA,NA,NA
+drinker,NA,NA,NA,4,1.86
+crust,NA,NA,NA,2,3.25
+bouquet,566,599,473,4,3.22
 alcove,NA,NA,NA,12,0.47
-laugh,433,528,594,2,62.86
-airline,NA,NA,NA,2,6.49
-coolers,NA,NA,NA,NA,0.75
-chicken wrap,NA,NA,NA,NA,NA
-blanket,622,582,563,2,12.98
-pork,585,522,538,2,10.53
-jogger,NA,NA,NA,NA,0.47
-anorak,NA,NA,NA,NA,NA
-bread roll,NA,NA,NA,NA,NA
-daughter,NA,NA,NA,2,171.35
-duck decoy,NA,NA,NA,NA,NA
+cutting board,NA,NA,NA,NA,NA
+graduate,455,516,520,4,12.22
+dock,570,559,483,2,9.75
+market,551,583,518,2,36.24
+pole,577,579,510,2,12.59
+juice,599,593,567,2,26.88
+soap,598,600,594,2,15.2
+cheeseburger,NA,NA,NA,2,3.2
+gingerbread house,NA,NA,NA,NA,NA
+bathroom cabinet,NA,NA,NA,NA,NA
+cushion,NA,NA,NA,4,2.16
+vial,NA,NA,NA,14,1.29
+toy car,NA,NA,NA,NA,NA
+area rug,NA,NA,NA,NA,NA
+frying pan,NA,NA,NA,NA,NA
+giraffes,NA,NA,NA,NA,0.61
+westminster,NA,NA,NA,NA,NA
+slope,513,578,563,2,2.94
+range hood,NA,NA,NA,NA,NA
+sandwiches,NA,NA,NA,NA,9.61
+pottery,NA,NA,NA,4,1.84
+eggs,NA,NA,NA,NA,38.65
+radish,NA,NA,456,2,0.61
+burger,NA,NA,NA,2,10.24
+ventilator,NA,NA,NA,6,1.25
+tugboat,NA,NA,NA,2,0.45
+sandwich,NA,NA,NA,2,21.92
+victim,467,521,511,6,47.73
+bison,NA,541,298,10,0.33
+crow,590,578,490,2,4.45
+condiments,NA,NA,NA,NA,0.61
+church,587,616,560,2,69.67
+cardboard,NA,NA,NA,2,2.71
+hitter,NA,NA,NA,NA,1.55
+leg,626,601,589,2,56.51
+voter,548,486,519,4,0.8
+sink,590,599,586,2,16.92
+stick,604,517,528,2,97.12
+pedestrian,NA,NA,NA,6,1.39
+fruitcake,NA,NA,NA,NA,2.06
+hamburger,NA,NA,NA,2,7.78
+utility truck,NA,NA,NA,NA,NA
+backpacker,NA,NA,NA,NA,0.04
+grasshopper,660,630,507,2,0.92
+hydrant cap,NA,NA,NA,NA,NA
+poodle,NA,NA,NA,2,2.84
+keeper,459,421,464,4,4.08
+glass bowl,NA,NA,NA,NA,NA
+tin,593,532,575,2,8.65
+mono cycle,NA,NA,NA,NA,NA
+object,487,408,586,2,25.76
+sportsman,NA,NA,NA,4,0.69
+track,547,499,514,2,55.75
+stretcher,NA,NA,NA,6,2.22
+road,583,609,604,2,111.94
+tablecloth,NA,NA,NA,2,0.94
+platform,547,529,498,4,6.14
+train car,NA,NA,NA,NA,NA
+cartoon,NA,NA,NA,2,3.76
+toilet closet,NA,NA,NA,NA,NA
+skateboard,NA,NA,NA,4,1.67
+cookie,NA,NA,NA,2,16.71
+railway,NA,NA,NA,4,1.57
+soccer,524,570,521,10,12.55
+luggage,NA,NA,NA,2,11.12
+vintage car,NA,NA,NA,NA,NA
+submarine sandwich,NA,NA,NA,NA,NA
+forklift,NA,NA,NA,NA,0.96
+bunked,NA,NA,NA,NA,0.14
+boxcar,NA,NA,NA,2,0.65
+food item,NA,NA,NA,NA,NA
+docks,NA,NA,NA,NA,3.69
+bull,NA,NA,NA,2,27.51
+bot,NA,NA,NA,NA,0.98
+polo,495,524,446,4,3.49
+pianist,565,608,473,4,1.69
+golden retriever,NA,NA,NA,NA,NA
+weapon,560,546,517,4,46.65
+tabby cat,NA,NA,NA,NA,NA
+scrambled eggs,NA,NA,NA,NA,NA
+swan,NA,NA,NA,4,NA
+trencher,NA,NA,NA,14,NA
+gloves,NA,NA,NA,2,16.24
+condo,NA,NA,NA,NA,4.22
+baby girl,NA,NA,NA,NA,NA
+squire,502,459,323,6,NA
+pitcher's mound,NA,NA,NA,NA,NA
+cheese sauce,NA,NA,NA,NA,NA
+blazer,NA,NA,NA,10,1.22
+butter,618,603,615,2,20.43
+mashed potato,NA,NA,NA,NA,NA
+pepperoni pizza,NA,NA,NA,NA,NA
+coupe,NA,NA,NA,8,0.61
+patient,487,526,538,4,63.65
+eagle,616,601,465,2,NA
+train tracks,NA,NA,NA,NA,NA
+snout,NA,NA,NA,4,0.84
+vest,575,581,472,2,5.57
+fork,592,598,584,2,8.82
+baker,NA,NA,NA,2,NA
+machine,578,575,549,2,70.25
+shampoo bottle,NA,NA,NA,NA,NA
+flower vase,NA,NA,NA,NA,NA
+drape,NA,NA,NA,4,1.04
+wood,606,577,574,2,27.0
+heifer,NA,NA,NA,8,1.2
+bumper,NA,NA,NA,2,3.55
+chicken breast,NA,NA,NA,NA,NA
+food,597,539,579,2,154.43
+tarmac,NA,NA,NA,14,0.43
+grass,599,602,587,2,16.78
+antique,492,549,484,6,6.06
+performer,529,530,479,2,2.41
+ambulance,595,627,499,4,22.41
+flower,584,618,566,2,22.76
+uniform,550,591,484,4,24.82
+goods train,NA,NA,NA,NA,NA
+zookeeper,NA,NA,NA,NA,0.02
+button down shirt,NA,NA,NA,NA,NA
+mobile phone,NA,NA,NA,NA,NA
+grazer,NA,NA,NA,NA,NA
+bath rug,NA,NA,NA,NA,NA
+cereal bowl,NA,NA,NA,NA,NA
+scooter,565,569,468,4,2.73
+brush,589,570,579,2,14.16
+delivery truck,NA,NA,NA,NA,NA
+sheets,NA,NA,NA,NA,12.47
+toilet seat,NA,NA,NA,NA,NA
+pepsi,NA,NA,NA,NA,NA
+berries,NA,NA,NA,NA,3.1
+cooker,NA,NA,NA,10,0.67
+blackshirt,NA,NA,NA,NA,NA
+bike,NA,NA,NA,2,25.88
+biscuit,574,571,521,4,NA
+toppings,NA,NA,NA,NA,0.37
+breakfast sandwich,NA,NA,NA,NA,NA
+drawer,NA,NA,NA,2,13.0
+gown,586,578,515,6,6.55
+carton,NA,NA,NA,4,1.88
+throw rug,NA,NA,NA,NA,NA
+farm animal,NA,NA,NA,NA,NA
+umbrella hat,NA,NA,NA,NA,NA
+nun,583,617,500,6,6.96
+cage,593,585,487,2,20.27
+signal light,NA,NA,NA,NA,NA
+shelving,NA,NA,NA,12,0.24
+tyre,NA,NA,NA,NA,2.43
+tanker truck,NA,NA,NA,NA,NA
+railroad car,NA,NA,NA,NA,NA
+foods,NA,NA,NA,NA,3.02
+poker table,NA,NA,NA,NA,NA
+subway train,NA,NA,NA,NA,NA
+dresses,NA,NA,NA,NA,9.75
+cub board,NA,NA,NA,NA,NA
+fishes,NA,NA,NA,NA,2.37
+zebra head,NA,NA,NA,NA,NA
+flower arrangement,NA,NA,NA,NA,NA
+french toast,NA,NA,NA,NA,NA
+cream,621,557,514,2,48.71
+shawl,606,576,455,4,1.37
+dump truck,NA,NA,NA,NA,NA
+computer desk,NA,NA,NA,NA,NA
+tea,609,599,572,2,58.63
+jockey,557,606,443,4,4.84
+railcar,NA,NA,NA,NA,0.04
+patio chair,NA,NA,NA,NA,NA
+kitchen countertop,NA,NA,NA,NA,NA
+actor,NA,NA,NA,2,26.33
+leather jacket,NA,NA,NA,NA,NA
+plastic cup,NA,NA,NA,NA,NA
+streetlight,NA,NA,NA,NA,0.49
+pasta,NA,NA,NA,12,4.24
+flatbed truck,NA,NA,NA,NA,NA
+arrogate,NA,NA,NA,14,NA
+patty,NA,NA,NA,8,NA
+adapter,NA,NA,NA,10,0.22
+cart,576,597,454,2,9.04
+stingray,NA,NA,NA,10,NA
+poultry,NA,NA,NA,6,1.0
+cyclist,NA,NA,NA,8,0.1
+trains,NA,NA,NA,NA,8.16
+seat,568,574,597,2,78.78
+fortress,NA,NA,NA,8,3.37
+toucan,NA,NA,NA,13,0.08
+railroad tracks,NA,NA,NA,NA,NA
+batting helmet,NA,NA,NA,NA,NA
+suv,NA,NA,NA,NA,NA
+pavement,NA,NA,NA,4,2.02
+keyboard tray,NA,NA,NA,NA,NA
+seafood,NA,NA,NA,4,2.02
+baseman,NA,NA,NA,4,0.59
+skiff,NA,NA,NA,12,0.73
+kitchen sink,NA,NA,NA,NA,NA
+fish,597,615,548,2,83.49
+egret,NA,NA,NA,13,0.04
+plain,426,463,551,4,21.82
+housing,NA,NA,NA,6,4.06
+snowflake,NA,NA,NA,2,NA
+coach,561,560,509,4,47.63
+footbridge,NA,NA,NA,10,0.12
+train track,NA,NA,NA,NA,NA
+churches,NA,NA,NA,NA,3.04
+egg yolk,NA,NA,NA,NA,NA
+toy cow,NA,NA,NA,NA,NA
+motorized wheelchair,NA,NA,NA,NA,NA
+salad bowl,NA,NA,NA,NA,NA
+bride,NA,NA,NA,2,24.22
+drop line,NA,NA,NA,NA,NA
+structure,NA,NA,NA,4,10.18
+bookshelves,NA,NA,NA,NA,0.31
+snowboard,NA,NA,NA,NA,0.78
+wedding,NA,NA,NA,4,101.43
+convertible,NA,NA,NA,6,3.25
+ice bucket,NA,NA,NA,NA,NA
+oatmeal,552,558,471,2,3.31
+can,365,369,620,2,5247.45
+police officer,NA,NA,NA,NA,NA
+bedroom,615,629,646,2,36.71
+lioness,NA,NA,NA,6,0.33
+cottage,593,607,543,2,5.29
+asparagus,608,590,534,6,0.98
+wild cat,NA,NA,NA,NA,NA
+kitchen counter,NA,NA,NA,NA,NA
+sea animal,NA,NA,NA,NA,NA
+sub,NA,NA,NA,2,7.65
+pocket knife,NA,NA,NA,NA,NA
+bed frame,NA,NA,NA,NA,NA
+pot roast,NA,NA,NA,NA,NA
+apartments,NA,NA,NA,NA,4.22
+tennis racket,NA,NA,NA,NA,NA
+stand,450,471,564,2,226.2
+salesman,NA,NA,NA,4,10.43
+penguin,NA,NA,360,2,2.88
+seagull,NA,NA,NA,8,1.22
+dough,627,558,474,4,15.88
+foot rest,NA,NA,NA,NA,NA
+closet,599,525,540,2,27.08
+student,549,603,632,2,43.04
+humans,NA,NA,NA,NA,16.29
+trough,NA,NA,NA,6,1.41
+black man,NA,NA,NA,NA,NA
+parakeet,NA,NA,NA,2,1.08
+reservoir,NA,NA,NA,6,1.86
+water bowl,NA,NA,NA,NA,NA
+volkswagen,NA,NA,NA,NA,NA
+transport,NA,NA,NA,4,11.2
+female,NA,NA,NA,4,31.61
+food cart,NA,NA,NA,NA,NA
+gift,533,553,566,2,64.51
+handle,NA,NA,NA,2,108.41
+train bearer,NA,NA,NA,NA,NA
+painter,568,565,575,2,6.75
+tail,613,551,533,4,23.9
+tracks,NA,NA,NA,6,16.75
+baggage,NA,NA,NA,2,6.24
+wastebasket,NA,NA,NA,2,0.63
+mattress,640,601,524,2,6.61
+memorabilia,NA,NA,NA,12,0.49
+ski jumper,NA,NA,NA,NA,NA
+red carpet,NA,NA,NA,8,NA
+team,492,565,538,2,147.61
+fruits,NA,NA,NA,12,2.8
+houses of parliament,NA,NA,NA,NA,NA
+casserole,NA,NA,NA,4,1.67
+santa,NA,NA,NA,NA,NA
+employee,NA,NA,NA,4,11.57
+german shepherd,NA,NA,NA,NA,NA
+dog bowl,NA,NA,NA,NA,NA
+mercedes,NA,NA,NA,NA,NA
+hutch,NA,NA,NA,12,NA
+dental chair,NA,NA,NA,NA,NA
+toga,NA,519,291,10,0.92
+taxi,NA,NA,NA,4,25.84
+pastureland,NA,NA,NA,NA,0.02
+twin bed,NA,NA,NA,NA,NA
+step,508,483,578,2,118.67
+baked goods,NA,NA,NA,NA,NA
+chopping board,NA,NA,NA,NA,NA
+toyota,NA,NA,NA,NA,NA
+tupperware,NA,NA,NA,NA,NA
+cleaner,NA,NA,NA,2,6.92
+quilt,613,554,490,2,0.76
+hair,583,580,575,2,153.55
+float,451,525,553,2,7.47
+railroad,579,596,493,2,12.43
+comedian,NA,NA,NA,4,4.1
+sunshade,NA,NA,NA,12,NA
+snakes,NA,NA,NA,NA,10.16
+omelette,NA,NA,NA,NA,1.2
+shapes,NA,NA,NA,NA,1.9
+coffee pot,NA,NA,NA,2,NA
+mozzarella cheese,NA,NA,NA,NA,NA
+geese,597,603,421,2,1.59
+tow truck,NA,NA,NA,NA,NA
+pier,588,545,436,6,6.55
+lot,NA,NA,NA,2,569.92
+bowler hat,NA,NA,NA,NA,NA
+waffle,NA,NA,NA,2,2.12
+landing strip,NA,NA,NA,NA,NA
+cake,624,624,594,2,45.06
+shed,611,602,524,6,10.98
+paddle,NA,NA,NA,4,3.75
+cookie sheet,NA,NA,NA,NA,NA
+pea coat,NA,NA,NA,NA,NA
+abode,498,458,334,12,0.65
+zombie,NA,NA,NA,6,3.61
+sniper,NA,NA,NA,10,4.35
+blinds,NA,NA,NA,2,2.14
+rose,608,623,556,2,NA
+hash browns,NA,NA,NA,NA,NA
+boss,552,554,574,2,124.29
+pancake,NA,NA,NA,2,3.96
+grates,NA,NA,NA,NA,0.27
+frisbee player,NA,NA,NA,NA,NA
+sandbar,NA,NA,NA,NA,0.06
 racehorse,NA,NA,NA,NA,1.16
-bowtie,NA,NA,NA,NA,0.12
-cushions,NA,NA,NA,NA,1.18
-juice box,NA,NA,NA,NA,NA
-pizza peel,NA,NA,NA,NA,NA
-entertainment center,NA,NA,NA,NA,NA
-nuggets,NA,NA,NA,NA,1.24
-exit,NA,512,616,2,15.57
-mono plane,NA,NA,NA,NA,NA
-flowers,NA,NA,NA,NA,47.59
-banana,633,644,576,2,10.73
-sectional,NA,NA,NA,8,0.27
-jacket,635,611,596,2,33.41
-jesus,NA,NA,NA,NA,NA
-iris,589,606,493,6,NA
-stove,591,592,525,2,7.59
-teddy,NA,NA,NA,NA,NA
-disc,553,575,466,6,2.57
-piano,615,630,545,2,24.86
+keyboard,NA,NA,NA,6,1.8
+toilet,586,603,567,2,28.9
+lorry,420,383,198,13,NA
+farmhouse,NA,NA,NA,2,1.31
+turtleneck,NA,NA,NA,4,0.82
+compact car,NA,NA,NA,NA,NA
+outfit,515,487,489,4,25.1
+gull,NA,NA,NA,6,1.1
+hot air balloon,NA,NA,NA,NA,NA
+shirt and tie,NA,NA,NA,NA,NA
+firetruck,NA,NA,NA,2,0.06
+bighorn sheep,NA,NA,NA,NA,NA
+watercraft,NA,NA,NA,NA,NA
+wrapper,NA,NA,NA,2,1.67
+desert,NA,NA,NA,4,27.98
+water plane,NA,NA,NA,NA,NA
+armchair,NA,NA,NA,2,0.41
+garage door,NA,NA,NA,NA,NA
+furniture,583,588,580,2,15.08
+fur,601,588,530,2,8.27
+boaters,NA,NA,NA,NA,0.06
+cinderella,NA,NA,NA,NA,NA
+planter,NA,NA,NA,2,0.63
+pontoon boat,NA,NA,NA,NA,NA
+antique car,NA,NA,NA,NA,NA
+motor home,NA,NA,NA,NA,NA
+bread,622,619,611,2,28.33
+stool,592,584,531,2,3.51
+monster truck,NA,NA,NA,NA,NA
+bookshelf,NA,NA,NA,2,0.33
+tarp,NA,NA,NA,12,0.98
+biker,NA,NA,NA,NA,1.55
+handlebar,NA,NA,NA,NA,0.2
+pigeon,609,610,499,2,5.9
+jeans,NA,NA,NA,2,6.61
+airplane propeller,NA,NA,NA,NA,NA
+meal,602,573,603,2,28.86
+black cat,NA,NA,NA,NA,NA
+reindeer,NA,NA,NA,2,3.37
+bomber,NA,NA,NA,4,4.2
+car mirror,NA,NA,NA,NA,NA
+bedframe,NA,NA,NA,NA,NA
+skydiver,NA,NA,NA,NA,0.08
+wiener,NA,NA,NA,6,2.22
+toaster,579,580,520,2,3.88
+sateen,NA,NA,NA,12,0.02
+camper,NA,NA,NA,4,1.43
+sailing boat,NA,NA,NA,NA,NA
+bowie,NA,NA,NA,NA,NA
+chicken wrap,NA,NA,NA,NA,NA
+decorator,NA,NA,NA,6,2.1
+tacos,NA,NA,NA,NA,2.16
+semi truck,NA,NA,NA,NA,NA
+umbrella,606,592,511,2,7.49
+mat,513,537,490,2,3.49
+serving table,NA,NA,NA,NA,NA
+patio furniture,NA,NA,NA,NA,NA
+liquid,555,589,578,4,7.75
+snowman,NA,NA,NA,2,1.9
+coffee maker,NA,NA,NA,NA,NA
+sari,NA,NA,NA,12,0.43
+lounger,NA,NA,NA,NA,0.06
+bedspread,NA,NA,NA,2,0.45
+kitchen island,NA,NA,NA,NA,NA
+boat house,NA,NA,NA,NA,NA
+motorcar,NA,NA,NA,2,0.57
+programmer,NA,NA,NA,10,1.1
+water bottle,NA,NA,NA,NA,NA
+sister,575,613,588,2,180.53
+newscaster,NA,NA,NA,NA,NA
+aqueduct,NA,NA,NA,10,0.33
+pizza pie,NA,NA,NA,NA,NA
+hot dog bun,NA,NA,NA,NA,NA
+sheet pan,NA,NA,NA,NA,NA
+lounge chair,NA,NA,NA,NA,NA
+key chain,NA,NA,NA,NA,NA
+work table,NA,NA,NA,NA,NA
+minivan,NA,NA,NA,NA,1.59
+cupcakes,NA,NA,NA,NA,1.49
+toilet lid,NA,NA,NA,NA,NA
+young person,NA,NA,NA,NA,NA
+camp chair,NA,NA,NA,NA,NA
+mash potatoes,NA,NA,NA,NA,NA
+scissors,596,609,559,2,6.69
+frisbee,NA,NA,NA,6,NA
+torso,NA,NA,NA,10,1.84
+plushy,NA,NA,NA,NA,0.04
+throne,NA,NA,NA,4,8.65
+cattle,600,619,511,2,13.22
+class,NA,NA,NA,2,117.35
+sundress,NA,NA,NA,NA,0.08
+tub,NA,NA,NA,4,12.69
+kitchen table,NA,NA,NA,NA,NA
+hang glider,NA,NA,NA,NA,NA
+hangar,NA,NA,NA,6,3.39
+wallpaper,NA,NA,NA,2,3.35
+wedding cake,NA,NA,NA,NA,NA
+plant pot,NA,NA,NA,NA,NA
+canine,NA,NA,NA,12,1.69
+stock pot,NA,NA,NA,NA,NA
+basin,602,542,504,4,1.88
+tie,568,551,559,2,44.43
+plant,594,605,592,2,27.61
+biplane,NA,NA,NA,8,0.04
+furnishing,NA,NA,NA,NA,0.24
+champagne glass,NA,NA,NA,NA,NA
+pathway,NA,NA,NA,2,1.14
+toy horse,NA,NA,NA,NA,NA
+old lady,NA,NA,NA,NA,NA
+trike,NA,NA,NA,NA,0.06
+youth,439,507,551,2,16.82
+stairs,NA,NA,NA,2,23.76
+game table,NA,NA,NA,NA,NA
+wedding dress,NA,NA,NA,NA,NA
+trolley,579,585,449,4,1.41
+balloon,623,583,520,2,8.67
+clock,591,614,608,2,58.63
+masts,NA,NA,NA,NA,0.16
+caboose,NA,NA,NA,2,0.59
+kitchen cabinet,NA,NA,NA,NA,NA
+young adult,NA,NA,NA,NA,NA
+broach,NA,NA,NA,13,0.45
+singer,553,575,548,2,15.69
+swing,NA,NA,NA,2,25.98
+friend,450,587,603,2,419.29
+bread bowl,NA,NA,NA,NA,NA
+sofa,629,597,564,4,5.86
+omelet,NA,NA,NA,8,2.37
+aquarium,NA,NA,NA,2,2.76
+headband,NA,NA,NA,2,0.41
+hatstand,NA,NA,NA,NA,NA
+jar,595,571,564,2,8.31
+pot,584,598,577,2,22.53
+musician,564,585,558,2,6.04
+cargo ship,NA,NA,NA,NA,NA
+cutlet,NA,NA,NA,10,0.35
+donkey,NA,NA,NA,2,5.35
+vases,NA,NA,NA,NA,0.55
+side mirror,NA,NA,NA,NA,NA
+roadway,NA,NA,NA,4,0.22
+honda,NA,NA,NA,NA,NA
+cowgirl,NA,NA,NA,4,1.18
+service dog,NA,NA,NA,NA,NA
+neck,587,622,576,2,59.51
+queen,537,612,527,2,54.69
+vehicles,NA,NA,NA,NA,6.0
+panel van,NA,NA,NA,NA,NA
+shirts,NA,NA,NA,NA,8.71
+airstrip,NA,NA,NA,6,1.12
+curtain,NA,NA,NA,NA,10.29
+cheesecake,NA,NA,NA,NA,2.31
+bathroom sink,NA,NA,NA,NA,NA
+moose,616,604,518,2,5.53
+hider,NA,NA,NA,NA,NA
+houseboat,NA,NA,NA,6,0.78
+suitcase,NA,NA,NA,4,13.39
+flower box,NA,NA,NA,NA,NA
+barbecue sandwich,NA,NA,NA,NA,NA
+fighter plane,NA,NA,NA,NA,NA
+tray table,NA,NA,NA,NA,NA
+hound,583,596,433,2,5.04
+train cake,NA,NA,NA,NA,NA
+bisque,NA,NA,NA,13,0.39
+swinging bench,NA,NA,NA,NA,NA
+shoppers,NA,NA,NA,NA,1.22
+city,554,605,616,2,169.1
+blindfold,NA,NA,NA,2,1.73
+pool table,NA,NA,NA,NA,NA
+potatoes,NA,NA,NA,NA,11.1
+awning,NA,NA,NA,8,0.47
+mate,507,506,553,2,29.24
+fireman,NA,NA,504,2,2.92
+fan,557,582,520,2,35.14
+traveler,NA,NA,NA,2,3.02
+toy giraffe,NA,NA,NA,NA,NA
+windsurfing,NA,NA,NA,NA,0.16
+cross country skier,NA,NA,NA,NA,NA
+barber chair,NA,NA,NA,NA,NA
+paring knife,NA,NA,NA,NA,NA
+beret,578,517,419,10,0.94
+steam train,NA,NA,NA,NA,NA
+laptop computer,NA,NA,NA,NA,NA
+pitcher,NA,NA,NA,2,3.24
+schoolgirl,NA,NA,NA,4,1.88
+aqueducts,NA,NA,NA,NA,0.12
+keyboarder,NA,NA,NA,NA,NA
+seats,NA,NA,NA,NA,21.76
+rug,611,591,557,2,10.41
+bikes,NA,NA,NA,NA,2.84
+icing,NA,NA,NA,4,1.39
+sweatshirt,NA,NA,NA,NA,2.35
+ingredients,NA,NA,NA,NA,2.14
+bow,572,546,489,2,20.27
+island,596,643,507,2,39.57
+club chair,NA,NA,NA,NA,NA
+tapestry,NA,NA,NA,10,0.71
+yolk,593,530,471,4,0.41
+piece of furniture,NA,NA,NA,NA,NA
+pavilion,NA,NA,NA,8,NA
+flower head,NA,NA,NA,NA,NA
+typecast,NA,NA,NA,NA,0.16
+quiche,NA,NA,NA,13,0.84
+oats,NA,NA,NA,2,2.06
+bus stop,NA,NA,NA,NA,NA
+tee shirt,NA,NA,NA,NA,NA
+boats,NA,NA,NA,NA,11.75
+llama,NA,NA,NA,6,1.41
+drain,591,540,510,2,8.63
+cover,502,443,597,2,94.27
+appetizer,NA,NA,NA,6,1.2
+hood,547,558,510,2,15.39
+adult,492,526,590,2,14.29
+youngster,NA,NA,NA,2,1.45
+wall hanging,NA,NA,NA,NA,NA
+avocado,NA,NA,NA,8,1.22
+bus,NA,NA,NA,2,74.18
+drizzle,558,582,516,4,0.43
+leaf,593,608,556,2,5.2
+battle,564,597,537,2,42.25
+display case,NA,NA,NA,NA,NA
+board,565,592,546,2,64.16
+riverboat,NA,NA,NA,NA,0.39
+meals,NA,NA,NA,NA,7.92
+reflection,339,567,505,4,5.02
+footrest,NA,NA,NA,NA,0.1
+trainer,NA,482,458,2,5.57
+jag,NA,NA,NA,8,NA
+chimney,NA,NA,479,2,4.18
+piece of cake,NA,NA,NA,NA,NA
 controller,NA,NA,NA,8,1.29
 horsetail,NA,NA,NA,NA,NA
-pear,634,590,567,2,1.33
-worker,532,486,587,2,10.94
-airplane tail,NA,NA,NA,NA,NA
-fritter,NA,NA,NA,10,0.29
-benches,NA,NA,NA,NA,0.59
-ski jacket,NA,NA,NA,NA,NA
-driver,553,567,593,2,47.37
-tram,NA,NA,NA,13,1.37
-owner,468,425,564,2,23.24
-metal grate,NA,NA,NA,NA,NA
-glass jar,NA,NA,NA,NA,NA
-girl,607,634,645,2,557.12
-coco,NA,NA,NA,14,NA
-bot,NA,NA,NA,NA,0.98
-leaves,NA,NA,NA,2,45.41
-sand,NA,NA,NA,2,20.29
-wall hanging,NA,NA,NA,NA,NA
-cruise ship,NA,NA,NA,NA,NA
-closet,599,525,540,2,27.08
-kite string,NA,NA,NA,NA,NA
-wife,562,575,585,2,348.92
-kitchen stove,NA,NA,NA,NA,NA
-jaguar,NA,NA,NA,4,NA
-desert,NA,NA,NA,4,27.98
-blackshirt,NA,NA,NA,NA,NA
-bet sheet,NA,NA,NA,NA,NA
-seating,NA,NA,NA,NA,2.14
-parking meter,NA,NA,NA,NA,NA
-fork,592,598,584,2,8.82
-court,509,552,549,4,100.73
-shetlands,NA,NA,NA,NA,0.02
-goods train,NA,NA,NA,NA,NA
-green bean,NA,NA,NA,NA,NA
-cupcake,NA,NA,NA,4,3.27
-runway,NA,NA,NA,6,5.47
-wooden spoon,NA,NA,NA,NA,NA
-calico,NA,NA,NA,8,0.31
-trees,NA,NA,NA,8,30.69
-sailboard,NA,NA,NA,NA,NA
-jerkin,NA,NA,NA,12,0.37
-kayaker,NA,NA,NA,NA,0.02
-raven,NA,NA,NA,8,NA
-ramp,538,527,504,8,2.88
-medicine cabinet,NA,NA,NA,NA,NA
-church,587,616,560,2,69.67
-moose,616,604,518,2,5.53
-steer,NA,NA,NA,4,5.98
-woman,580,626,623,2,434.63
-german shepherd,NA,NA,NA,NA,NA
-dump truck,NA,NA,NA,NA,NA
-chare,NA,NA,NA,NA,NA
-bunks,NA,NA,NA,NA,1.08
-goalie,NA,NA,NA,6,1.43
-lattice,NA,NA,NA,10,0.08
-filing cabinet,NA,NA,NA,NA,NA
-bug,NA,NA,NA,2,20.94
-trashcan,NA,NA,NA,NA,0.37
-purse,572,567,533,2,19.76
-sleeping mask,NA,NA,NA,NA,NA
-coral,572,561,425,8,NA
-water closet,NA,NA,NA,12,NA
-bathroom vanity,NA,NA,NA,NA,NA
-blankets,NA,NA,NA,2,5.1
-steam train,NA,NA,NA,NA,NA
-white rice,NA,NA,NA,NA,NA
-boat,637,631,584,2,95.78
-picnic table,NA,NA,NA,NA,NA
-pineapple,653,569,489,4,2.55
-bathmat,NA,NA,NA,NA,0.25
-frag,NA,NA,NA,NA,0.25
-railroad track,NA,NA,NA,NA,NA
-horns,NA,NA,NA,NA,6.2
-handbag,NA,NA,NA,2,2.63
-glazed donut,NA,NA,NA,NA,NA
-bullet train,NA,NA,NA,NA,NA
-newlyweds,NA,NA,NA,4,1.45
-breakfast sandwich,NA,NA,NA,NA,NA
-toucan,NA,NA,NA,13,0.08
-apple core,NA,NA,NA,NA,NA
-roadster,NA,NA,NA,8,0.35
-airbus,NA,NA,NA,NA,NA
-caramel sauce,NA,NA,NA,NA,NA
-mitten,NA,NA,NA,2,NA
-smock,NA,NA,NA,6,0.49
-jacuzzi,NA,NA,NA,NA,NA
-seawall,NA,NA,NA,NA,0.04
-cabinetmaking,NA,NA,NA,NA,NA
-airplane propeller,NA,NA,NA,NA,NA
-helmet,602,620,528,2,9.47
-mixer,574,536,518,2,1.08
-lutenist,NA,NA,NA,NA,NA
-bun,NA,NA,NA,2,2.88
-front end,NA,NA,NA,NA,NA
-water skier,NA,NA,NA,NA,NA
-graduate,455,516,520,4,12.22
-monorail,NA,NA,NA,12,0.1
-chocolate cake,NA,NA,NA,NA,NA
-lid,NA,NA,NA,4,4.92
-doggo,NA,NA,NA,NA,NA
-pigeon,609,610,499,2,5.9
-weapon,560,546,517,4,46.65
-flipper,NA,NA,NA,2,NA
-poster board,NA,NA,NA,NA,NA
-rocker,583,520,474,4,1.25
-witch,522,589,474,2,27.65
-wedding cake,NA,NA,NA,NA,NA
-dexter,NA,NA,NA,13,NA
-tents,NA,NA,NA,NA,1.92
-fire,595,634,580,2,215.49
-water tank,NA,NA,NA,NA,NA
-windbreaker,NA,NA,NA,4,0.31
-food tray,NA,NA,NA,NA,NA
-shower curtain,NA,NA,NA,NA,NA
-cap,NA,NA,429,2,18.75
-hairdresser,NA,NA,NA,4,2.47
-glass bowl,NA,NA,NA,NA,NA
-airliner,NA,NA,NA,NA,0.57
-tanker truck,NA,NA,NA,NA,NA
-veils,NA,NA,NA,NA,0.37
-cement truck,NA,NA,NA,NA,NA
-grate,432,424,431,6,1.02
-birdie,NA,NA,NA,4,NA
-vegetable,602,598,591,2,5.71
-sail,567,597,504,2,13.75
-butt,NA,NA,NA,2,38.57
-birdbath,NA,NA,NA,NA,0.2
-marinara,NA,NA,NA,NA,0.47
-clydesdale,NA,NA,NA,NA,NA
-horse statue,NA,NA,NA,NA,NA
-divider,NA,NA,NA,6,0.16
-donut,NA,NA,NA,2,1.41
-bott,NA,NA,NA,NA,NA
-subway,NA,NA,NA,6,10.71
-buzzard,NA,NA,NA,6,1.82
-life vest,NA,NA,NA,NA,NA
-wire,585,564,556,2,27.51
-donut hole,NA,NA,NA,NA,NA
-sleeveless,NA,NA,NA,2,0.1
-mother,579,638,632,2,479.92
-shirtmaker,NA,NA,NA,NA,0.04
-starlet,NA,NA,NA,12,0.59
-omelet,NA,NA,NA,8,2.37
-para sailer,NA,NA,NA,NA,NA
-swiss army knife,NA,NA,NA,NA,NA
-squash,NA,NA,NA,2,4.37
-bowler,NA,NA,NA,12,1.31
-kitchen appliance,NA,NA,NA,NA,NA
-child skier,NA,NA,NA,NA,NA
-lase,NA,NA,NA,NA,NA
-water fountain,NA,NA,NA,NA,NA
-young man,NA,NA,NA,NA,NA
-lentil,NA,NA,NA,14,0.22
-bus seat,NA,NA,NA,NA,NA
-young boy,NA,NA,NA,NA,NA
-cub board,NA,NA,NA,NA,NA
-frisbee,NA,NA,NA,6,NA
-objects,NA,NA,NA,NA,8.71
-serena,NA,NA,NA,NA,NA
-gingerbread house,NA,NA,NA,NA,NA
-handclasps,NA,NA,NA,NA,NA
-dipping sauce,NA,NA,NA,NA,NA
-guest,519,497,560,2,39.94
-zebra head,NA,NA,NA,NA,NA
-baking,NA,NA,NA,2,3.47
-brother,585,589,598,2,283.94
-croissant,NA,NA,NA,14,0.88
-video,NA,NA,NA,10,41.27
-zebra,NA,NA,333,2,2.51
-protester,NA,NA,NA,NA,0.2
-ping pong table,NA,NA,NA,NA,NA
-vehicle door,NA,NA,NA,NA,NA
-groomsman,NA,NA,NA,NA,0.27
-soccer ball,NA,NA,NA,NA,NA
-cream,621,557,514,2,48.71
-dove,588,616,415,4,5.57
-surfer,NA,NA,NA,NA,1.63
-caramel,NA,NA,NA,4,1.24
+tunnel,555,578,541,4,17.88
 steam engine,NA,NA,NA,4,NA
-video game player,NA,NA,NA,NA,NA
-setback,NA,NA,NA,8,1.53
-mare,549,529,460,6,2.9
-shower,588,615,593,2,41.12
-child seat,NA,NA,NA,NA,NA
-liquor,630,576,579,2,17.29
-egg benedict,NA,NA,NA,NA,NA
-poster,592,600,545,2,5.98
-bookshelves,NA,NA,NA,NA,0.31
-trouser,NA,NA,NA,NA,0.39
-zipper,599,632,556,2,2.82
-latex glove,NA,NA,NA,NA,NA
-face,599,581,612,2,289.16
-homeschooling,NA,NA,NA,NA,0.08
-book rack,NA,NA,NA,NA,NA
-shore,574,624,531,2,NA
-sleeper,NA,NA,NA,2,2.06
-furnishing,NA,NA,NA,NA,0.24
-power lines,NA,NA,NA,NA,NA
-referee,554,564,534,4,3.59
-jet plane,NA,NA,NA,NA,NA
-buses,NA,NA,NA,2,3.94
-skating board,NA,NA,NA,NA,NA
-french toast,NA,NA,NA,NA,NA
-pond,623,599,506,4,6.33
-drinker,NA,NA,NA,4,1.86
-huts,NA,NA,NA,NA,1.1
-partner,500,513,555,2,75.22
-puppies,NA,NA,NA,NA,5.45
-koala,NA,NA,NA,10,0.61
-pastureland,NA,NA,NA,NA,0.02
-doubleheader,NA,NA,NA,NA,0.14
+volleyball player,NA,NA,NA,NA,NA
+football jersey,NA,NA,NA,NA,NA
+shelves,NA,NA,NA,2,2.75
+fleece jacket,NA,NA,NA,NA,NA
+video game,NA,NA,NA,NA,NA
+leek,621,540,431,12,0.29
+lake,585,616,583,2,36.0
+airbus,NA,NA,NA,NA,NA
 tabletop,NA,NA,NA,NA,0.1
-dill,NA,NA,NA,6,NA
-ban,NA,NA,NA,8,3.14
-snowy egret,NA,NA,NA,NA,NA
-huskies,NA,NA,NA,NA,NA
-table lamp,NA,NA,NA,NA,NA
-fruitcake,NA,NA,NA,NA,2.06
-kitchen cabinet,NA,NA,NA,NA,NA
-rowboat,NA,NA,NA,2,1.06
-peel,432,436,507,2,5.35
-tofu,NA,NA,NA,NA,2.69
-glass,635,585,611,2,60.71
-interior,434,424,456,6,5.24
-gerbil,NA,NA,NA,8,0.75
-hummingbird,NA,NA,NA,2,0.61
-lotion,534,497,479,2,3.25
-bike,NA,NA,NA,2,25.88
+truck bed,NA,NA,NA,NA,NA
+noodles,NA,NA,NA,2,6.06
+crib,NA,NA,NA,2,6.2
+foal,420,448,338,12,0.27
+drapery,NA,NA,NA,10,0.06
+fruit stand,NA,NA,NA,NA,NA
+sport coat,NA,NA,NA,NA,NA
+goldfinch,NA,NA,NA,4,NA
+animal,587,575,620,2,45.49
+table,604,582,599,2,105.63
+surfer,NA,NA,NA,NA,1.63
+duckling,NA,NA,NA,2,0.76
+plank,592,598,483,4,2.04
+chicken and waffles,NA,NA,NA,NA,NA
+rugby player,NA,NA,NA,NA,NA
+metro,NA,NA,NA,13,NA
+bananas,NA,NA,NA,NA,5.45
+pack horse,NA,NA,NA,NA,NA
+figurine,NA,NA,NA,10,0.27
+lobster,590,630,472,2,7.33
+racetrack,NA,NA,NA,NA,1.8
+fillings,NA,NA,NA,NA,0.69
+van,606,572,542,6,NA
+tower,585,596,463,4,22.84
+couch,578,536,521,2,23.47
+onion,632,617,550,2,4.24
+name tag,NA,NA,NA,NA,NA
+garage,NA,NA,NA,2,27.22
+doughnuts,NA,NA,NA,NA,4.53
+anchor,595,561,458,4,7.41
+deep dish pizza,NA,NA,NA,NA,NA
+home base,NA,NA,NA,NA,NA
+baking sheet,NA,NA,NA,NA,NA
+overpass,NA,NA,NA,4,0.49
+shower stall,NA,NA,NA,NA,NA
+human,NA,NA,NA,2,124.76
+macaroni,631,608,498,2,3.25
+kitchen,NA,NA,NA,2,58.31
+cloths,NA,NA,NA,NA,0.43
+fridge,NA,NA,NA,12,9.84
+steamship,NA,NA,NA,2,0.47
+plate,595,527,556,2,25.65
+doberman,NA,NA,NA,NA,NA
 squeezer,NA,NA,NA,4,0.14
-display,462,453,567,6,8.53
-toll,424,419,485,NA,3.35
-red carpet,NA,NA,NA,8,NA
-ferry boat,NA,NA,NA,NA,NA
-chirr,NA,NA,NA,NA,NA
-mozzarella cheese,NA,NA,NA,NA,NA
-homes,NA,NA,NA,NA,14.16
-bowl of soup,NA,NA,NA,NA,NA
-stand,450,471,564,2,226.2
-chine,NA,NA,NA,NA,0.08
-jackal,NA,NA,NA,6,NA
-storage,NA,NA,NA,4,8.86
-granny,NA,546,471,4,NA
-duplicator,NA,NA,NA,6,0.02
-housekeeper,NA,NA,NA,2,5.84
-glass bottle,NA,NA,NA,NA,NA
-oven door,NA,NA,NA,NA,NA
-street,579,577,602,2,148.18
-melon,NA,NA,441,2,4.27
+orange,601,626,567,2,22.31
+barge,NA,NA,NA,4,3.88
+washroom,NA,NA,NA,2,1.69
+waterway,NA,NA,NA,4,0.12
+shirt,616,612,612,2,46.37
+costume,544,538,456,4,14.14
+sectional,NA,NA,NA,8,0.27
+television camera,NA,NA,NA,NA,NA
+palace,579,612,462,2,19.2
+tomato,662,610,574,4,5.9
+dish,NA,NA,NA,2,11.45
+plastic knife,NA,NA,NA,NA,NA
+shelter,NA,488,509,4,11.67
+semi,NA,NA,NA,8,2.33
+wing back chair,NA,NA,NA,NA,NA
+elder,NA,NA,NA,4,NA
+daughter,NA,NA,NA,2,171.35
+bbq,NA,NA,NA,NA,NA
+farmer,NA,NA,NA,2,11.84
+steak,646,647,558,4,16.24
+car,622,638,634,2,483.06
+rails,NA,NA,NA,NA,1.04
+frankfurter,NA,NA,NA,4,NA
+water bird,NA,NA,NA,NA,NA
+lawn chair,NA,NA,NA,NA,NA
+frame,562,508,494,2,14.1
+fingers,NA,NA,NA,NA,33.25
+jean jacket,NA,NA,NA,NA,NA
+chemical,NA,NA,NA,2,11.35
+station wagon,NA,NA,NA,4,NA
+eater,NA,NA,NA,NA,1.57
+dinner table,NA,NA,NA,NA,NA
+guacamole,NA,NA,NA,NA,1.1
+booth,556,486,444,6,20.37
+pizza slice,NA,NA,NA,NA,NA
+mobility scooter,NA,NA,NA,NA,NA
+beer bottle,NA,NA,NA,NA,NA
+macaw,NA,NA,NA,14,0.24
+parliament,456,475,511,6,NA
+mouse,624,615,520,2,19.12
+sedan,NA,NA,NA,6,1.76
+swimmer,NA,NA,NA,2,3.73
+baby boy,NA,NA,NA,NA,NA
+daybed,NA,NA,NA,NA,0.02
+dandelion,558,579,513,4,0.29
+stump,540,490,447,4,2.45
+apples,NA,NA,NA,NA,8.29
+epithets,NA,NA,NA,NA,0.12
+horse toy,NA,NA,NA,NA,NA
+granola,NA,NA,NA,NA,0.59
+camping chair,NA,NA,NA,NA,NA
+ski jacket,NA,NA,NA,NA,NA
+cupcake wrapper,NA,NA,NA,NA,NA
+pin,600,576,524,2,16.37
+kids,NA,NA,NA,2,301.1
+teddy bear jacket,NA,NA,NA,NA,NA
+cows,NA,NA,NA,NA,9.41
+domicile,456,435,219,14,0.35
+side table,NA,NA,NA,NA,NA
+mask,NA,NA,NA,2,19.8
+dinner,542,570,621,2,202.67
+desktop,NA,NA,NA,NA,0.1
+bull head,NA,NA,NA,NA,NA
+tabby,NA,NA,NA,12,NA
+bowl of carrots,NA,NA,NA,NA,NA
+person,562,562,620,2,212.88
+cake server,NA,NA,NA,NA,NA
+crashed plane,NA,NA,NA,NA,NA
 entertainer,NA,NA,NA,4,1.65
-loup,NA,NA,NA,NA,NA
-top hat,NA,NA,NA,NA,NA
-tin,593,532,575,2,8.65
+path,NA,NA,NA,2,24.55
+cooler,NA,NA,NA,4,7.06
+apricot,638,591,428,4,0.63
+girlfriend,NA,NA,NA,NA,76.1
+wine bucket,NA,NA,NA,NA,NA
+camp,571,588,541,2,51.22
+hard hat,NA,NA,NA,NA,NA
+bread slice,NA,NA,NA,NA,NA
+cat bed,NA,NA,NA,NA,NA
+saddle,603,578,436,2,7.82
+folding knife,NA,NA,NA,NA,NA
+conference table,NA,NA,NA,NA,NA
+field,NA,NA,NA,2,70.2
+chef,NA,NA,NA,6,11.88
+beef and broccoli,NA,NA,NA,NA,NA
+ledge,NA,NA,NA,4,3.51
+pirate hat,NA,NA,NA,NA,NA
+mound,NA,NA,NA,4,1.51
+computer table,NA,NA,NA,NA,NA
+white wine,NA,NA,NA,NA,NA
+backdrop,NA,NA,NA,8,0.47
+trash can,NA,NA,NA,NA,NA
+grandson,NA,NA,NA,2,7.98
+lid,NA,NA,NA,4,4.92
+citrus,NA,NA,NA,6,0.51
+tops,NA,NA,NA,4,7.35
+shelve,NA,NA,NA,12,0.2
+tiger,611,606,513,2,18.53
+gyro plane,NA,NA,NA,NA,NA
+florist,NA,NA,NA,4,2.41
+stove top,NA,NA,NA,NA,NA
+gazebo,NA,NA,NA,13,0.9
+fries,NA,NA,NA,NA,11.69
+toilet bowl,NA,NA,NA,NA,NA
+grilled chicken,NA,NA,NA,NA,NA
+dinghy,NA,NA,NA,13,0.71
+sleep mask,NA,NA,NA,NA,NA
+bridle,NA,NA,NA,4,0.29
+brick,610,574,529,2,10.18
+huts,NA,NA,NA,NA,1.1
+lattice,NA,NA,NA,10,0.08
+para sail,NA,NA,NA,NA,NA
+hydroplane,NA,NA,NA,8,0.02
+sidewalk,NA,NA,NA,2,5.47
+ped sheet,NA,NA,NA,NA,NA
+energy drink,NA,NA,NA,NA,NA
+glove,607,596,575,2,10.1
+workshop,NA,NA,NA,4,2.8
+gymnast,NA,NA,NA,6,0.59
+grandma,NA,NA,NA,2,NA
+gondola,606,572,291,10,0.73
+railroad train,NA,NA,NA,NA,NA
+sweater,NA,NA,NA,2,13.8
+beverage,526,565,566,4,2.33
+boys,NA,NA,NA,NA,224.16
+runway,NA,NA,NA,6,5.47
+pet bed,NA,NA,NA,NA,NA
+mountain man,NA,NA,NA,NA,NA
+head wrap,NA,NA,NA,NA,NA
+wagon,NA,NA,443,2,17.76
+lift gate,NA,NA,NA,NA,NA
+outhouse,573,494,378,6,0.75
+corset,NA,NA,NA,6,0.88
+citrus juicer,NA,NA,NA,NA,NA
+cheese pizza,NA,NA,NA,NA,NA
+flock,477,516,434,2,4.65
+workspace,NA,NA,NA,NA,0.27
+heart,605,617,578,2,244.18
+raft,NA,NA,483,4,4.71
+latex glove,NA,NA,NA,NA,NA
+pagoda,NA,NA,NA,12,NA
+couple,NA,NA,NA,2,223.41
+ramp,538,527,504,8,2.88
+tea kettle,NA,NA,NA,NA,NA
+stuffed toy,NA,NA,NA,NA,NA
+bench,614,555,488,2,9.67
+housekeeper,NA,NA,NA,2,5.84
+horse head,NA,NA,NA,NA,NA
+trash truck,NA,NA,NA,NA,NA
+camper van,NA,NA,NA,NA,NA
+tinning table,NA,NA,NA,NA,NA
+sea,596,606,537,2,59.84
+sport utility vehicle,NA,NA,NA,NA,NA
+strainer,NA,NA,NA,6,0.27
+racehorses,NA,NA,NA,NA,0.33
+baseball glove,NA,NA,NA,NA,NA
+legs,NA,NA,NA,12,55.59
+tennis player,NA,NA,NA,NA,NA
+overcoat,611,552,441,2,1.45
+beanbag,NA,NA,NA,2,0.51
+hotdogs,NA,NA,NA,NA,0.25
+motor,565,521,545,2,13.16
+fedora,NA,NA,NA,12,0.25
+window,609,602,621,2,86.0
+flooring,NA,NA,NA,6,0.43
+reporter,NA,NA,NA,2,20.39
+frank,NA,NA,NA,2,NA
+brownshirt,NA,NA,NA,NA,NA
+blouse,640,595,562,2,5.33
+strawberry,610,631,539,2,5.53
+fighter,NA,NA,NA,2,12.78
+herd,NA,NA,NA,2,7.06
+signboard,NA,NA,NA,6,0.08
+soup bowl,NA,NA,NA,NA,NA
+business,389,441,563,2,321.0
+tanker,NA,NA,NA,4,1.96
+sinks,NA,NA,NA,NA,1.71
+wildebeest,NA,NA,NA,12,0.43
+snowplow,NA,NA,NA,4,0.39
+suit and tie,NA,NA,NA,NA,NA
+goth,NA,NA,NA,NA,NA
+sail,567,597,504,2,13.75
+kitchen cupboard,NA,NA,NA,NA,NA
+model train,NA,NA,NA,NA,NA
+prow,485,307,252,14,0.12
+fire hydrant cap,NA,NA,NA,NA,NA
+cellphone,NA,NA,NA,NA,3.08
+processor,NA,NA,NA,NA,0.9
+coat,601,572,610,2,42.08
+mixer,574,536,518,2,1.08
+clothes,NA,NA,NA,2,101.14
+trawler,NA,NA,NA,12,0.45
+lamppost,NA,NA,NA,4,0.55
+canopy bed,NA,NA,NA,NA,NA
+jetliner,NA,NA,NA,4,0.06
+police car,NA,NA,NA,NA,NA
+arugula,NA,NA,NA,NA,0.12
+huskies,NA,NA,NA,NA,NA
+secretary,576,563,528,4,33.22
+lady,564,571,573,2,217.08
+ruins,NA,NA,NA,6,4.41
+cupboards,NA,NA,NA,NA,0.47
+hose,596,572,449,2,8.06
+buggy,NA,NA,NA,2,2.49
+jelly donut,NA,NA,NA,NA,NA
+motorcycling,NA,NA,NA,NA,0.02
+cycle,NA,NA,NA,6,5.88
+horns,NA,NA,NA,NA,6.2
+zucchini,NA,NA,NA,12,0.96
+medic,NA,NA,NA,10,5.71
+living room,NA,NA,NA,2,NA
+cap,NA,NA,429,2,18.75
+highchair,NA,NA,NA,NA,0.16
+mice,NA,NA,NA,2,6.57
+groomsman,NA,NA,NA,NA,0.27
+goats,NA,NA,NA,NA,2.65
+jeep,622,659,564,2,10.27
+ski board,NA,NA,NA,NA,NA
+newlyweds,NA,NA,NA,4,1.45
+lasagna,NA,NA,NA,8,3.59
+wooden stool,NA,NA,NA,NA,NA
+park bench,NA,NA,NA,NA,NA
+lime,590,563,447,4,3.29
+sneaker,NA,NA,NA,2,0.69
+contestant,NA,NA,NA,6,2.67
+pasta dish,NA,NA,NA,NA,NA
+sleeper sofa,NA,NA,NA,NA,NA
+seaport,NA,NA,NA,4,0.16
+watermelon,NA,NA,NA,4,2.2
+barrel,590,602,487,4,10.63
+zebra,NA,NA,333,2,2.51
+butterfly,593,624,481,2,5.51
+brother,585,589,598,2,283.94
+policeman,574,629,570,2,11.73
+meat,587,618,589,2,43.65
+steer,NA,NA,NA,4,5.98
+glass jar,NA,NA,NA,NA,NA
+sailboard,NA,NA,NA,NA,NA
+jumpsuit,NA,NA,NA,NA,0.71
+wild horse,NA,NA,NA,NA,NA
+rider,NA,NA,NA,4,7.71
+rain jacket,NA,NA,NA,NA,NA
+feeder,NA,NA,NA,10,0.69
+tree,604,622,613,2,65.0
+sunflower,NA,NA,NA,2,0.67
+bridge,623,608,561,2,45.71
+butt,NA,NA,NA,2,38.57
+airfield,NA,NA,NA,2,2.31
+apple,620,637,598,2,23.67
+cape,581,566,521,4,NA
+pasture,562,562,414,2,1.53
+outerwear,NA,NA,NA,NA,NA
+carpeting,NA,NA,NA,6,0.57
+trucks,NA,NA,NA,NA,9.86
+passenger,562,529,543,4,10.76
+earring,NA,NA,NA,2,2.71
+chili,NA,NA,NA,2,7.49
+relish,NA,NA,NA,6,1.88
+bookcase,NA,NA,NA,2,0.94
+skating board,NA,NA,NA,NA,NA
+lunch box,NA,NA,NA,NA,NA
+pillow,613,624,602,2,11.39
+jumbo jet,NA,NA,NA,NA,NA
+cactus,NA,NA,400,2,2.9
+carnival game,NA,NA,NA,NA,NA
+politician,494,507,556,6,3.27
+parking garage,NA,NA,NA,NA,NA
+floor,559,544,551,2,100.63
+soup pot,NA,NA,NA,NA,NA
+glass bottle,NA,NA,NA,NA,NA
+sheds,NA,NA,NA,NA,0.41
+hanger,NA,NA,NA,4,1.35
+pelican,NA,NA,NA,6,NA
+old woman,NA,NA,NA,NA,NA
+puppy,623,635,522,2,11.45
+railway track,NA,NA,NA,NA,NA
+train cars,NA,NA,NA,NA,NA
+bad,NA,NA,NA,2,545.18
+streetlamp,NA,NA,NA,NA,0.04
+shark,611,602,516,4,14.98
+specs,NA,NA,NA,4,2.08
+submarine,583,588,450,4,7.1
+pony,611,642,524,2,8.1
+prisoner,548,565,485,4,23.14
+athletic shirt,NA,NA,NA,NA,NA
+yacht,606,624,464,6,8.22
+nose,628,605,584,2,69.75
+train door,NA,NA,NA,NA,NA
+toothbrush,NA,NA,NA,2,5.0
+sailboat,NA,NA,NA,2,1.61
+lunch,552,602,616,2,104.12
+goalie,NA,NA,NA,6,1.43
+coral rock,NA,NA,NA,NA,NA
+platter,593,576,478,4,2.92
+highway overpass,NA,NA,NA,NA,NA
+hiker,NA,NA,NA,NA,0.27
+mashed potatoes,NA,NA,NA,NA,NA
+container,NA,NA,NA,4,4.29
+oven rack,NA,NA,NA,NA,NA
+animals,NA,NA,NA,NA,39.08
+stagecoach,NA,NA,NA,4,1.0
+water tank,NA,NA,NA,NA,NA
+leopard,595,635,431,2,5.41
+spectator,NA,NA,NA,6,0.9
+gas stove,NA,NA,NA,NA,NA
+grate,432,424,431,6,1.02
+blender cup,NA,NA,NA,NA,NA
+dwelling,NA,NA,NA,6,1.33
+treasure,NA,NA,NA,2,19.06
+paganini,NA,NA,NA,NA,NA
+green shirt,NA,NA,NA,NA,NA
+pizza,NA,NA,NA,2,33.51
+grinder,NA,NA,NA,6,1.27
+bread knife,NA,NA,NA,NA,NA
+vase,595,563,452,2,3.84
+chalet,NA,NA,NA,14,0.51
+race car,NA,NA,NA,NA,NA
+undershirt,NA,NA,NA,2,0.29
+dining table,NA,NA,NA,NA,NA
+guardhouse,NA,NA,NA,4,0.71
+washbasin,NA,NA,NA,6,0.02
+recreational vehicle,NA,NA,NA,NA,NA
+mike,NA,NA,NA,4,NA
+slider,NA,NA,NA,NA,0.39
+box,597,591,599,2,89.75
+single bed,NA,NA,NA,NA,NA
+cheese,NA,NA,NA,2,39.04
+girl,607,634,645,2,557.12
+dumpster,NA,NA,NA,10,3.98
+teacher,569,575,599,2,55.73
+icecream sandwhich,NA,NA,NA,NA,NA
+military man,NA,NA,NA,NA,NA
+military vehicle,NA,NA,NA,NA,NA
+railing,NA,NA,NA,4,1.47
+walker,NA,NA,NA,2,NA
+snow,618,597,615,2,31.35
+shore,574,624,531,2,NA
+screen,NA,NA,NA,2,23.39
+drawbridge,NA,NA,NA,4,0.53
+waitress,NA,NA,NA,2,11.53
+land,604,566,574,2,88.12
+grilled cheese,NA,NA,NA,NA,NA
+bathing tub,NA,NA,NA,NA,NA
+sky board,NA,NA,NA,NA,NA
+chocolate,576,611,560,2,29.39
+chili dog,NA,NA,NA,NA,NA
+motorbike,NA,NA,NA,NA,0.75
+drink,549,553,628,2,247.39
+bridge board,NA,NA,NA,NA,NA
+passenger train,NA,NA,NA,NA,NA
+doll,588,565,503,2,24.76
+tennis court,NA,NA,NA,6,NA
+bible,NA,NA,NA,NA,NA
+stork,614,570,393,2,NA
+computer system,NA,NA,NA,NA,NA
+girls,NA,NA,NA,NA,208.35
+kettle,602,594,551,2,2.8
+pizza pan,NA,NA,NA,NA,NA
+kayaker,NA,NA,NA,NA,0.02
+referee,554,564,534,4,3.59
+scrubs,NA,NA,NA,NA,0.71
+competitors,NA,NA,NA,NA,2.14
+yak,NA,NA,NA,8,1.39
+plane,535,556,558,2,95.53
+blackbird,NA,NA,NA,2,NA
+folding chair,NA,NA,NA,NA,NA
+garbage truck,NA,NA,NA,NA,NA
+softball player,NA,NA,NA,NA,NA
+fruit bowl,NA,NA,NA,NA,NA
+casserole dish,NA,NA,NA,NA,NA
+fruit,612,587,590,2,21.73
+television stand,NA,NA,NA,NA,NA
+coffee table,NA,NA,NA,NA,NA
+chew toy,NA,NA,NA,NA,NA
+tween,NA,NA,NA,NA,0.22
+chairperson,NA,NA,NA,8,0.12
+truckload,NA,NA,NA,NA,1.0
+tennis players,NA,NA,NA,NA,NA
+big ben,NA,NA,NA,NA,NA
+veg,NA,NA,NA,NA,0.45
+rocker,583,520,474,4,1.25
+hotel,591,597,565,2,103.22
+frittata,NA,NA,NA,NA,0.33
+gerbil,NA,NA,NA,8,0.75
+padding,NA,NA,NA,8,0.96
+sweets,NA,NA,NA,2,2.39
+punch bowl,NA,NA,NA,NA,NA
+home,539,599,626,2,774.33
+vulture,NA,NA,NA,4,1.76
+dentist,607,622,563,2,11.2
+caramel,NA,NA,NA,4,1.24
+ski lift,NA,NA,NA,NA,NA
+catcher,NA,NA,NA,4,3.75
+crepe,NA,NA,NA,NA,0.82
+sunbather,NA,NA,NA,NA,NA
+dogs,NA,NA,NA,NA,53.02
+pail,NA,NA,NA,4,0.94
+goose,NA,NA,NA,2,13.04
+cutlery,NA,NA,NA,10,0.35
+vent hood,NA,NA,NA,NA,NA
+headlight,NA,NA,NA,4,0.73
+linen,581,551,515,2,2.92
+post,533,518,586,2,32.43
+holder,NA,NA,NA,4,1.61
+goblet,592,577,306,6,0.37
+cooking pot,NA,NA,NA,NA,NA
+cup of tea,NA,NA,NA,NA,NA
+filet,NA,NA,NA,8,0.94
+amtrak,NA,NA,NA,NA,NA
+pastry,NA,NA,NA,6,1.92
+telephone,619,655,605,2,32.37
+arrangement,308,316,525,4,9.45
+swam,NA,NA,NA,2,2.41
+double bed,NA,NA,NA,NA,NA
+sandwich bun,NA,NA,NA,NA,NA
+tolly,NA,NA,NA,NA,NA
+dip,479,456,466,4,7.96
+flannel,574,520,499,4,1.37
+court,509,552,549,4,100.73
+knife,612,633,573,2,46.8
+flatbed,NA,NA,NA,NA,0.41
+cargo hold,NA,NA,NA,NA,NA
+cop,NA,NA,NA,2,86.14
+mango,NA,NA,NA,12,1.65
+teen,NA,NA,NA,NA,4.1
+tortilla,NA,NA,NA,10,0.31
+red bull,NA,NA,NA,NA,NA
+monk,NA,NA,NA,6,7.37
+dress,595,595,588,2,87.2
+wicker chair,NA,NA,NA,NA,NA
+river,585,633,565,2,55.47
+bed,635,635,636,2,187.12
+coke,580,623,585,2,NA
+robe,NA,NA,NA,4,8.49
+flower pot,NA,NA,NA,NA,NA
+eyeglass,NA,NA,NA,2,0.06
+picnic table,NA,NA,NA,NA,NA
+potter,NA,NA,NA,6,NA
+columns,NA,NA,NA,NA,2.76
+booster seat,NA,NA,NA,NA,NA
+baby clothes,NA,NA,NA,NA,NA
+toddler,NA,NA,NA,6,0.78
+griddle,NA,NA,NA,6,0.35
+puppies,NA,NA,NA,NA,5.45
+pizza server,NA,NA,NA,NA,NA
+pizza peel,NA,NA,NA,NA,NA
+face,599,581,612,2,289.16
+couches,NA,NA,NA,NA,0.43
+prairie,575,569,416,2,2.8
+truck,595,621,620,2,72.86
+seat cushion,NA,NA,NA,NA,NA
+futon,NA,NA,NA,NA,0.67
+cast iron skillet,NA,NA,NA,NA,NA
+tool,570,538,532,4,10.75
+pancakes,NA,NA,NA,NA,9.65
+measuring cup,NA,NA,NA,NA,NA
+pole dancer,NA,NA,NA,NA,NA
+computer mouse,NA,NA,NA,NA,NA
+grassland,NA,NA,NA,4,0.1
+lama,NA,NA,NA,14,NA
+young man,NA,NA,NA,NA,NA
+buffet,NA,NA,NA,10,4.43
+garlic bread,NA,NA,NA,NA,NA
+fielder,509,472,365,4,0.55
+trunk,596,529,485,2,19.8
+photo,NA,NA,NA,2,22.84
+guest,519,497,560,2,39.94
+police motor bike,NA,NA,NA,NA,NA
+stone,614,585,564,2,40.63
+fountain,593,602,469,2,6.9
+bug,NA,NA,NA,2,20.94
+divider,NA,NA,NA,6,0.16
+classic car,NA,NA,NA,NA,NA
+lamp,615,575,578,2,12.88
+table setting,NA,NA,NA,NA,NA
+jacuzzi,NA,NA,NA,NA,NA
+charge,NA,NA,NA,2,89.39
+mix,NA,NA,NA,2,16.35
+frosting,NA,NA,NA,2,1.41
+hooker,NA,NA,NA,12,11.73
+dress shirt,NA,NA,NA,NA,NA
+oriental rug,NA,NA,NA,NA,NA
+matte,NA,NA,NA,14,0.27
+white rice,NA,NA,NA,NA,NA
+grating,NA,NA,NA,10,0.31
+gunman,NA,NA,NA,4,2.08
+goldman,NA,NA,NA,NA,NA
+taxicab,NA,NA,NA,4,0.86
+beds,NA,NA,NA,NA,8.57
+men,586,587,621,2,372.76
+bald eagle,NA,NA,NA,NA,NA
+clock dial,NA,NA,NA,NA,NA
+bagel sandwich,NA,NA,NA,NA,NA
+stuffed fish,NA,NA,NA,NA,NA
+lily,609,541,437,2,NA
+shutter,562,533,398,2,1.45
+hut,589,560,486,2,13.22
+apron,NA,565,516,2,2.67
+wooden,NA,NA,NA,2,7.2
+cooking pan,NA,NA,NA,NA,NA
+arch,512,557,483,6,3.69
+sink counter,NA,NA,NA,NA,NA
+horses,NA,NA,NA,NA,40.92
+breakfast,576,586,657,2,66.29
+pen,571,576,554,2,24.73
+tomatoes,NA,NA,NA,NA,4.31
+glass,635,585,611,2,60.71
+rope bridge,NA,NA,NA,NA,NA
+mirror,605,627,593,2,24.18
+face mask,NA,NA,NA,NA,NA
+mammal,NA,NA,NA,8,1.22
+tents,NA,NA,NA,NA,1.92
+wine bottle,NA,NA,NA,NA,NA
+mechanic,580,530,467,4,5.06
+food counter,NA,NA,NA,NA,NA
+mason jar,NA,NA,NA,NA,NA
+picnic boat,NA,NA,NA,NA,NA
+racer,NA,NA,NA,2,2.63
+tulip,619,641,546,4,NA
+skyline,NA,NA,NA,6,0.67
+telephone booth,NA,NA,NA,NA,NA
+halter top,NA,NA,NA,NA,NA
+bun,NA,NA,NA,2,2.88
+sweet,463,493,570,2,145.2
+customer,505,488,549,4,15.2
+t-shirt,NA,NA,NA,NA,NA
+hotdog,NA,NA,NA,NA,0.39
+snowsuit,NA,NA,NA,NA,0.12
+traffic light,NA,NA,NA,NA,NA
+ketchup,NA,NA,NA,2,6.08
+exhaust,467,520,510,6,2.14
+light pole,NA,NA,NA,NA,NA
+game,NA,NA,NA,2,233.84
+vat,NA,NA,NA,8,1.49
+pork chop,NA,NA,NA,NA,NA
+bed cover,NA,NA,NA,NA,NA
+conveyor,NA,NA,NA,8,0.84
+cookware,NA,NA,NA,NA,0.12
+knit hat,NA,NA,NA,NA,NA
+baseball catcher,NA,NA,NA,NA,NA
+rail,540,556,505,2,4.57
+food container,NA,NA,NA,NA,NA
+glassware,NA,NA,NA,2,0.14
+mono plane,NA,NA,NA,NA,NA
+dolphin,NA,NA,NA,10,2.76
+cruise liner,NA,NA,NA,NA,NA
+old person,NA,NA,NA,NA,NA
+pizza slices,NA,NA,NA,NA,NA
+plumber,NA,NA,NA,2,4.49
+paper cup,NA,NA,NA,NA,NA
+coffee mug,NA,NA,NA,NA,NA
+parka,NA,NA,NA,8,0.61
+armor,NA,NA,NA,4,7.29
+whisky bottle,NA,NA,NA,NA,NA
+loveseat,NA,NA,NA,NA,0.06
+monkey,566,588,531,2,33.51
+bus seat,NA,NA,NA,NA,NA
+defender,NA,NA,NA,4,2.98
+wine,621,624,570,4,60.35
+toy boat,NA,NA,NA,NA,NA
+bunks,NA,NA,NA,NA,1.08
+spatula,586,517,407,10,1.1
+gyro,NA,NA,NA,8,0.31
+drinks,NA,NA,NA,NA,34.2
+wash,447,522,632,2,40.73
+fire boat,NA,NA,NA,NA,NA
+urn,551,510,369,10,1.94
+latte,NA,NA,NA,NA,2.41
+wiper,NA,NA,NA,2,0.57
+snowboarder,NA,NA,NA,NA,0.43
+mannequin,NA,NA,NA,12,1.22
+pan,586,532,566,2,12.29
+atv,NA,NA,NA,NA,NA
+glazed donut,NA,NA,NA,NA,NA
+jersey,621,572,559,6,NA
+father,594,646,591,2,554.49
+roast beef,NA,NA,NA,NA,NA
+train station,NA,NA,NA,NA,NA
+grill,NA,NA,NA,2,4.45
+guardrail,NA,NA,NA,NA,0.27
+bet sheet,NA,NA,NA,NA,NA
+lentil,NA,NA,NA,14,0.22
+bullet train,NA,NA,NA,NA,NA
+children,582,597,608,2,175.1
+pinata,NA,NA,NA,NA,0.41
+front door,NA,NA,NA,NA,NA
+light,550,542,575,2,165.2
+office chair,NA,NA,NA,NA,NA
+guitarist,NA,NA,NA,NA,0.71
+player,NA,NA,NA,2,37.76
+electronics,NA,NA,NA,12,2.73
+cabinetry,NA,NA,NA,NA,NA
+dirt,564,547,571,2,25.69
+curry,NA,NA,NA,12,2.43
+cowboy hat,NA,NA,NA,NA,NA
+shoulder,589,577,553,2,26.2
+starlet,NA,NA,NA,12,0.59
+egg benedict,NA,NA,NA,NA,NA
+aircraft,NA,NA,NA,4,9.45
+bath,600,601,599,2,31.12
+bureau,547,497,395,6,NA
+church tower,NA,NA,NA,NA,NA
+husky,NA,NA,NA,2,NA
+bat,564,586,514,2,20.63
+cup,539,558,595,2,51.65
+dress suit,NA,NA,NA,6,NA
+drive,NA,NA,NA,2,153.14
+cat,615,617,582,2,66.33
+sheep,622,596,507,2,13.43
+townhouse,NA,NA,NA,NA,0.75
+cafe,568,625,531,2,5.06
+pets,NA,NA,NA,NA,5.69
+cloak,543,518,423,6,3.0
+sour cream,NA,NA,NA,NA,NA
+pita,NA,NA,NA,NA,NA
+train caboose,NA,NA,NA,NA,NA
+guy,565,551,550,4,762.61
+kites,NA,NA,NA,NA,0.71
+dugout,NA,NA,NA,2,0.9
+insect,593,586,542,2,3.16
+seating area,NA,NA,NA,NA,NA
+bed sheet,NA,NA,NA,NA,NA
+sideboard,NA,NA,NA,12,0.25
+old man,NA,NA,NA,12,NA
+tractor trailer,NA,NA,NA,NA,NA
+puffin,NA,NA,NA,13,0.16
+light post,NA,NA,NA,NA,NA
+repairman,NA,NA,NA,NA,1.06
+folding table,NA,NA,NA,NA,NA
+jet fighter,NA,NA,NA,NA,NA
+rhubarb,NA,NA,NA,4,1.08
+burrito,NA,NA,NA,NA,1.65
+water trough,NA,NA,NA,NA,NA
+chair,606,610,617,2,49.24
+orchids,NA,NA,NA,NA,2.63
+stable,562,537,519,2,13.2
+coffee,613,618,625,2,144.53
+runner,NA,546,531,2,4.96
+dashboard,NA,NA,NA,8,0.98
+mustard,595,599,532,2,6.45
+pajama,NA,NA,NA,NA,1.27
+horse and rider,NA,NA,NA,NA,NA
+earphone,NA,NA,NA,6,0.12
+recliner,NA,NA,NA,NA,0.18
+light rail,NA,NA,NA,NA,NA
+shadow,457,565,536,2,21.18
+books,NA,NA,NA,NA,67.76
+gauge,NA,NA,NA,2,2.2
+tourist,533,577,536,6,4.65
+reader,NA,NA,NA,2,5.45
+veggies,NA,NA,NA,NA,0.49
+blind,443,485,531,2,45.82
+sauce,576,569,522,2,15.59
+wok,NA,NA,NA,NA,0.75
+open sandwich,NA,NA,NA,NA,NA
+snacks,NA,NA,NA,NA,3.39
+boardwalk,NA,NA,NA,10,1.84
+lap,540,531,505,4,13.47
+competitor,NA,NA,NA,6,1.37
+life jacket,NA,NA,NA,NA,NA
+storage,NA,NA,NA,4,8.86
+moth,550,577,496,2,2.27
+mug,576,574,527,4,6.84
+snack,NA,NA,NA,2,9.14
+homes,NA,NA,NA,NA,14.16
+bathtub,NA,NA,NA,2,6.1
+mantle,579,596,438,12,2.16
+young girl,NA,NA,NA,NA,NA
+cadet,NA,NA,NA,6,3.45
+long boarder,NA,NA,NA,NA,NA
+bars,NA,NA,NA,NA,17.96
+piece of pie,NA,NA,NA,NA,NA
+watch,487,525,576,2,330.02
+rat,624,588,548,2,32.61
+riverbank,NA,NA,NA,NA,0.67
+sailing ship,NA,NA,NA,NA,NA
+eggs benedict,NA,NA,NA,NA,NA
+general,408,491,568,2,NA
+spotter,NA,NA,NA,12,0.94
+cardigan,NA,NA,NA,14,0.57
+suit,545,536,543,2,68.61
+tunic,563,508,373,12,0.55
+goal,482,556,554,4,16.75
+phone,624,587,550,2,269.73
+stream,NA,NA,NA,2,8.04
+granny,NA,546,471,4,NA
+hoagie,NA,NA,NA,NA,NA
+fry,NA,NA,NA,2,8.39
+toilet cleaner,NA,NA,NA,NA,NA
+fruit basket,NA,NA,NA,NA,NA
+blackberries,NA,NA,NA,NA,0.24
+bunk bed,NA,NA,NA,NA,NA
+shampoo,NA,NA,NA,2,4.22
+kitchen stove,NA,NA,NA,NA,NA
+emu,NA,NA,NA,12,NA
+patio set,NA,NA,NA,NA,NA
+metal grate,NA,NA,NA,NA,NA
+server,NA,NA,NA,4,3.92
+coffee cup,NA,NA,NA,NA,NA
+door,606,599,630,2,292.06
+buses,NA,NA,NA,2,3.94
+child,581,619,585,2,157.65
+store,548,506,562,2,81.92
+shower,588,615,593,2,41.12
+skater,NA,NA,NA,2,1.9
+businessman,NA,NA,NA,2,7.92
+produce,432,396,534,4,11.06
+celery,NA,NA,NA,4,1.86
+bobcat,NA,NA,NA,2,0.39
+squirrel,612,642,511,2,5.47
+goat,636,585,469,2,10.53
+depot,NA,NA,NA,6,2.94
+hot tub,NA,NA,NA,NA,NA
+doorway,578,548,532,2,3.22
+stuffed animal,NA,NA,NA,NA,NA
+chest of drawers,NA,NA,NA,NA,NA
+monorail,NA,NA,NA,12,0.1
+baby dress,NA,NA,NA,NA,NA
+tank top,NA,NA,NA,NA,NA
+transportation,NA,NA,NA,4,5.55
+groomer,NA,NA,NA,NA,0.12
+bedside table,NA,NA,NA,NA,NA
+oranges,NA,NA,NA,NA,2.45
+refrigerator,574,612,545,2,8.37
 shade,NA,NA,NA,2,5.96
+cabin,596,582,523,2,19.65
+desk lamp,NA,NA,NA,NA,NA
+canister,NA,NA,NA,8,1.43
+chairlift,NA,NA,NA,NA,0.06
+delivery van,NA,NA,NA,NA,NA
+pineapple,653,569,489,4,2.55
+peel,432,436,507,2,5.35
+white shirt,NA,NA,NA,NA,NA
+bunk,NA,NA,NA,2,6.27
+nightshirt,NA,NA,NA,4,0.22
+ice cream,NA,NA,NA,2,NA
+restaurant,NA,NA,NA,2,46.53
+sitting bench,NA,NA,NA,NA,NA
+elk,NA,NA,NA,6,NA
+black sheep,NA,NA,NA,12,NA
+sleeping mask,NA,NA,NA,NA,NA
+chaise,NA,NA,NA,14,0.29
+sports jacket,NA,NA,NA,NA,NA
+ball,615,622,575,2,104.96
+entertainment,NA,NA,NA,4,12.55
+crab,626,589,433,4,6.9
+cowboy,NA,NA,521,2,18.98
+ramiro,NA,NA,NA,NA,NA
+fowl,532,528,452,6,0.69
+belt,602,494,550,2,24.35
+chicken,614,619,544,2,61.73
+doubleheader,NA,NA,NA,NA,0.14
+mom,NA,NA,NA,2,NA
+suit coat,NA,NA,NA,NA,NA
+barber,NA,NA,NA,2,5.47
+settee,NA,NA,NA,12,0.18
+steam locomotive,NA,NA,NA,NA,NA
+smoothie,NA,NA,NA,8,0.73
+eyes,NA,NA,NA,6,221.55
+donut,NA,NA,NA,2,1.41
+doghouse,NA,NA,NA,6,1.12
+siding,NA,NA,NA,10,1.33
+wooden leg,NA,NA,NA,NA,NA
+straw hat,NA,NA,NA,NA,NA
+horse carriage,NA,NA,NA,NA,NA
+trilby,NA,NA,NA,NA,NA
+helicopter,NA,NA,NA,2,15.8
+headgear,NA,NA,NA,6,0.31
+lift,461,482,555,2,34.14
+prius,NA,NA,NA,NA,NA
+lettuce,579,608,565,2,3.39
+kicker,NA,NA,NA,NA,1.06
+overalls,NA,NA,NA,2,1.02
+pizza box,NA,NA,NA,NA,NA
+ruler,555,543,571,2,3.18
+pizza toppings,NA,NA,NA,NA,NA
+sewing table,NA,NA,NA,NA,NA
+vegetable,602,598,591,2,5.71
+horse statue,NA,NA,NA,NA,NA
+milkshake,NA,NA,NA,2,0.82
+greens,NA,NA,NA,2,2.14
+headdress,NA,NA,NA,4,0.29
+food processor,NA,NA,NA,NA,NA
+stage,NA,NA,NA,4,45.57
+vacationer,NA,NA,NA,NA,0.02
+phone booth,NA,NA,NA,2,NA
+snowy egret,NA,NA,NA,NA,NA
+library,564,587,580,2,22.94
+rice,608,506,548,2,15.08
+syrup,NA,NA,NA,6,5.1
+porcelain,NA,NA,NA,8,1.57
+medicine cabinet,NA,NA,NA,NA,NA
+patrolman,NA,NA,NA,4,1.22
+building,NA,NA,NA,2,99.57
+beard,NA,NA,NA,4,12.61
+tossed salad,NA,NA,NA,NA,NA
+doughnut,NA,NA,NA,4,4.22
+windshield,NA,NA,NA,6,3.27
+servomotor,NA,NA,NA,NA,NA
+ford,NA,NA,NA,8,NA
+larry,NA,NA,NA,NA,NA
+flatbread,NA,NA,NA,NA,NA
+harness,563,513,421,2,2.61
+birds,NA,NA,NA,NA,25.88
+teenager,NA,NA,NA,NA,6.88
+pant leg,NA,NA,NA,NA,NA
+sofa bed,NA,NA,NA,NA,NA
+calf,592,565,511,2,2.96
+beanie,NA,NA,NA,8,NA
+facade,NA,NA,NA,13,0.82
+bullock,NA,NA,NA,12,NA
+fur coat,NA,NA,NA,NA,NA
+bonnet,NA,NA,NA,2,1.86
+bagel dog,NA,NA,NA,NA,NA
+sea plane,NA,NA,NA,NA,NA
+airplane wing,NA,NA,NA,NA,NA
+workstation,NA,NA,NA,NA,0.33
+bowl,575,579,557,2,21.45
+clock tower,NA,NA,NA,NA,NA
+ship,615,612,553,2,98.88
+skillet,NA,NA,NA,4,1.22
+equipment,532,410,543,4,25.45
+eye mask,NA,NA,NA,NA,NA
+carafe,NA,NA,NA,12,0.1
+subway,NA,NA,NA,6,10.71
+beach,612,667,553,2,56.63
+stove,591,592,525,2,7.59
+jesus,NA,NA,NA,NA,NA
+motor scooter,NA,NA,NA,NA,NA
+swiss army knife,NA,NA,NA,NA,NA
+child skier,NA,NA,NA,NA,NA
+poster,592,600,545,2,5.98
+houses,NA,NA,NA,NA,19.12
+apple chip,NA,NA,NA,NA,NA
+baby,589,608,597,2,509.37
+apartment house,NA,NA,NA,NA,NA
+zip up,NA,NA,NA,NA,NA
+ski pole,NA,NA,NA,NA,NA
+squash,NA,NA,NA,2,4.37
+hamburger bun,NA,NA,NA,NA,NA
+cow head,NA,NA,NA,NA,NA
+whooping crane,NA,NA,NA,8,NA
+sparrow,629,583,523,2,NA
+reclining chair,NA,NA,NA,NA,NA
+topping,NA,NA,NA,8,0.88
+inflatable,NA,NA,NA,NA,0.73
+jets,NA,NA,NA,NA,4.41
+ray,470,556,480,4,NA
+bedding,NA,NA,NA,6,0.75
+thatched roof,NA,NA,NA,NA,NA
+cos player,NA,NA,NA,NA,NA
+airline,NA,NA,NA,2,6.49
+chicken sandwich,NA,NA,NA,NA,NA
+gravy,606,594,522,2,5.27
+overhang,NA,NA,NA,8,0.18
+muffin,NA,NA,NA,2,5.82
+uni cyclist,NA,NA,NA,NA,NA
+police boat,NA,NA,NA,NA,NA
+warplane,NA,NA,NA,NA,0.1
+billy goat,NA,NA,NA,2,NA
+graph,553,535,524,6,0.75
+doggy,NA,NA,NA,4,4.41
+husband,549,537,557,2,194.8
+wheelchair,NA,NA,NA,NA,6.2
+hummingbird,NA,NA,NA,2,0.61
+bathrooms,NA,NA,NA,NA,2.71
+dessert plate,NA,NA,NA,NA,NA
+picture,579,581,597,2,138.45
+cushions,NA,NA,NA,NA,1.18
+sign,520,534,543,2,133.27
+panel truck,NA,NA,NA,NA,NA
+yogurt,NA,NA,NA,2,2.27
+roll,457,496,547,2,63.27
+trunks,NA,NA,NA,4,2.51
+sports dress,NA,NA,NA,NA,NA
+alpaca,NA,NA,NA,12,0.2
+wine glasses,NA,NA,NA,NA,NA
+soup,615,604,576,2,25.2
+drinking glass,NA,NA,NA,NA,NA
+bidet,NA,NA,NA,14,0.35
+curtains,NA,NA,NA,4,6.29
+cupcake,NA,NA,NA,4,3.27
+toy motorcycle,NA,NA,NA,NA,NA
+tennis outfit,NA,NA,NA,NA,NA
+stew,603,587,522,4,6.43
+mini truck,NA,NA,NA,NA,NA
+body,568,614,610,2,195.53
+bar,565,596,592,2,85.98
+hatch,NA,NA,NA,4,12.82
+book,609,591,643,2,176.98
+kitty,NA,NA,NA,2,NA
+bulldog,626,583,370,2,NA
+speedboat,NA,NA,NA,2,0.53
+dentist chair,NA,NA,NA,NA,NA
+spacecraft,NA,NA,NA,2,2.25
+seating,NA,NA,NA,NA,2.14
+calzone,NA,NA,NA,NA,0.1
+shower curtain,NA,NA,NA,NA,NA
+wine glass,NA,NA,NA,NA,NA
+elephant,628,616,459,2,11.37
+boarder,NA,NA,NA,8,0.57
+bicycle,NA,NA,NA,2,6.61
+sub sandwich,NA,NA,NA,NA,NA
+railroad track,NA,NA,NA,NA,NA
+hair stylist,NA,NA,NA,NA,NA
+bowls,NA,NA,NA,12,2.18
+chare,NA,NA,NA,NA,NA
+frock,481,403,323,10,0.84
+bathrobe,NA,NA,NA,4,1.67
+door mat,NA,NA,NA,NA,NA
+flannel shirt,NA,NA,NA,NA,NA
+breakfast table,NA,NA,NA,NA,NA
+card,565,578,543,2,85.43
+pool house,NA,NA,NA,NA,NA
+turban,NA,NA,NA,6,1.29
+jumper,NA,NA,NA,6,2.29
+glasses,NA,NA,NA,2,33.12
+apple core,NA,NA,NA,NA,NA
+water,616,632,641,2,225.06
+airport,NA,NA,NA,2,38.04
+cake slice,NA,NA,NA,NA,NA
+coral,572,561,425,8,NA
+video game player,NA,NA,NA,NA,NA
+deck,566,539,507,2,23.76
+freeway,NA,NA,NA,NA,5.53
+chair cushion,NA,NA,NA,NA,NA
+car interior,NA,NA,NA,NA,NA
+bowl of cereal,NA,NA,NA,NA,NA
+gourd,NA,NA,NA,6,0.47
+mountain,616,629,574,4,35.39
+hydrant,NA,NA,NA,6,1.02
+plushier,NA,NA,NA,NA,NA
+yellow jacket,NA,NA,NA,2,NA
+bear,585,572,526,2,57.41
+bluejay,NA,NA,NA,4,NA
+cot,NA,NA,391,4,2.0
+egg,613,599,608,2,26.04
+brownie,535,553,386,2,NA
+bacon,NA,NA,NA,2,11.86
+pilot,NA,NA,NA,2,26.67
+water pitcher,NA,NA,NA,NA,NA
+corral,NA,NA,NA,6,2.33
+peacock,NA,NA,NA,2,NA
+batter,NA,NA,NA,2,3.98
+truck cab,NA,NA,NA,NA,NA
+coastline,NA,NA,NA,6,0.71
+women,NA,NA,NA,2,195.65
+pizza hut,NA,NA,NA,NA,NA
+chest,580,556,543,2,40.98
+basket,606,560,485,2,13.18
+whiskey,604,592,574,4,16.12
+outfielder,NA,NA,NA,2,0.1
+sleeping bag,NA,NA,NA,NA,NA
+spreader,NA,NA,NA,8,0.69
+fuselage,483,402,289,12,1.02
+train set,NA,NA,NA,NA,NA
+polar bear,NA,NA,NA,2,NA
+pedestrian bridge,NA,NA,NA,NA,NA
+sausages,NA,NA,NA,NA,2.55
+coffee machine,NA,NA,NA,NA,NA
+ewe,538,481,341,6,0.31
+bean,604,538,549,2,6.84
+log,NA,NA,466,2,11.96
+temple,565,547,450,4,17.55
+canoe,623,602,441,4,3.57
+stone bench,NA,NA,NA,NA,NA
+equine,NA,NA,NA,14,0.14
+countertop,NA,NA,NA,NA,NA
+gentleman,516,559,537,2,41.86
+butter knife,NA,NA,NA,NA,NA
+figure,472,526,534,4,129.37
+camel,597,561,421,2,5.02
+shoe,600,601,569,2,30.39
+taco truck,NA,NA,NA,NA,NA
+rickshaw,NA,NA,NA,NA,0.59
+baking pan,NA,NA,NA,NA,NA
+fight,455,543,561,2,201.08
+pig,614,635,509,2,39.14
+clydesdale,NA,NA,NA,NA,NA
+pickup,NA,NA,NA,2,7.63
+toothbrush holder,NA,NA,NA,NA,NA
+cabinetmaking,NA,NA,NA,NA,NA
+tuxedo,NA,NA,NA,8,3.1
+bench seat,NA,NA,NA,NA,NA
+salt shaker,NA,NA,NA,NA,NA
+jackknife,NA,NA,NA,4,0.18
+collar,622,582,509,2,10.51
+pickup truck,NA,NA,NA,NA,NA
+television,NA,NA,NA,4,33.9
+buildings,NA,NA,NA,NA,9.98
+dog jacket,NA,NA,NA,NA,NA
+bathroom vanity,NA,NA,NA,NA,NA
+ocean liner,NA,NA,NA,NA,NA
+bartender,NA,NA,NA,2,9.76
+ballerina,NA,NA,NA,8,2.31
+card reader,NA,NA,NA,NA,NA
+crackpot,NA,NA,NA,6,0.96
+pant,NA,NA,NA,6,0.96
+daisy,613,573,519,4,NA
+roast,NA,NA,536,2,9.78
+airway,NA,NA,NA,2,1.63
+flamingo,NA,NA,NA,6,NA
+shelf,NA,NA,NA,4,6.96
+shirting,NA,NA,NA,NA,NA
+backboard,NA,NA,NA,6,0.47
+croissant,NA,NA,NA,14,0.88
+trailer,597,587,528,4,11.35
+spray bottle,NA,NA,NA,NA,NA
+teddy bear,NA,NA,NA,2,NA
+handbag,NA,NA,NA,2,2.63
+young boy,NA,NA,NA,NA,NA
+donut hole,NA,NA,NA,NA,NA
+baseball jersey,NA,NA,NA,NA,NA
+ottoman,NA,NA,NA,14,0.31
+ram,541,546,468,2,6.43
+juggler,547,553,425,2,0.47
+male,564,587,588,4,33.94
+baseball field,NA,NA,NA,NA,NA
+splash,NA,NA,NA,2,4.22
+boyfriend,NA,NA,NA,NA,72.24
+table and chairs,NA,NA,NA,NA,NA
+boy,609,618,606,2,529.82
+glider,NA,NA,NA,4,0.69
+toilette,NA,NA,NA,13,0.1
+barbecue,NA,NA,NA,4,8.94
+tray,590,550,558,4,8.04
+coleslaw,NA,NA,NA,4,1.24
+pirate ship,NA,NA,NA,NA,NA
+dalmatian,NA,NA,NA,NA,NA
+patio,NA,NA,NA,6,2.61
+mountain goat,NA,NA,NA,2,NA
+cook stove,NA,NA,NA,NA,NA
+cappuccino,NA,NA,NA,NA,2.86
+bagel,NA,NA,NA,10,3.06
+vehicle,558,593,534,4,22.61
+bedsheets,NA,NA,NA,NA,0.24
+anchorman,NA,NA,NA,10,0.35
+soda,600,544,536,2,19.84
+food bowl,NA,NA,NA,NA,NA
+vent,NA,NA,NA,4,4.41
+fruit cup,NA,NA,NA,NA,NA
+school bus,NA,NA,NA,NA,NA
+box truck,NA,NA,NA,NA,NA
+camping,NA,NA,NA,NA,6.18
+teenagers,NA,NA,NA,NA,4.22
+broccoli and cheese,NA,NA,NA,NA,NA
+exam table,NA,NA,NA,NA,NA
+carriage,576,529,436,2,7.47
+turf,NA,NA,NA,6,4.27
+blackberry,NA,NA,NA,2,0.75
+young lady,NA,NA,NA,NA,NA
+pizza tray,NA,NA,NA,NA,NA
+cruise ship,NA,NA,NA,NA,NA
+tin can,NA,NA,NA,NA,NA
+lantern,630,575,441,2,2.02
+model,NA,NA,NA,2,32.06
+shipyard,NA,NA,NA,2,0.84
+f's,NA,NA,NA,NA,NA
+wall,589,576,596,2,70.69
+road sign,NA,NA,NA,NA,NA
+semitrailer,NA,NA,NA,NA,0.02
+train cab,NA,NA,NA,NA,NA
+bathroom,NA,NA,NA,2,61.67
+retriever,NA,NA,NA,10,0.75
+oven door,NA,NA,NA,NA,NA
+sports coat,NA,NA,NA,NA,NA
+coal car,NA,NA,NA,NA,NA
+tramcar,NA,NA,NA,NA,NA
+hill,588,607,585,2,37.55
+photograph,590,618,551,4,11.35
+dog out,NA,NA,NA,NA,NA
+champagne,NA,NA,NA,6,31.29
+dirt bike,NA,NA,NA,NA,NA
+tractor,590,585,518,2,3.73
+kiwi,NA,NA,NA,12,0.78
+pipe,602,598,535,2,19.39
+man,618,567,623,2,1845.75
+pontoon,NA,NA,NA,12,0.27
+sink cabinet,NA,NA,NA,NA,NA
+train cart,NA,NA,NA,NA,NA
+top hat,NA,NA,NA,NA,NA
+filling,NA,NA,NA,4,9.69
+family,525,577,607,2,354.25
+toy dog,NA,NA,NA,NA,NA
+barbecue sauce,NA,NA,NA,2,NA
+motorcyclist,NA,NA,NA,NA,0.25
+shrine,NA,NA,NA,8,2.96
+easy chair,NA,NA,NA,NA,NA
+window screen,NA,NA,NA,NA,NA
+bathroom counter,NA,NA,NA,NA,NA
+cheetah,NA,NA,NA,8,NA
+teapot,NA,NA,NA,2,0.86
+trophy,NA,NA,NA,2,7.55
+pepperoni,NA,NA,NA,NA,2.57
+food bar,NA,NA,NA,NA,NA
+lambs,NA,NA,NA,NA,1.67
+paddle boat,NA,NA,NA,NA,NA
+mother,579,638,632,2,479.92
+shopper,NA,NA,NA,2,0.65
+device,444,391,500,6,18.16
+trench coat,NA,NA,NA,8,NA
+lion,627,626,511,2,15.35
+work surface,NA,NA,NA,NA,NA
+prey,464,500,443,6,5.51
+trucked,NA,NA,NA,NA,0.08
+disc drive,NA,NA,NA,NA,NA
+rocking chair,NA,NA,NA,NA,NA
+monument,558,543,455,4,2.29
+easel,580,532,349,4,0.27
+kid,536,525,559,2,339.2
+buzzard,NA,NA,NA,6,1.82
+spinach,589,606,452,4,2.55
+ramen,NA,NA,NA,NA,NA
+sausage,NA,NA,NA,2,7.78
+cookie jar,NA,NA,NA,NA,NA
+wooden spoon,NA,NA,NA,NA,NA
+petals,NA,NA,NA,NA,1.51
+buffalo,NA,NA,NA,2,NA
+pie tin,NA,NA,NA,NA,NA
+floor mat,NA,NA,NA,NA,NA
+streetcar,NA,NA,NA,2,1.27
+veggie,NA,NA,NA,NA,0.59
+china,578,597,507,2,NA
+spaghetti,NA,NA,NA,2,5.92
+blanket,622,582,563,2,12.98
+pantry,NA,NA,NA,6,1.75
+life vest,NA,NA,NA,NA,NA
+storefront,NA,NA,NA,NA,0.45
+number plate,NA,NA,NA,NA,NA
+flyer,NA,NA,NA,2,3.39
+lamp shade,NA,NA,NA,NA,NA
+jet,580,585,583,2,14.14
+porch,596,586,455,2,9.63
+wood stove,NA,NA,NA,NA,NA
+hat,601,562,580,2,64.18
+lotion,534,497,479,2,3.25
+lodge,538,464,429,4,6.69
+margarita,NA,NA,NA,NA,1.39
+pickle,606,641,562,2,4.61
+freight train,NA,NA,NA,NA,NA
+commuter,NA,NA,NA,8,0.59
+street,579,577,602,2,148.18
+fire engine,NA,NA,NA,2,NA
+pizza topping,NA,NA,NA,NA,NA
+ferry boat,NA,NA,NA,NA,NA
+footstool,NA,NA,NA,2,0.16
+anorak,NA,NA,NA,NA,NA
+child seat,NA,NA,NA,NA,NA
+selfie,NA,NA,NA,NA,NA
+kayak,NA,NA,NA,6,0.51
+skating,NA,NA,NA,NA,4.92
+station,572,554,548,2,79.08
+orange juice,NA,NA,NA,NA,NA
+backpack,NA,NA,NA,NA,3.65
+deer,631,624,509,2,8.71
+pizza oven,NA,NA,NA,NA,NA
+shrimp,629,618,546,4,8.71
+propeller,593,599,491,4,1.53
+turkey,NA,NA,NA,2,22.61
+dresser,560,556,526,6,3.57
+para sailer,NA,NA,NA,NA,NA
+entry,NA,356,492,6,12.16
+locket,NA,NA,NA,4,1.71
+commuter train,NA,NA,NA,NA,NA
+diver,NA,NA,448,4,2.43
+cruise,NA,NA,NA,6,12.27
+kitchenettes,NA,NA,NA,NA,0.02
+samosas,NA,NA,NA,NA,0.18
+shower head,NA,NA,NA,NA,NA
+elbow,607,602,564,2,6.14
+cabbage,611,573,504,2,2.9
+plastic bottle,NA,NA,NA,NA,NA
+stuffed animals,NA,NA,NA,NA,NA
+clothe,NA,NA,NA,8,0.82
+bricks,NA,NA,NA,NA,3.92
+focaccia,NA,NA,NA,NA,NA
+roadster,NA,NA,NA,8,0.35
+entree,418,413,441,12,0.82
+liquor,630,576,579,2,17.29
+whale,610,623,500,4,11.25
+smart car,NA,NA,NA,NA,NA
+motorcycle,NA,NA,NA,2,8.92
+apartment complex,NA,NA,NA,NA,NA
+fritter,NA,NA,NA,10,0.29
+curio cabinet,NA,NA,NA,NA,NA
+lamb,633,614,519,2,10.63
+male child,NA,NA,NA,NA,NA
+tank,581,563,511,4,25.61
+cook,502,504,568,2,45.57
+castle,NA,NA,415,2,21.55
+shirtsleeve,NA,NA,NA,NA,0.02
+caretaker,NA,NA,NA,6,2.45
+propeller plane,NA,NA,NA,NA,NA
+oxen,NA,NA,NA,4,0.43
+resort,499,523,523,6,6.9
+covering,NA,NA,NA,4,12.43
+utensil,567,534,494,4,0.24
+garb,NA,NA,NA,10,0.31
+flowers,NA,NA,NA,NA,47.59
+head,603,593,611,2,371.51
+entertainment center,NA,NA,NA,NA,NA
+dancer,558,551,535,4,16.29
+tomato sauce,NA,NA,NA,NA,NA
+skier,NA,NA,NA,NA,0.47
+cabinets,NA,NA,NA,NA,1.2
+foot,558,597,583,2,64.92
+wings,NA,NA,NA,8,19.67
+pineapple upside down cake,NA,NA,NA,NA,NA
+wave,492,542,518,2,21.25
+chateau,NA,NA,NA,13,2.53
+eclair,NA,NA,NA,13,0.2
+chick,NA,NA,NA,2,26.16
+pie,613,604,576,2,28.75
+pie crust,NA,NA,NA,NA,NA
+table lamp,NA,NA,NA,NA,NA
+sauerkraut,604,585,426,6,1.0
+finch,NA,NA,NA,8,NA
+dove,588,616,415,4,5.57
+myna,NA,NA,NA,NA,NA
+baseball cap,NA,NA,NA,NA,NA
+partition,NA,NA,NA,10,0.49
+hug,NA,NA,NA,2,19.33
+counter,NA,NA,NA,4,13.9
+broccoli pasta,NA,NA,NA,NA,NA
+moped,NA,NA,NA,6,0.45
+officer,550,593,549,4,103.24
+potato,629,617,612,2,11.29
+silverware,NA,NA,NA,4,2.14
+hospital bed,NA,NA,NA,NA,NA
+walkway,NA,NA,NA,NA,0.37
+bedpost,NA,NA,NA,2,0.31
+eye wear,NA,NA,NA,NA,NA
+listener,NA,NA,NA,6,1.41
+soldier,578,578,517,4,38.92
+giraffe,NA,NA,381,2,1.49
+sock,581,553,578,2,8.98
+remote control car,NA,NA,NA,NA,NA
+buyer,NA,463,487,2,5.18
+olive,618,578,444,4,NA
+bucket,594,586,506,2,10.02
+train engine,NA,NA,NA,NA,NA
+turntable,NA,NA,NA,2,0.35
+deckchair,NA,NA,NA,NA,NA
+taco,NA,NA,NA,NA,3.1
+paper,599,590,635,2,103.35
+pair,377,480,544,2,37.25
+pizza paddle,NA,NA,NA,NA,NA
+train platform,NA,NA,NA,NA,NA
+flag,606,607,545,2,17.49
+leeks,NA,NA,NA,NA,0.06
+tiles,NA,NA,NA,NA,1.67
+china cabinet,NA,NA,NA,NA,NA
+speaker,537,549,554,2,6.9
+manor,523,508,424,10,3.41
+quad,NA,NA,NA,NA,1.55
+cow,621,632,529,2,25.51
+ramekin,NA,NA,NA,14,NA
+carpet,581,538,508,2,11.65
+duck,606,632,529,2,24.76
+flat-bed truck,NA,NA,NA,NA,NA
+little girl,NA,NA,NA,NA,NA
+van door,NA,NA,NA,NA,NA
+fighter jet,NA,NA,NA,NA,NA
+duck decoy,NA,NA,NA,NA,NA
+polo shirt,NA,NA,NA,NA,NA
+maid,NA,NA,NA,4,22.82
+bathmat,NA,NA,NA,NA,0.25
+scoreboard,NA,NA,NA,NA,0.61
+formal wear,NA,NA,NA,NA,NA
+vehicle door,NA,NA,NA,NA,NA
+fast food,NA,NA,NA,NA,NA
+ale,578,526,454,6,3.96
+work clothes,NA,NA,NA,NA,NA
+pizza dough,NA,NA,NA,NA,NA
+flower stand,NA,NA,NA,NA,NA
+marina,NA,NA,NA,10,NA
+artist,554,600,547,2,28.63
+ostrich,NA,NA,358,2,0.94
+sandwich bread,NA,NA,NA,NA,NA
+princess,568,547,502,2,39.59
+teddy,NA,NA,NA,NA,NA
+pasta salad,NA,NA,NA,NA,NA
+caramel sauce,NA,NA,NA,NA,NA
+file cabinet,NA,NA,NA,NA,NA
+pet,557,589,541,2,20.18
+iris,589,606,493,6,NA
+mitt,NA,NA,NA,2,1.37
+pyjamas,NA,NA,NA,2,1.76
+mantel,NA,NA,NA,6,0.75
+wash room,NA,NA,NA,NA,NA
+football player,NA,NA,NA,NA,NA
+grandmother,579,609,522,2,27.78
+house,608,606,600,2,514.0
+bar top,NA,NA,NA,NA,NA
+farm,565,560,564,2,30.04
+dog,610,636,598,2,192.84
+pizza plate,NA,NA,NA,NA,NA
+wooden bench,NA,NA,NA,NA,NA
+quesadilla,NA,NA,NA,NA,0.22
+steamboat,NA,NA,NA,4,0.51
+worker,532,486,587,2,10.94
+cradle,587,592,478,2,2.84
+little kid,NA,NA,NA,NA,NA
+round table,NA,NA,NA,NA,NA
+shirt collar,NA,NA,NA,NA,NA
+bong,NA,NA,NA,2,2.78
+hairdresser,NA,NA,NA,4,2.47
+teepee,NA,NA,NA,4,0.12
+clothing,570,588,614,2,10.84
+model plane,NA,NA,NA,NA,NA
+heron,NA,NA,NA,8,0.27
+garden chair,NA,NA,NA,NA,NA
+veterinarian,NA,NA,NA,6,1.25
+pork,585,522,538,2,10.53
+waistcoat,NA,NA,NA,8,0.35
+hot dog and fries,NA,NA,NA,NA,NA
+toast,582,594,571,2,33.47
+beach chair,NA,NA,NA,NA,NA
+pastries,NA,NA,NA,NA,0.57
+counter type,NA,NA,NA,NA,NA
+bear cub,NA,NA,NA,NA,NA
+lounge,NA,NA,NA,6,7.86
+cloth,580,547,561,2,6.1
+nightshirts,NA,NA,NA,NA,0.02
+motorboat,NA,NA,NA,2,0.57
+shack,NA,NA,NA,6,5.65
+gallery,569,566,479,6,8.51
+dog toy,NA,NA,NA,NA,NA
+mule,592,608,455,2,7.02
+stems,NA,NA,NA,NA,1.0
+pug,NA,NA,NA,8,NA
+jet plane,NA,NA,NA,NA,NA
+hatchback,NA,NA,NA,10,0.16
+pond,623,599,506,4,6.33
+countertype,NA,NA,NA,NA,NA
+military aircraft,NA,NA,NA,NA,NA
+monitor,NA,NA,NA,6,13.12
+skirt,614,573,551,4,9.96
+ground,558,513,574,2,72.47
+lover,NA,NA,NA,2,26.63
+comforter,467,499,392,6,0.39
+actress,NA,NA,NA,2,16.02
+parking lot,NA,NA,NA,NA,NA
+apartment,575,556,491,2,83.04
+slice,443,507,540,2,8.53
+headboard,NA,NA,NA,8,0.29
+husband and wife,NA,NA,NA,NA,NA
+microwave oven,NA,NA,NA,NA,NA
+photographer,NA,NA,NA,4,9.12
+bear statue,NA,NA,NA,NA,NA
+hoodie,NA,NA,NA,NA,0.2
+protester,NA,NA,NA,NA,0.2
+mitten,NA,NA,NA,2,NA
+bowtie,NA,NA,NA,NA,0.12
+birdbath,NA,NA,NA,NA,0.2
+pants,619,630,575,2,58.75
+cereal,637,576,543,2,6.35
+ox,633,548,364,4,7.78
+camera,627,576,550,2,57.0
+decoration,507,526,517,10,1.84
+wrap,457,482,549,2,17.8
+vessel,571,525,461,6,9.35
+baby bird,NA,NA,NA,NA,NA
+self,459,466,604,4,14.16
+trailer truck,NA,NA,NA,NA,NA
+washstand,NA,NA,NA,6,0.04
+diner,515,497,442,2,12.39
+shetlands,NA,NA,NA,NA,0.02
+graffiti,NA,NA,NA,NA,2.02
+wind surfer,NA,NA,NA,NA,NA
+water fountain,NA,NA,NA,NA,NA
+crane,606,562,428,4,NA
+kale,558,391,256,14,0.55
+nurse,588,617,537,2,44.98
+giraffe statue,NA,NA,NA,NA,NA
+spoon,614,584,612,2,7.61
+pretzel,NA,NA,NA,2,2.0
+parrot,NA,NA,NA,2,3.27
+umpire,581,572,542,4,1.06
+love seat,NA,NA,NA,6,NA
+gamer,NA,NA,NA,NA,0.12
+mansion,579,628,489,4,6.45
+cargo plane,NA,NA,NA,NA,NA
+zebras,NA,NA,NA,NA,0.51
+bluebird,NA,NA,NA,2,0.76
+raven,NA,NA,NA,8,NA
+pop,NA,NA,NA,2,NA
+sportswear,NA,NA,NA,NA,0.37
+cable car,NA,NA,NA,NA,NA
+baseball dugout,NA,NA,NA,NA,NA
+sleeveless,NA,NA,NA,2,0.1
+playground,NA,NA,NA,2,5.1
+bicycler,NA,NA,NA,NA,NA
+pizza cutter,NA,NA,NA,NA,NA
+prep table,NA,NA,NA,NA,NA
+towel,NA,NA,NA,2,14.16
+computer,NA,NA,NA,2,59.04
+dishes,NA,NA,NA,2,11.86
+carrier,NA,NA,NA,6,6.39
+ping pong table,NA,NA,NA,NA,NA
+rescue truck,NA,NA,NA,NA,NA
+food truck,NA,NA,NA,NA,NA
+juicer,NA,NA,NA,NA,0.39
+dipping sauce,NA,NA,NA,NA,NA
+drapes,NA,NA,NA,4,2.98
+caller,NA,NA,NA,6,4.35
+flight,NA,NA,NA,2,59.69
+house cat,NA,NA,NA,NA,NA
+basketball player,NA,NA,NA,NA,NA
+skewer,NA,NA,NA,12,0.41
+baseball,NA,NA,NA,2,25.25
+jug,NA,NA,498,2,2.63
+lemon,608,632,518,2,12.02
+construction worker,NA,NA,NA,NA,NA
+reuben,NA,NA,NA,NA,NA
+ham,554,570,536,2,11.59
+span,352,381,449,6,1.98
+book stack,NA,NA,NA,NA,NA
+chairs,NA,NA,NA,NA,9.88
+street sign,NA,NA,NA,NA,NA
+hall,565,559,592,2,51.94
+4 wheeler,NA,NA,NA,NA,NA
+hand,604,598,601,2,279.65
+portrait,570,565,427,6,5.43
+desk,583,574,583,2,43.9
+canopy,NA,NA,NA,8,1.69
+packet,NA,NA,NA,6,2.51
+bus station,NA,NA,NA,NA,NA
+baseball mitt,NA,NA,NA,NA,NA
+dad,603,626,646,2,NA
+crumb cake,NA,NA,NA,NA,NA
+crossover,NA,NA,NA,NA,0.39
+side view mirror,NA,NA,NA,NA,NA
+pot of vegetables,NA,NA,NA,NA,NA
+ladies,NA,NA,NA,2,138.31
+rice bowl,NA,NA,NA,NA,NA
+salmon,NA,NA,NA,4,6.55
+slice of bread,NA,NA,NA,NA,NA
+serviceman,NA,NA,NA,10,0.16
+garment,552,507,440,4,1.39
+display,462,453,567,6,8.53
+raincoat,NA,NA,NA,4,1.65
+lab coat,NA,NA,NA,NA,NA
+water buffalo,NA,NA,NA,6,NA
+roasting pan,NA,NA,NA,NA,NA
+village,576,578,524,2,33.57
+donuts,NA,NA,NA,NA,2.9
+horse,613,624,560,2,92.88
+crape,NA,NA,NA,14,NA
+water skier,NA,NA,NA,NA,NA
+top,435,486,571,2,133.43
+auto,NA,NA,NA,2,7.67
+green bean,NA,NA,NA,NA,NA
+beer,587,598,604,4,75.49
+tennis dress,NA,NA,NA,NA,NA
+skate,562,563,534,2,5.9
+pews,NA,NA,NA,NA,0.14
+wardrobe,NA,NA,NA,6,6.47
+stocking cap,NA,NA,NA,NA,NA
+cucumber,653,623,536,6,1.98
+blankets,NA,NA,NA,2,5.1
+plane wing,NA,NA,NA,NA,NA
+bed sheets,NA,NA,NA,NA,NA
+helmet,602,620,528,2,9.47
+kitten,612,639,517,2,4.73
+fence,597,611,526,2,16.06
+power lines,NA,NA,NA,NA,NA
+kimono,NA,NA,NA,4,1.08
+jacket,635,611,596,2,33.41
+cruiser,571,553,490,6,3.18
+console table,NA,NA,NA,NA,NA
+model airplane,NA,NA,NA,NA,NA
+soccer player,NA,NA,NA,NA,NA
+laptop,NA,NA,NA,NA,3.47
+room,566,545,627,2,439.51
+hawk,623,591,504,2,NA
+ferry,580,592,458,2,5.35
+jogger,NA,NA,NA,NA,0.47
+airliner,NA,NA,NA,NA,0.57
+console,NA,NA,NA,NA,2.24
+rowboat,NA,NA,NA,2,1.06
+ballgirl,NA,NA,NA,NA,NA
+shipwreck,NA,NA,NA,4,0.53
+backstop,NA,NA,NA,10,0.22
+skiers,NA,NA,NA,NA,0.24
+smoker,NA,NA,NA,4,2.27
+rooster,NA,NA,385,2,3.86
+sidelines,NA,NA,NA,NA,1.12
+ice cream sandwich,NA,NA,NA,NA,NA
+oil,581,573,548,2,41.08
+bird feeder,NA,NA,NA,NA,NA
+businesswoman,NA,NA,NA,NA,0.49
+owl,614,595,477,2,5.61
+purse,572,567,533,2,19.76
+automobile,607,628,456,2,5.71
+tricycle,NA,NA,436,2,0.53
+woman,580,626,623,2,434.63
+cubicle,NA,NA,NA,12,2.57
+female child,NA,NA,NA,NA,NA
+car bumper,NA,NA,NA,NA,NA
+broccoli,NA,NA,NA,8,2.27
+inflatable ship,NA,NA,NA,NA,NA
+stroller,NA,NA,NA,2,0.88
+handlebars,NA,NA,NA,2,0.51
+water closet,NA,NA,NA,12,NA
+hippo,NA,NA,NA,2,1.41
+dude,NA,NA,NA,8,99.43
+bin,598,562,580,4,5.37
+microwave,NA,NA,NA,12,3.9
+mayonnaise,NA,NA,NA,6,2.25
+banana tree,NA,NA,NA,NA,NA
+guys,NA,NA,NA,NA,631.33
+grandpa,NA,NA,NA,2,NA
+archway,NA,NA,NA,4,0.24
+bicyclist,NA,NA,NA,NA,NA
+parachute,NA,NA,NA,4,3.18
+nightstand,NA,NA,NA,NA,0.84
+broccoli salad,NA,NA,NA,NA,NA
+son,NA,560,607,2,410.76
+surfboard,NA,NA,NA,2,0.92
+pool,573,577,541,2,46.98
+gas station,NA,NA,NA,2,NA
+birdie,NA,NA,NA,4,NA
+toy,567,569,550,2,16.84
+ice cream truck,NA,NA,NA,NA,NA
+sand,NA,NA,NA,2,20.29
+falcon,NA,NA,NA,4,NA
+stir fry,NA,NA,NA,NA,NA
+office table,NA,NA,NA,NA,NA
+wine cooler,NA,NA,NA,NA,NA
+dress clothes,NA,NA,NA,NA,NA
+cricket,NA,NA,NA,2,2.82
+beverages,NA,NA,NA,NA,1.2
+fort,580,559,418,4,NA
+horsepower,NA,NA,NA,6,1.22
+tart,NA,NA,NA,6,2.39
+vegetables,NA,NA,NA,NA,6.63
+groom,NA,NA,NA,4,7.82
+toy train,NA,NA,NA,NA,NA
+grains,NA,NA,NA,NA,0.98
+bottle,591,619,591,2,50.75
+perching bird,NA,NA,NA,NA,NA
+crab cake,NA,NA,NA,NA,NA
+pie cutter,NA,NA,NA,NA,NA
+armoire,NA,NA,NA,NA,0.16
+wedding gown,NA,NA,NA,NA,NA
+cub,NA,NA,NA,2,NA
+ballplayer,NA,NA,NA,NA,0.63
+salad,595,623,554,2,17.02
+asphalt,583,569,488,8,0.96
+motorcycle cop,NA,NA,NA,NA,NA
+bent,NA,NA,NA,2,7.22
+book rack,NA,NA,NA,NA,NA
+skateboarder,NA,NA,NA,NA,0.18
+hooded sweatshirt,NA,NA,NA,NA,NA
+filing cabinet,NA,NA,NA,NA,NA
+pitchers mound,NA,NA,NA,NA,NA
+tea cup,NA,NA,NA,NA,NA
+barn,614,589,466,2,13.59
+bag,603,570,634,2,94.04
+jewelry,NA,NA,NA,2,11.06
+icebreaker,NA,NA,NA,6,0.41
+hen,631,597,461,2,3.2
+batsman,NA,NA,NA,NA,0.04
+motorcycles,NA,NA,NA,NA,1.29
+airplane,NA,NA,NA,2,10.92
+cotton,608,562,521,2,14.18
+tram,NA,NA,NA,13,1.37
+hot dogs,NA,NA,NA,NA,NA
+food tray,NA,NA,NA,NA,NA
+case,548,517,553,2,282.41
+wing,595,584,510,2,20.24
+beef,637,625,598,2,19.71
+balcony,NA,NA,NA,4,7.31
+hitchhiker,NA,NA,NA,NA,0.98
+cabinet,593,524,472,4,8.33
+gyroplane,NA,NA,NA,NA,NA
+young woman,NA,NA,NA,NA,NA
+ski boat,NA,NA,NA,NA,NA
+kiss,564,633,592,2,121.16
+vanity,250,406,433,6,4.12
+urinal,NA,NA,NA,12,0.76
+crown,586,602,531,2,13.69
+art,440,493,529,2,70.8
+athlete,545,591,482,4,4.61
+baseball player,NA,NA,NA,NA,NA
+salsa,NA,NA,NA,NA,2.14
+car door,NA,NA,NA,NA,NA
+bullpen,NA,NA,NA,NA,0.65
+fuel truck,NA,NA,NA,NA,NA
+fish tank,NA,NA,NA,NA,NA
+chef hat,NA,NA,NA,NA,NA
+infant,579,600,513,6,4.22
+engine,586,595,543,2,31.88
+skateboard ramp,NA,NA,NA,NA,NA
+beans,NA,NA,NA,2,14.43
+desk chair,NA,NA,NA,NA,NA
+melon,NA,NA,441,2,4.27
+train,592,593,548,2,95.06
+smock,NA,NA,NA,6,0.49
+airplane tail,NA,NA,NA,NA,NA
+dog bed,NA,NA,NA,NA,NA
+sea bird,NA,NA,NA,NA,NA
+witch,522,589,474,2,27.65
+tepee,NA,NA,NA,4,0.53
+air plan,NA,NA,NA,NA,NA
+ties,NA,NA,NA,6,9.84
+suit jacket,NA,NA,NA,NA,NA
+parent,NA,NA,NA,2,13.14
+painting,NA,NA,NA,2,29.2
+steeple,561,559,405,2,0.41
+fishing boat,NA,NA,NA,NA,NA
+orchid,599,597,456,6,2.16
+rack,535,439,486,2,7.78
+kite,592,624,481,4,2.29
+players,NA,NA,NA,NA,17.16
+schoolboy,NA,NA,NA,2,1.31
+tailgate,NA,NA,NA,8,0.45
+beanbag chair,NA,NA,NA,NA,NA
+cathedral,553,599,440,6,3.73
+town home,NA,NA,NA,NA,NA
+saucepan,NA,NA,NA,4,0.16
+mobile,NA,NA,NA,6,7.47
+cardinal,600,531,451,4,NA
+multiplayer,NA,NA,NA,NA,NA
+chopper,NA,NA,NA,2,11.69
+utensils,NA,NA,NA,NA,0.65
+lifeguard,NA,NA,NA,2,1.67
+end table,NA,NA,NA,NA,NA
+appliance,558,554,493,4,0.8
+drawers,NA,NA,NA,12,4.27
+bird,602,614,592,2,45.45
+wheel,573,576,566,2,27.06
+sunhat,NA,NA,NA,NA,NA
+roof,586,604,552,2,35.65
+woodpecker,NA,NA,NA,2,0.98
+macaroni and cheese,NA,NA,NA,NA,NA
+windshield wipers,NA,NA,NA,NA,NA
+tux,NA,NA,NA,12,3.45
+labrador,NA,NA,NA,NA,NA
+scarf,NA,NA,NA,4,4.69
+tap,538,541,567,2,14.75
+fruit salad,NA,NA,NA,NA,NA
+clock face,NA,NA,NA,NA,NA
+apartment building,NA,NA,NA,NA,NA
+schoolchild,NA,NA,NA,NA,0.04
+half pipe,NA,NA,NA,NA,NA
+thrower,NA,NA,NA,NA,0.47
+meatloaf,NA,NA,NA,NA,2.33
+stadium,569,586,526,4,6.12
+banana,633,644,576,2,10.73
+tripling,NA,NA,NA,NA,0.06
+carrot,622,577,539,2,3.82
+pizza board,NA,NA,NA,NA,NA
+fighter aircraft,NA,NA,NA,NA,NA
+guinea pig,NA,NA,NA,8,NA
+basil,NA,NA,NA,13,NA
+rodent,NA,NA,NA,8,1.8
+people,540,548,628,2,1102.98
+duplex,NA,NA,NA,8,0.47
+ceiling,606,557,531,2,8.35
+paraglider,NA,NA,NA,12,0.04
+cupboard,NA,NA,NA,2,2.49
+business card,NA,NA,NA,NA,NA
+tire,563,511,546,6,12.37
+hamster,599,581,467,2,2.14
+dairy cow,NA,NA,NA,NA,NA
+birthday cake,NA,NA,NA,NA,NA
+exhaust fan,NA,NA,NA,NA,NA
+statue,600,562,444,2,10.59
+fabric,565,544,477,6,4.8
+rear view mirror,NA,NA,NA,NA,NA
+pit,593,589,493,2,13.22
+alcohol,618,598,578,4,16.57
+dessert,NA,NA,NA,2,14.02
+seabird,NA,NA,NA,NA,NA
+talker,NA,NA,NA,2,1.78
+craft,464,429,487,6,5.67
+motor vehicle,NA,NA,NA,NA,NA
+preacher,NA,NA,NA,4,6.71
+condiment,NA,NA,NA,14,0.16
+coaches,NA,NA,NA,NA,1.75
+mushroom,NA,NA,NA,2,2.14
+car hood,NA,NA,NA,NA,NA
+sculpture,NA,NA,NA,6,3.12
+slice of pizza,NA,NA,NA,NA,NA
+locomotive,NA,NA,405,4,0.8
+arm,592,593,608,2,65.41
+feline,483,471,277,12,0.9
+footballer,NA,NA,NA,NA,0.31
+underpass,NA,NA,NA,6,0.25
+external hard drive,NA,NA,NA,NA,NA
+shop,549,561,615,2,53.55
+police,NA,NA,NA,2,236.16
+cake pan,NA,NA,NA,NA,NA
+gate,573,545,540,2,32.04
+nerd,NA,NA,NA,10,3.29
+bowl of soup,NA,NA,NA,NA,NA
+senator,NA,NA,NA,6,NA
+diaper cake,NA,NA,NA,NA,NA
+blade,584,568,517,2,13.0
+shooter,NA,NA,NA,NA,9.78
+cockatoo,NA,NA,NA,8,0.16
+cat sweater,NA,NA,NA,NA,NA
+fish fillet,NA,NA,NA,NA,NA
+train carriage,NA,NA,NA,NA,NA
+sectional couch,NA,NA,NA,NA,NA
+cement truck,NA,NA,NA,NA,NA
+workbench,NA,NA,NA,6,0.2
+sidecar,NA,NA,NA,10,0.59
+steps,NA,NA,NA,NA,24.69
+tent,608,593,521,2,17.49
+chain,595,559,513,2,21.22
+sport jacket,NA,NA,NA,NA,NA
+video,NA,NA,NA,10,41.27
+workhorse,NA,NA,NA,12,0.1
+slaw,NA,NA,NA,4,0.33
+center,371,459,540,2,45.78
+tree stump,NA,NA,NA,NA,NA
+range,417,413,515,2,22.76
+chocolate cake,NA,NA,NA,NA,NA
+club sandwich,NA,NA,NA,10,NA
+shark costume,NA,NA,NA,NA,NA
+trestle,NA,NA,NA,10,0.16
+office,569,518,566,2,203.9
+apparel,NA,NA,NA,10,0.69
+boat,637,631,584,2,95.78
+wheat,594,577,510,2,5.75
+enclosure,NA,NA,NA,6,0.39
+graduation gown,NA,NA,NA,NA,NA
+cameraman,NA,NA,NA,NA,2.16
+loaf,NA,NA,NA,2,4.47
+net,577,540,514,2,15.55
+stoplight,NA,NA,NA,2,0.31
+harbor,NA,NA,NA,2,NA
+sheep shearer,NA,NA,NA,NA,NA
+soup spoon,NA,NA,NA,NA,NA
+rocking horse,NA,NA,NA,2,NA
+dining room table,NA,NA,NA,NA,NA
+tile,NA,NA,NA,6,2.12
+poncho,NA,NA,NA,8,0.86
+ornament,615,594,460,4,1.14
+boxcars,NA,NA,NA,NA,0.16
+entertainment stand,NA,NA,NA,NA,NA
+garbage can,NA,NA,NA,NA,NA
+green beans,NA,NA,NA,2,NA
+highway,575,581,488,2,17.86
+blender,NA,NA,NA,4,1.67
