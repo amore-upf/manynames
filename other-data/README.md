@@ -5,10 +5,30 @@ This subfolder contains:
 
 * CSV files `lexical-info-en.csv`, `lexical-info-zh.csv`, containing lexical information (concreteness, familiarity, imageability, age of acquisition, frequency in English/Chinese, frequency within ManyNames) for each name in ManyNames. This information has been retrieved from the resources listed below.
 
-* a file with additional information about the ManyNames data (`additional-info.tsv`). Note that this information is here and not in the main file because it is likely to be of interest to few users only. More information about its content can be found below.
+* a file with additional information about the ManyNames data (`additional-info-en.tsv`). Note that this information is here and not in the main file because it is likely to be of interest to few users only. More information about its content can be found below.
 
 * a template in HTML and PDF of the task and instructions that were given to turkers for the manual singleton verification process (`instructions_for_singleton_verification.pdf / .html`).
 
+## Additional information for English ManyNames
+
+File `other-data/additional-info-en.tsv` contains the additional columns in the following table. These are pieces of information that correspond either to the adjudication process for the names (see [Silberer , Zarrieß, & Boleda 2020](https://aclanthology.org/2020.coling-main.172/); in columns `vg_same_object`, `vg_adequacy_mean`, `vg_inadequacy_type`, `vg_clusters`, `clusters`, `same_object`, `adequacy_mean`, `inadequacy_type`), or to further information from VisualGenome (in columns `vg_image_name`, `vg_cat`, `vg_bbox_xywh`).
+
+| Column | Type | Description |
+| -------- | :-------: | -------- |
+| vg_object_id | int | The VG id of the object |
+| vg_image_id | int | The VG id of the image |
+| vg_obj_name | str | The VG name of the object |
+| vg_domain | str | The ManyNames domain of the VG name, which may be a superset of its WordNet category (encoded in column vg_cat). Example: The ManyNames domain *food* subsumes the WordNet categories *food, solid food*, and *food, nutrient*. |
+| link_vg | str | The url to the image in VG |
+| vg_same_object | dict | Same object ratings for the vg_object_name
+| vg_adequacy_mean | str | Mean adequacy rating for the vg_object_name
+| vg_inadequacy_type | dict | Rated inadequacy type for the vg_object_name
+| vg_image_name | str | The name of the VG image |
+| vg_cat | str | The WN hypernym of the VG synset, corresponds roughly to one of the 7 ManyNames domains. |
+| clusters | dict | Response clusters and total count per cluster |
+| adequacy_mean | dict | Mean adequacy ratings for ManyNames responses |
+| inadequacy_type | dict | Rated inadequacy rating for ManyNames responses |
+| same_object | dicts | Mean same-object ratings for response pairs |
 
 ## Resources for lexical information
 
@@ -27,24 +47,3 @@ This subfolder contains:
 | Concreteness | Xu, X., & Li, J. (2020). Concreteness/abstractness ratings for two-character Chinese words in MELD-SCH. *PLoS ONE 15(6): e0232133*. https://doi.org/10.1371/journal.pone.0232133 | As stated in Xu & Li (2020):<ul><li>Scale from 1 ("very concrete") to 5 ("very abstract")</li><li>An additional option “N” was also provided to participants when they felt that they did not know the meaning of the word</li></ul> |
 | Familiarity,<br>Imageability,<br>Age of Acquisition | Song, D., & Li, D. (2021). Psycholinguistic Norms for 3,783 Two-Character Words in Simplified Chinese. *SAGE Open, 11*(4). https://doi.org/10.1177/21582440211054495 | As stated in Song & Li (2021):<ul><li>Familiarity (min: 2.82; max 7.00; mean 5.75; SD 0.63) and imageability (min 1.30; max 7.00; mean 4.69; SD 0.96) values are based on a seven-point Likert scale<ul><li>7 indicates more familiarity/more clearness of the images the word arouses in the participant's mind</li></ul><li>Age of acquisition (min 1.00; max 4.70; mean 2.48; SD 0.64) values are based on a seven-point Likert scale<ul><li>Participants were asked to select a number from 1 to 7 depending on when they consider they first saw, heard, or used each word</li><li>Numbers 1, 2, 3, 4, 5, and 6 refer to grades 3, 5, 8, 9, 11, and 12, respectively, and 7 refers to university studies</li></ul> |
 | Frequency | Cai, Q., & Brysbaert, M. (2010). SUBTLEX-CH: Chinese Word and Character Frequencies Based on Film Subtitles. *Plos ONE, 5(6), e10729*. https://doi.org/10.1371/journal.pone.0010729 |<ul><li>Values in column `freq_zh` were retrieved from column `W.million` in file *SUBTLEX_CH_131210_CE.utf8*, and correspond to the word frequency per million words</li><li>Values in column `log_freq_zh` were retrieved from column `log10W` of the same file, and correspond to the log10 of column `WCount`</li></ul> |
-
-## Additional information for ManyNames objects
-
-File `other-data/additional-info.tsv` contains the additional columns in the following table. These are pieces of information that correspond either to the adjudication process for the names (see [Silberer , Zarrieß, & Boleda 2020](https://aclanthology.org/2020.coling-main.172/); in columns `vg_same_object`, `vg_adequacy_mean`, `vg_inadequacy_type`, `vg_clusters`, `clusters`, `same_object`, `adequacy_mean`, `inadequacy_type`), or to further information from VisualGenome (in columns `vg_image_name`, `vg_cat`, `vg_bbox_xywh`).
-
-| Column | Type | Description |
-| -------- | :-------: | -------- |
-| vg_object_id | int | The VG id of the object |
-| vg_image_id | int | The VG id of the image |
-| vg_obj_name | str | The VG name of the object |
-| vg_domain | str | The ManyNames domain of the VG name, which may be a superset of its WordNet category (encoded in column vg_cat). Example: The ManyNames domain *food* subsumes the WordNet categories *food, solid food*, and *food, nutrient*. |
-| link_vg | str | The url to the image in VG |
-| vg_same_object | dict | Same object ratings for the vg_object_name
-| vg_adequacy_mean | str | Mean adequacy rating for the vg_object_name
-| vg_inadequacy_type | dict | Rated inadequacy type for the vg_object_name
-| vg_image_name | str | The name of the VG image |
-| vg_cat | str | The WN hypernym of the VG synset, corresponds roughly to one of the 7 ManyNames domains. |
-| clusters | dict | Response clusters and total count per cluster |
-| adequacy_mean | dict | Mean adequacy ratings for ManyNames responses |
-| inadequacy_type | dict | Rated inadequacy rating for ManyNames responses |
-| same_object | dicts | Mean same-object ratings for response pairs |
