@@ -29,7 +29,7 @@ The columns that are included for **both the English and Mandarin Chinese datase
 | H | float | The H agreement measure from Snodgrass and Vanderwart (1980), which is the entropy over subject responses |
 | vg_synset | str | The WordNet synset of the object, as provided by VisualGenome  |
 | link_mn | str | The url to the image with the object marked|
-| mn_bbox_xywh | list| The coordinates of the object: "[left x, bottom y, width, height]"; y=0 is at the top of the image|
+| bbox_xywh | list| The coordinates of the object: "[left x, bottom y, width, height]"; y=0 is at the top of the image|
 
 &nbsp;
 
