@@ -26,7 +26,7 @@ if __name__=="__main__":
     #add required arguments
     arg_parser.add_argument('-mnfile', type=str, 
                             help='local path to the JSON file containing the ManyNames data',
-                            default='../manynames-en.json')
+                            default='../other-data/manynames-en.json')
       
     arg_parser.add_argument('-vgimg', type=str, 
                             help='path to the VG images (with subfolders VG_100K and VG_100K_2)', 
@@ -34,7 +34,7 @@ if __name__=="__main__":
     
     arg_parser.add_argument('-outdir', type=str, 
                             help='output path for the ManyNames images', 
-                            default='../MN_images/')
+                            default='MN_images/')
     
     #check provided arguments
     args = arg_parser.parse_args()
@@ -48,7 +48,7 @@ if __name__=="__main__":
     #%%% ----- PROCESSING
     #data import
     manynames_df = pd.read_json(mn_file)
-    additional_df = pd.read_csv('additional-info.tsv', sep='\t')[['vg_object_id', 'link_vg']] #add needed columns
+    additional_df = pd.read_csv('../other-data/additional-info-en.tsv', sep='\t')[['vg_object_id', 'link_vg']] #add needed columns
     mn_data = pd.merge(manynames_df, additional_df, on='vg_object_id').to_dict(orient='records')
 
     #create outdir
@@ -78,10 +78,10 @@ if __name__=="__main__":
         vg_img = vg_img.resize((mn_w, mn_h), resample = Image.LANCZOS)
         
         #draw box on MN size image
-        bbox = [mn_itm['mn_bbox_xywh'][0],
-                mn_itm['mn_bbox_xywh'][1],
-                mn_itm['mn_bbox_xywh'][0] + mn_itm['mn_bbox_xywh'][2],
-                mn_itm['mn_bbox_xywh'][1] + mn_itm['mn_bbox_xywh'][3]]
+        bbox = [mn_itm['vg_bbox_xywh'][0],
+                mn_itm['vg_bbox_xywh'][1],
+                mn_itm['vg_bbox_xywh'][0] + mn_itm['vg_bbox_xywh'][2],
+                mn_itm['vg_bbox_xywh'][1] + mn_itm['vg_bbox_xywh'][3]]
 
         #draw image
         ImageDraw.Draw(vg_img).rectangle(bbox, outline ="red", width = lwidth)

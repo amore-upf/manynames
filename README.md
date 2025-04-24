@@ -1,5 +1,5 @@
 # ManyNames
-Repository for the ManyNames dataset (version 2.2) for English and Mandarin Chinese. The English version of ManyNames provides ca. 36 name annotations for each of 25K objects in images selected from VisualGenome, whereas the Chinese version provides approximately 20 name annotations for 1319 objects in images selected from ManyNames. For an illustration see the image below.
+Repository for the ManyNames dataset (version 2.3) for English and Mandarin Chinese. The English version of ManyNames provides ca. 31 name annotations for each of 25K objects in images selected from VisualGenome, whereas the Chinese version provides approximately 20 name annotations for 1319 objects in images selected from ManyNames. For an illustration see the image below.
 
 <p align="center">
   <img src="examples/mn_images_example5.png" alt="ManyNames example" width="500"/>
@@ -18,8 +18,8 @@ The columns that are included for **both the English and Mandarin Chinese datase
 
 | Column | Type | Description |
 | -------- | :-------: | -------- |
-| vg_object_id | int | The VisualGenome id of the object (functions as the unique id for the datapoints in ManyNames)|
-| vg_image_id | int | The VisualGenome id of the image |
+| vg_object_id | int | The VisualGenome ID of the object (functions as the unique ID for the datapoints in ManyNames)|
+| vg_image_id | int | The VisualGenome ID of the image (is also unique)|
 | topname | str | The most frequent name produced by subjects for the object |
 | responses | dict | Correct responses and their counts |
 | domain | str | The ManyNames domain of the object, i.e. categorisation of objects into *people*, *animals_plants*, *vehicles*, *food*, *home*, *buildings*, and *clothing* |
@@ -39,11 +39,11 @@ The **English** dataset also includes the columns listed below.
 | -------- | :-------: | -------- |
 | incorrect | dict | Incorrect responses and their counts |
 | split | str | Use of the image in training vs. test vs. validation in [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/) |
-
+|synsets| dict | Correct responses and their [WordNet](https://wordnet.princeton.edu/) synset, assigned automatically|
 
 &nbsp;
 
-The **Mandarin Chinese** dataset also includes the following columns.
+The **Mandarin Chinese** dataset also includes the columns listed below.
 
 | Column | Type | Description |
 | -------- | :-------: | -------- |
@@ -54,7 +54,7 @@ The **Mandarin Chinese** dataset also includes the following columns.
 
 ## Subfolder: other-data/
 
-Contains the ManyNames datasets in JSON format, a file with additional information about the ManyNames objects, and files with lexical information (concreteness, familiarity, imageability, age of acquisition and frequency per million tokens) for each name in ManyNames, for both languages. See the README inside the folder for more information.
+Contains the ManyNames datasets in JSON format, some files with additional information about the English ManyNames dataset, and also files with lexical information (concreteness, familiarity, imageability, age of acquisition, frequency...) for each name in ManyNames and for both languages. See the README inside the folder for more information.
 
 ## Subfolder: scripts/
 
@@ -112,7 +112,9 @@ He, Y., Liao, X., Liang, J., Boleda, G. 2023. [The Impact of Familiarity on Nami
 
 (For more information about versions 2.1 onward, see the [release notes](https://github.com/amore-upf/manynames/blob/master/release_notes_v2.2.md).)
 
-* **version 2.2**: Added all singletons responses (= responses given only once) following a manual correction procedure; added Mandarin Chinese names for a subset of the data; added lexical information for names.
+* **version 2.3**: **Revised English singletons after identifying issues in v2.2; added Wordnet synset for English names; added anonymized subject IDs for English data; enhanced lexical data for English and Mandarin Chinese**.
+
+* **version 2.2**: Added all singletons responses for English (= responses given only once) following a manual correction procedure; added Mandarin Chinese names for a subset of the data; added lexical information for names.
 
 * **version 2.1.1**: Added bounding box coordinates for ManyNames image versions. Updated image links to new domain: manynames.upf.edu.
 

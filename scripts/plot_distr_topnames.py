@@ -4,6 +4,7 @@
 #%% ---- DEPENDENCIES
 import ast
 import argparse
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import manynames as mn
@@ -134,6 +135,10 @@ def plot_function(domain, ax, nm2domain, domain_gdf, domains, lang, text_fontsiz
 
 #%% ---- MAIN
 if __name__ == '__main__':
+    #make sure new path exists
+    new_dir = 'imgs/'
+    os.makedirs(new_dir, exist_ok=True)
+
     #dict with MN versions, paths, and lang codes
     datasets = {'English': {'path': '../manynames-en.tsv', 'code': 'en'},
                 'Chinese': {'path': '../manynames-zh.tsv', 'code': 'zh'}
@@ -158,11 +163,11 @@ if __name__ == '__main__':
 
         #%%% ----- PROCESSING
         manynames_df = mn.load_manynames(fn)
-        
-        # add VG columns
-        additional_df = pd.read_csv('../other-data/additional-info.tsv', sep='\t')[['vg_object_id', 'vg_obj_name', 'vg_domain']]
-        manynames_df = pd.merge(manynames_df, additional_df, on='vg_object_id')
-        
+
+        if lang == 'English':
+            # add VG columns
+            additional_df = pd.read_csv('../other-data/additional-info-en.tsv', sep='\t')[['vg_object_id', 'vg_obj_name', 'vg_domain']]
+            manynames_df = pd.merge(manynames_df, additional_df, on='vg_object_id')
         
         nm2domain = dict(zip(manynames_df["vg_obj_name"], manynames_df["vg_domain"]))
         
@@ -194,7 +199,7 @@ if __name__ == '__main__':
         fig.subplots_adjust(wspace=0)
         
         # save image
-        plt.savefig(f"../topname_distribution_{datasets[lang]['code']}.png", dpi=300)
+        plt.savefig(f"{new_dir}topname_distribution_{datasets[lang]['code']}.png", dpi=300)
         
         plt.show()
 

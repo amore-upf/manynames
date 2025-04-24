@@ -66,15 +66,16 @@ if __name__=="__main__":
 
     #%%% ----- PROCESSING
     manynames = mn.load_manynames(filename=fn)
-    additional = pd.read_csv('additional-info.tsv', sep='\t')[['vg_object_id', 'vg_obj_name', 'vg_image_name', 'link_vg']]
+    additional = pd.read_csv('../other-data/additional-info-en.tsv', sep='\t')[['vg_object_id', 'vg_obj_name', 'vg_image_name', 'link_vg']]
     manynames = pd.merge(manynames, additional, on='vg_object_id')
+    manynames['vg_bbox_xywh'] =  manynames['vg_bbox_xywh'].apply(lambda x: literal_eval(str(x)))
    
     for image_id in ids:
         mn_item = manynames[manynames["vg_image_id"]==image_id]
         url = mn_item["link_vg"].values[0]
         responses = mn_item["responses"].values[0]
         mn_objnames = " / ".join(responses.keys())
-        bbox = literal_eval(mn_item["vg_bbox_xywh"].values[0])
+        bbox = mn_item["vg_bbox_xywh"].values[0]
         show_objects(url, bbox, mn_objnames)
     
                 

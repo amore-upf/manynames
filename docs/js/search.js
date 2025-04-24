@@ -1,11 +1,11 @@
 /* get search settings */
-var submit_button = d3.select("#submit_button");
-submit_button.on("click", runEnter);
+var submit_button = d3.select("#submit_button"); // Search for HTML element with the id "submit_button"
+submit_button.on("click", runEnter); // Set up a button on the webpage with the id "submit_button" to respond when clicked
 
 function runEnter() {
   /*gather language input*/
   let json_path = retrievePathfromLang();
-
+  
   /* read manynames.json and filter */
   d3.json(json_path)
     .then(function(data) {
@@ -15,8 +15,12 @@ function runEnter() {
       /*filter data*/
       let filtered_data = data.filter(
         fitsSearch(user_input['scope'], user_input['names'],
-                  user_input['min_pct'], user_input['max_pct']));
+                    user_input['min_pct'], user_input['max_pct']));
 
+      
+      // console.log(filtered_data)
+      // filtered_data = [{"": '2972', vg_image_id: 2324345, …}, {"": '10773', vg_image_id: 2359476, …} ...]
+      
       /*give feedback on search*/
       let filtered_length = filtered_data.length
       searchFeedback(filtered_length);
@@ -29,6 +33,8 @@ function runEnter() {
       display_data = sampleSubset(filtered_data, 0, img_per_page);
       for (let i = 0; i < display_data.length; i++) {
         addImage(display_data[i]['link_mn'], responseStr(display_data[i]['responses']));
+        // console.log(display_data[i]['responses'])
+        // display_data[i]['responses'] = [{keyboard: 17, desk: 12, ...}, {keyboard: 18, table: 5, ...} ...]
       }
 
       /*image pagination*/
@@ -52,6 +58,7 @@ function runEnter() {
       /*show/hide download buttons*/
       if (filtered_data.length > 0) {
         displayResults('block');
+        // If there are no results, hide 'Download' button
       } else {
         displayResults('none');
       };
@@ -70,10 +77,10 @@ function retrievePathfromLang() {
 
   switch(lang_button) {
     case 'English':
-      path = "https://raw.githubusercontent.com/amore-upf/manynames/master/other-data/manynames-en.json";
+      path = "https://raw.githubusercontent.com/amore-upf/manynames/release_v2.2/other-data/manynames-en.json";
       break;
     case 'Chinese':
-      path = "https://raw.githubusercontent.com/amore-upf/manynames/master/other-data/manynames-zh.json";
+      path = "https://raw.githubusercontent.com/amore-upf/manynames/release_v2.2/other-data/manynames-zh.json";
       break;
   }
   return path
@@ -161,6 +168,7 @@ function shuffle(array) {
 /* convert to csv and start download*/
 function downloadCSV(filtered_data) {
   document.getElementById('csv_button').disabled = true;
+  // It disables the "csv_button" to prevent multiple clicks during the download process
   makeCSV(filtered_data)
   .then(function(csv_dat) {
     const blob = new Blob([csv_dat], { type: 'text/csv' });
@@ -173,6 +181,7 @@ function downloadCSV(filtered_data) {
     document.body.removeChild(csv_download_link);
     window.URL.revokeObjectURL(url)
     document.getElementById('csv_button').disabled = false;
+    // It re-enables the "csv_button" to allow subsequent downloads
   });
 };
 
@@ -180,7 +189,7 @@ function downloadCSV(filtered_data) {
 function makeCSV(data_obj) {
   return new Promise(function(resolve, reject){
     /*variable names*/
-    let img_vars = ['vg_image_id', 'vg_object_id', 'link_mn', 'link_vg', 'total_responses'];
+    let img_vars = ['vg_image_id', 'vg_object_id', 'link_mn', 'total_responses'];
     let name_vars = ['name', 'is_topname', 'name_proportion'];
 
     /*reshape to flatten input data*/
@@ -224,13 +233,13 @@ function searchFeedback(n_results) {
   var search_feedback = document.getElementById("search_feedback")
   if (n_results > 0) {
     search_feedback.className = 'text-success';
-    search_feedback.innerHTML = n_results.toString() + ' images fit your search criteria.' + 'You can download the corresponding naming data below (in CSV format). The <a href="./download.html">download</a> section contains scripts to download the images in your search result based on this csv.';
+    search_feedback.innerHTML = n_results.toString() + ' images fit your search criteria.' + 'You can download the corresponding naming data (in csv-format). The <a href="./download.html">download</a> section contains scripts to download the images in your search result based on this csv.';
     if (n_results === 1) {
       search_feedback.innerHTML.replace('images fit', 'image fits');
     };
   } else if (n_results === 0) {
     search_feedback.className = 'text-danger';
-    search_feedback.innerHTML = 'No images fit your search criteria. Please make sure that you have set a sensible range for name agreement. Please also consider other spelling variants of the names you are looking for. You can browse the list of all ManyNames names (and their spelling) <a href="./names.html">here</a>.';
+    search_feedback.innerHTML = 'No images fit your search criteria. Please make sure that you have set a sensible range for name agreement. Please also consider other spelling variants of the names you are looking for. You can browse the list of all names (and their spelling) found in ManyNames  <a href="./names.html">here</a>.';
   };
 };
 
@@ -268,7 +277,8 @@ function addImage(img_url, resp_string) {
 function responseStr(obj){
   resp_string = '';
   for (const [nam, cnt] of Object.entries(obj)) {
-      resp_string += `${nam} (${cnt}), `;
+      resp_string += `${nam} (${cnt}), `; // !!!!!!!!!!! create the text displayed in the results 'word (counts)'
+      // console.log(resp_string) = what is seen on the screen
     }
   return resp_string.slice(0,-2);
 };
@@ -293,14 +303,14 @@ function gatherInput() {
   }
 
   if (lang === 'Chinese') {
-    var names = names_input.split('，');
+    var names = names_input.split('，'); // The exact word(s) the user is searching for
   } else {
     var names = names_input.split(',');
   }
-
+  // REVISE AND CHANGE //
   if (lang === 'English') {
     names.forEach(function(val, idx) {
-      names[idx] = val.trim().replace(/[^a-zA-Z\- ]/g, "");
+      names[idx] = val.trim().replace(/[^a-zA-Z\- ]/g, ""); // !!!!!! only keep alphabetical characters, spaces, and hyphens
     })
   }
   else if (lang === 'Chinese') {
@@ -308,6 +318,7 @@ function gatherInput() {
       names[idx] = val.trim().replace(/[^\u4E00-\u9FFF ]/g, "");
     })
   }
+  //
 
   var names = names.filter(Boolean)
 
@@ -341,10 +352,11 @@ function isBetween(x, min, max) {
 };
 
 /* check search criteria for name and response percent pair */
-function responseFits(resp, pct, names, min_pct, max_pct) {
-  if (typeof resp === 'string') {
+function responseFits(resp, pct, names, min_pct, max_pct) { // returns either True or False
+  // console.log(typeof resp)
+  if (typeof resp === 'string') { // if the 'topname' is a single word
     return names.includes(resp) && isBetween(pct, min_pct, max_pct);
-  } else if (typeof resp === 'object') {
+  } else if (typeof resp === 'object') { // if the 'topname' is a list of names
     var checked = []
     for (const r of resp) {
       checked.push(names.includes(r) && isBetween(pct, min_pct, max_pct));
@@ -354,16 +366,18 @@ function responseFits(resp, pct, names, min_pct, max_pct) {
 };
 
 /* filter function (for now only one topname and "any_topname") */
-function fitsSearch(scope, names, min_pct, max_pct) {
-  return function(el) {
+function fitsSearch(scope, names, min_pct, max_pct) { // names = the word(s) that the user is searching for
+  // console.log(names)
+  return function(el) { // 'el' is each element of the MN dataset
+    // console.log(el.topname + ' - ' + names)
     if (scope === 'any_top') {
       return responseFits(el.topname, el.perc_top, names, min_pct, max_pct);
     } else if (scope === 'any_nam'){
       var checked = []
       for (const resp of Object.entries(el['responses'])) {
-          checked.push(responseFits(resp[0], resp[1]/el['total_responses'],
-                       names, min_pct, max_pct));
-        }
+        checked.push(responseFits(resp[0], resp[1]/el['total_responses'],
+        names, min_pct, max_pct));
+      }
       return(checked.some(Boolean))
     } else if (scope === 'all_nam'){
       responses = Object.keys(el['responses'])
@@ -379,6 +393,7 @@ function fitsSearch(scope, names, min_pct, max_pct) {
             };
         }
       }
+      // console.log(checked.every(Boolean));
       return(checked.every(Boolean));
     };
   };

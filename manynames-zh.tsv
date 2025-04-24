@@ -1,4 +1,4 @@
-vg_object_id	vg_image_id	vg_obj_name	vg_domain	topname	responses	domain	N	total_responses	perc_top	H	list	familiarity	vg_synset	link_mn	link_vg	bbox_xywh
+vg_object_id	vg_image_id	vg_obj_name	vg_domain	topname	responses	domain	N	total_responses	perc_top	H	list	familiarity	vg_synset	link_mn	link_vg	vg_bbox_xywh
 143313	2415243	dog	animals_plants	['狗']	{'狗': 19}	animals_plants	1	19	100.0	0.0	list6	4.0722	dog.n.01	http://manynames.upf.edu/2415243_143313_dog.png	https://cs.stanford.edu/people/rak248/VG_100K_2/2415243.jpg	[53, 11, 407, 246]
 149494	2414912	woman	people	['女人']	{'女人': 16, '笑脸': 1, '游客': 1, '女性': 1, '女孩': 1, '女士': 2}	people	6	22	72.72727272727273	1.4594316186372973	list1	3.9359318181818184	woman.n.01	http://manynames.upf.edu/2414912_149494_woman.png	https://cs.stanford.edu/people/rak248/VG_100K_2/2414912.jpg	[239, 150, 259, 347]
 149712	2414899	bagel	food	['面包']	{'食物': 3, '面包': 16, '贝果': 1, '包': 1, '面包圈': 2}	food	5	23	69.56521739130434	1.44726249944121	list3	3.179682608695652	baked_goods.n.01	http://manynames.upf.edu/2414899_149712_bagel.png	https://cs.stanford.edu/people/rak248/VG_100K_2/2414899.jpg	[44, 70, 280, 306]

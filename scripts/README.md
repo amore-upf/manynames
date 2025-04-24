@@ -26,4 +26,4 @@ The scripts can be run from the command line. Use `python <script-name> -h` for 
   annotates and displays subsets of ManyNames images.
 
 ## R scripts
-The R-script **`download_MN_images.r`** can be used, as its Python counterpart, to download a subset of images from manynames.upf.edu.
+The R-script **`download_MN_images.r`** can be used, as its Python counterpart, to download a subset of images from [manynames.upf.edu](https://manynames.upf.edu/).
