@@ -49,6 +49,10 @@ Also, we have changed the source of some lexical measurements, aiming to achieve
 
 ### Data reorganization
 * File `additional-info.tsv` was renamed to `additional-info-en.tsv`. Scripts using this file have also been modified.
+* Columns *vg_domain* and *vg_obj_name* have been moved from `additional_info-en.tsv`to `manynames-en.tsv`.
+* Column *vg_image_name* of `additional_info-en.tsv` has been renamed to `filename`.
+* Script `add_lexical_info.py` has been added to subfolder *scripts/*.
+
 
 &nbsp;
 &nbsp;

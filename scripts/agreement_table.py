@@ -97,9 +97,6 @@ if __name__ == '__main__':
         #%%% ----- PROCESSING
         #data import
         manynames_df = mn.load_manynames(fn)
-        if lang == 'en':
-            additional_df = pd.read_csv('../other-data/additional-info-en.tsv', sep='\t')[['vg_object_id', 'vg_obj_name', 'vg_domain']] #add needed columns
-            manynames_df = pd.merge(manynames_df, additional_df, on='vg_object_id')
         
         resdf = make_df(manynames_df)
         o1 = make_agreement_table(resdf)

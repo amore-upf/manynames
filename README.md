@@ -20,9 +20,11 @@ The columns that are included for **both the English and Mandarin Chinese datase
 | -------- | :-------: | -------- |
 | vg_object_id | int | The VisualGenome ID of the object (functions as the unique ID for the datapoints in ManyNames)|
 | vg_image_id | int | The VisualGenome ID of the image (is also unique)|
+| vg_obj_name | str | The VG name of the object |
 | topname | str | The most frequent name produced by subjects for the object |
 | responses | dict | Correct responses and their counts |
 | domain | str | The ManyNames domain of the object, i.e. categorisation of objects into *people*, *animals_plants*, *vehicles*, *food*, *home*, *buildings*, and *clothing* |
+| vg_domain | str | The ManyNames domain of the VG name, which may be a superset of its WordNet category (encoded in column vg_cat). Example: The ManyNames domain *food* subsumes the WordNet categories *food, solid food*, and *food, nutrient*. |
 | N | int | The number of name types in the ManyNames responses (each name counts once) |
 | total_responses | int | Sum count of correct responses (tokens; each subject production of a name counts once)|
 | perc_top | float | The relative frequency of the topname (among correct responses), in percentage|

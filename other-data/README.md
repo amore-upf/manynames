@@ -13,19 +13,17 @@ This subfolder contains:
 
 ## Additional information for English ManyNames
 
-File `other-data/additional-info-en.tsv` contains the additional columns in the following table. These are pieces of information that correspond either to the adjudication process for the names (see [Silberer , Zarrieß, & Boleda 2020](https://aclanthology.org/2020.coling-main.172/); in columns `vg_same_object`, `vg_adequacy_mean`, `vg_inadequacy_type`, `vg_clusters`, `clusters`, `same_object`, `adequacy_mean`, `inadequacy_type`), or to further information from VisualGenome (in columns `vg_image_name`, `vg_cat`, `vg_bbox_xywh`).
+File `other-data/additional-info-en.tsv` contains the additional columns in the following table. These are pieces of information that correspond either to the adjudication process for the names (see [Silberer , Zarrieß, & Boleda 2020](https://aclanthology.org/2020.coling-main.172/); in columns `vg_same_object`, `vg_adequacy_mean`, `vg_inadequacy_type`, `vg_clusters`, `clusters`, `same_object`, `adequacy_mean`, `inadequacy_type`), or to further information from VisualGenome (in columns `filename`, `vg_cat`, `vg_bbox_xywh`).
 
 | Column | Type | Description |
 |:-------|:----:|:------------|
 | vg_object_id | int | The VG id of the object |
 | vg_image_id | int | The VG id of the image |
-| vg_obj_name | str | The VG name of the object |
-| vg_domain | str | The ManyNames domain of the VG name, which may be a superset of its WordNet category (encoded in column vg_cat). Example: The ManyNames domain *food* subsumes the WordNet categories *food, solid food*, and *food, nutrient*. |
 | link_vg | str | The url to the image in VG |
 | vg_same_object | dict | Same object ratings for the vg_object_name
 | vg_adequacy_mean | str | Mean adequacy rating for the vg_object_name
 | vg_inadequacy_type | dict | Rated inadequacy type for the vg_object_name
-| vg_image_name | str | The name of the VG image |
+| filename | str | The filename of the VG image |
 | vg_cat | str | The WN hypernym of the VG synset, corresponds roughly to one of the 7 ManyNames domains. |
 | clusters | dict | Response clusters and total count per cluster |
 | adequacy_mean | dict | Mean adequacy ratings for ManyNames responses |

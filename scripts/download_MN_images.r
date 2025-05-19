@@ -9,9 +9,6 @@
 ##   "[R Path]bin\Rscript.exe" download_MN_images.r
 ## %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-# read csv
-# imgdat <- read.table('ManyNames_data.csv', header=TRUE, sep=",")
-
 # read tsv
 imgdat <- read.table('../manynames-en.tsv', header=TRUE, sep="\t")
 

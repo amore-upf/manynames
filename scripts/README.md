@@ -24,6 +24,8 @@ The scripts can be run from the command line. Use `python <script-name> -h` for 
   downloads a subset of images from manynames.upf.edu.
 * **`showExamples.py`**
   annotates and displays subsets of ManyNames images.
+* **`add_lexical_info.py`**
+  add measures from file `lexical-info-{lang}.tsv` to the main file `manynames-{lang}.tsv` in a dict format.
 
 ## R scripts
 The R-script **`download_MN_images.r`** can be used, as its Python counterpart, to download a subset of images from [manynames.upf.edu](https://manynames.upf.edu/).
