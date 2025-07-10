@@ -27,14 +27,14 @@ The other solution was an automatic filter using WordNet, aimed at removing sing
 **Affected columns**: responses, incorrect, singletons
 
 ### Subject information
-We have included a version of the MN English dataset where each row corresponds to a single answer (file *subject-ids_en.tsv*), and includes the anonymized ID of the person that gave that answer (if available). In order to do so, earlier information about the data collection process was retrieved so as to match each answer in the current ManyNames dataset with an ID. However, some annotations were missing, so there are only up to 27 IDs available per image. For Chinese, this information is not available.
+We have included a version of the MN English dataset where each row corresponds to a single answer (file *subject-ids-en.tsv*), and includes the anonymized ID of the person that gave that answer (if available). In order to do so, earlier information about the data collection process was retrieved so as to match each answer in the current ManyNames dataset with an ID. However, some annotations were missing, so there are only up to 27 IDs available per image. For Chinese, this information is not available.
 
 ### New lexical information
 We have added the following columns for each ManyNames dataset:
 
 - `log_freq_{language}` (both English and Mandarin Chinese): Logarithmic frequency of each name based on log10, retrieved from column `Lg10WF` of [SUBTLEXus](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus) and column `log10W` of [SUBTLEX-CH](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexch) respectively.
 - `freq_mn` (both English and Mandarin Chinese): frequency of each name in the 'correct' column (tokens; each subject production of a name counts once).
-- (English only): WordNet synset of the name. WordNet is a large lexical database containing with interlinked synsets, or sets of synonyms, that can function as sense IDs. For nouns, these synsets form a hierarchy. In order to disambiguate among different senses of a given name (e.g. "pitcher" can refer to a baseball player or a jug), we identified a set of synsets for each value in column `domain` (e.g. 'clothing.n.01' for domain 'clothing', 'animal.n.01' and 'plant.n.02' for domain 'animals_plants', etc.); we picked as synset for the name-domain pair the first synset of the name that is a hyponym of the domain synset.
+- `synsets` (English only): WordNet synset of the name. WordNet is a large lexical database containing with interlinked synsets, or sets of synonyms, that can function as sense IDs. For nouns, these synsets form a hierarchy. In order to disambiguate among different senses of a given name (e.g. "pitcher" can refer to a baseball player or a jug), we identified a set of synsets for each value in column `domain` (e.g. 'clothing.n.01' for domain 'clothing', 'animal.n.01' and 'plant.n.02' for domain 'animals_plants', etc.); we picked as synset for the name-domain pair the first synset of the name that is a hyponym of the domain synset.
 
 Also, we have changed the source of some lexical measurements, aiming to achieve a bigger coverage of types:
 - English:

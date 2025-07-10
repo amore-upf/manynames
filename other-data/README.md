@@ -9,7 +9,7 @@ This subfolder contains:
 
 * a file with anonymized participant information for each response in the English version of ManyNames (`subject-ids-en.tsv`). Note that there are up to 27 IDs available per image only, because some annotation files were lost.
 
-* a template in HTML and PDF of the task and instructions that were given to turkers for the manual singleton verification process (`instructions_for_singleton_verification.pdf / .html`).
+* a template in HTML and PDF of the task and instructions that were given to turkers for the manual singleton verification process (`instructions_for_singletonverification.pdf / .html`).
 
 ## Additional information for English ManyNames
 

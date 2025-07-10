@@ -1,5 +1,5 @@
 # ManyNames
-Repository for the ManyNames dataset (version 2.3) for English and Mandarin Chinese. The English version of ManyNames provides ca. 31 name annotations for each of 25K objects in images selected from VisualGenome, whereas the Chinese version provides approximately 20 name annotations for 1319 objects in images selected from ManyNames. For an illustration see the image below.
+Repository for the ManyNames dataset (version 2.3) for English and Mandarin Chinese. The English version of ManyNames provides ca. 31 name annotations for each of 25K objects in images selected from VisualGenome, whereas the Chinese version provides approximately 20 name annotations for 1319 objects in images selected from ManyNames. For an illustration, see the image below.
 
 <p align="center">
   <img src="examples/mn_images_example5.png" alt="ManyNames example" width="500"/>
