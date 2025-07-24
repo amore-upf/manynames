@@ -3,16 +3,13 @@
 
 ## ManyNames v2.3
 
-The following changes have been introduced in version 2.3:
+The following changes have been introduced in version 2.3 (details below):
 
 * Singletons (names that were produced only once for a given object) have been re-evaluated for quality, with both manual and automatic procedures.
 
 * An anonymized subject ID is now available for 3/4 of the English version of ManyNames.
 
-* Lexical information of English names was enhanced: adding frequency information; changing the source database for concreteness, familiarity, and imageability ratings; adding WordNet synsets. In the case of Mandarin Chinese names, lexical information was enhanced as well: adding frequency information; changing the source database for concreteness, familiarity, imageability, and age of acquisition ratings.
-
-Each step is described in more detail below. 
-
+* Lexical information was enhanced. For both English and Mandarin Chinese, we added frequency information and changed the source database for concreteness, familiarity, and imageability ratings. For English, we also added WordNet synsets. For Mandarin chinese, we also changed the source database for age of acquisition ratings.
 
 ### Singleton re-evaluation
 
@@ -27,16 +24,16 @@ The other solution was an automatic filter using WordNet, aimed at removing sing
 **Affected columns**: responses, incorrect, singletons
 
 ### Subject information
-We have included a version of the MN English dataset where each row corresponds to a single answer (file *subject-ids-en.tsv*), and includes the anonymized ID of the person that gave that answer (if available). In order to do so, earlier information about the data collection process was retrieved so as to match each answer in the current ManyNames dataset with an ID. However, some annotations were missing, so there are only up to 27 IDs available per image. For Chinese, this information is not available.
+We have included a version of the MN English dataset where each row corresponds to a single answer (file *subject-ids-en.tsv*), and includes the anonymized ID of the person that gave that answer (if available). In order to do so, earlier information about the data collection process was retrieved so as to match each answer in the current ManyNames dataset with an ID. However, some annotations were missing, so there are only up to 27 IDs available per image. For Chinese, this information is not available, as it was not collected.
 
 ### New lexical information
 We have added the following columns for each ManyNames dataset:
 
-- `log_freq_{language}` (both English and Mandarin Chinese): Logarithmic frequency of each name based on log10, retrieved from column `Lg10WF` of [SUBTLEXus](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus) and column `log10W` of [SUBTLEX-CH](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexch) respectively.
-- `freq_mn` (both English and Mandarin Chinese): frequency of each name in the 'correct' column (tokens; each subject production of a name counts once).
-- `synsets` (English only): WordNet synset of the name. WordNet is a large lexical database containing with interlinked synsets, or sets of synonyms, that can function as sense IDs. For nouns, these synsets form a hierarchy. In order to disambiguate among different senses of a given name (e.g. "pitcher" can refer to a baseball player or a jug), we identified a set of synsets for each value in column `domain` (e.g. 'clothing.n.01' for domain 'clothing', 'animal.n.01' and 'plant.n.02' for domain 'animals_plants', etc.); we picked as synset for the name-domain pair the first synset of the name that is a hyponym of the domain synset.
+- `log_freq_{language}` (both English and Mandarin Chinese): Logarithmic corpus frequency of each name based on log10, retrieved from column `Lg10WF` of [SUBTLEXus](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus) and column `log10W` of [SUBTLEX-CH](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexch) respectively.
+- `freq_mn` (both English and Mandarin Chinese): frequency of each name in the 'correct' column in ManyNames (tokens; each subject production of a name counts once).
+- `synsets` (English only): WordNet synset of the name. WordNet is a large lexical database consisting of interlinked synsets, or sets of synonyms, that can function as sense IDs. For nouns, these synsets form a hierarchy. In order to disambiguate among different senses of a given name (e.g. "pitcher" can refer to a baseball player or a jug), we identified a set of synsets for each value in the `domain` column (e.g. 'clothing.n.01' for domain 'clothing', 'animal.n.01' and 'plant.n.02' for domain 'animals_plants', etc.); we picked as synset for the name-domain pair the first synset of the name that is a hyponym of the domain synset.
 
-Also, we have changed the source of some lexical measurements, aiming to achieve a bigger coverage of types:
+Also, we have changed the source of some lexical measurements, aiming to achieve a better coverage:
 - English:
     - Concreteness: [Brysbaert et al. (2014)](https://doi.org/10.3758/s13428-013-0403-5)
     - Familiarity: [Glasgow Norms (Scott et al., 2019)](https://doi.org/10.3758/s13428-013-0403-5)
@@ -48,7 +45,7 @@ Also, we have changed the source of some lexical measurements, aiming to achieve
     - Age of acquisition: [Xu et al. (2021)](https://doi.org/10.3758/s13428-020-01455-8)
 
 ### Data reorganization
-* File `additional-info.tsv` was renamed to `additional-info-en.tsv`. Scripts using this file have also been modified.
+* File `additional-info.tsv` was renamed `additional-info-en.tsv`. Scripts using this file have also been modified.
 * Columns *vg_domain* and *vg_obj_name* have been moved from `additional_info-en.tsv`to `manynames-en.tsv`.
 * Column *vg_image_name* of `additional_info-en.tsv` has been renamed to `filename`.
 * Script `add_lexical_info.py` has been added to subfolder *scripts/*.

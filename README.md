@@ -1,18 +1,18 @@
 # ManyNames
-Repository for the ManyNames dataset (version 2.3) for English and Mandarin Chinese. The English version of ManyNames provides ca. 31 name annotations for each of 25K objects in images selected from VisualGenome, whereas the Chinese version provides approximately 20 name annotations for 1319 objects in images selected from ManyNames. For an illustration, see the image below.
+Repository for the ManyNames dataset (version 2.3) for English and Mandarin Chinese. The English version of ManyNames provides ca. 31 name annotations for each of 25K objects in images selected from VisualGenome, whereas the Chinese version provides ca. 20 name annotations for 1319 objects in images selected from ManyNames. For an illustration, see the images below.
 
 <p align="center">
   <img src="examples/mn_images_example5.png" alt="ManyNames example" width="500"/>
 </p>
 
-For details about the data collection and the information in the dataset, see [Silberer, Zarrieß, & Boleda, 2020](https://aclanthology.org/2020.lrec-1.710/) (version 1.0) and [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/) (version 2.0), and [He, Liao, Liang, & Boleda, 2023](https://aclanthology.org/2023.conll-1.30/) (Mandarin Chinese version). For changes in the present version see the [release notes](https://github.com/amore-upf/manynames/blob/master/release_notes_v2.2.md). Previous versions of the dataset can be accessed as older releases in this repository.
+For details about the data collection process and the information encoded in the dataset, see [Silberer, Zarrieß, & Boleda, 2020](https://aclanthology.org/2020.lrec-1.710/) (version 1.0) and [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/) (version 2.0), as well as [He, Liao, Liang, & Boleda, 2023](https://aclanthology.org/2023.conll-1.30/) (Mandarin Chinese version). For changes in the present version see the [release notes](https://github.com/amore-upf/manynames/blob/master/release_notes_v2.2.md). Previous versions of the dataset can be accessed as older releases in this repository.
 
 
 ## Data files
 The data are provided in two formats:
 
 * **TSV**: tab-separated text files, first row contains the column labels, nested data is stored as python dictionaries (i.e., "{key: value}"). Available in this folder.
-* **JSON**: the same data set in .json format to facilitate access (to the nested data) outside of python. Included in subfolder *other_data*.
+* **JSON**: the same data set in .json format to facilitate access (to the nested data) outside of python. Available in subfolder *other_data*.
 
 The columns that are included for **both the English and Mandarin Chinese datasets** are labelled as follows.
 
@@ -21,16 +21,16 @@ The columns that are included for **both the English and Mandarin Chinese datase
 | vg_object_id | int | The VisualGenome ID of the object (functions as the unique ID for the datapoints in ManyNames)|
 | vg_image_id | int | The VisualGenome ID of the image (is also unique)|
 | vg_obj_name | str | The VG name of the object |
-| topname | str | The most frequent name produced by subjects for the object |
+| topname | str | The most frequent name produced for the object in the ManyNames data collection |
 | responses | dict | Correct responses and their counts |
-| domain | str | The ManyNames domain of the object, i.e. categorisation of objects into *people*, *animals_plants*, *vehicles*, *food*, *home*, *buildings*, and *clothing* |
-| vg_domain | str | The ManyNames domain of the VG name, which may be a superset of its WordNet category (encoded in column vg_cat). Example: The ManyNames domain *food* subsumes the WordNet categories *food, solid food*, and *food, nutrient*. |
-| N | int | The number of name types in the ManyNames responses (each name counts once) |
+| domain | str | The ManyNames domain of the object, categorizing objects into *people*, *animals_plants*, *vehicles*, *food*, *home*, *buildings*, and *clothing* |
+| vg_domain | str | The ManyNames domain of the VG name, which may be a superset of its WordNet category (encoded in column vg_cat of file `other-data/additional-info-en.tsv`). Example: The ManyNames domain *food* subsumes the WordNet categories *food, solid food*, and *food, nutrient* |
+| N | int | The number of +++correct?+++ name types in the ManyNames responses (each name counts once) |
 | total_responses | int | Sum count of correct responses (tokens; each subject production of a name counts once)|
 | perc_top | float | The relative frequency of the topname (among correct responses), in percentage|
 | H | float | The H agreement measure from Snodgrass and Vanderwart (1980), which is the entropy over subject responses |
 | vg_synset | str | The WordNet synset of the object, as provided by VisualGenome  |
-| link_mn | str | The url to the image with the object marked|
+| link_mn | str | The url to the image with the object framed (the original VG image contains no frame)|
 | vg_bbox_xywh | list| The coordinates of the object: "[left x, bottom y, width, height]"; y=0 is at the top of the image|
 
 &nbsp;
@@ -50,13 +50,13 @@ The **Mandarin Chinese** dataset also includes the columns listed below.
 | Column | Type | Description |
 | -------- | :-------: | -------- |
 |  list  |  str | Lists of images assigned to participants |
-| familiarity | float | Familiarity approximated as the weighted average of the frequency of the responses in a textual corpus |
+| familiarity | float | Familiarity, approximated as the weighted average of the frequency of the responses in a textual corpus |
 
 *Note*: A subset of the ManyNames data has also been annotated for Catalan within the [AINA project](https://projecteaina.cat/). It is available [here](https://huggingface.co/datasets/projecte-aina/cat_manynames).
 
 ## Subfolder: other-data/
 
-Contains the ManyNames datasets in JSON format, some files with additional information about the English ManyNames dataset, and also files with lexical information (concreteness, familiarity, imageability, age of acquisition, frequency...) for each name in ManyNames and for both languages. See the README inside the folder for more information.
+Contains the ManyNames datasets in JSON format, some files with additional information about the English ManyNames dataset (including per-subject responses), and also files with lexical information (concreteness, familiarity, imageability, age of acquisition, corpus frequency, context diversity) for each name in ManyNames, in both languages. See the README inside the folder for more information.
 
 ## Subfolder: scripts/
 
@@ -78,7 +78,7 @@ Silberer, C., S. Zarrieß, G. Boleda. 2020. [Object Naming in Language and Visio
 }
 ```
 
-* In addition, if you refer to anything specific to version 1 of ManyNames:
+* In addition, if you refer to anything specific to version 1:
 
 Silberer, C., S. Zarrieß, M. Westera, G. Boleda. 2020. [Humans meet models on object naming: A new dataset and analysis](https://aclanthology.org/2020.coling-main.172/). Proceedings of the 28th International Conference on Computational Linguistics, 1893-1905.
 
