@@ -19,7 +19,7 @@ def main():
     df = pd.read_table(mn_path, sep='\t')
     
     lex_path = f"https://raw.githubusercontent.com/amore-upf/manynames/refs/heads/master/other-data/lexical-info-{lang_code}.tsv"   
-    lex = pd.read_table(lex_path, sep='\t').set_index('word').to_dict('index')
+    lex = pd.read_table(lex_path, sep='\t').set_index('name').to_dict('index')
 
     # Add desired measure
     df['concreteness'] = df['responses'].apply(lambda x: create_dict(x, lex, 'concreteness'))
@@ -27,9 +27,10 @@ def main():
     df['familiarity'] = df['responses'].apply(lambda x: create_dict(x, lex, 'familiarity'))
     df['age_of_acquisition'] = df['responses'].apply(lambda x: create_dict(x, lex, 'age_of_acquisition'))
     df['freq_en'] = df['responses'].apply(lambda x: create_dict(x, lex, 'freq_en'))
-    df['log_freq_en'] = df['responses'].apply(lambda x: create_dict(x, lex, 'log_freq_en'))
+    df['log10freq_en'] = df['responses'].apply(lambda x: create_dict(x, lex, 'log10freq_en'))
     df['context_div_en'] = df['responses'].apply(lambda x: create_dict(x, lex, 'context_div_en'))
-    df['freq_mn'] = df['responses'].apply(lambda x: create_dict(x, lex, 'freq_mn'))
+    df['n_tokens'] = df['responses'].apply(lambda x: create_dict(x, lex, 'n_tokens'))
+    df['n_images'] = df['responses'].apply(lambda x: create_dict(x, lex, 'n_images'))
 
     # Save to TSV (if needed)
     df.to_csv('manynames-en-lex.tsv', sep='\t')

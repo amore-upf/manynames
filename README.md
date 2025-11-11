@@ -5,7 +5,7 @@ Repository for the ManyNames dataset (version 2.3) for English and Mandarin Chin
   <img src="examples/mn_images_example5.png" alt="ManyNames example" width="500"/>
 </p>
 
-For details about the data collection process and the information encoded in the dataset, see [Silberer, Zarrieß, & Boleda, 2020](https://aclanthology.org/2020.lrec-1.710/) (version 1.0) and [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/) (version 2.0), as well as [He, Liao, Liang, & Boleda, 2023](https://aclanthology.org/2023.conll-1.30/) (Mandarin Chinese version). For changes in the present version see the [release notes](https://github.com/amore-upf/manynames/blob/master/release_notes_v2.2.md). Previous versions of the dataset can be accessed as older releases in this repository.
+For details about the data collection process and the information encoded in the dataset, see [Silberer, Zarrieß, & Boleda, 2020](https://aclanthology.org/2020.lrec-1.710/) (version 1.0) and [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/) (version 2.0), as well as [He, Liao, Liang, & Boleda, 2023](https://aclanthology.org/2023.conll-1.30/) (Mandarin Chinese version). For changes in the present version see the [release notes](https://github.com/amore-upf/manynames/blob/master/release_notes.md). Previous versions of the dataset can be accessed as older releases in this repository.
 
 
 ## Data files
@@ -19,29 +19,32 @@ The columns that are included for **both the English and Mandarin Chinese datase
 | Column | Type | Description |
 | -------- | :-------: | -------- |
 | vg_object_id | int | The VisualGenome ID of the object (functions as the unique ID for the datapoints in ManyNames)|
-| vg_image_id | int | The VisualGenome ID of the image (is also unique)|
-| vg_obj_name | str | The VG name of the object |
 | topname | str | The most frequent name produced for the object in the ManyNames data collection |
 | responses | dict | Correct responses and their counts |
 | domain | str | The ManyNames domain of the object, categorizing objects into *people*, *animals_plants*, *vehicles*, *food*, *home*, *buildings*, and *clothing* |
-| vg_domain | str | The ManyNames domain of the VG name, which may be a superset of its WordNet category (encoded in column vg_cat of file `other-data/additional-info-en.tsv`). Example: The ManyNames domain *food* subsumes the WordNet categories *food, solid food*, and *food, nutrient* |
 | N | int | The number of +++correct?+++ name types in the ManyNames responses (each name counts once) |
 | total_responses | int | Sum count of correct responses (tokens; each subject production of a name counts once)|
 | perc_top | float | The relative frequency of the topname (among correct responses), in percentage|
 | H | float | The H agreement measure from Snodgrass and Vanderwart (1980), which is the entropy over subject responses |
-| vg_synset | str | The WordNet synset of the object, as provided by VisualGenome  |
 | link_mn | str | The url to the image with the object framed (the original VG image contains no frame)|
 | vg_bbox_xywh | list| The coordinates of the object: "[left x, bottom y, width, height]"; y=0 is at the top of the image|
+| vg_image_id | int | The VisualGenome ID of the image (is also unique)|
+| vg_obj_name | str | The VG name of the object |
+| vg_synset | str | The WordNet synset of the object, as provided by VisualGenome  |
+| vg_domain | str | The ManyNames domain of the VG name, which may be a superset of its WordNet category (encoded in column vg_cat of file `other-data/additional-info-en.tsv`). Example: The ManyNames domain *food* subsumes the WordNet categories *food, solid food*, and *food, nutrient* |
 
 &nbsp;
 
 The **English** dataset also includes the columns listed below.
 
-| Column | Type | Description |
-| -------- | :-------: | -------- |
+|   Column  | Type | Description |
+| --------- | :-------: | -------- |
 | incorrect | dict | Incorrect responses and their counts |
+| typicality| dict | Correct responses and their image-text similarity score, calculated using [BLIP2 (Li, Li, Savarese & Hoi, 2023)](https://arxiv.org/abs/2301.12597)|
+|  synsets  | dict | Correct responses and their [WordNet](https://wordnet.princeton.edu/) synset, assigned automatically|
+|informativeness|dict|Synsets of correct responses and their [WordNet](https://wordnet.princeton.edu/) information content ratings|
+|most_informative_synset_image|str|Synset with the highest [WordNet](https://wordnet.princeton.edu/) information content rating|
 | split | str | Use of the image in training vs. test vs. validation in [Silberer, Zarrieß, Westera, & Boleda, 2020](https://aclanthology.org/2020.coling-main.172/) |
-|synsets| dict | Correct responses and their [WordNet](https://wordnet.princeton.edu/) synset, assigned automatically|
 
 &nbsp;
 
@@ -112,9 +115,9 @@ He, Y., Liao, X., Liang, J., Boleda, G. 2023. [The Impact of Familiarity on Nami
 
 ## Version history
 
-(For more information about versions 2.1 onward, see the [release notes](https://github.com/amore-upf/manynames/blob/master/release_notes_v2.2.md).)
+(For more information about versions 2.1 onward, see the [release notes](https://github.com/amore-upf/manynames/blob/master/release_notes.md).)
 
-* **version 2.3**: **Revised English singletons after identifying issues in v2.2; added Wordnet synset for English names; added anonymized subject IDs for English data; enhanced lexical data for English and Mandarin Chinese**.
+* **version 2.3**: **Revised English singletons after identifying issues in v2.2; added WordNet synset-related information and BLIP-2 typicality scores for English names; added anonymized subject IDs for English data; enhanced lexical data for English and Mandarin Chinese**.
 
 * **version 2.2**: Added all singletons responses for English (= responses given only once) following a manual correction procedure; added Mandarin Chinese names for a subset of the data; added lexical information for names.
 

@@ -4,7 +4,7 @@ Created on Tue May 16 16:46:59 2023
 - takes a .tsv (like manynames-en.tsv from GitHub) or .csv (like manynames_data.csv 
   created from the search interface) as input. File needs to contain a column
   labelled "link_mn" with the image urls
-- downloads the images specified in the input file into a folder (default: "../MN_images")
+- downloads the images specified in the input file into a folder (default: "MN_images/")
 @author: amaed
 """
 
@@ -35,7 +35,7 @@ if __name__=="__main__":
       
     arg_parser.add_argument('-outdir', type=str, 
                             help='output path for the ManyNames images', 
-                            default='../MN_images/')
+                            default='MN_images/')
     
     #check provided arguments
     args = arg_parser.parse_args()
@@ -64,6 +64,7 @@ if __name__=="__main__":
     img_links = list(set([i['link_mn'] for i in mn]))
     for url in tqdm(img_links):
         file_path = url.replace('http://manynames.upf.edu/', mn_img_dir)
+        url = url.strip().replace(' ', '%20') # make sure urls with compounds are read properly
         if os.path.isfile(file_path):
             print('skipping: ' + file_path + ' because it already exists')
             continue

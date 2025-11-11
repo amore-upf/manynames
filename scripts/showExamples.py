@@ -7,6 +7,7 @@ from io import BytesIO
 import json
 import random
 import requests
+import os
 
 #%% ---- FUNCTIONS
 # Response formatting
@@ -229,6 +230,9 @@ if __name__ == "__main__":
     # define a dict with MN versions, paths, and lang codes
     datasets = {'English': {'path': '../other-data/manynames-en.json', 'code': 'en'},
                 'Chinese': {'path': '../other-data/manynames-zh.json', 'code': 'zh'}}
+    
+    dir_examples = '../examples/'
+    os.makedirs(dir_examples, exist_ok=True)
     # iterate over versions
     for lang in datasets:
         # open file
@@ -242,14 +246,14 @@ if __name__ == "__main__":
         idx = random.sample(range(len(mn)), 6)
         images = [mn[i] for i in idx]
         arrangement = arrange_images(images, lang, type="pct", incl="correct")
-        arrangement.save("../examples/mn_images_example1_" + datasets[lang]['code'] + ".png")
+        arrangement.save(f"{dir_examples}mn_images_example1_{datasets[lang]['code']}.png")
     
         # Example 2: Counts - Only Correct
         idx = random.sample(range(len(mn)), 6)
         images = [mn[i] for i in idx]
         arrangement = arrange_images(images, lang, type="count", incl="correct")
         
-        arrangement.save("../examples/mn_images_example2_" + datasets[lang]['code'] + ".png")
+        arrangement.save(f"{dir_examples}mn_images_example2_{datasets[lang]['code']}.png")
     
         # Example 3: Counts - Including Incorrect - Only Topname "Man"/"男人"
         if lang == 'English':
@@ -261,7 +265,7 @@ if __name__ == "__main__":
         images = [mn[i] for i in idx]
         arrangement = arrange_images(images, lang, type="count", incl="correct")
         
-        arrangement.save("../examples/mn_images_example3_" + datasets[lang]['code'] + ".png")
+        arrangement.save(f"{dir_examples}mn_images_example3_{datasets[lang]['code']}.png")
     
         # Example 4: Figure 1 from Silberer et al 2020
         if lang == 'English':
@@ -270,11 +274,11 @@ if __name__ == "__main__":
             images = [mn[i] for i in idx]
             arrangement = arrange_images(images, lang, type="count", incl="correct")
             
-            arrangement.save("../examples/mn_images_example4_" + datasets[lang]['code'] + ".png")
+            arrangement.save(f"{dir_examples}mn_images_example4_{datasets[lang]['code']}.png")
     
     # Example 5: Counts - Examples in English and Chinese
     dic = {'English': {'path': '../other-data/manynames-en.json', 'ids': [2358126, 713859, 2393177]},
            'Chinese': {'path': '../other-data/manynames-zh.json', 'ids': [3327, 4692, 286036]}}
     arrangement = arrange_images_2_datasets(dic, type="count", incl="correct", nCols=2, add_caption=False)
     
-    arrangement.save("../examples/mn_images_example5.png")
+    arrangement.save(f"{dir_examples}mn_images_example5.png")

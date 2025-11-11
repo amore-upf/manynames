@@ -103,7 +103,9 @@ if __name__ == '__main__':
         o1 = o1.sort_values(by = 'domain') #sort by domain
         
         #print results
+        print(lang)
         print(o1)
+        print('\n\n')
         
         #save into CSV file
         o1.to_csv(f'{new_dir}agreement_table_{lang}.csv', index=False)

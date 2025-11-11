@@ -3,37 +3,47 @@
 
 ## ManyNames v2.3
 
-The following changes have been introduced in version 2.3 (details below):
+The following changes have been introduced in version 2.3:
 
 * Singletons (names that were produced only once for a given object) have been re-evaluated for quality, with both manual and automatic procedures.
 
-* An anonymized subject ID is now available for 3/4 of the English version of ManyNames.
+* The anonymized ID of people that originally produced each name is now available for 3/4 of the English version of ManyNames.
 
-* Lexical information was enhanced. For both English and Mandarin Chinese, we added frequency information and changed the source database for concreteness, familiarity, and imageability ratings. For English, we also added WordNet synsets. For Mandarin chinese, we also changed the source database for age of acquisition ratings.
+* Lexical information was enhanced. For both English and Mandarin Chinese, we added frequency information and context diversity, and changed some source databases to aim for a bigger coverage.
+
+* WordNet synsets and informativity ratings have been added for English, alongside typicality ratings for each pair name-image.
+
+Each step is described in more detail below. 
 
 ### Singleton re-evaluation
 
-**Problem**: Too many singletons that were annotated as 'correct' in the manual annotation phase were not actually referring to the object in the bounding box (e.g. 'shirt' for a picture of a woman wearing a shirt).
+**Problem**: Some singletons that were annotated as 'correct' were not referring to the object in the bounding box (i.e. 'shirt' for a picture of a woman wearing a shirt.)
 
 **Solution**: We devised two solutions. 
 
-One consisted in re-assessing the singleton annotation that we carried out in version 2.2, which collected 3 judgments for each singleton and combined them into a decision to accept or reject the singleton based on the criteria in the release notes for v2.2 below. For version 2.3, after experimenting with a manually annotated a sample of 200 images, we changed the criterion to accepting annotations with at least 3 out of 4 quality items correctly answered, because it greatly reduced the number of false positives. As a consequence of this change, we had to collect a few new anotations that met the new criteria.
+One consisted in manually annotating a sample of 200 images and testing the effects of changing the requirements for accepting an annotation. It was then decided to increase the requirements related to quality items, as it had a positive effect on erasing true negatives and especially false positives. Around 150 new annotations were collected according to the new criteria, and ManyNames was re-generated including these results.
 
-The other solution was an automatic filter using WordNet, aimed at removing singletons marked as 'correct' that are out of domain (like 'shirt', which refers to clothing, for an image of domain 'person'). We first added a WordNet synset for each name (with the procedure explained below). The synset of a given singleton was compared to the synset of the top name of the corresponding image. The singleton was kept if it shares a common hypernym with the synset of the top name within a reasonable depth in the WordNet hierarchy (we defined a set of synset nodes that were too generic to be considered a good indicator of belonging to the same domain, e.g. 'entity.n.01', 'abstraction.n.06', 'instrumentality.n.03', etc.). Else, it was moved to column 'incorrect'.
+The other solution was an automatic filter using WordNet, aimed at removing singletons marked as 'correct' that are out of domain (like 'shirt', which refers to clothing, for an image of domain 'person'). We first added a WordNet synset for each name (procedure explained below). The synset of a given singleton was compared to the synset of the top name of the corresponding image. The singleton was kept if it shares a common hypernym with the synset of the top name within a reasonable depth in the WordNet hierarchy (we defined a set of synset nodes that were too generic to be considered a good indicator of belonging to the same domain, e.g. 'entity.n.01', 'abstraction.n.06', 'instrumentality.n.03', etc.). Else, it was moved to column 'incorrect'.
 
 **Affected columns**: responses, incorrect, singletons
 
 ### Subject information
-We have included a version of the MN English dataset where each row corresponds to a single answer (file *subject-ids-en.tsv*), and includes the anonymized ID of the person that gave that answer (if available). In order to do so, earlier information about the data collection process was retrieved so as to match each answer in the current ManyNames dataset with an ID. However, some annotations were missing, so there are only up to 27 IDs available per image. For Chinese, this information is not available, as it was not collected.
+We have included a version of the MN English dataset where each row corresponds to a single answer (file *subject-ids-en.tsv*), and includes the anonymized ID of the person that gave that answer (if available). In order to do so, earlier information about the data collection process was retrieved so as to match each answer in the current ManyNames dataset with an ID. However, some annotations were missing, so there are only up to 27 IDs available per image.
+For Chinese, this information is not available, as it was not collected.
 
-### New lexical information
+### New lexical and pair-related (name and image) information
 We have added the following columns for each ManyNames dataset:
 
-- `log_freq_{language}` (both English and Mandarin Chinese): Logarithmic corpus frequency of each name based on log10, retrieved from column `Lg10WF` of [SUBTLEXus](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus) and column `log10W` of [SUBTLEX-CH](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexch) respectively.
-- `freq_mn` (both English and Mandarin Chinese): frequency of each name in the 'correct' column in ManyNames (tokens; each subject production of a name counts once).
+- `log10freq_{language}` (English, Mandarin Chinese): Logarithmic corpus frequency of each name based on log10, retrieved from column `Lg10WF` of [SUBTLEXus](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus) and column `log10W` of [SUBTLEX-CH](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexch).
+- `context_div_{language}` (English, Mandarin Chinese): Context diversity ratings of each name, retrieved from column `CDcount` of [SUBTLEXus](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexus) and column `W-CD` of [SUBTLEX-CH](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/subtlexch).
+- `n_tokens` (English, Mandarin Chinese): frequency of each name in the 'correct' column in ManyNames (tokens; each subject production of a name counts once).
+- `n_images` (English, Mandarin Chinese): frequency of each name per image in ManyNames (types per image; each name counts once per image regardless of the number of times produced).
 - `synsets` (English only): WordNet synset of the name. WordNet is a large lexical database consisting of interlinked synsets, or sets of synonyms, that can function as sense IDs. For nouns, these synsets form a hierarchy. In order to disambiguate among different senses of a given name (e.g. "pitcher" can refer to a baseball player or a jug), we identified a set of synsets for each value in the `domain` column (e.g. 'clothing.n.01' for domain 'clothing', 'animal.n.01' and 'plant.n.02' for domain 'animals_plants', etc.); we picked as synset for the name-domain pair the first synset of the name that is a hyponym of the domain synset.
+- `informativeness` (English only): [Information content](https://wn.readthedocs.io/en/latest/api/wn.ic.html) rating, provided by WordNet, per available synset.
+- `most_informative_synset_image` (English only): If any, the synset with highest informativity rating per image.
+- `typicality` (English only): Image-text similarity score for each pair of name and object image, calculated using [BLIP2 (Li, Li, Savarese & Hoi, 2023)](https://arxiv.org/abs/2301.12597)
 
-Also, we have changed the source of some lexical measurements, aiming to achieve a better coverage:
+Also, we have changed the source of some lexical measurements, aiming to achieve a better coverage. These are the new sources employed:
 - English:
     - Concreteness: [Brysbaert et al. (2014)](https://doi.org/10.3758/s13428-013-0403-5)
     - Familiarity: [Glasgow Norms (Scott et al., 2019)](https://doi.org/10.3758/s13428-013-0403-5)
@@ -49,6 +59,7 @@ Also, we have changed the source of some lexical measurements, aiming to achieve
 * Columns *vg_domain* and *vg_obj_name* have been moved from `additional_info-en.tsv`to `manynames-en.tsv`.
 * Column *vg_image_name* of `additional_info-en.tsv` has been renamed to `filename`.
 * Script `add_lexical_info.py` has been added to subfolder *scripts/*.
+* Column `mn_bbox_xywh` was renamed to `vg_bbox_xywh`, as it corresponds to the object coordinates only in the Visual Genome image.
 
 
 &nbsp;
