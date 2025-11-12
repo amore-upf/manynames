@@ -22,7 +22,7 @@ The columns that are included for **both the English and Mandarin Chinese datase
 | topname | str | The most frequent name produced for the object in the ManyNames data collection |
 | responses | dict | Correct responses and their counts |
 | domain | str | The ManyNames domain of the object, categorizing objects into *people*, *animals_plants*, *vehicles*, *food*, *home*, *buildings*, and *clothing* |
-| N | int | The number of +++correct?+++ name types in the ManyNames responses (each name counts once) |
+| N | int | The number of correct name types in the ManyNames responses (each name counts once) |
 | total_responses | int | Sum count of correct responses (tokens; each subject production of a name counts once)|
 | perc_top | float | The relative frequency of the topname (among correct responses), in percentage|
 | H | float | The H agreement measure from Snodgrass and Vanderwart (1980), which is the entropy over subject responses |
