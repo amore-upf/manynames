@@ -5,13 +5,13 @@
 
 The following changes have been introduced in version 2.3:
 
-* Singletons (names that were produced only once for a given object) have been re-evaluated for quality, with both manual and automatic procedures.
+* Singletons (names that were produced only once for a given object) have been re-evaluated for quality using both manual and automatic procedures.
 
-* The anonymized ID of people that originally produced each name is now available for 3/4 of the English version of ManyNames.
+* The anonymized IDs of people who originally produced each name are now available for 3/4 of the English version of ManyNames.
 
-* Lexical information was enhanced. For both English and Mandarin Chinese, we added frequency information and context diversity, and changed some source databases to aim for a bigger coverage.
+* Lexical information has been enhanced. For both English and Mandarin Chinese, frequency information and context diversity have been added, and some source databases have been updated to achieve broader coverage.
 
-* WordNet synsets and informativity ratings have been added for English, alongside typicality ratings for each pair name-image.
+* WordNet synsets and informativity ratings have been added for English, together with typicality ratings for each pair name-image.
 
 Each step is described in more detail below. 
 
